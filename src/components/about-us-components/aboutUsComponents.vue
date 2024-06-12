@@ -472,6 +472,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
        
       .n-tabs {
         // border: 2px solid red;
+        
           .n-tab-pane {
             .first-wrap {
               // border: 2px solid blue;
