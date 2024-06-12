@@ -2685,8 +2685,8 @@ section {
           color: $base-color-1;
           position: relative;
           font-weight: 600;
-          font-size: 40px;
-          line-height: 60px;
+          font-size: 18px !important;
+          line-height: 40px;
           letter-spacing: 0em;
         }
 
