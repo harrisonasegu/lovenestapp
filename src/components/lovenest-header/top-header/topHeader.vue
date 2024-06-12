@@ -1,0 +1,123 @@
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import { Icon } from '@iconify/vue';
+</script>
+
+<template>
+  <header>
+    <div class="topheader-wrap">
+      <nav> 
+        <div class="phone-routing">
+          <div class="phone">
+            <span>
+              <Icon icon="ion:call" color="#BE0C68" width="20" />
+            </span>
+
+            <span>
+                <a class="number" href="tel:++0808 501 5786">0808 501 5786</a>
+            </span>
+
+          </div>
+
+          <div class="routing">
+            <div class="icon-links"> <span>
+                <Icon icon="wpf:message-outline" color="#fff" width="20" />
+              </span> <span> <a href="mailto:">Email</a> </span> </div>
+
+            <RouterLink class="icon-links" to="/about"><span><Icon icon="clarity:cursor-arrow-line" width="20px" height="20px"  style="color: white" /></span> Become a Caregiver </RouterLink>
+
+            <RouterLink class="icon-links" to="/about"> Request Free Assessment </RouterLink>
+<!-- 
+              <div class="icon-links"><span>
+               
+                <Icon icon="ion:search" width="20px" height="20px"  style="color: white" />
+              </span>
+            </div> -->
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+</template>
+
+<style lang="scss" scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .topheader-wrap {
+    // border: 12px solid red;
+
+    // header- nav
+    nav {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &>.phone-routing {
+        // border: 12px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+
+        &>.phone {
+          // border: 2px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 8px;
+          font-size: 23px;
+
+          &>.number, a {
+            display: flex;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            color: $base-color-2;
+          }
+        }
+
+        &>.routing {
+          // border: 2px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 30px;
+
+          &>.icon-links {
+            background-color: $base-color-2;
+            border-radius: 10px;
+            padding: 10px 15px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+
+            span {
+              // border: 12px solid red;
+              display: flex;
+
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>
