@@ -3380,13 +3380,13 @@ const imageUrl = [
           &>.light-background {
             // border: 1px solid red;
             background-color: #FFFFFFB2;
-            width: 95%;
+            width: 94.5%;
+            right: 10px;
             // min-height: 200px;
             overflow-y: scroll;
             position: absolute;
             top: -100px;
             bottom: 10px;
-            right: 7px;
             display: flex;
             align-content: center;
             justify-content: center;
@@ -3465,13 +3465,13 @@ const imageUrl = [
           &>.light-background {
             // border: 1px solid red;
             background-color: #FFFFFFB2;
-            width: 95%;
+            width: 94.5%;
             // min-height: 200px;
             position: absolute;
             overflow-y: scroll;
             top: -100px;
             bottom: 10px;
-            left: 7px;
+            left: 10px;
             display: flex;
             align-content: center;
             justify-content: center;
@@ -3804,16 +3804,16 @@ const imageUrl = [
 
 
           &>.light-background {
-            // border: 11px solid red;
+            // border: 5px solid red;
             background-color: #FFFFFFB2;
             display: flex;
             align-content: center;
             justify-content: center;
-            width: 95%;
             position: absolute;
             top: -100px;
             bottom: 10px;
-            left: 10px;
+            width: 94.5%;
+            left: 10px !important;
 
 
             &>.contents {
