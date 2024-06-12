@@ -3330,16 +3330,17 @@ const imageUrl = [
     }
 
     P {
-      font-size: 14px;
+      font-size: 16px !important;
+      line-height: 25px !important;
     }
 
     h2 {
       // border: 2px solid red;
-      font-size: 16px;
+      font-size: 20px !important;
     }
 
     h3 {
-      font-size: 15px;
+      font-size: 18px !important;
     }
 
     // First- Section---------------
@@ -3984,7 +3985,7 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 18px;
+                        font-size: 17px !important;
                         font-weight: 800;
                         line-height: 30px;
                         font-size: 14px;
@@ -3992,7 +3993,7 @@ const imageUrl = [
                       }
 
                       .header-extra-container {
-                        font-size: 18px;
+                        font-size: 25px !important;
                         font-weight: bolder;
                         color: $base-color-2;
                       }
