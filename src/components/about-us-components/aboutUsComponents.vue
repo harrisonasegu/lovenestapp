@@ -3,13 +3,12 @@ import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { Icon } from '@iconify/vue'
 import { ArrowBack, ArrowForward } from '@vicons/ionicons5'
-import { NCarousel, NIcon } from 'naive-ui'
+import { NCarousel, NIcon, NCard, NTabs, NTabPane } from 'naive-ui'
 
 const route = useRoute()
 const router = useRouter()
 
 const routeName = route.name as string
-
 
 const navigateToSubMenu = (elementId: string) => {
   // Get the element by its ID
@@ -64,6 +63,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 import Banner from '@/assets/images/about-us-image/aboutBanner.png'
 import Image1 from '@/assets/images/about-us-image/aboutImage1.png'
 import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
+import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 </script>
 
 <template>
@@ -129,47 +129,94 @@ import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
     </section>
 
     <!-- This section is for tab, Mission, Vision etc -->
-     
-       <!-- Carousel section -->
-      <section>
-      <n-carousel class="carousel" show-arrow autoplay>
+    <section>
+      <div class="tab-content">
+        <n-card title="" style="margin-bottom: 16px">
+          <n-tabs default-value="oasis" justify-content="space-evenly" type="line">
+            <n-tab-pane class="tab-caption" name="oasis" tab="MISSION">
+              <div class="first-wrap">
+                <div class="picture">
+                  <img :src="Image3" alt="picture">
+                </div>
+                <div class="contents">
+                  <h2>OUR MISSION</h2>
+                  <p>
+                    Our Mission is to support the needs of people 
+                    wishing to age-in-place with security and dignity.
+                  </p>
+                </div>
+              </div>
+            </n-tab-pane>
+            <n-tab-pane class="tab-caption" name="the beatles" tab="VALUES">
+              <div class="first-wrap">
+                <div class="picture">
+                  <img :src="Image1" alt="picture">
+                </div>
+                <div class="contents">
+                  <h2>OUR VALUES</h2>
+                  <p>
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magni et, tempora alias, expedita facere illo reprehenderit nisi necessitatibus optio, sint adipisci similique asperiores blanditiis. Consequuntur temporibus asperiores doloribus eum!
+                  </p>
+                </div>
+              </div>
+            </n-tab-pane>
+            <n-tab-pane class="tab-caption"         name="jay chou" tab="VISION">
+              <div class="first-wrap">
+                <div class="picture">
+                  <img :src="Image3" alt="picture">
+                </div>
+                <div class="contents">
+                  <h2>OUR VISION</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magni et, tempora alias, expedita facere illo reprehenderit nisi necessitatibus optio, sint adipisci similique asperiores blanditiis. Consequuntur temporibus asperiores doloribus eum!
+                  </p>
+                </div>
+              </div>
+            </n-tab-pane>
+          </n-tabs>
+        </n-card>
+      </div>
+    </section>
+      <!-- Carousel section -->
+    <section>
+    <n-carousel class="carousel" show-arrow autoplay>
 
 <!-- Second Section -->
 <!-- Relative and Absolute section -->
 <div class="second-reliable carousel-img">
-  <div class="section-image">
-  <img :src="Banner" alt="picture">
-  </div>
-  <div class="section-background">
+<div class="section-image">
+<img :src="Banner" alt="picture">
+</div>
+<div class="section-background">
 
-  <div class="light-background">
-    <div class="contents">
-      <div class="quotation">
-        <Icon class="icons"
-         icon="ri:double-quotes-l" width="80px" height="80px"  style="color: #4897E6" />
-      </div>
-      <p>
-        Mom's LoveNest caregivers are simultaneously her lifeline and
-        my security blanket. […] From the day Mom first moved here—
-        just prior to Rosh Hashanah, 2017—her aides have not only
-        provided her day-to-day care, but they've also provided her 
-        companionship.
-      </p>
-      <div class="color-btn">
-          <h4>Sindy</h4>
-          <p>Daughter of a LoveNest client</p>
-            <br>
-            <span>
-              <Icon class="icons"  icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-              <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-              <Icon  class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-              <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-              <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-            </span>
-      </div>
+<div class="light-background">
+  <div class="contents">
+    <div class="quotation">
+      <Icon class="icons"
+        icon="ri:double-quotes-l" width="80px" height="80px"  style="color: #4897E6" />
+    </div>
+    <p>
+      Mom's LoveNest caregivers are simultaneously her lifeline and
+      my security blanket. […] From the day Mom first moved here—
+      just prior to Rosh Hashanah, 2017—her aides have not only
+      provided her day-to-day care, but they've also provided her 
+      companionship.
+    </p>
+    <div class="color-btn">
+        <h4>Sindy</h4>
+        <p>Daughter of a LoveNest client</p>
+          <br>
+          <span>
+            <Icon class="icons"  icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
+            <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
+            <Icon  class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
+            <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
+            <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
+          </span>
     </div>
   </div>
-  </div>
+</div>
+</div>
 </div>
 
 <img class="carousel-img" :src="Image2">
@@ -179,23 +226,23 @@ import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
 <img class="carousel-img" :src="Image2">
 
 <template #arrow="{ prev, next }">
-      <div class="custom-arrow">
-        <button type="button" class="custom-arrow--left" @click="prev">
-          <n-icon><ArrowBack /></n-icon>
-        </button>
-        <button type="button" class="custom-arrow--right" @click="next">
-          <n-icon><ArrowForward /></n-icon>
-        </button>
-      </div>
-    </template>
+    <div class="custom-arrow">
+      <button type="button" class="custom-arrow--left" @click="prev">
+        <n-icon><ArrowBack /></n-icon>
+      </button>
+      <button type="button" class="custom-arrow--right" @click="next">
+        <n-icon><ArrowForward /></n-icon>
+      </button>
+    </div>
+  </template>
 <template #dots="{ total, currentIndex, to }">
- <ul class="custom-dots">
-   <li v-for="index of total" :key="index" :class="{ ['is-active']: currentIndex === index - 1 }"
-     @click="to(index - 1)" />
- </ul>
+<ul class="custom-dots">
+  <li v-for="index of total" :key="index" :class="{ ['is-active']: currentIndex === index - 1 }"
+    @click="to(index - 1)" />
+</ul>
 </template>
-      </n-carousel>
-      </section>
+    </n-carousel>
+    </section>
 
     <section>
       <div class="colored-last">
@@ -418,6 +465,38 @@ import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
   }
 
   // <!-- This section is for tab, Mission, Vision etc -->
+
+  section {
+    &>.tab-content {
+      // border: 2px solid red;
+       
+      .n-tabs {
+        // border: 2px solid red;
+          .n-tab-pane {
+            .first-wrap {
+              // border: 2px solid blue;
+              display: flex;
+              column-gap: 20px;
+
+              &>.picture {
+                img{
+                  // border: 2px solid blue;
+                  width: 700px;
+                  height: auto;
+                }
+              }
+
+              &>.contents {
+                width: 100%;
+              //  h2 {}
+              //  p {}
+              }
+           }
+       }   
+      }
+    }
+  }
+
   // <!-- Carousel section -->
   section {
     &>.carousel {

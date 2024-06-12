@@ -70,7 +70,6 @@ import Icon6 from '@/assets/images/Caregiver-Image/Icons/icon6.png'
 import Imagegiver1 from '@/assets/images/Caregiver-Image/Imagegiver1.png'
 import Imagegiver2 from '@/assets/images/Care_Service/Frame1.png'
 import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
-
 </script>
 
 <template>
@@ -2446,6 +2445,7 @@ section {
                   flex-direction: column;
                   text-align: center;
                   line-height: 0px;
+                  text-align: center !important;
              
                   .background-icon {
                     .icons {
@@ -2460,6 +2460,7 @@ section {
                     line-height: 30px;
                     letter-spacing: 0em;
                     font-size: 20px !important;
+                   text-align: center !important;
                   }
 
                   h4 {
@@ -2476,7 +2477,6 @@ section {
                   font-weight: 400;
                   line-height: 25px;
                   letter-spacing: 0em;
-                  text-align: left;
                 }
               }
             }
@@ -2488,6 +2488,7 @@ section {
 
           p {
             color: #fff;
+            text-align: center !important;
           }
         }
       }
@@ -2530,9 +2531,9 @@ section {
     }
 
     p {
+      // border: 2px solid red;
       width: 90%;
-      margin: 0 auto;
-      text-align: left;
+      text-align: center;
       margin-bottom: 50px;
     }
 
@@ -2598,8 +2599,8 @@ section {
                 font-weight: 400;
                 line-height: 25px;
                 letter-spacing: 0em;
-                text-align: left;
-                padding: 0 10px;
+                text-align: center;
+                padding: 0px;
               }
             }
           }
