@@ -2028,7 +2028,7 @@ margin-top: 0px;
       padding-left: 0px;
     }
   }
-}
+    }
 
 
 &>.line-paragraphy {
