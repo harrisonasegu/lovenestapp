@@ -24,7 +24,7 @@ import { Icon } from '@iconify/vue';
                 <Icon icon="wpf:message-outline" color="#fff" width="20" />
               </span> <span> <a href="mailto:">Email</a> </span> </div>
 
-            <RouterLink class="icon-links" to="/about"><span><Icon icon="clarity:cursor-arrow-line" width="20px" height="20px"  style="color: white" /></span> Become a Caregiver </RouterLink>
+            <RouterLink class="icon-links" to="/vacancy"><span><Icon icon="clarity:cursor-arrow-line" width="20px" height="20px"  style="color: white" /></span> Apply For Jobs </RouterLink>
 
             <RouterLink class="icon-links" to="/Free-assessment"> Request Free Assessment </RouterLink>
 <!-- 

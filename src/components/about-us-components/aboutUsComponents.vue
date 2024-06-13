@@ -177,6 +177,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
         </n-card>
       </div>
     </section>
+    
       <!-- Carousel section -->
     <section>
     <n-carousel class="carousel" show-arrow autoplay>
