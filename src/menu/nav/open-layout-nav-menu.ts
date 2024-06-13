@@ -103,6 +103,18 @@ export const openLayoutNavMenu: any = [
             RouterLink,
             {
                 to: {
+                    name: 'Free-assessment'
+                }
+            },
+            { default: () => 'RequestFreeAssessment' }
+        ),
+        key: 'RequestFreeAssessment'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
                     name: 'contact us'
                 }
             },

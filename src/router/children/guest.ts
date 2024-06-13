@@ -61,6 +61,14 @@ const guestRouteChildren = [
     }
   },
   {
+    path: '/Free-assessment',
+    name: 'RequestFreeAssessment',
+    component: () => import('@/views/RequestFreeAssessment.vue'),
+    meta: {
+      title: 'RequestFreeAssessment'
+    }
+  },
+  {
     path: '/contact-us',
     name: 'contact us',
     component: () => import('@/views/ContactView.vue'),

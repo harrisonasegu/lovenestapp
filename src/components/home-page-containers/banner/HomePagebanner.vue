@@ -7,7 +7,7 @@ import { ArrowBack, ArrowForward } from '@vicons/ionicons5'
 // carousel Images
 import carouselImage2 from '@/assets/images/landingPageImages/caro.png'
 import carouselImage5 from '@/assets/images/OurServiceImage/Frame-5.png'
-import carouselImage6 from '@/assets/images/contact-us-image/contact-banner.png'
+import carouselImage6 from '@/assets/images/contact-us-image/Bannercontact.png'
 import carouselImage7 from '@/assets/images/OurServiceImage/Frame3.png'
 import carouselImage8 from '@/assets/images/about-us-image/about-us-banner.png'
 import carouselImage9 from '@/assets/images/OurServiceImage/image6.png'
@@ -39,7 +39,7 @@ const handleItemHeaderClick: CollapseProps['onItemHeaderClick'] = ({ name, expan
 }
 
 const imageUrl = [
-  carouselImage6, carouselImage2, carouselImage5, carouselImage7, carouselImage8, carouselImage9
+carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,  carouselImage9
 ]
 </script>
 

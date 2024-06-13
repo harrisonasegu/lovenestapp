@@ -26,7 +26,7 @@ import { Icon } from '@iconify/vue';
 
             <RouterLink class="icon-links" to="/about"><span><Icon icon="clarity:cursor-arrow-line" width="20px" height="20px"  style="color: white" /></span> Become a Caregiver </RouterLink>
 
-            <RouterLink class="icon-links" to="/about"> Request Free Assessment </RouterLink>
+            <RouterLink class="icon-links" to="/Free-assessment"> Request Free Assessment </RouterLink>
 <!-- 
               <div class="icon-links"><span>
                
