@@ -79,7 +79,6 @@ import Icon1 from '@/assets/images/newImage/Icons/covid-icon.png'
 import Icon2 from '@/assets/images/newImage/Icons/list-icon.png'
 import Image1 from '@/assets/images/newImage/newsimage.png'
 
-
 </script>
 
 <template>

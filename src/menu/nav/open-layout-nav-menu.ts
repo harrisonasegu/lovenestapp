@@ -67,6 +67,18 @@ export const openLayoutNavMenu: any = [
             RouterLink,
             {
                 to: {
+                    name: 'job-form'
+                }
+            },
+            { default: () => 'JobForm' }
+        ),
+        key: 'JobForm'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
                     name: 'blogs'
                 }
             },

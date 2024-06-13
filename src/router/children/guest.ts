@@ -37,6 +37,14 @@ const guestRouteChildren = [
     }
   },
   {
+    path: '/job-form',
+    name: 'JobForm',
+    component: () => import('@/views/JobForm.vue'),
+    meta: {
+      title: 'JobForm'
+    }
+  },
+  {
     path: '/blogs',
     name: 'blogs',
     component: () => import('@/views/Blogs.vue'),

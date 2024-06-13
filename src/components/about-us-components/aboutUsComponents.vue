@@ -679,7 +679,6 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 @media (max-width: 250.9px) {
   .care-service-wrap {
 
-
     .up-icon {
       position: relative;
 
@@ -1534,7 +1533,6 @@ margin-top: 0px;
 @media (min-width: 351px) and (max-width: 575.9px) {
   .care-service-wrap {
 
-
     .up-icon {
   position: relative;
 
@@ -1596,7 +1594,6 @@ h2 {
     }
   }
 }
-
 
 &>.line-paragraphy {
 // border: 3px solid red;

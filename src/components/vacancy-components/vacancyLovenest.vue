@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { NH2 } from 'naive-ui';
+import { defineComponent, ref } from 'vue';
+
 import VacancyBanner from '@/assets/images/vacancy_images/vacancy-banner.png'
 import Ellipse from '@/assets/images/vacancy_images/Ellipse0.png'
 import Car from '@/assets/images/vacancy_images/car.png'
@@ -29,7 +31,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                     aspernatur, atque quaerat perspiciatis reviews.
                 </p>
                 <div class="vancancy-btn">
-                    <a href="#">JOIN OUR TEAM</a>
+                    <RouterLink class="icon-links" to="/job-form"> JOIN OUR TEAM </RouterLink>
                 </div>
             </section>
 
@@ -106,10 +108,13 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
             </div>
 
             <div class="vancancy-btn">
-                <a href="#">JOIN OUR TEAM</a>
+                <!-- <a href="#">JOIN OUR TEAM</a> -->
+                <div>
+   
             </div>
         </div>
     </div>
+   </div>
 </template>
 
 <style lang="scss" scoped>
@@ -285,11 +290,42 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
             margin-top: 30px;
             margin-bottom: 40px;
 
-            a {
-                text-decoration: none;
-                font-weight: 500;
-                color: #fff;
-            }
+            /* Styles for modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for modal */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+            // a {
+            //     text-decoration: none;
+            //     font-weight: 500;
+            //     color: #fff;
+            // }
+
+
         }
     }
 }
