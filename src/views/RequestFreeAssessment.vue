@@ -47,7 +47,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
   const navMenuTextContent = FirstChildOfFirstChildElement.innerText as string
 
   switch (routeName) {
-    case 'home contact services':
+    case 'home assessment services':
       navigateToSubMenu(subMenu)
       break
 
@@ -67,7 +67,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 </script>
 
 <template>
-  <div id="toTop" class="contact-service-wrap">
+  <div id="toTop" class="assessment-service-wrap">
 
     <div class="banner">
 
@@ -85,11 +85,18 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
         <div class="form-content">
             <div class="my-form"></div>
             <div class="contents">
-                <h2>Contact Information</h2>
+               
                 <p>
-                    Our team is always ready to assist you with all of your
-                    home care needs.
+                    We'll come to you for an in-home consultation and
+                    evaluation so we can create a detailed care plan that 
+                    works best for you or your loved one.
                 </p>
+
+                <h2>
+                  4 Simple Steps to Get the
+                  Home Care You Need
+                </h2>
+
                 <p>
                    <a href="#">
                     Address: 9395 Kenwood Rd, Suite 100, Cincinnati, OH 45242 <br>
@@ -103,15 +110,41 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
                     LoveNest HomeCare?
                 </h2>
                 <p>
-                   <a href="#">
-                    Learn how to become a Caregiver or apply today.Ashley Worthy, Talent Acquisition, JVS Career Services: <br>
-                    Phone: 513-745-2912  <br>
-                    Email: AWorthy@JVSCareers.org
-                   </a>
+                  Yes, it really is this easy!
+                </p>
+                <p>
+                <ol>
+                  <li>
+                    Fill out the form to get started.
+                  </li>
+                  <li>       
+                    Our staff will be in touch to confirm the consultation.
+                  </li>
+                  <li>       
+                    We will match you or your loved one to a caregiver 
+                  </li>
+                  <li>       
+                    And plan that's right for you based on our evaluation. 
+                  </li>
+                  <li>       
+                    Your hand-selected caregiver delivers personalized 
+                    home care!
+                  </li>
+                </ol>
                 </p>
 
                 <h2>
-                    Office Hours
+                  Contact Information
+                </h2>
+                <p>
+                   <a href="#">
+                    Address: 9395 Kenwood Rd, Suite 100, Cincinnati, OH 45242 <br>
+                    Phone: 513-766-3339 <br>
+                    Email: Info@StarPointHC.org
+                   </a>
+                </p>
+                <h2>
+                  Office Hours
                 </h2>
                 <div> 
                     <p> Monday: 9AM - 5PM</p>
@@ -154,7 +187,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 </template>
 
 <style lang="scss" scoped>
-.contact-service-wrap {
+.assessment-service-wrap {
 
   .up-icon {
     position: relative;
@@ -421,7 +454,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 
 // XX-SM (<251px)
 @media (max-width: 250.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
 
 
     .up-icon {
@@ -849,7 +882,7 @@ section {
 
 // XX-SM
 @media (min-width: 251px) and (max-width: 350.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
 
 
 .up-icon {
@@ -1276,7 +1309,7 @@ margin-top: 0px;
 
 // X-SM
 @media (min-width: 351px) and (max-width: 575.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
 
 
     .up-icon {
@@ -1710,7 +1743,7 @@ margin-top: 0px;
 
 // SM
 @media (min-width: 576px) and (max-width: 767.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
     
 .up-icon {
   position: relative;
@@ -2146,7 +2179,7 @@ height: 15px;
 
 // MD
 @media (min-width: 768px) and (max-width: 991.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
    
     
 .up-icon {
@@ -2583,7 +2616,7 @@ line-height: 0px;
 
 // LG
 @media (min-width: 992px) and (max-width: 1200.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
    
     
    .up-icon {
@@ -3020,7 +3053,7 @@ line-height: 0px;
 
 // XL
 @media (min-width: 1201px) and (max-width: 1499.9px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
     // border: 1px solid red;
 
     &>.underline-wrap {
@@ -3094,7 +3127,7 @@ line-height: 0px;
       background-color: $base-color-1;
       padding: 0 20px;
 
-      &>.call-contact {
+      &>.call-assessment {
         width: 100%;
         display: flex;
         align-items: center;
@@ -3110,7 +3143,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.icon-contact {
+        &>.icon-assessment {
           // border: 11px solid red;
           background-color: #fff;
           border-radius: 20px;
@@ -3138,7 +3171,7 @@ line-height: 0px;
       }
     }
 
-    &>.elderly-contact {
+    &>.elderly-assessment {
       // background-image: linear-gradient(148.01deg, rgba(218, 94, 66, 0.2) -0.47%, rgba(218, 94, 66, 0.4) 56.24%);
       // ;
 
@@ -3181,7 +3214,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.lady-elderly-contact {
+        &>.lady-elderly-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -3194,7 +3227,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-contact {
+          &>.important-assessment {
             width: 750px;
 
             h3 {
@@ -3248,7 +3281,7 @@ line-height: 0px;
       }
     }
 
-    // Looking for elderly contact support? component just below the elderly contact with image of an advance lady
+    // Looking for elderly assessment support? component just below the elderly assessment with image of an advance lady
 
     &>.elderly-support {
       background-color: $base-color-2;
@@ -3262,7 +3295,7 @@ line-height: 0px;
         justify-content: center;
         padding: 10px 20px;
 
-        &>.call-contact {
+        &>.call-assessment {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -3279,7 +3312,7 @@ line-height: 0px;
             letter-spacing: 0em;
           }
 
-          &>.icon-contact {
+          &>.icon-assessment {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -3307,12 +3340,12 @@ line-height: 0px;
       }
     }
 
-    &>.personal-contact {
+    &>.personal-assessment {
       // border: 1px solid red;
       padding: 0 20px;
 
       &>.underline-wrap {
-        &>.underline-contact {
+        &>.underline-assessment {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -3354,7 +3387,7 @@ line-height: 0px;
           width: 600px;
 
           &>.underline-wrap {
-            &>.supporting-contact {
+            &>.supporting-assessment {
               display: flex;
               justify-content: center;
               flex-direction: column;
@@ -3475,7 +3508,7 @@ line-height: 0px;
         justify-content: space-between;
         padding: 10px 20px;
 
-        &>.call-contact {
+        &>.call-assessment {
           width: 100%;
           display: flex;
           align-items: center;
@@ -3493,7 +3526,7 @@ line-height: 0px;
 
           }
 
-          &>.contact {
+          &>.assessment {
             // border: 11px solid red;
             background-color: #fff;
             border-radius: 20px;
@@ -3522,7 +3555,7 @@ line-height: 0px;
       }
     }
 
-    &>.domiciliary-contact {
+    &>.domiciliary-assessment {
       &>.domiciliary {
         padding: 0 20px;
 
@@ -3641,13 +3674,13 @@ line-height: 0px;
       }
     }
 
-    &>.companionship-contact {
+    &>.companionship-assessment {
       // border: 1px solid red;
       padding: 0 20px;
       padding-bottom: 20px;
 
       &>.underline-wrap {
-        &>.underline-contact {
+        &>.underline-assessment {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -3692,7 +3725,7 @@ line-height: 0px;
           width: 600px;
 
           &>.underline-wrap {
-            &>.companionship-contact {
+            &>.companionship-assessment {
               display: flex;
               justify-content: center;
               flex-direction: column;
@@ -3747,7 +3780,7 @@ line-height: 0px;
       }
     }
 
-    &>.dementia-contact {
+    &>.dementia-assessment {
 
       &>.contents {
         // border: 2px solid red;
@@ -3775,7 +3808,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.elder-dementia-contact {
+        &>.elder-dementia-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -3788,7 +3821,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-contact {
+          &>.important-assessment {
             width: 650px;
 
             h3 {
@@ -3824,7 +3857,7 @@ line-height: 0px;
       padding-bottom: 20px;
 
       &>.underline-wrap {
-        &>.underline-contact {
+        &>.underline-assessment {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -3879,7 +3912,7 @@ line-height: 0px;
       }
     }
 
-    &>.pet-contact {
+    &>.pet-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -3912,7 +3945,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.pet-image-contact {
+        &>.pet-image-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -3955,7 +3988,7 @@ line-height: 0px;
       }
     }
 
-    &>.life-contact {
+    &>.life-assessment {
 
 
       &>.contents {
@@ -3991,7 +4024,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.life-contact-image {
+        &>.life-assessment-image {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4033,7 +4066,7 @@ line-height: 0px;
       }
     }
 
-    &>.palliative-contact {
+    &>.palliative-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4067,7 +4100,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.palliative-image-contact {
+        &>.palliative-image-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4110,7 +4143,7 @@ line-height: 0px;
       }
     }
 
-    &>.hospital-contact {
+    &>.hospital-assessment {
 
 
       &>.contents {
@@ -4144,7 +4177,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.life-contact-image {
+        &>.life-assessment-image {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4222,7 +4255,7 @@ line-height: 0px;
       }
     }
 
-    &>.overnight-contact {
+    &>.overnight-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4254,7 +4287,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.lady-elderly-contact {
+        &>.lady-elderly-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4266,7 +4299,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-contact {
+          &>.important-assessment {
             width: 650px;
 
             h3 {
@@ -4332,7 +4365,7 @@ line-height: 0px;
       }
     }
 
-    &>.couples-contact {
+    &>.couples-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4365,7 +4398,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.couples-image-contact {
+        &>.couples-image-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4416,7 +4449,7 @@ line-height: 0px;
       }
     }
 
-    &>.live-in-contact {
+    &>.live-in-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4447,7 +4480,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.wheelchair-live-in-contact {
+        &>.wheelchair-live-in-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4460,7 +4493,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-contact {
+          &>.important-assessment {
             width: 650px;
 
             h3 {
@@ -4490,7 +4523,7 @@ line-height: 0px;
       }
     }
 
-    &>.respite-contact {
+    &>.respite-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4522,7 +4555,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.respite-image-contact {
+        &>.respite-image-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4573,7 +4606,7 @@ line-height: 0px;
       }
     }
 
-    &>.complex-contact {
+    &>.complex-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4806,7 +4839,7 @@ line-height: 0px;
       }
     }
 
-    &>.stroke-contact {
+    &>.stroke-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4831,7 +4864,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.stroke-image-contact {
+        &>.stroke-image-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4891,7 +4924,7 @@ line-height: 0px;
 
 // XXL
 @media (min-width: 1500px) {
-  .contact-service-wrap {
+  .assessment-service-wrap {
     // border: 11px solid red;
     .up-icon {
       position: relative;
@@ -5266,7 +5299,7 @@ line-height: 0px;
       background-color: $base-color-1;
       padding: 0 200px;
 
-      &>.call-contact {
+      &>.call-assessment {
         width: 100%;
         display: flex;
         align-items: center;
@@ -5282,7 +5315,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.icon-contact {
+        &>.icon-assessment {
           // border: 11px solid red;
           background-color: #fff;
           border-radius: 20px;
@@ -5310,7 +5343,7 @@ line-height: 0px;
       }
     }
 
-    &>.elderly-contact {
+    &>.elderly-assessment {
 
       &>.contents {
         // border: 2px solid red;
@@ -5331,7 +5364,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.lady-elderly-contact {
+        &>.lady-elderly-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: center;
@@ -5345,7 +5378,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-contact {
+          &>.important-assessment {
             width: 750px;
 
             h3 {
@@ -5400,13 +5433,13 @@ line-height: 0px;
       }
     }
 
-    // Looking for elderly contact support? component just below the elderly contact with image of an advance lady
+    // Looking for elderly assessment support? component just below the elderly assessment with image of an advance lady
 
     &>.elderly-support {
       .call-us {
         padding: 10px 200px;
 
-        &>.call-contact {
+        &>.call-assessment {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -5423,7 +5456,7 @@ line-height: 0px;
             letter-spacing: 0em;
           }
 
-          &>.icon-contact {
+          &>.icon-assessment {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -5452,12 +5485,12 @@ line-height: 0px;
       }
     }
 
-    &>.personal-contact {
+    &>.personal-assessment {
       // border: 11px solid red;
       padding: 0 200px;
 
       &>.underline-wrap {
-        &>.underline-contact {
+        &>.underline-assessment {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -5526,7 +5559,7 @@ line-height: 0px;
         justify-content: space-between;
         padding: 10px 200px;
 
-        &>.call-contact {
+        &>.call-assessment {
         width: 100%;
         display: flex;
         align-items: center;
@@ -5544,7 +5577,7 @@ line-height: 0px;
 
         }
 
-        &>.contact {
+        &>.assessment {
           // border: 11px solid red;
           padding: 20px 35px;
 
@@ -5561,7 +5594,7 @@ line-height: 0px;
       }
     }
 
-    &>.domiciliary-contact {
+    &>.domiciliary-assessment {
       &>.domiciliary {
         padding: 0 200px;
 
@@ -5610,13 +5643,13 @@ line-height: 0px;
       }
     }
 
-    &>.companionship-contact {
+    &>.companionship-assessment {
       // border: 11px solid red;
       padding: 0 200px;
       padding-bottom: 20px;
 
       &>.underline-wrap {
-        &>.underline-contact {
+        &>.underline-assessment {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -5646,7 +5679,7 @@ line-height: 0px;
           width: 600px;
 
           &>.underline-wrap {
-            &>.companionship-contact {
+            &>.companionship-assessment {
               display: flex;
               justify-content: center;
               flex-direction: column;
@@ -5705,7 +5738,7 @@ line-height: 0px;
       }
     }
 
-    &>.dementia-contact {
+    &>.dementia-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 200px;
@@ -5718,7 +5751,7 @@ line-height: 0px;
           }
         }
 
-        &>.elder-dementia-contact {
+        &>.elder-dementia-assessment {
           // border: 2px solid red;
           display: flex;
           justify-content: center;
@@ -5732,7 +5765,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-contact {
+          &>.important-assessment {
             width: 650px;
 
             h3 {
@@ -5768,7 +5801,7 @@ line-height: 0px;
       padding-bottom: 20px;
 
       &>.underline-wrap {
-        &>.underline-contact {
+        &>.underline-assessment {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -5808,7 +5841,7 @@ line-height: 0px;
       }
     }
 
-    &>.pet-contact {
+    &>.pet-assessment {
 
       &>.contents {
         // border: 2px solid red;
@@ -5821,14 +5854,14 @@ line-height: 0px;
           }
         }
 
-        .pet-image-contact {
+        .pet-image-assessment {
           justify-content: center;
           column-gap: 300px;
         }
       }
     }
 
-    &>.life-contact {
+    &>.life-assessment {
 
 
       &>.contents {
@@ -5844,14 +5877,14 @@ line-height: 0px;
         }
 
 
-        .life-contact-image {
+        .life-assessment-image {
           justify-content: center;
           column-gap: 300px;
         }
       }
     }
 
-    &>.palliative-contact {
+    &>.palliative-assessment {
 
       &>.contents {
         // border: 2px solid red;
@@ -5864,14 +5897,14 @@ line-height: 0px;
           }
         }
 
-        .palliative-image-contact {
+        .palliative-image-assessment {
           justify-content: center;
           column-gap: 300px;
         }
       }
     }
 
-    &>.hospital-contact {
+    &>.hospital-assessment {
 
       &>.contents {
         // border: 2px solid red;
@@ -5884,7 +5917,7 @@ line-height: 0px;
           }
         }
 
-        .life-contact-image {
+        .life-assessment-image {
           justify-content: center;
           column-gap: 300px;
         }
@@ -5908,7 +5941,7 @@ line-height: 0px;
       }
     }
 
-    &>.overnight-contact {
+    &>.overnight-assessment {
       &>.contents {
         // border: 12px solid red;
         padding: 20px 200px;
@@ -5920,11 +5953,11 @@ line-height: 0px;
           }
         }
 
-        .lady-elderly-contact {
+        .lady-elderly-assessment {
           justify-content: center;
           column-gap: 300px;
 
-          .important-contact {
+          .important-assessment {
           width: 650px;
 
           &>.paragraph-dots {
@@ -5955,7 +5988,7 @@ line-height: 0px;
       }
     }
 
-    &>.couples-contact {
+    &>.couples-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 200px;
@@ -5967,14 +6000,14 @@ line-height: 0px;
           }
         }
 
-        .couples-image-contact {
+        .couples-image-assessment {
           justify-content: center;
           column-gap: 300px;
         }
       }
     }
 
-    &>.live-in-contact {
+    &>.live-in-assessment {
 
       &>.contents {
         // border: 2px solid red;
@@ -5987,14 +6020,14 @@ line-height: 0px;
           }
         }
 
-        .wheelchair-live-in-contact {
+        .wheelchair-live-in-assessment {
           justify-content: center;
           column-gap: 300px;
         }
       }
     }
 
-    &>.respite-contact {
+    &>.respite-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 200px;
@@ -6006,14 +6039,14 @@ line-height: 0px;
           }
         }
 
-        .respite-image-contact {
+        .respite-image-assessment {
           justify-content: center;
           column-gap: 300px;
         }
       }
     }
 
-    &>.complex-contact {
+    &>.complex-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 200px;
@@ -6124,7 +6157,7 @@ line-height: 0px;
       }
     }
 
-    &>.stroke-contact {
+    &>.stroke-assessment {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 200px;
@@ -6136,7 +6169,7 @@ line-height: 0px;
           }
         }
 
-        .stroke-image-contact {
+        .stroke-image-assessment {
           justify-content: center;
           column-gap: 300px;
         }
