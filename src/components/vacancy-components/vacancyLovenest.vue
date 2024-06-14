@@ -311,8 +311,8 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
 
                     h3 {
                         font-size: 25px;
+                        color: #fff !important;
                         font-weight: 700;
-                        line-height: 25px;
                         letter-spacing: 0em;
                         text-align: center;
                     }
@@ -563,7 +563,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
 
                 &>.second-row {
                     // border: 2px solid red;
-                    margin-top: -30px;
+                    margin-top: 30px;
 
                     h3 {
                         font-size: 18px;
@@ -607,30 +607,30 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
     }
 
     // colored-last line section
-section {
-  &>.colored-last {
-    display: none;
-    margin-top: 50px;
+    section {
+    &>.colored-last {
+        display: none;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+        background-color: $base-color;
+        width: 50%;
+        height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+        background-color: $base-color-2;
+        width: 25%;
+        height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+        background-color: $base-color-1;
+        width: 25%;
+        height: 15px;
+        }
     }
-  }
-}
+    }
   }
 }
 
@@ -762,7 +762,7 @@ line-height: 0px;
 
         &>.second-row {
             // border: 2px solid red;
-            margin-top: -30px;
+            margin-top: 30px;
 
             h3 {
                 font-size: 18px;
@@ -971,7 +971,7 @@ h2 {
 
         &>.second-row {
             // border: 2px solid red;
-            margin-top: -30px;
+            margin-top: 30px;
 
             h3 {
                 font-size: 18px;
