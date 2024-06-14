@@ -8,13 +8,21 @@ import Car from '@/assets/images/vacancy_images/car.png'
 import Clock from '@/assets/images/vacancy_images/Clock1.png'
 import HatchBack from '@/assets/images/vacancy_images/step.png'
 import BrainStorm from '@/assets/images/vacancy_images/Brain.png'
-import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
+import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
 </script>
 
 <template>
     <div class="vacancy-page-wrap">
-        <div class="vacancy-page-banner">
-            <h3>Vacancy</h3>
+        <div class="banner">
+
+            <div class="intro-content">
+                <!-- <h2 class="intro-title">
+      Dedicated To Senior Adults And The
+  </h2> -->
+                <h1 class="intro-subtitle">
+                    Vacancy
+                </h1>
+            </div>
         </div>
         <!-- First section -->
         <div class="vacancy-contents">
@@ -26,7 +34,8 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                 <p>
                     Our Carer Centric values have lead to Visiting Angels having an exceptionally low staff
                     turnover rate & great employee satisfaction reviews.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis facere dolorem suscipit, eligendi
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis facere dolorem suscipit,
+                    eligendi
                     hic nobis! Consequatur accusantium aut temporibus placeat, optio sunt cupiditate, repellat error
                     aspernatur, atque quaerat perspiciatis reviews.
                 </p>
@@ -108,42 +117,112 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
             </div>
 
             <div class="vancancy-btn">
-                <!-- <a href="#">JOIN OUR TEAM</a> -->
+                <a href="#">JOIN OUR TEAM</a>
                 <div>
-   
+                </div>
             </div>
         </div>
+
+        <section>
+      <div class="colored-last">
+        <div class="second-color"></div>
+        <div class="third-color"></div>
+        <div class="first-color"></div>
+      </div>
+    </section>
     </div>
-   </div>
 </template>
 
 <style lang="scss" scoped>
 .vacancy-page-wrap {
 
-    // border: 4px solid red;
-    p,
-    h3,
-    h4 {
-        font-family: Poppins;
+    .up-icon {
+        position: relative;
+
+        .move-up {
+            // border: 2px solid red;
+            transition: ease;
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+        }
     }
 
-    &>.vacancy-page-banner {
-        padding: 150px 20px;
-        background-image: url('../../assets/images/vacancy_images/vacancy-banner.png');
-        background-repeat: no-repeat;
+    P {
+        font-size: 18px;
+        color: #00000080 !important;
+        line-height: 30px !important;
+    }
 
-        h3 {
+    h3 {
+        color: $base-color-1;
+        font-weight: 600 !important;
+    }
+
+    h2 {
+        font-size: 35px;
+        color: $base-color-1;
+    }
+
+    &>.banner {
+        background-image: url('../../assets/images/vacancy_images/vacancy-banner.png');
+        // border: 5px solid red;
+        display: flex;
+        align-items: center;
+        height: 400px;
+        padding: 60px 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &>.intro-content {
+            //   border: 12px solid red;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 68px;
-            letter-spacing: 0em;
-            color: #fff;
+            line-height: 0px;
 
+            .intro-title {
+                // border: 2px solid red;
+                margin-bottom: 2.5rem;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 0px;
+                color: #fff;
+                padding-left: 50px;
+            }
+
+            .intro-subtitle {
+                // border: 2px solid red;
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 0px;
+                letter-spacing: 0em;
+                color: #fff;
+            }
+
+            .discover-btn {
+                // border: 1px solid $base-color;
+                padding: 15px 25px;
+                text-decoration: none;
+                font-size: 15px;
+                color: $base-color;
+
+                &:hover {
+                    background-color: #c96;
+                    color: #fff;
+                }
+
+                &>div {
+                    display: inline-flex;
+                    column-gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
+
 
     &>.vacancy-contents {
 
@@ -164,14 +243,12 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                 content: '';
                 position: absolute;
                 bottom: 0;
-                left: 35%;
-                width: 30%;
-                border-bottom: 7px solid $base-color-1;
-                border-radius: 10px;
+                left: 30%;
+                width: 40%;
+                border-bottom: 2px solid $base-color-1;
             }
 
             p {
-                font-size: 16px;
                 font-weight: 500;
                 line-height: 25px;
                 letter-spacing: 0em;
@@ -180,7 +257,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
             &>.vancancy-btn {
                 background: $base-color-1;
                 width: fit-content;
-                padding: 10px 20px;
+                padding: 15px 30px;
                 margin-top: 30px;
                 margin-bottom: 40px;
 
@@ -193,7 +270,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
         }
 
         &>.color-background {
-            background-color: $base-color-3;
+            background-color: $base-color-1;
             padding: 50px 0;
 
             &>.contents {
@@ -220,10 +297,10 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                         }
 
                         &>.para {
-                            font-size: 14px;
                             font-weight: 400;
-                            line-height: 24px;
                             letter-spacing: 0em;
+                            color: #fff !important;
+                            padding-top: 10px;
                         }
                     }
                 }
@@ -241,16 +318,17 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                     }
 
                     p {
-                        font-size: 16px;
                         font-weight: 300;
-                        line-height: 25px;
                         letter-spacing: 0em;
+                        color: #fff !important;
                     }
                 }
             }
         }
 
         &>.application-process {
+            display: flex;
+            justify-content: center;
             padding: 0 20px;
             margin-bottom: 40px;
 
@@ -267,9 +345,8 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                width: 10%;
-                border-bottom: 5px solid $base-color-1;
-                border-radius: 10px;
+                width: 100%;
+                border-bottom: 2px solid $base-color-1;
             }
         }
 
@@ -284,50 +361,76 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
 
         &>.vancancy-btn {
             background: $base-color-1;
+            // border: 3px solid red;
             width: fit-content;
             margin: 0 auto;
-            padding: 10px 20px;
+            padding: 15px 30px;
             margin-top: 30px;
             margin-bottom: 40px;
 
-            /* Styles for modal overlay */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Styles for modal */
-.modal {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  position: relative;
-}
-
-/* Close Button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-            // a {
-            //     text-decoration: none;
-            //     font-weight: 500;
-            //     color: #fff;
+            // /* Styles for modal overlay */
+            // .modal-overlay {
+            //     position: fixed;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: rgba(0, 0, 0, 0.5);
+            //     /* Semi-transparent black overlay */
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
             // }
 
+            // /* Styles for modal */
+            // .modal {
+            //     background-color: white;
+            //     padding: 20px;
+            //     border-radius: 8px;
+            //     position: relative;
+            // }
 
+            // /* Close Button */
+            // .close {
+            //     position: absolute;
+            //     top: 10px;
+            //     right: 10px;
+            //     cursor: pointer;
+            // }
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                color: #fff;
+            }
         }
     }
+
+     // colored-last line section
+  section {
+    &>.colored-last {
+      display: flex;
+      margin-top: 50px;
+
+      &>.first-color {
+        background-color: $base-color;
+        width: 50%;
+        height: 15px;
+      }
+
+      &>.second-color {
+        background-color: $base-color-2;
+        width: 25%;
+        height: 15px;
+      }
+
+      &>.third-color {
+        background-color: $base-color-1;
+        width: 25%;
+        height: 15px;
+      }
+    }
+  }
 }
 
 // MEDIA QUERY
@@ -336,414 +439,608 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
 @media (max-width: 250.9px) {
     .vacancy-page-wrap {
 
-        // border: 4px solid red;
-        &>.vacancy-page-banner {
-            padding: 100px 20px;
+        .up-icon {
+      position: relative;
 
-            h3 {
-                font-size: 22px;
-                line-height: 25px;
-            }
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
+
+    P {
+      font-size: 14px !important;
+    }
+
+    h3 {
+      font-size: 15px !important;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    &>.banner {
+      // border: 11px solid red;
+      height: 400px;
+      padding: 10px 10px;
+
+      &>.intro-content {
+        // border: 2px solid red;
+        text-align: center;
+        padding: 0px 0px;
+        line-height: 0px;
+
+        .intro-title {
+          // border: 12px solid red;
+          margin-bottom: 2.5rem;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 25px;
+          color: #fff;
+          padding-left: 0px;
         }
 
-        &>.vacancy-contents {
+        .intro-subtitle {
+          // border: 2px solid red;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 25px;
+          letter-spacing: 0em;
+          color: #fff;
+          padding-left: 0px;
+        }
+      }
+    }
+ 
+    &>.vacancy-contents {
 
-            // underline h3 text
-            &>.first {
-                padding: 0 10px;
+        // underline h3 text
+        &>.first {
+            padding: 0 10px;
 
-                h3 {
-                    font-size: 20px;
-                    line-height: 25px;
-                }
-
-                h3::after {
-                    left: 35%;
-                    width: 30%;
-                    border-bottom: 3px solid $base-color-1;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-
-                &>.vancancy-btn {
-                    width: fit-content;
-                    margin: 0 auto;
-                    padding: 10px 20px;
-                    margin-top: 30px;
-                    margin-bottom: 40px;
-
-                    a {
-                        font-size: 12px;
-                    }
-                }
+            h3 {
+                font-size: 20px;
+                line-height: 25px;
             }
 
-            &>.color-background {
-                background-color: $base-color-3;
-                padding: 50px 0;
+            h3::after {
+                left: 35%;
+                width: 30%;
+              }
 
-                &>.contents {
-                    // border: 2px solid red;
-                    padding: 0 10px;
-
-                    &>.first-row {
-                        justify-content: center;
-                        row-gap: 30px;
-
-                        &>.icons-contents {
-                            &>.image {
-                                // border: 2px solid red;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                img {
-                                    width: 50px;
-                                }
-                            }
-
-                            // &>.para {
-                            //     font-size: 14px;
-                            //     font-weight: 400;
-                            //     line-height: 24px;
-                            //     letter-spacing: 0em;
-                            // }
-                        }
-                    }
-
-                    &>.second-row {
-                        // border: 2px solid red;
-                        // margin-top: 60px;
-
-                        h3 {
-                            font-size: 18px;
-                            // text-align: left;
-                        }
-
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-
-            &>.application-process {
-                padding: 0 10px;
-
-                h3 {
-                    position: relative;
-                    font-size: 18px;
-                    line-height: 25px;
-                }
-
-                h3::after {
-                    left: 0;
-                    width: 50%;
-                    border-bottom: 3px solid $base-color-1;
-                    border-radius: 10px;
-                }
-            }
-
-            &>.vacancy-process {
-                // border: 2px solid red;
-
-                img {
-                    width: 100%;
-                }
+            p {
+                text-align: center;
             }
 
             &>.vancancy-btn {
+                width: fit-content;
+                margin: 0 auto;
+                padding: 10px 20px;
                 margin-top: 30px;
-                margin-bottom: 0px;
+                margin-bottom: 40px;
 
                 a {
                     font-size: 12px;
                 }
             }
         }
+
+        &>.color-background {
+            padding: 50px 0;
+
+            &>.contents {
+                // border: 2px solid red;
+                padding: 0 10px;
+
+                &>.first-row {
+                    justify-content: center;
+                    row-gap: 30px;
+
+                    &>.icons-contents {
+                        &>.image {
+                            // border: 2px solid red;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 80px;
+                            }
+                        }
+
+                        // &>.para {
+                        //     font-size: 14px;
+                        //     font-weight: 400;
+                        //     line-height: 24px;
+                        //     letter-spacing: 0em;
+                        // }
+                    }
+                }
+
+                &>.second-row {
+                    // border: 2px solid red;
+                    margin-top: -30px;
+
+                    h3 {
+                        font-size: 18px;
+                        // text-align: left;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &>.application-process {
+            padding: 0 10px;
+
+            h3 {
+                position: relative;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        &>.vacancy-process {
+            // border: 2px solid red;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &>.vancancy-btn {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            padding: 10px 30px;
+
+            a {
+                font-size: 12px;
+            }
+        }
     }
+
+    // colored-last line section
+section {
+  &>.colored-last {
+    display: none;
+    margin-top: 50px;
+
+    &>.first-color {
+      background-color: $base-color;
+      width: 50%;
+      height: 15px;
+    }
+
+    &>.second-color {
+      background-color: $base-color-2;
+      width: 25%;
+      height: 15px;
+    }
+
+    &>.third-color {
+      background-color: $base-color-1;
+      width: 25%;
+      height: 15px;
+    }
+  }
+}
+  }
 }
 
 // XX-SM
 @media (min-width: 251px) and (max-width: 350.9px) {
     .vacancy-page-wrap {
 
-        // border: 4px solid red;
-        &>.vacancy-page-banner {
-            padding: 100px 20px;
+.up-icon {
+position: relative;
 
-            h3 {
-                font-size: 22px;
-                line-height: 25px;
+.move-up {
+// border: 5px solid red;
+transition: ease;
+position: fixed;
+right: 10px;
+bottom: 20px;
+}
+}
+
+P {
+font-size: 14px !important;
+}
+
+h3 {
+font-size: 15px !important;
+}
+
+h2 {
+font-size: 16px;
+}
+
+&>.banner {
+// border: 11px solid red;
+height: 400px;
+padding: 10px 10px;
+
+&>.intro-content {
+// border: 2px solid red;
+text-align: center;
+padding: 0px 0px;
+line-height: 0px;
+
+.intro-title {
+  // border: 12px solid red;
+  margin-bottom: 2.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #fff;
+  padding-left: 0px;
+}
+
+.intro-subtitle {
+  // border: 2px solid red;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: #fff;
+  padding-left: 0px;
+}
+}
+}
+
+&>.vacancy-contents {
+
+// underline h3 text
+&>.first {
+    padding: 0 10px;
+
+    h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    h3::after {
+        left: 35%;
+        width: 30%;
+      }
+
+    p {
+        text-align: center;
+    }
+
+    &>.vancancy-btn {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px 20px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+&>.color-background {
+    padding: 50px 0;
+
+    &>.contents {
+        // border: 2px solid red;
+        padding: 0 10px;
+
+        &>.first-row {
+            justify-content: center;
+            row-gap: 30px;
+
+            &>.icons-contents {
+                &>.image {
+                    // border: 2px solid red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                // &>.para {
+                //     font-size: 14px;
+                //     font-weight: 400;
+                //     line-height: 24px;
+                //     letter-spacing: 0em;
+                // }
             }
         }
 
-        &>.vacancy-contents {
+        &>.second-row {
+            // border: 2px solid red;
+            margin-top: -30px;
 
-            // underline h3 text
-            &>.first {
-                padding: 0 10px;
-
-                h3 {
-                    font-size: 20px;
-                    line-height: 25px;
-                }
-
-                h3::after {
-                    left: 35%;
-                    width: 30%;
-                    border-bottom: 3px solid $base-color-1;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-
-                &>.vancancy-btn {
-                    width: fit-content;
-                    margin: 0 auto;
-                    padding: 10px 20px;
-                    margin-top: 30px;
-                    margin-bottom: 40px;
-
-                    a {
-                        font-size: 12px;
-                    }
-                }
+            h3 {
+                font-size: 18px;
+                // text-align: left;
             }
 
-            &>.color-background {
-                background-color: $base-color-3;
-                padding: 50px 0;
-
-                &>.contents {
-                    // border: 2px solid red;
-                    padding: 0 10px;
-
-                    &>.first-row {
-                        row-gap: 30px;
-                        column-gap: 30px;
-
-                        &>.icons-contents {
-                            // border: 2px solid red;
-
-                            &>.image {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-
-                                img {
-                                    width: 50px;
-                                }
-                            }
-
-                            &>.para {
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 24px;
-                                letter-spacing: 0em;
-                            }
-                        }
-                    }
-
-                    &>.second-row {
-                        // margin-top: 60px;
-
-                        h3 {
-                            font-size: 18px;
-                            text-align: left;
-                        }
-
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-
-            &>.application-process {
-                // border: 2px solid red;
-                padding: 0 10px;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-                margin-top: 15px;
-
-                h3 {
-                    position: relative;
-                    font-size: 18px;
-                    line-height: 25px;
-                }
-
-                h3::after {
-                    left: 0;
-                    width: 50%;
-                    border-bottom: 3px solid $base-color-1;
-                    border-radius: 10px;
-                }
-            }
-
-            &>.vacancy-process {
-                // border: 2px solid red;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            &>.vancancy-btn {
-                margin-top: 30px;
-                margin-bottom: 0px;
-
-                a {
-                    font-size: 12px;
-                }
+            p {
+                text-align: center;
             }
         }
     }
 }
 
+&>.application-process {
+    padding: 0 10px;
+
+    h3 {
+        position: relative;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+&>.vacancy-process {
+    // border: 2px solid red;
+
+    img {
+        width: 100%;
+    }
+}
+
+&>.vancancy-btn {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 10px 30px;
+
+    a {
+        font-size: 12px;
+    }
+}
+}
+
+// colored-last line section
+section {
+&>.colored-last {
+display: none;
+margin-top: 50px;
+
+&>.first-color {
+background-color: $base-color;
+width: 50%;
+height: 15px;
+}
+
+&>.second-color {
+background-color: $base-color-2;
+width: 25%;
+height: 15px;
+}
+
+&>.third-color {
+background-color: $base-color-1;
+width: 25%;
+height: 15px;
+}
+}
+}
+}
+}
+
 // X-SM
 @media (min-width: 351px) and (max-width: 575.9px) {
     .vacancy-page-wrap {
+            
+    .up-icon {
+  position: relative;
 
-        // border: 4px solid red;
-        &>.vacancy-page-banner {
-            padding: 125px 20px;
+  .move-up {
+    // border: 5px solid red;
+    transition: ease;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+  }
+}
 
-            h3 {
-                font-size: 22px;
-                line-height: 25px;
+P {
+  font-size: 16px !important;
+}
+
+h3 {
+  font-size: 20px !important;
+//   border: 2px solid red;
+
+}
+
+h2 {
+  font-size: 16px;
+}
+
+&>.banner {
+  // border: 11px solid red;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+
+  &>.intro-content {
+    // border: 2px solid red;
+    width: 100%;
+    padding: 0px 20px;
+    line-height: 0px;
+
+    .intro-title {
+      // border: 2px solid red;
+      margin-bottom: 2.5rem;
+      font-size: 30px;
+      line-height: 35px;
+      padding-left: 0px;
+    }
+
+    .intro-title:first-child {
+      // border: 12px solid red;
+      margin-bottom: 0px;
+    }
+
+    .intro-subtitle {
+      // border: 2px solid red;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 35px;
+      letter-spacing: 0em;
+      color: #fff;
+      padding-left: 0px;
+    }
+  }
+}
+
+
+
+&>.vacancy-contents {
+
+// underline h3 text
+&>.first {
+    padding: 0 10px;
+
+    h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    h3::after {
+        left: 35%;
+        width: 30%;
+      }
+
+    p {
+        text-align: center;
+    }
+
+    &>.vancancy-btn {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 15px 30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+&>.color-background {
+    padding: 50px 0;
+
+    &>.contents {
+        // border: 2px solid red;
+        padding: 0 10px;
+
+        &>.first-row {
+            justify-content: center;
+            column-gap: 30px;
+            row-gap: 30px;
+
+            &>.icons-contents {
+                &>.image {
+                    // border: 2px solid red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                // &>.para {
+                //     font-size: 14px;
+                //     font-weight: 400;
+                //     line-height: 24px;
+                //     letter-spacing: 0em;
+                // }
             }
         }
 
-        &>.vacancy-contents {
+        &>.second-row {
+            // border: 2px solid red;
+            margin-top: -30px;
 
-            // underline h3 text
-            &>.first {
-                padding: 0 10px;
-
-                h3 {
-                    font-size: 20px;
-                    line-height: 30px;
-                    margin-top: 50px;
-
-                }
-
-                h3::after {
-                    left: 40%;
-                    width: 20%;
-                    border-bottom: 3px solid $base-color-1;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-
-                &>.vancancy-btn {
-                    width: fit-content;
-                    margin: 0 auto;
-                    padding: 10px 20px;
-                    margin-top: 30px;
-                    margin-bottom: 40px;
-
-                    a {
-                        font-size: 12px;
-                    }
-                }
+            h3 {
+                font-size: 18px;
+                // text-align: left;
             }
 
-            &>.color-background {
-                background-color: $base-color-3;
-                padding: 50px 0;
-
-                &>.contents {
-                    // border: 2px solid red;
-                    padding: 0 10px;
-
-                    &>.first-row {
-                        row-gap: 30px;
-                        column-gap: 30px;
-                        justify-content: left;
-
-                        &>.icons-contents {
-                            &>.image {
-                                // border: 2px solid red;
-                                display: flex;
-                                justify-content: center;
-                                align-items: left;
-
-                                img {
-                                    width: 50px;
-                                }
-                            }
-
-                            &>.para {
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 24px;
-                                letter-spacing: 0em;
-                            }
-                        }
-                    }
-
-                    &>.second-row {
-                        // margin-top: 60px;
-
-                        h3 {
-                            font-size: 18px;
-                            text-align: left;
-                        }
-
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-
-            &>.application-process {
-                // border: 2px solid red;
-                padding: 0 10px;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-                margin-top: 15px;
-
-                h3 {
-                    position: relative;
-                    font-size: 18px;
-                    line-height: 25px;
-                }
-
-                h3::after {
-                    left: 0;
-                    width: 50%;
-                    border-bottom: 3px solid $base-color-1;
-                    border-radius: 10px;
-                }
-            }
-
-            &>.vacancy-process {
-                // border: 2px solid red;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            &>.vancancy-btn {
-                margin-top: 30px;
-                margin-bottom: 0px;
-
-                a {
-                    font-size: 12px;
-                }
+            p {
+                text-align: center;
             }
         }
     }
+}
+
+&>.application-process {
+    padding: 0 10px;
+    margin-top: 20px;
+
+    h3 {
+        position: relative;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+&>.vacancy-process {
+    // border: 2px solid red;
+
+    img {
+        width: 100%;
+    }
+}
+
+&>.vancancy-btn {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 15px 30px;
+
+    a {
+        font-size: 12px;
+    }
+}
+}
+
+// colored-last line section
+section {
+&>.colored-last {
+display: none;
+margin-top: 50px;
+
+&>.first-color {
+background-color: $base-color;
+width: 50%;
+height: 15px;
+}
+
+&>.second-color {
+background-color: $base-color-2;
+width: 25%;
+height: 15px;
+}
+
+&>.third-color {
+background-color: $base-color-1;
+width: 25%;
+height: 15px;
+}
+}
+}
+}  
 }
 
 // SM
@@ -912,23 +1209,23 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-process.png'
                 padding: 0 200px;
 
                 h3 {
-                position: relative;
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 60px;
-                letter-spacing: 0em;
-                text-align: center;
-            }
+                    position: relative;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 60px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
 
-            h3::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 30%;
-                width: 40%;
-                border-bottom: 7px solid $base-color-1;
-                border-radius: 10px;
-            }
+                h3::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 30%;
+                    width: 40%;
+                    border-bottom: 7px solid $base-color-1;
+                    border-radius: 10px;
+                }
             }
         }
 

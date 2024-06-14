@@ -655,7 +655,9 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
                 }
 
                 &>.btn-container {
+               //  border: 3px solid red;
                  background-color: $base-color-1;
+                 color: #fff;
                  
                   .n-button {
                     width: 100%;
@@ -689,13 +691,14 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
               column-gap: 5px;
               justify-content: center;
               word-break: break-all;
+              text-align: center;
 
               // &>span {}
 
               a {
                 text-decoration: none;
                 font-weight: bold;
-                color: $base-color-1;
+                color: red;
               }
             }
           }
