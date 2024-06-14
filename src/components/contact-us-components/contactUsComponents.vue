@@ -298,6 +298,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
                 <n-form-item  path="fromSelect">
                   <n-select v-model:value="value" :options="options" />
                 </n-form-item>
+
                 <n-form-item path="customerAddress">
                   <n-input size="large" placeholder="Address" type="textarea" rows="2"
                     v-model:value="model.customerAddress" :disabled="isLoading" @keydown.enter.prevent />
@@ -619,6 +620,11 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
             display: flex;
             flex-direction: column;
             row-gap: 25px;
+
+            .n-input, .n-select {
+          //  border: 3px solid red;
+           padding: 5px 0;
+          }
 
             // onboarding form
             &>div.onboarding-form {
@@ -1568,6 +1574,7 @@ section {
 
       // form header
       &.form-header {
+    // border: 3px solid red;
         border-radius: 0.25rem;
         padding: 22px 20px;
         text-align: center;
@@ -1597,6 +1604,9 @@ section {
           flex-direction: column;
           row-gap: 5px;
           text-align: center;
+
+        
+        
         }
         &>div.privacy-form-footer {
           flex-direction: column;
