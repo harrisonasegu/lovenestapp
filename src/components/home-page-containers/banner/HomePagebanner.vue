@@ -7662,7 +7662,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
         // height: fit-content;
         justify-content: center;
         overflow-y: hidden;
-        padding: 0 200px;
+        padding: 0 00px;
         margin-bottom: 0px;
 
         &>.section-image {

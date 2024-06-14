@@ -1556,7 +1556,8 @@ section {
 
     // This section is for the form
     div.form-container {
-    width: 95%;
+    // border: 3px solid red;
+    width: 90%;
     margin:0 auto;
     border-radius: 0rem;
     padding: 0 10px 40px;
