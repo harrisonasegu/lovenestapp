@@ -1046,145 +1046,512 @@ height: 15px;
 @media (min-width: 576px) and (max-width: 767.9px) {
     .vacancy-page-wrap {
 
-        // border: 4px solid red;
-        &>.vacancy-page-banner {
-            padding: 100px 20px;
+            
+.up-icon {
+  position: relative;
+
+  .move-up {
+    // border: 5px solid red;
+    transition: ease;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+  }
+}
+
+  P {
+    font-size: 18px !important;
+    line-height: 30px;
+  }
+
+
+    h2 {
+      // border: 2px solid red;
+      font-size: 22px !important;
+    }
+
+    h3 {
+      font-size: 30px !important;
+    }
+
+    &>.banner {
+  // border: 11px solid red;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+
+  &>.intro-content {
+    // border: 2px solid red;
+    width: 100%;
+    padding: 0px 20px;
+    line-height: 0px;
+
+    .intro-title {
+      // border: 2px solid red;
+      margin-bottom: 2.5rem;
+      font-size: 30px !important;
+      line-height: 30px;
+      padding-left: 0px;
+    }
+
+    .intro-title:first-child {
+      // border: 12px solid red;
+      margin-bottom: 0px;
+    }
+
+    .intro-subtitle {
+      // border: 2px solid red;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #fff;
+      padding-left: 0px;
+    }
+  }
+    }
+
+    &>.vacancy-contents {
+
+        // underline h3 text
+        &>.first {
+            padding: 0 10px;
 
             h3 {
-                font-size: 22px;
-                line-height: 25px;
-            }
-        }
+                font-size: 20px;
+                line-height: 60px;
+                margin-top: 50px;
 
-        &>.vacancy-contents {
-
-            // underline h3 text
-            &>.first {
-                padding: 0 10px;
-
-                h3 {
-                    font-size: 20px;
-                    line-height: 30px;
-                    margin-top: 50px;
-
-                }
-
-                h3::after {
-                    left: 35%;
-                    width: 30%;
-                    border-bottom: 3px solid $base-color-1;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-
-                &>.vancancy-btn {
-                    width: fit-content;
-                    margin: 0 auto;
-                    padding: 10px 20px;
-                    margin-top: 30px;
-                    margin-bottom: 40px;
-
-                    a {
-                        font-size: 12px;
-                    }
-                }
             }
 
-            &>.color-background {
-                background-color: $base-color-3;
-                padding: 50px 0;
-
-                &>.contents {
-                    // border: 2px solid red;
-                    padding: 0 10px;
-
-                    &>.first-row {
-                        row-gap: 30px;
-                        column-gap: 30px;
-                        justify-content: left;
-
-                        &>.icons-contents {
-                            &>.image {
-                                // border: 2px solid red;
-                                display: flex;
-                                justify-content: center;
-                                align-items: left;
-
-                                img {
-                                    width: 70px;
-                                }
-                            }
-
-                            &>.para {
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 24px;
-                                letter-spacing: 0em;
-                            }
-                        }
-                    }
-
-                    &>.second-row {
-                        // margin-top: 60px;
-
-                        h3 {
-                            font-size: 18px;
-                            text-align: left;
-                        }
-
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
+            h3::after {
+                left: 10%;
+                width: 80%;
+                border-bottom: 3px solid $base-color-1;
             }
 
-            &>.application-process {
-                // border: 2px solid red;
-                padding: 0 10px;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-                margin-top: 15px;
-
-                h3 {
-                    position: relative;
-                    font-size: 18px;
-                    line-height: 25px;
-                }
-
-                h3::after {
-                    left: 0;
-                    width: 50%;
-                    border-bottom: 3px solid $base-color-1;
-                    border-radius: 10px;
-                }
-            }
-
-            &>.vacancy-process {
-                // border: 2px solid red;
-
-                img {
-                    width: 100%;
-                }
+            p {
+                font-size: 16px;
             }
 
             &>.vancancy-btn {
+                width: fit-content;
+                margin: 0 auto;
+                padding: 10px 20px;
                 margin-top: 30px;
-                margin-bottom: 0px;
+                margin-bottom: 40px;
 
                 a {
                     font-size: 12px;
                 }
             }
         }
+
+        &>.color-background {
+            padding: 50px 0;
+
+            &>.contents {
+                // border: 2px solid red;
+                padding: 0 10px;
+
+                &>.first-row {
+                    row-gap: 50px;
+                    column-gap: 30px;
+                    justify-content: center;
+
+                    &>.icons-contents {
+                        &>.image {
+                            // border: 2px solid red;
+                            display: flex;
+                            justify-content: center;
+                            align-items: left;
+
+                            img {
+                                width: 70px;
+                            }
+                        }
+
+                        &>.para {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                        }
+                    }
+                }
+
+                &>.second-row {
+                    // margin-top: 60px;
+
+                    h3 {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &>.application-process {
+            // border: 2px solid red;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 15px;
+
+            h3 {
+                position: relative;
+                font-size: 18px;
+                line-height: 50px;
+            }
+
+            h3::after {
+                left: 0;
+                width: 100%;
+                border-bottom: 3px solid $base-color-1;
+                border-radius: 10px;
+            }
+        }
+
+        &>.vacancy-process {
+            // border: 2px solid red;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &>.vancancy-btn {
+            margin-top: 30px;
+            margin-bottom: 0px;
+
+            a {
+                font-size: 12px;
+            }
+        }
     }
+
+    // colored-last line section
+    section {
+    &>.colored-last {
+    display: none;
+    margin-top: 50px;
+
+    &>.first-color {
+    background-color: $base-color;
+    width: 50%;
+    height: 15px;
+    }
+
+    &>.second-color {
+    background-color: $base-color-2;
+    width: 25%;
+    height: 15px;
+    }
+
+    &>.third-color {
+    background-color: $base-color-1;
+    width: 25%;
+    height: 15px;
+    }
+    }
+    }
+ }
 }
 
 // MD
-/* @media (min-width: 768px) and (max-width: 991.9px) {} */
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .vacancy-page-wrap {
+
+.up-icon {
+    position: relative;
+
+    .move-up {
+        // border: 2px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+    }
+}
+
+P {
+    font-size: 18px;
+    color: #00000080 !important;
+    line-height: 30px !important;
+}
+
+h3 {
+    color: $base-color-1;
+    font-weight: 600 !important;
+}
+
+h2 {
+    font-size: 35px;
+    color: $base-color-1;
+}
+
+&>.banner {
+    background-image: url('../../assets/images/vacancy_images/vacancy-banner.png');
+    // border: 5px solid red;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    padding: 60px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &>.intro-content {
+        //   border: 12px solid red;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0px;
+
+        .intro-title {
+            // border: 2px solid red;
+            margin-bottom: 2.5rem;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 0px;
+            color: #fff;
+            padding-left: 50px;
+        }
+
+        .intro-subtitle {
+            // border: 2px solid red;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 0px;
+            letter-spacing: 0em;
+            color: #fff;
+        }
+
+        .discover-btn {
+            // border: 1px solid $base-color;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 15px;
+            color: $base-color;
+
+            &:hover {
+                background-color: #c96;
+                color: #fff;
+            }
+
+            &>div {
+                display: inline-flex;
+                column-gap: 5px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+&>.vacancy-contents {
+
+    // underline h3 text
+    &>.first {
+        padding: 0 20px;
+
+        h3 {
+            position: relative;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            border-bottom: 2px solid $base-color-1;
+        }
+
+        p {
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 0em;
+        }
+
+        &>.vancancy-btn {
+            background: $base-color-1;
+            width: fit-content;
+            padding: 15px 30px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+    }
+
+    &>.color-background {
+        background-color: $base-color-1;
+        padding: 50px 0;
+
+        &>.contents {
+            padding: 0 20px;
+
+            &>.first-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                column-gap: 10px;
+                row-gap: 20px;
+
+                &>.icons-contents {
+                    &>.image {
+                        // border: 2px solid red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 80px;
+                        }
+                    }
+
+                    &>.para {
+                        font-weight: 400;
+                        letter-spacing: 0em;
+                        color: #fff !important;
+                        padding-top: 10px;
+                    }
+                }
+            }
+
+            &>.second-row {
+                // border: 2px solid red;
+                margin-top: 60px;
+
+                h3 {
+                    font-size: 25px;
+                    color: #fff !important;
+                    font-weight: 700;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+
+                p {
+                    // border: 2px solid red;
+                    font-weight: 300;
+                    letter-spacing: 0em;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+
+    &>.application-process {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+        margin-bottom: 40px;
+
+        h3 {
+            position: relative;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 60px;
+            letter-spacing: 0em;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 2px solid $base-color-1;
+        }
+    }
+
+    &>.vacancy-process {
+        // border: 2px solid red;
+
+        img {
+            background-size: contain;
+            width: 100%;
+        }
+    }
+
+    &>.vancancy-btn {
+        background: $base-color-1;
+        // border: 3px solid red;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 15px 30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        // /* Styles for modal overlay */
+        // .modal-overlay {
+        //     position: fixed;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: rgba(0, 0, 0, 0.5);
+        //     /* Semi-transparent black overlay */
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+
+        // /* Styles for modal */
+        // .modal {
+        //     background-color: white;
+        //     padding: 20px;
+        //     border-radius: 8px;
+        //     position: relative;
+        // }
+
+        // /* Close Button */
+        // .close {
+        //     position: absolute;
+        //     top: 10px;
+        //     right: 10px;
+        //     cursor: pointer;
+        // }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+}
+
+ // colored-last line section
+section {
+    &>.colored-last {
+    display: none;
+    margin-top: 50px;
+
+ 
+    }
+}
+}
+
+} 
 
 // LG
 /* @media (min-width: 992px) and (max-width: 1200.9px) {} */
