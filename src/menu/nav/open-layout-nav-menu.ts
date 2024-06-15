@@ -79,6 +79,42 @@ export const openLayoutNavMenu: any = [
             RouterLink,
             {
                 to: {
+                    name: 'helpful-links'
+                }
+            },
+            { default: () => 'HelpfulSeniorLinks' }
+        ),
+        key: 'HelpfulSeniorLinks'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
+                    name: 'news-blogs'
+                }
+            },
+            { default: () => 'NewsAndBlogs' }
+        ),
+        key: 'NewsAndBlogs'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
+                    name: 'health-safety'
+                }
+            },
+            { default: () => 'HealthAndSafety' }
+        ),
+        key: 'HealthAndSafety'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
                     name: 'blogs'
                 }
             },

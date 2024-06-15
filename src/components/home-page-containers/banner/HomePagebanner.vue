@@ -3996,7 +3996,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 17px !important;
+                        font-size: 16px !important;
                         font-weight: 800;
                         line-height: 30px;
                         font-size: 14px;
@@ -4004,7 +4004,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
                       }
 
                       .header-extra-container {
-                        font-size: 25px !important;
+                        // font-size: 25px !important;
                         font-weight: bolder;
                         color: $base-color-2;
                       }
@@ -4012,7 +4012,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 14px;
+                        font-size: 14px !important;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;

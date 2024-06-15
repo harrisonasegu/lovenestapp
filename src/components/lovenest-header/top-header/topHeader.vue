@@ -55,6 +55,7 @@ import { Icon } from '@iconify/vue';
     // header- nav
     nav {
       // border: 2px solid red;
+      font-family: Montserrat;
       display: flex;
       justify-content: flex-end;
       align-items: center;

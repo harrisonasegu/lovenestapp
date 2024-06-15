@@ -124,13 +124,13 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 </div>
                 <!-- Dropdown #tag for Single page navigation -->
                 <div class="dropdown-content about-drop">
-                  <RouterLink class="icon-links" to="/Frequent-question"> News and Blogs
+                  <RouterLink class="icon-links" to="/news-blogs"> News and Blogs
                   </RouterLink>
 
-                  <RouterLink class="icon-links" to="/Frequent-question"> Health and Safety
+                  <RouterLink class="icon-links" to="/health-safety"> Health and Safety
                   </RouterLink>
 
-                  <RouterLink class="icon-links" to="/Frequent-question"> Helpful Senior Links
+                  <RouterLink class="icon-links" to="/helpful-links"> Helpful Senior Links
                   </RouterLink>
                         
                 </div>
@@ -175,6 +175,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     // border: 12px solid red;
     // header- nav
     nav {
+      font-family: Montserrat;
       background-color: $base-color-1;
       display: flex;
       justify-content: flex-end;

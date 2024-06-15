@@ -45,6 +45,30 @@ const guestRouteChildren = [
     }
   },
   {
+    path: '/helpful-links',
+    name: 'HelpfulSeniorLinks',
+    component: () => import('@/views/HelpfulSeniorLinks.vue'),
+    meta: {
+      title: 'HelpfulSeniorLinks'
+    }
+  },
+  {
+    path: '/news-blogs',
+    name: 'NewsAndBlogs',
+    component: () => import('@/views/NewsAndBlogs.vue'),
+    meta: {
+      title: 'NewsAndBlogs'
+    }
+  },
+  {
+    path: '/health-safety',
+    name: 'HealthAndSafety',
+    component: () => import('@/views/HealthAndSafety.vue'),
+    meta: {
+      title: 'HealthAndSafety'
+    }
+  },
+  {
     path: '/blogs',
     name: 'blogs',
     component: () => import('@/views/Blogs.vue'),
