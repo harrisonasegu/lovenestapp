@@ -47,7 +47,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
   const navMenuTextContent = FirstChildOfFirstChildElement.innerText as string
 
   switch (routeName) {
-    case 'home care services':
+    case 'home about services':
       navigateToSubMenu(subMenu)
       break
 
@@ -67,7 +67,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 </script>
 
 <template>
-  <div id="toTop" class="care-service-wrap">
+  <div id="toTop" class="about-service-wrap">
 
     <div class="banner">
 
@@ -94,7 +94,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
       </div>
 
       <p>
-        Non-medical home care that puts your loved ones first.LoveNest Home Care proceeds are reinvested in nonprofit, communal organizations that serve seniors, fight 
+        Non-medical home about that puts your loved ones first.LoveNest Home about proceeds are reinvested in nonprofit, communal organizations that serve seniors, fight 
         hunger, and foster mental health in Cincinnati.
       </p>
     </div>
@@ -113,10 +113,10 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
           </h2>
           <p>
             Hi. My name is Alicia Reid and I'm the Assistant Director of
-            LoveNest Home Care. Every day, people entrust us to care for
+            LoveNest Home about. Every day, people entrust us to about for
             their loved ones, and that is a responsibility I take very
             seriously. In my role, I am responsible for training and
-            managing LoveNest's full team of caregivers. But what really
+            managing LoveNest's full team of aboutgivers. But what really
             drives me are the personal connections I have with our seniors.
             I like to say our hearts beat for our clients, and it's true! The
             human interaction and the relationships we develop are what
@@ -197,10 +197,10 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
         icon="ri:double-quotes-l" width="80px" height="80px"  style="color: #4897E6" />
     </div>
     <p>
-      Mom's LoveNest caregivers are simultaneously her lifeline and
+      Mom's LoveNest aboutgivers are simultaneously her lifeline and
       my security blanket. […] From the day Mom first moved here—
       just prior to Rosh Hashanah, 2017—her aides have not only
-      provided her day-to-day care, but they've also provided her 
+      provided her day-to-day about, but they've also provided her 
       companionship.
     </p>
     <div class="color-btn">
@@ -267,7 +267,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 </template>
 
 <style lang="scss" scoped>
-.care-service-wrap {
+.about-service-wrap {
 
   .up-icon {
     position: relative;
@@ -677,7 +677,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 
 // XX-SM (<251px)
 @media (max-width: 250.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
 
     .up-icon {
       position: relative;
@@ -1104,7 +1104,7 @@ section {
 
 // XX-SM
 @media (min-width: 251px) and (max-width: 350.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
 
 
 .up-icon {
@@ -1531,7 +1531,7 @@ margin-top: 0px;
 
 // X-SM
 @media (min-width: 351px) and (max-width: 575.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
 
     .up-icon {
   position: relative;
@@ -1716,11 +1716,10 @@ section {
         // border: 1px solid red;
         background-color: #FFFFFFB2;
         width: 94.8%;
-        height: 400px;
         position: absolute;
         overflow-y: scroll;
-        top: -70px;
-        bottom: 5px;
+        top: -140px;
+        bottom: 10px;
         left: 10px;
         display: flex;
         align-content: center;
@@ -1737,9 +1736,8 @@ section {
             font-weight: 600;
             line-height: 25.86px;
             color: $base-color-1;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             text-align: center;
-
           }
 
           p {
@@ -1747,6 +1745,7 @@ section {
             font-weight: 400;
             line-height: 25.26px;
             margin-bottom: 20px;
+           font-size: 17px !important;
           }
 
           &>.color-btn {
@@ -1964,7 +1963,7 @@ margin-top: 0px;
 
 // SM
 @media (min-width: 576px) and (max-width: 767.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
     
 .up-icon {
   position: relative;
@@ -2400,9 +2399,8 @@ height: 15px;
 
 // MD
 @media (min-width: 768px) and (max-width: 991.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
    
-    
 .up-icon {
   position: relative;
 
@@ -2415,22 +2413,16 @@ height: 15px;
   }
 }
 
-  P {
-    font-size: 18px !important;
-    line-height: 30px !important;
-  }
+P {
+font-size: 18px !important;
+}
 
+h3 {
+font-size: 35px !important;
+}
 
-    h2 {
-      // border: 2px solid red;
-      font-size: 22px !important;
-    }
-
-    h3 {
-      font-size: 35px !important;
-    }
-
-    &>.banner {
+// border: 11px solid red;
+&>.banner {
 // border: 11px solid red;
 height: 400px;
 display: flex;
@@ -2446,7 +2438,7 @@ line-height: 0px;
 .intro-title {
   // border: 2px solid red;
   margin-bottom: 2.5rem;
-  font-size: 50px !important;
+  font-size: 50px;
   line-height: 60px;
   padding-left: 0px;
 }
@@ -2467,6 +2459,7 @@ line-height: 0px;
 }
 }
 }
+
 
     
     &>.line-paragraphy {
@@ -2837,7 +2830,7 @@ line-height: 0px;
 
 // LG
 @media (min-width: 992px) and (max-width: 1200.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
    
     
    .up-icon {
@@ -3274,7 +3267,7 @@ line-height: 0px;
 
 // XL
 @media (min-width: 1201px) and (max-width: 1499.9px) {
-  .care-service-wrap {
+  .about-service-wrap {
     // border: 1px solid red;
 
     &>.underline-wrap {
@@ -3392,7 +3385,7 @@ line-height: 0px;
       }
     }
 
-    &>.elderly-care {
+    &>.elderly-about {
       // background-image: linear-gradient(148.01deg, rgba(218, 94, 66, 0.2) -0.47%, rgba(218, 94, 66, 0.4) 56.24%);
       // ;
 
@@ -3435,7 +3428,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.lady-elderly-care {
+        &>.lady-elderly-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -3448,7 +3441,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-care {
+          &>.important-about {
             width: 750px;
 
             h3 {
@@ -3502,7 +3495,7 @@ line-height: 0px;
       }
     }
 
-    // Looking for elderly care support? component just below the elderly care with image of an advance lady
+    // Looking for elderly about support? component just below the elderly about with image of an advance lady
 
     &>.elderly-support {
       background-color: $base-color-2;
@@ -3561,12 +3554,12 @@ line-height: 0px;
       }
     }
 
-    &>.personal-care {
+    &>.personal-about {
       // border: 1px solid red;
       padding: 0 20px;
 
       &>.underline-wrap {
-        &>.underline-care {
+        &>.underline-about {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -3608,7 +3601,7 @@ line-height: 0px;
           width: 600px;
 
           &>.underline-wrap {
-            &>.supporting-care {
+            &>.supporting-about {
               display: flex;
               justify-content: center;
               flex-direction: column;
@@ -3776,7 +3769,7 @@ line-height: 0px;
       }
     }
 
-    &>.domiciliary-care {
+    &>.domiciliary-about {
       &>.domiciliary {
         padding: 0 20px;
 
@@ -3895,13 +3888,13 @@ line-height: 0px;
       }
     }
 
-    &>.companionship-care {
+    &>.companionship-about {
       // border: 1px solid red;
       padding: 0 20px;
       padding-bottom: 20px;
 
       &>.underline-wrap {
-        &>.underline-care {
+        &>.underline-about {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -3946,7 +3939,7 @@ line-height: 0px;
           width: 600px;
 
           &>.underline-wrap {
-            &>.companionship-care {
+            &>.companionship-about {
               display: flex;
               justify-content: center;
               flex-direction: column;
@@ -4001,7 +3994,7 @@ line-height: 0px;
       }
     }
 
-    &>.dementia-care {
+    &>.dementia-about {
 
       &>.contents {
         // border: 2px solid red;
@@ -4029,7 +4022,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.elder-dementia-care {
+        &>.elder-dementia-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4042,7 +4035,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-care {
+          &>.important-about {
             width: 650px;
 
             h3 {
@@ -4078,7 +4071,7 @@ line-height: 0px;
       padding-bottom: 20px;
 
       &>.underline-wrap {
-        &>.underline-care {
+        &>.underline-about {
           // border: 3px solid red;
           display: flex;
           justify-content: center;
@@ -4133,7 +4126,7 @@ line-height: 0px;
       }
     }
 
-    &>.pet-care {
+    &>.pet-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4166,7 +4159,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.pet-image-care {
+        &>.pet-image-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4209,7 +4202,7 @@ line-height: 0px;
       }
     }
 
-    &>.life-care {
+    &>.life-about {
 
 
       &>.contents {
@@ -4245,7 +4238,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.life-care-image {
+        &>.life-about-image {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4287,7 +4280,7 @@ line-height: 0px;
       }
     }
 
-    &>.palliative-care {
+    &>.palliative-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4321,7 +4314,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.palliative-image-care {
+        &>.palliative-image-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4364,7 +4357,7 @@ line-height: 0px;
       }
     }
 
-    &>.hospital-care {
+    &>.hospital-about {
 
 
       &>.contents {
@@ -4398,7 +4391,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.life-care-image {
+        &>.life-about-image {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4476,7 +4469,7 @@ line-height: 0px;
       }
     }
 
-    &>.overnight-care {
+    &>.overnight-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4508,7 +4501,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.lady-elderly-care {
+        &>.lady-elderly-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4520,7 +4513,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-care {
+          &>.important-about {
             width: 650px;
 
             h3 {
@@ -4586,7 +4579,7 @@ line-height: 0px;
       }
     }
 
-    &>.couples-care {
+    &>.couples-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4619,7 +4612,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.couples-image-care {
+        &>.couples-image-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4670,7 +4663,7 @@ line-height: 0px;
       }
     }
 
-    &>.live-in-care {
+    &>.live-in-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4701,7 +4694,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.wheelchair-live-in-care {
+        &>.wheelchair-live-in-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4714,7 +4707,7 @@ line-height: 0px;
             }
           }
 
-          &>.important-care {
+          &>.important-about {
             width: 650px;
 
             h3 {
@@ -4744,7 +4737,7 @@ line-height: 0px;
       }
     }
 
-    &>.respite-care {
+    &>.respite-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -4776,7 +4769,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.respite-image-care {
+        &>.respite-image-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -4827,7 +4820,7 @@ line-height: 0px;
       }
     }
 
-    &>.complex-care {
+    &>.complex-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -5060,7 +5053,7 @@ line-height: 0px;
       }
     }
 
-    &>.stroke-care {
+    &>.stroke-about {
       &>.contents {
         // border: 2px solid red;
         padding: 20px 20px;
@@ -5085,7 +5078,7 @@ line-height: 0px;
           letter-spacing: 0em;
         }
 
-        &>.stroke-image-care {
+        &>.stroke-image-about {
           // border: 2px solid red;
           display: flex;
           justify-content: space-between;
@@ -5145,1263 +5138,389 @@ line-height: 0px;
 
 // XXL
 @media (min-width: 1500px) {
-  .care-service-wrap {
-    // border: 11px solid red;
-    .up-icon {
-      position: relative;
+  .about-service-wrap {
 
-      .move-up {
-        // border: 2px solid red;
-        transition: ease;
-        position: fixed;
-        right: 30px;
-        bottom: 20px;
-
-        .icon-image {
-          //  border: 2px solid red;
-           width: 100px;
-           height: 80px;
-        }
-      }
-    }
-
-      // The heart icons in the absolute pages
-      .heart {
-      width: 80px;
-      height: 50px;
-    }
-
-    P {
-      font-size: 28px !important;
-      line-height: 50px !important;
-    }
-
-    h2 {
-      font-size: 40px;
-    }
-
-    h3 {
-      font-size: 60px !important;
-      line-height: 80px !important;
-    }
-
-    &>.banner {
-    height: 500px;
     
-    &>.intro-content {
-      line-height: 20px;
+.up-icon {
+  position: relative;
 
-      .intro-title {
-        // border: 2px solid red;
-        font-size: 70px;
-      }
-
-      .intro-subtitle {
-        font-size: 100px;
-        padding-left: 300px;
-      }
-
-      .discover-btn {
-        // border: 1px solid $base-color;
-        padding: 15px 25px;
-        text-decoration: none;
-        font-size: 15px;
-        color: $base-color;
-
-        &:hover {
-          background-color: #c96;
-          color: #fff;
-        }
-
-        &>div {
-          display: inline-flex;
-          column-gap: 5px;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-    }
+  .move-up {
+    // border: 5px solid red;
+    transition: ease;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
   }
-    
-  &>.line-paragraphy {
-    margin-top: 50px;
+}
 
-    p {
-      padding: 0 20px;
-      // text-align: center;
+P {
+  font-size: 20px !important;
+}
+
+h3 {
+  color: $base-color-1;
+  font-weight: 600 !important;
+}
+
+h2 {
+  // font-size: 30px !important;
+  line-height: 40px !important;
+  color: $base-color-1;
+}
+
+&>.banner {
+  height: 500px;
+
+  &>.intro-content {
+    // border: 12px solid red;
+    line-height: 20px;
+
+    .intro-title {
+      // border: 2px solid red;
+      font-size: 70px;
     }
 
-    &>.underline-wrap {
-      padding: 0 20px;
+    .intro-subtitle {
+      // border: 2px solid red;
+      font-size: 100px;
+      padding-left: 300px;
+    }
 
-      &>.making-preparation {
-        display: flex;
+    .discover-btn {
+      // border: 1px solid $base-color;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 15px;
+      color: $base-color;
+
+      &:hover {
+        background-color: #c96;
+        color: #fff;
+      }
+
+      &>div {
+        display: inline-flex;
+        column-gap: 5px;
         justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
 
-        // border: 4px solid red;
-        h3 {
-          color: $base-color-1;
-          position: relative;
-          font-weight: 600;
-          font-size: 45px;
-          line-height: 60px;
-          letter-spacing: 0em;
-        }
 
-        h3::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: -5%;
-          width: 110%;
-          border-bottom: 2px solid $base-color-1;
-        }
+&>.line-paragraphy {
+  // border: 3px solid red;
+  margin-top: 30px;
+
+  &>.underline-wrap {
+    padding: 0 20px;
+
+    &>.making-preparation {
+      display: flex;
+      justify-content: center;
+
+      // border: 4px solid red;
+      h3 {
+        color: $base-color-1;
+        position: relative;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 60px;
+        letter-spacing: 0em;
+      }
+
+      h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -5%;
+        width: 110%;
+        border-bottom: 2px solid $base-color-1;
+      }
+    }
+  }
+
+  p {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+section {
+  margin-top: 50px;
+
+  &>.third-reliable {
+    justify-content:center;
+    padding: 0 200px;
+
+    &>.section-image {
+
+      // border: 1px solid red;
+      img {
+        // border: 1px solid red;
+        width: 1000px;
+        height: 1000px;
+        padding-right: 20px;
       }
     }
 
-  }
+    &>.section-background {
+      // border: 1px solid red;
+      position: relative;
+      width: 1500px;
+      height: 500px;
+      background-color: $base-color;
 
-  // First- Section---------------
-  // <!-- Relative and Absolute section -->
-
-  section {
-
-    &>.reliable {
-      // border: 5px solid $base-color;
-      display: flex;
-      // height: fit-content;
-      justify-content: center;
-      overflow-y: hidden;
-      padding: 0 20px;
-      margin-bottom: 0px;
-
-      &>.section-image {
-
+      &>.light-background {
         // border: 1px solid red;
-        img {
-          // border: 1px solid red;
-          width: 1000px !important;
-          height: 700px !important;
-        }
-      }
+        background-color: #FFFFFFB2;
+        width: 850px;
+        // min-height: 200px;
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
 
-      &>.section-background {
-        // border: 1px solid red;
-        position: relative;
-        width: 1000px !important;
-        height: 700px !important;
-        background-color: $base-color;
-
-        &>.light-background {
-          // border: 1px solid red;
-          background-color: #FFFFFFB2;
-          width: 1000px !important;
-          // min-height: 200px;
-          position: absolute;
-          top: 20px;
-          bottom: 20px;
-          right: 20px;
+        &>.contents {
+          // border: 2px solid red;
           display: flex;
-          align-content: center;
-          justify-content: flex-end;
+          flex-direction: column;
+          justify-content: center;
+          padding: 20px;
 
-          &>.contents {
-            // border: 2px solid red;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
+          h2 {
+            font-weight: 600;
+            line-height: 50.86px;
+            color: $base-color-1;
+            margin-bottom: 20px;
 
-            h2 {
-              font-weight: 600;
-              line-height: 50.86px;
-              color: $base-color-1;
-              margin-bottom: 20px;
-            }
+          }
 
-            &>.contents-wrap {
-              // border: 2px solid red;
-              display: flex;
-              // justify-content: center;
-              column-gap: 50px;
-
-              &>.first-section,
-              .second-section {
-                div {
-                  display: flex;
-                  column-gap: 5px;
-
-                  span {
-                  //  border: 2px solid red;
-                  font-size: 23px;
-                  }
-                }
-              }
-            }
+          p {
+            font-family: Montserrat;
+            font-weight: 400;
+            line-height: 35.26px;
+            margin-bottom: 20px;
           }
         }
       }
     }
   }
+}
 
-  // <!-- YOUR SEARCH ENDS HERE -->
-  &>.search-ends {
-    // border: 3px solid red;
-    margin-top: 50px;
+// <!-- This section is for tab, Mission, Vision etc -->
 
-    &>.underline-wrap {
-      padding: 0 20px;
+section {
+  &>.tab-content {
+    // border: 2px solid red;
+     
+    .n-tabs {
+      // border: 2px solid red;
 
-      &>.making-preparation {
-        display: flex;
-        justify-content: center;
-
-        // border: 4px solid red;
-        h3 {
-          color: $base-color-1;
-          position: relative;
-          font-size: 30px;
-          font-weight: 600;
-          line-height: 50px;
-          letter-spacing: 0em;
-        }
-
-        h3::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: -5%;
-          width: 110%;
-          border-bottom: 2px solid $base-color-1;
-        }
-      }
-    }
-
-    p {
-      // border: 3px solid red;
-      padding: 0 20px;
-      text-align: center;
-      padding-bottom: 30px;
-    }
-  }
-
-  // Second- Section---------------
-  // <!-- Relative and Absolute section -->
-
-  section {
-
-    &>.reliable {
-      // border: 5px solid $base-color;
-      display: flex;
-      // height: fit-content;
-      overflow-y: hidden;
-      padding: 0 20px;
-      margin-bottom: 0px;
-
-      &>.section-image {
-
-        // border: 1px solid red;
-        img {
-          // border: 1px solid red;
-          width: 650px;
-          height: 450px;
-        }
-      }
-
-      &>.section-background {
-        // border: 1px solid red;
-        position: relative;
-        width: 1500px;
-        height: 450px;
-        background-color: $base-color;
-
-        &>.light-background {
-          // border: 1px solid red;
-          background-color: #FFFFFFB2;
-          width: 850px;
-          // min-height: 200px;
-          position: absolute;
-          top: 20px;
-          bottom: 20px;
-          right: 20px;
-          display: flex;
-          align-content: center;
-          justify-content: flex-end;
-
-          &>.contents {
-            // border: 2px solid red;
+        .n-tab-pane {
+          .first-wrap {
+            // border: 2px solid blue;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
+            column-gap: 20px;
 
-            h2 {
-              font-weight: 600;
-              line-height: 50.86px;
-              color: $base-color-1;
-              margin-bottom: 30px;
-              text-align: center;
+            &>.picture {
+              img{
+                // border: 2px solid blue;
+                width: 700px;
+                height: auto;
+              }
             }
 
-            &>.contents-wrap {
-              // border: 2px solid red;
-              display: flex;
-              // justify-content: center;
-              column-gap: 50px;
+            &>.contents {
+              width: 100%;
+            //  h2 {}
+            //  p {}
+            }
+         }
+     }   
+    }
+  }
+}
 
-              &>.first-section,
-              .second-section {
+// <!-- Carousel section -->
+section {
+  &>.carousel {
+      .carousel-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+  
+      .custom-arrow {
+        display: flex;
+        position: absolute;
+        bottom: 25px;
+        right: 10px;
+      }
+  
+      .custom-arrow button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
+        color: #fff;
+        background-color: $base-color-2;
+        border-width: 0;
+        border-radius: 8px;
+        transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+  
+      .custom-arrow button:hover {
+        background-color: $base-color-1;
+      }
+  
+      .custom-arrow button:active {
+        transform: scale(0.95);
+        transform-origin: center;
+      }
+  
+      .custom-dots {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+  
+      .custom-dots li {
+        display: inline-block;
+        width: 12px;
+        height: 4px;
+        margin: 0 3px;
+        border-radius: 4px;
+        background-color: $base-color-2;
+        // background-color: rgba(255, 255, 255, 0.4);
+        transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+  
+      .custom-dots li.is-active {
+        width: 40px;
+        background: $base-color-1;
+      }
+  
+      // Absolute Image - Section--------------
+
+        .second-reliable {
+        //  border: 3px solid red;
+          border: 5px solid $base-color;
+          display: flex;
+          flex-direction: row-reverse;
+          height: 500px;
+          overflow-y: hidden;
+          margin-bottom: 50px;
+  
+          &>.section-image {
+  
+            // border: 1px solid red;
+            img {
+              // border: 1px solid red;
+              width: 650px;
+              height: 500px;
+            }
+          }
+  
+          &>.section-background {
+            // border: 1px solid red;
+            position: relative;
+            width: 1500px;
+            height: 500px;
+            background-color: $base-color;
+  
+            &>.light-background {
+              // border: 11px solid red;
+              background-color: #FFFFFFB2;
+              width: 850px;
+              // min-height: 200px;
+              position: absolute;
+              top: 20px;
+              bottom: 20px;
+              left: 20px;
+              display: flex;
+              align-content: center;
+              justify-content: flex-end;
+  
+              &>.contents {
+                // border: 2px solid red;
                 display: flex;
                 flex-direction: column;
-                row-gap: 10px;
-
-                div {
-                  // border: 2px solid red;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+  
+                .quotation {
+                  line-height: 0.86px;
+                  color: $base-color-1;
+                  // margin-bottom: 20px;
+  
+                }
+  
+                p {
+                  font-family: Montserrat;
+                  font-weight: 400;
+                  line-height: 30.26px;
+                  margin-bottom: 20px;
+                }
+  
+                &>.color-btn {
                   display: flex;
-                  column-gap: 5px;
+                  justify-items: center;
+                  flex-direction: column;
+                  align-items: center;
+                  line-height: 0px;
+
+                  h4 {
+                    font-size: 30px;
+                    color: $base-color-1;
+                  }
+               
                 }
               }
             }
           }
-        }
-      }
-    }
-  }
-
-    &>.underline-wrap {
-      padding: 0 200px;
-
-      &>.making-preparation {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    &>.paragraph-dots {
-      // border: 11px solid red;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 0 200px;
-      margin-bottom: 30px;
-
-      &>.para {
-        p {
-          font-weight: 400;
-          line-height: 25px;
-          letter-spacing: 0em;
-          padding-bottom: 30px;
-        }
-      }
-
-      &>.contents-dots {
-        // border: 2px solid blue;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 30px;
-        row-gap: 10px;
-        font-size: 22px;
-
-        .contents {
-          // border: 1px solid rgba(0, 0, 0, 0.070);
-          border-radius: 8px;
-          width: calc((100% / 4) - 33px);
-          display: flex;
-          flex-wrap: wrap;
-          padding: 8px 0;
+  
         }
       }
     }
 
-    .call-us-wrap {
-      // border: 12px solid red;
+// colored-last line section
+section {
+  &>.colored-last {
+    display: flex;
+    margin-top: 50px;
+
+    &>.first-color {
+      background-color: $base-color;
+      width: 50%;
+      height: 15px;
+    }
+
+    &>.second-color {
+      background-color: $base-color-2;
+      width: 25%;
+      height: 15px;
+    }
+
+    &>.third-color {
       background-color: $base-color-1;
-      padding: 0 200px;
-
-      &>.call-contact {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        h3 {
-          color: #fff;
-          font-weight: 400;
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 40px;
-          letter-spacing: 0em;
-        }
-
-        &>.icon-contact {
-          // border: 11px solid red;
-          background-color: #fff;
-          border-radius: 20px;
-          color: $base-color;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 20px 30px;
-          column-gap: 10px;
-
-          span {
-            display: flex;
-
-            a {
-              text-decoration: none;
-              font-size: 22px;
-            }
-          }
-
-          .phone-number {
-            color: $base-color-1;
-            font-weight: 700;
-          }
-        }
-      }
-    }
-
-    &>.elderly-care {
-
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 25px;
-          letter-spacing: 0em;
-        }
-
-        &>.lady-elderly-care {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          column-gap: 100px;
-          padding: 30px 0;
-
-          &>.lady {
-            img {
-              width: 650px;
-              height: auto;
-            }
-          }
-
-          &>.important-care {
-            width: 750px;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 22px;
-              font-weight: 700;
-              line-height: 40px;
-              letter-spacing: 0em;
-            }
-
-            p {
-              font-weight: 400;
-              line-height: 25px;
-              letter-spacing: 0em;
-            }
-
-            &>.paragraph-dots {
-              // border: 1px solid red;
-              display: flex;
-              flex-direction: column;
-
-              &>.contents-dots {
-                // border: 2px solid blue;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                column-gap: 30px;
-                row-gap: 10px;
-                font-size: 20px;
-
-                .contents {
-                  border: 1px solid rgba(0, 0, 0, 0.070);
-                  border-radius: 8px;
-                  width: calc((100% / 2) - 17px);
-                  display: flex;
-                  flex-wrap: wrap;
-                  padding: 8px 0;
-                }
-              }
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 40px;
-          letter-spacing: 0em;
-        }
-      }
-    }
-
-    // Looking for elderly care support? component just below the elderly care with image of an advance lady
-
-    &>.elderly-support {
-      .call-us {
-        padding: 10px 200px;
-
-        &>.call-contact {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 100%;
-          flex-wrap: wrap;
-          column-gap: 20px;
-
-          div h3 {
-            color: #fff;
-            font-weight: 400;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 30px;
-            letter-spacing: 0em;
-          }
-
-          &>.icon-contact {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 30px;
-
-            span {
-              // border: 11px solid red;
-              border-radius: 20px;
-              background-color: #fff;
-              padding: 20px 30px;
-
-
-              a {
-                text-decoration: none;
-                color: $base-color;
-                font-size: 22px;
-                font-weight: 700;
-              }
-            }
-
-            .phone-number {
-              color: $base-color-1;
-            }
-          }
-        }
-      }
-    }
-
-    &>.personal-care {
-      // border: 11px solid red;
-      padding: 0 200px;
-
-      &>.underline-wrap {
-        &>.underline-care {
-          // border: 3px solid red;
-          display: flex;
-          justify-content: center;
-        }
-      }
-
-      .image-supporting,
-      .choose-image {
-        justify-content: center;
-        column-gap: 200px;
-
-        &>.image {
-        img {
-          width: 550px;
-          height: 550px;
-        }
-      }
-      }
-
-      &>.bathing-showering {
-        // border: 11px solid red;
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px;
-        margin-bottom: 30px;
-
-        h4 {
-          font-size: 30px;
-          font-weight: 600;
-          line-height: 25px;
-          letter-spacing: 0em;
-
-        }
-
-        &>.contents-dots {
-          // border: 2px solid blue;
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          column-gap: 30px;
-          row-gap: 10px;
-
-          .contents {
-            // border: 1px solid rgba(0, 0, 0, 0.070);
-            border-radius: 8px;
-            width: calc((100% / 4) - 33px);
-            padding: 8px 0;
-
-            &>.dots {
-              &>.dots-span {
-                // border: 2px solid red;
-                display: flex;
-                align-items: center;
-                font-size: 22px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &>.getIn-touch {
-      .call-us {
-        background-color: $base-color-1;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 200px;
-
-        &>.call-contact {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        column-gap: 50px;
-
-        div h3 {
-          // border: 2px solid red;
-          color: #fff;
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 25px;
-          letter-spacing: 0em;
-
-        }
-
-        &>.contact {
-          // border: 11px solid red;
-          padding: 20px 35px;
-
-          span {
-            display: flex;
-
-            a {
-              text-decoration: none;
-              font-size: 22px;
-            }
-          }
-        }
-      }
-      }
-    }
-
-    &>.domiciliary-care {
-      &>.domiciliary {
-        padding: 0 200px;
-
-        &>.underline-domiciliary {
-          padding: 0 20px;
-
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .image-domiciliary {
-          justify-content: center;
-          column-gap: 100px;
-        }
-
-        &>.consider-domiciliary {
-        padding-top: 10px;
-
-        h3 {
-          font-size: 25px;
-          font-weight: 700;
-          line-height: 25px;
-          letter-spacing: 0em;
-        }
-
-
-        &>.paragraph-dots {
-          // border: 1px solid red;
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 50px;
-
-          &>.contents-dots {
-            // border: 2px solid blue;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 30px;
-            row-gap: 10px;
-            font-size: 22px;
-          }
-        }
-      }
-      }
-    }
-
-    &>.companionship-care {
-      // border: 11px solid red;
-      padding: 0 200px;
-      padding-bottom: 20px;
-
-      &>.underline-wrap {
-        &>.underline-care {
-          // border: 3px solid red;
-          display: flex;
-          justify-content: center;
-        }
-      }
-
-      p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0em;
-      }
-
-      &>.image-companionship {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 200px;
-
-        &>.image {
-          img {
-            width: 550px;
-          }
-        }
-
-        &>.companionship {
-          width: 600px;
-
-          &>.underline-wrap {
-            &>.companionship-care {
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-
-              // border: 4px solid red;
-              h3 {
-                position: relative;
-                font-size: 30px;
-                font-weight: 700;
-                line-height: 48px;
-                letter-spacing: 0em;
-              }
-
-              h3::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0%;
-                width: 30%;
-                border-bottom: 7px solid $base-color-1;
-                border-radius: 10px;
-              }
-            }
-          }
-
-          h4 {
-            width: 450px;
-            color: $base-color-1;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-
-          p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-        }
-      }
-
-      h3 {
-        font-size: 25px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0em;
-      }
-
-      p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0em;
-      }
-    }
-
-    &>.dementia-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        &>.elder-dementia-care {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          column-gap: 300px;
-          padding: 30px 0;
-
-          &>.elder {
-            img {
-              width: 500px;
-              height: 550px;
-            }
-          }
-
-          &>.important-care {
-            width: 650px;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 22px;
-              font-weight: 700;
-              line-height: 40px;
-              letter-spacing: 0em;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 25px;
-              letter-spacing: 0em;
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 40px;
-          letter-spacing: 0em;
-        }
-      }
-    }
-
-    &>.personal-assistance {
-      // border: 1px solid red;
-      padding: 0 200px;
-      padding-bottom: 20px;
-
-      &>.underline-wrap {
-        &>.underline-care {
-          // border: 3px solid red;
-          display: flex;
-          justify-content: center;
-        }
-      }
-
-      &>.image-personal-assistance {
-        // border: 2px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 300px;
-
-        &>.image {
-          img {
-            width: 550px;
-          }
-        }
-
-        &>.companionship {
-          width: 600px;
-
-          p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-
-          h3 {
-            font-size: 25px;
-            font-weight: 700;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-        }
-      }
-    }
-
-    &>.pet-care {
-
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .pet-image-care {
-          justify-content: center;
-          column-gap: 300px;
-        }
-      }
-    }
-
-    &>.life-care {
-
-
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-
-        .life-care-image {
-          justify-content: center;
-          column-gap: 300px;
-        }
-      }
-    }
-
-    &>.palliative-care {
-
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .palliative-image-care {
-          justify-content: center;
-          column-gap: 300px;
-        }
-      }
-    }
-
-    &>.hospital-care {
-
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .life-care-image {
-          justify-content: center;
-          column-gap: 300px;
-        }
-
-        .paragraph-dots {
-          // border: 1px solid red;
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 50px;
-
-          &>.contents-dots {
-            // border: 2px solid blue;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 30px;
-            row-gap: 10px;
-            font-size: 22px;
-          }
-        }
-      }
-    }
-
-    &>.overnight-care {
-      &>.contents {
-        // border: 12px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .lady-elderly-care {
-          justify-content: center;
-          column-gap: 300px;
-
-          .important-care {
-          width: 650px;
-
-          &>.paragraph-dots {
-            // border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-
-            &>.contents-dots {
-              // border: 2px solid blue;
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              column-gap: 30px;
-              row-gap: 10px;
-
-              h4 {
-                // border: 2px solid red;
-                font-size: 25px;
-              }
-
-              .contents {
-                font-size: 22px;
-              }
-            }
-          }
-        }
-        }
-      }
-    }
-
-    &>.couples-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .couples-image-care {
-          justify-content: center;
-          column-gap: 300px;
-        }
-      }
-    }
-
-    &>.live-in-care {
-
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .wheelchair-live-in-care {
-          justify-content: center;
-          column-gap: 300px;
-        }
-      }
-    }
-
-    &>.respite-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .respite-image-care {
-          justify-content: center;
-          column-gap: 300px;
-        }
-      }
-    }
-
-    &>.complex-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .complex-support-plan {
-          justify-content: center;
-          column-gap: 300px;
-
-          p span {
-            // border: 2px solid red;
-            color: $base-color-2;
-            font-size: 22px !important;
-            font-weight: 600;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-
-          h4 {
-            // border: 2px solid red;
-            color: $base-color-2;
-            font-size: 30px !important;
-            line-height: 35px !important;
-          }
-
-          &>.paragraph-dots {
-            // border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-
-            &>.contents-dots {
-              // border: 2px solid blue;
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              column-gap: 30px;
-              row-gap: 10px;
-              font-size: 22px !important;
-
-              h4 {
-                // border: 2px solid red;
-                display: none;
-                color: $base-color-1;
-                font-size: 25px;
-              }
-
-              .contents {
-                // border: 1px solid rgba(0, 0, 0, 0.070);
-                border-radius: 8px;
-                width: calc((100% / 3) - 30px);
-                display: flex;
-                flex-wrap: wrap;
-                padding: 8px 0;
-              }
-            }
-          }
-        }
-
-        .complex-home {
-          justify-content: center;
-          column-gap: 300px;
-            // border: 2px solid red;
-
-          h4 {
-            // border: 2px solid red;
-            color: $base-color-2;
-            font-size: 25px;
-            font-weight: 500;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-
-          .paragraph-dots {
-            // border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-
-            &>.contents-dots {
-              // border: 2px solid blue;
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              column-gap: 30px;
-              row-gap: 10px;
-              font-size: 22px;
-
-              .contents {
-                border: 1px solid rgba(0, 0, 0, 0.070);
-                border-radius: 8px;
-                width: calc((100% / 1) - 30px);
-                display: flex;
-                flex-wrap: wrap;
-                padding: 8px 0;
-
-                .needs-assess {
-                  color: #00000080;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &>.stroke-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 200px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .stroke-image-care {
-          justify-content: center;
-          column-gap: 300px;
-        }
-
-        h3 {
-          text-align: center;
-          margin-top: 30px;
-        }
-      }
+      width: 25%;
+      height: 15px;
     }
   }
-
+}
+}
 }
 </style>
