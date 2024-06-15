@@ -2459,7 +2459,7 @@ section {
                   .background-icon {
                     .icons {
                       // border: 1px solid red;
-                      height: 50px;
+                      height: 100px;
                     }
                   }
 
@@ -2587,7 +2587,7 @@ section {
                 &>.background-icon {
                   img {
                     // border: 1px solid red;
-                    width: 80px;
+                    width: 120px;
                   }
                 }
 
