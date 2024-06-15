@@ -1546,7 +1546,7 @@ margin-top: 0px;
 }
 
 P {
-  font-size: 16px !important;
+  font-size: 18px !important;
   line-height: 25px !important;
 }
 
