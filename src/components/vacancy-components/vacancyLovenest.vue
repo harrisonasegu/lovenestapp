@@ -243,8 +243,8 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
                 content: '';
                 position: absolute;
                 bottom: 0;
-                left: 30%;
-                width: 40%;
+                left: 25%;
+                width: 50%;
                 border-bottom: 2px solid $base-color-1;
             }
 
@@ -318,6 +318,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
                     }
 
                     p {
+                        // border: 2px solid red;
                         font-weight: 300;
                         letter-spacing: 0em;
                         color: #fff !important;
@@ -407,30 +408,30 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
     }
 
      // colored-last line section
-  section {
-    &>.colored-last {
-      display: flex;
-      margin-top: 50px;
+    section {
+        &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-      &>.first-color {
-        background-color: $base-color;
-        width: 50%;
-        height: 15px;
-      }
+        &>.first-color {
+            background-color: $base-color;
+            width: 50%;
+            height: 15px;
+        }
 
-      &>.second-color {
-        background-color: $base-color-2;
-        width: 25%;
-        height: 15px;
-      }
+        &>.second-color {
+            background-color: $base-color-2;
+            width: 25%;
+            height: 15px;
+        }
 
-      &>.third-color {
-        background-color: $base-color-1;
-        width: 25%;
-        height: 15px;
-      }
+        &>.third-color {
+            background-color: $base-color-1;
+            width: 25%;
+            height: 15px;
+        }
+        }
     }
-  }
 }
 
 // MEDIA QUERY
@@ -901,8 +902,6 @@ h2 {
   }
 }
 
-
-
 &>.vacancy-contents {
 
 // underline h3 text
@@ -911,12 +910,12 @@ h2 {
 
     h3 {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 30px;
     }
 
     h3::after {
-        left: 35%;
-        width: 30%;
+        left: 8%;
+        width: 80%;
       }
 
     p {
