@@ -633,6 +633,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
 
 .wrap {
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
   div.carousel-container {
     height: 500px;
     //   padding: 0 50px;
@@ -760,15 +761,22 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
     }
   }
 
+  a{
+    font-family: Montserrat; 
+  }
+
   P {
+    font-family: Montserrat; 
     font-size: 18px;
   }
 
   h2 {
+    font-family: Montserrat; 
     font-size: 38px;
   }
 
   h3 {
+    font-family: Montserrat; 
     font-size: 25px;
   }
 
@@ -3386,7 +3394,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
             // min-height: 200px;
             overflow-y: scroll;
             position: absolute;
-            top: -100px;
+            top: -120px;
             bottom: 10px;
             display: flex;
             align-content: center;
@@ -3402,7 +3410,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
                 font-weight: 600;
                 line-height: 30.86px;
                 color: $base-color-1;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 text-align: center;
               }
 

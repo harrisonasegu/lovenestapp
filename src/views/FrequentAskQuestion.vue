@@ -277,6 +277,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
 <style lang="scss" scoped>
 .care-giver-wrap {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
   .up-icon {
     position: relative;
@@ -291,16 +292,19 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
   }
 
   P {
+    font-family: Montserrat; 
     font-size: 18px;
     color: #00000080;
   }
 
   h3 {
+    font-family: Montserrat; 
     color: $base-color-1;
     font-weight: 600 !important;
   }
 
   h2 {
+    font-family: Montserrat; 
     font-size: 35px;
     color: $base-color-1;
   }

@@ -581,7 +581,6 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
 <style lang="scss" scoped>
 .care-giver-wrap {
-
   .up-icon {
     position: relative;
 
@@ -595,16 +594,19 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
   }
 
   P {
+    font-family: Montserrat; 
     font-size: 18px;
     color: #00000080;
   }
 
   h3 {
+    font-family: Montserrat; 
     color: $base-color-1;
     font-weight: 600 !important;
   }
 
   h2 {
+    font-family: Montserrat; 
     font-size: 35px;
     color: $base-color-1;
   }

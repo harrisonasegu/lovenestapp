@@ -2807,21 +2807,25 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
   
   span{
+    font-family: Montserrat; 
     font-size: 18px !important;
   }
 
   P{
+    font-family: Montserrat; 
     font-size: 18px;
     line-height: 30px !important;
     color: #00000080;
   }
 
   h3 {
+    font-family: Montserrat; 
     color: $base-color-1;
     font-weight: 600 !important;
   }
 
   h2 {
+    font-family: Montserrat; 
     font-size: 35px;
     color: $base-color-1;
   }
@@ -8598,7 +8602,7 @@ section {
 }
 
 P {
-//  border: 1px solid red;
+  // border: 1px solid red;
   font-size: 18px !important;
 }
 
@@ -8719,7 +8723,7 @@ section {
         // border: 11px solid red;
         background-color: #FFFFFFB2;
         width: 97%;
-        top: -40px;
+        top: -80px;
         bottom: 5px;
         right: 0px;
         left: 5px;
@@ -8739,7 +8743,7 @@ section {
             font-size: 18px !important;
             line-height: 30.86px;
             color: $base-color-1;
-            // padding-bottom: 10px;
+            padding-bottom: 0px;
             text-align: center;
           }
 
