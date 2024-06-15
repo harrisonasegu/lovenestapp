@@ -2805,10 +2805,15 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     }
   }
 
-  P, span {
-    font-size: 18px;
-    color: #00000080;
+  
+  span{
+    font-size: 18px !important;
+  }
 
+  P{
+    font-size: 18px;
+    line-height: 30px !important;
+    color: #00000080;
   }
 
   h3 {

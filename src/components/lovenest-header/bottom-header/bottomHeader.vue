@@ -123,22 +123,16 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     </span></span>
                 </div>
                 <!-- Dropdown #tag for Single page navigation -->
-                <div class="dropdown-content">
-                  <a href="#learning" @click.prevent="(e) => handleSubMenuClick(e, 'learning')">Learning Disability</a>
+                <div class="dropdown-content about-drop">
+                  <RouterLink class="icon-links" to="/Frequent-question"> News and Blogs
+                  </RouterLink>
 
-                  <a href="#autism" @click.prevent="(e) => handleSubMenuClick(e, 'autism')">Autism Support</a>
+                  <RouterLink class="icon-links" to="/Frequent-question"> Health and Safety
+                  </RouterLink>
 
-                  <a href="#supported" @click.prevent="(e) => handleSubMenuClick(e, 'supported')">Supported Living</a>
-
-                  <a href="#physical" @click.prevent="(e) => handleSubMenuClick(e, 'physical')">Physical Disability & Epilepsy</a>
-
-                  <a href="#outreach" @click.prevent="(e) => handleSubMenuClick(e, 'outreach')">Outreach Support</a>
-
-                  <a href="#mental-health" @click.prevent="(e) => handleSubMenuClick(e, 'mental-health')">Mental-Health</a>
-
-                  <a href="#drug" @click.prevent="(e) => handleSubMenuClick(e, 'drug')">Drug Misuse Services</a>
-
-                  <a href="#integration" @click.prevent="(e) => handleSubMenuClick(e, 'integration')">Integration Under Disability Support</a>
+                  <RouterLink class="icon-links" to="/Frequent-question"> Helpful Senior Links
+                  </RouterLink>
+                        
                 </div>
               </div>
             </RouterLink>
