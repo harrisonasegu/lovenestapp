@@ -2082,7 +2082,6 @@ section {
   }
 }
 
-
 // colored-last line section
 section {
 &>.colored-last {

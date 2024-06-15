@@ -1545,12 +1545,9 @@ section {
     &>.colored-last {
     display: none;
     margin-top: 50px;
-
- 
     }
-}
-}
-
+   }
+  }
 } 
 
 // LG
