@@ -3407,11 +3407,13 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
 
 
               h2 {
+                // border: 2px solid red;
                 font-weight: 600;
                 line-height: 30.86px;
                 color: $base-color-1;
                 margin-bottom: 10px;
                 text-align: center;
+                font-size: 18.5px !important;
               }
 
               p {
