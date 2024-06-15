@@ -2302,6 +2302,11 @@ section {
   }
 }
 
+  p {
+    font-size: 18px !important;
+    line-height: 30px !important;
+
+  }
 
     h2 {
       // border: 2px solid red;

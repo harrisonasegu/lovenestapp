@@ -2805,7 +2805,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     }
   }
 
-  P {
+  P, span {
     font-size: 18px;
     color: #00000080;
 
@@ -8593,7 +8593,13 @@ section {
 }
 
 P {
-  font-size: 14px;
+//  border: 1px solid red;
+  font-size: 18px !important;
+}
+
+span {
+//  border: 1px solid red;
+  font-size: 16px !important;
 }
 
 h3 {
@@ -8602,6 +8608,7 @@ h3 {
 
 // The heart icons in the absolute pages
 .heart {
+ // border: 1px solid red;
   width: 25px;
 }
 
@@ -10314,6 +10321,10 @@ section {
 }
 
 P {
+  font-size: 18px !important;
+}
+
+span {
   font-size: 18px !important;
 }
 
@@ -17329,12 +17340,6 @@ section {
            height: 80px;
         }
       }
-    }
-
-      // The heart icons in the absolute pages
-      .heart {
-      width: 80px;
-      height: 50px;
     }
 
     P {

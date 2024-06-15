@@ -1546,15 +1546,16 @@ margin-top: 0px;
 }
 
 P {
-  font-size: 14px !important;
+  font-size: 16px !important;
+  line-height: 25px !important;
 }
 
 h3 {
-  font-size: 15px !important;
+  font-size: 18px !important;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 20px !important;
 }
 
 &>.banner {

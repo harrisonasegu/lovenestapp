@@ -632,6 +632,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
 }
 
 .wrap {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
   div.carousel-container {
     height: 500px;
     //   padding: 0 50px;
@@ -4181,16 +4182,17 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
     }
 
     P {
-      font-size: 16px;
+      font-size: 18px !important;
+      line-height: 30px;
     }
 
     h2 {
       // border: 2px solid red;
-      font-size: 25px;
+      font-size: 22px !important;
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 30px !important;
     }
 
     // First- Section---------------
@@ -5065,21 +5067,22 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
       }
     }
 
-
-
     P {
-      font-size: 16px;
-    }
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+
 
     h2 {
       // border: 2px solid red;
-      font-size: 25px;
+      font-size: 25px !important;
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 35px !important;
     }
 
+ 
     // First- Section---------------
     // <!-- Relative and Absolute section -->
     section {

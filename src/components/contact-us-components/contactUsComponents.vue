@@ -1504,7 +1504,7 @@ section {
 }
 
 P {
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 h3 {
@@ -2135,7 +2135,7 @@ margin-top: 50px;
 
     h2 {
       // border: 2px solid red;
-      font-size: 22px !important;
+      font-size: 25px !important;
     }
 
     h3 {
@@ -5777,6 +5777,5 @@ line-height: 0px;
       }
     }
   }
-
 }
 </style>

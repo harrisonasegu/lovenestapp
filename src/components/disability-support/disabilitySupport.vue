@@ -2504,15 +2504,15 @@ section {
 }
 
 P {
-  font-size: 14px !important;
+  font-size: 18px !important;
 }
 
 h3 {
-  font-size: 15px !important;
+  font-size: 18px !important;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 20px !important;
 }
 
 &>.banner {
@@ -3109,15 +3109,15 @@ section {
 
 P {
   font-size: 18px !important;
-  line-height: 25px !important;
+  line-height: 30px !important;
 }
 
 h3 {
-  font-size: 25px !important;
+  font-size: 30px !important;
 }
 
 // h2 {
-//   font-size: 20px !important;
+//   font-size: 22px !important;
 // }
 
 &>.banner {
@@ -6725,38 +6725,21 @@ h2 {
 }
 
 &>.banner {
-  background-image: url('../../assets/images/newImage/new-banner.png');
-  // border: 5px solid red;
-  display: flex;
-  align-items: center;
-  height: 400px;
-  padding: 60px 40px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 500px;
 
   &>.intro-content {
     // border: 12px solid red;
-    padding: 10px 20px;
-    line-height: 0px;
+    line-height: 20px;
 
     .intro-title {
       // border: 2px solid red;
-      margin-bottom: 2.5rem;
-      font-size: 50px;
-      font-weight: 600;
-      line-height: 0px;
-      color: #fff;
-      padding-left: 50px;
+      font-size: 70px;
     }
 
     .intro-subtitle {
       // border: 2px solid red;
-      font-weight: 700;
-      font-size: 70px;
-      line-height: 0px;
-      letter-spacing: 0em;
-      color: #fff;
-      padding-left: 350px;
+      font-size: 100px;
+      padding-left: 300px;
     }
 
     .discover-btn {
@@ -6786,7 +6769,7 @@ section {
   &>.colored-wrap {
     background-color: $base-color;
     min-height: 300px;
-    padding: 30px 0px;
+    padding: 150px 200px;
     // margin-top: 0px;
 
     &>.contents {
@@ -6804,9 +6787,7 @@ section {
         .items {
           // border: 5px solid red;
           width: calc((100% / 3) - 50px);
-          min-height: 200px;
-          display: flex;
-          flex-flow: column nowrap;
+          padding: 50px 0;
           // line-height: 2px;
 
           div.category-item {
@@ -6899,7 +6880,7 @@ section {
     margin-top: 30px;
 
     &>.underline-wrap {
-      padding: 0 20px;
+      padding: 0 200px;
 
       &>.making-preparation {
         display: flex;
@@ -6935,13 +6916,14 @@ section {
     }
 
     .cards {
-      width: 95%;
+      width: 100%;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       column-gap: 20px;
-      row-gap: 20px;
+      row-gap: 50px;
       margin-top: 30px;
       margin-bottom: 50px;
       padding: 0px;
@@ -6954,10 +6936,11 @@ section {
         flex-flow: column nowrap;
 
         div.category-item {
+        
           &>div.category-item-header {
-            // border: 5px solid red;
             width: 100%;
             display: flex;
+            justify-content: center;
             column-gap: 10px;
 
             &>.reliable {
@@ -7169,7 +7152,7 @@ section {
   &>.last-colored-wrap {
     background-color: $base-color-1;
     // min-height: 300px;
-    padding: 50px 0px;
+    padding: 50px 150px;
 
     &>.contents {
       h3 {
@@ -7177,7 +7160,6 @@ section {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        font-size: 40px;
         font-weight: 600;
         line-height: 45.76px;
         color: $base-color-1;
@@ -7274,9 +7256,8 @@ section {
 
                   // collapse header and header extra
                   .collapsed-item-header {
-                    // border: 2px solid red;
                     padding: 10px 0;
-                    font-size: 18px;
+                    font-size: 25px !important;
                     font-weight: 800;
                     line-height: 40px;
                     color: $base-color-1;
@@ -7284,17 +7265,18 @@ section {
                   }
 
                   .header-extra-container {
-                    font-size: 25px;
+                    // border: 4px solid red;
+                    font-size: 50px;
                     font-weight: bolder;
                     color: $base-color-2;
                   }
 
                   // collapsed content
                   p {
-                    width: 900px;
-                    font-size: 16px;
+                    width: 70%;
+                    font-size: 20px !important;
                     font-weight: 700;
-                    line-height: 25.26px;
+                    line-height: 40px;
                     color: $base-color-1;
                   }
                 }
