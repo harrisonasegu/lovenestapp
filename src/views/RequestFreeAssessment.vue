@@ -444,6 +444,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 .assessment-service-wrap {
 
   .up-icon {
+    display: none !important;
     position: relative;
 
     .move-up {

@@ -8178,7 +8178,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-            height: 100px;
+            height: 60px;
             padding: 30px 80px;
             margin-bottom: 50px;
             margin-top: 30px;

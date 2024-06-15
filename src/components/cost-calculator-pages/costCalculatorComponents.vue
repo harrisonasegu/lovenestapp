@@ -6653,8 +6653,8 @@ section {
   
             // border: 1px solid red;
             img {
-              // border: 1px solid red;
-              width: 1000px;
+              // border: 11px solid red;
+              width: 1300px;
               height: 600px;
               padding-right: 20px;
             }
@@ -6663,14 +6663,14 @@ section {
           &>.section-background {
             // border: 1px solid red;
             position: relative;
-            width: 1500px;
+            width: 100%;
             height: 600px;
             background-color: $base-color;
   
             &>.light-background {
               // border: 11px solid red;
               background-color: #FFFFFFB2;
-              width: 900px;
+              width: 100%;
               // min-height: 200px;
               position: absolute;
               top: 20px;

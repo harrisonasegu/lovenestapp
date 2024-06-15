@@ -270,6 +270,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 .about-service-wrap {
 
   .up-icon {
+    display: none !important;
     position: relative;
 
     .move-up {
@@ -5253,6 +5254,7 @@ section {
   &>.third-reliable {
     justify-content:center;
     padding: 0 200px;
+    margin-bottom: 200px;
 
     &>.section-image {
 
@@ -5261,36 +5263,18 @@ section {
         // border: 1px solid red;
         width: 1000px;
         height: 1000px;
-        padding-right: 20px;
       }
     }
 
     &>.section-background {
-      // border: 1px solid red;
-      position: relative;
-      width: 1500px;
-      height: 500px;
-      background-color: $base-color;
+
+      width: 1000px;
+      height: auto;
 
       &>.light-background {
-        // border: 1px solid red;
-        background-color: #FFFFFFB2;
-        width: 850px;
-        // min-height: 200px;
-        position: absolute;
-        top: 20px;
-        bottom: 20px;
-        left: 20px;
-        display: flex;
-        align-content: center;
-        justify-content: flex-end;
+        width: 1000px;
 
         &>.contents {
-          // border: 2px solid red;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 20px;
 
           h2 {
             font-weight: 600;
@@ -5301,7 +5285,6 @@ section {
           }
 
           p {
-            font-family: Montserrat;
             font-weight: 400;
             line-height: 35.26px;
             margin-bottom: 20px;
@@ -5317,10 +5300,11 @@ section {
 section {
   &>.tab-content {
     // border: 2px solid red;
+    padding: 0 300px;
+   
      
     .n-tabs {
-      // border: 2px solid red;
-
+   
         .n-tab-pane {
           .first-wrap {
             // border: 2px solid blue;
@@ -5428,7 +5412,7 @@ section {
             // border: 1px solid red;
             img {
               // border: 1px solid red;
-              width: 650px;
+              width: 1300px;
               height: 500px;
             }
           }
@@ -5436,14 +5420,14 @@ section {
           &>.section-background {
             // border: 1px solid red;
             position: relative;
-            width: 1500px;
+            width: 100%;
             height: 500px;
             background-color: $base-color;
   
             &>.light-background {
               // border: 11px solid red;
               background-color: #FFFFFFB2;
-              width: 850px;
+              width: 100%;
               // min-height: 200px;
               position: absolute;
               top: 20px;

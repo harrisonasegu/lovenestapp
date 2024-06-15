@@ -850,18 +850,17 @@ height: 15px;
   }
 }
 
+
 P {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 h3 {
-  font-size: 20px !important;
-//   border: 2px solid red;
-
+  font-size: 18px !important;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 20px !important;
 }
 
 &>.banner {
@@ -881,7 +880,7 @@ h2 {
       // border: 2px solid red;
       margin-bottom: 2.5rem;
       font-size: 30px;
-      line-height: 35px;
+      line-height: 30px;
       padding-left: 0px;
     }
 
@@ -894,13 +893,14 @@ h2 {
       // border: 2px solid red;
       font-weight: 700;
       font-size: 35px;
-      line-height: 35px;
+      line-height: 30px;
       letter-spacing: 0em;
       color: #fff;
       padding-left: 0px;
     }
   }
 }
+
 
 &>.vacancy-contents {
 
@@ -1298,14 +1298,7 @@ h2 {
 }
 
 &>.banner {
-    background-image: url('../../assets/images/vacancy_images/vacancy-banner.png');
-    // border: 5px solid red;
-    display: flex;
-    align-items: center;
     height: 400px;
-    padding: 60px 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     &>.intro-content {
         //   border: 12px solid red;
@@ -1559,11 +1552,10 @@ section {
 // XXL
 @media (min-width: 1500px) {
     .vacancy-page-wrap {
-        &>.vacancy-page-banner {
-            padding: 200px 20px;
-
-            background-size: cover;
-        }
+     
+        &>.banner {
+        height: 500px;
+      }
 
         &>.vacancy-contents {
 
@@ -1575,7 +1567,7 @@ section {
                     position: relative;
                     font-size: 40px;
                     font-weight: 700;
-                    line-height: 60px;
+                    line-height: 80px;
                     letter-spacing: 0em;
                     text-align: center;
                 }
@@ -1608,22 +1600,17 @@ section {
 
                     &>.icons-contents {
                         &>.image {
-                            // border: 2px solid red;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
                             img {
-                                width: 80px;
+                                width: 150px !important;
+                                height: 150px;
                             }
                         }
 
                         &>.para {
-
-                            font-size: 14px;
                             font-weight: 400;
                             line-height: 24px;
                             letter-spacing: 0em;
+                            font-size: 20px;
                         }
                     }
                 }
@@ -1643,9 +1630,9 @@ section {
                     }
 
                     p {
-                        font-size: 16px;
+                        font-size: 20px;
                         font-weight: 300;
-                        line-height: 25px;
+                        line-height: 30px;
                         letter-spacing: 0em;
                     }
                 }
@@ -1653,12 +1640,12 @@ section {
         }
 
         .application-process {
-            // border: 5px solid red;
             margin-bottom: 40px;
 
 
             h3 {
-                margin-left: 200px;
+                margin-left: 0px;
+                font-size: 40px !important;
             }
 
             h3::after {
@@ -1666,8 +1653,8 @@ section {
             }
         }
 
-        &>.vacancy-process {
-            // border: 2px solid red;
+        .vacancy-process {
+            // border: 12px solid red;
 
             img {
                 background-size: contain;
@@ -1675,18 +1662,9 @@ section {
             }
         }
 
-        &>.vancancy-btn {
-            background: $base-color-1;
-            width: fit-content;
-            margin: 0 auto;
-            padding: 10px 20px;
-            margin-top: 30px;
-            margin-bottom: 40px;
-
+        .vancancy-btn {
             a {
-                text-decoration: none;
-                font-weight: 500;
-                color: #fff;
+                font-size: 25px;
             }
         }
     }
