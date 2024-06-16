@@ -2571,7 +2571,6 @@ h2 {
   }
 }
 
-
 // <!-- Colored background section -->
 section {
   &>.colored-wrap {
@@ -4490,7 +4489,7 @@ section {
       }
     }
 
-    // <!-- COMPREHENSIVE TRAINING -->
+      // <!-- LATEST NEWS & BLOG -->
     section {
       &>.line-paragraphy {
         margin-top: 30px;

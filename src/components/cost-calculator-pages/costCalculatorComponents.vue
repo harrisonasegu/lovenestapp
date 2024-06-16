@@ -553,7 +553,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
           color: $base-color-1;
           position: relative;
           font-weight: 600;
-          font-size: 45px;
+          font-size: 40px;
           line-height: 60px;
           letter-spacing: 0em;
         }
@@ -712,7 +712,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
             color: $base-color-1;
             position: relative;
             font-weight: 600;
-            font-size: 45px;
+            font-size: 40px;
             line-height: 60px;
             letter-spacing: 0em;
           }

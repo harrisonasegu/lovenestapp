@@ -17361,6 +17361,7 @@ section {
     }
 
     h3 {
+      // border: 2px solid red;
       font-size: 60px !important;
       line-height: 80px !important;
     }
@@ -17698,7 +17699,7 @@ section {
     .call-us-wrap {
       // border: 12px solid red;
       background-color: $base-color-1;
-      padding: 0 200px;
+      padding: 0 20px;
 
       &>.call-contact {
         width: 100%;
@@ -17710,7 +17711,7 @@ section {
         h3 {
           color: #fff;
           font-weight: 400;
-          font-size: 22px;
+          font-size: 40px !important;
           font-weight: 700;
           line-height: 40px;
           letter-spacing: 0em;
@@ -17838,9 +17839,10 @@ section {
 
     &>.elderly-support {
       .call-us {
-        padding: 10px 200px;
+        padding: 10px 20px;
 
         &>.call-contact {
+          // border: 14px solid red;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -17851,7 +17853,7 @@ section {
           div h3 {
             color: #fff;
             font-weight: 400;
-            font-size: 22px;
+            font-size: 40px !important;
             font-weight: 700;
             line-height: 30px;
             letter-spacing: 0em;
@@ -17955,10 +17957,11 @@ section {
 
     &>.getIn-touch {
       .call-us {
+        // border: 12px solid red;
         background-color: $base-color-1;
         display: flex;
         justify-content: space-between;
-        padding: 10px 200px;
+        padding: 10px 20px;
 
         &>.call-contact {
         width: 100%;
@@ -17971,7 +17974,7 @@ section {
         div h3 {
           // border: 2px solid red;
           color: #fff;
-          font-size: 22px;
+          font-size: 40px  !important;
           font-weight: 700;
           line-height: 25px;
           letter-spacing: 0em;
