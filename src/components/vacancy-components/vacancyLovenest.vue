@@ -1575,16 +1575,6 @@ section {
                     letter-spacing: 0em;
                     text-align: center;
                 }
-
-                h3::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 30%;
-                    width: 40%;
-                    border-bottom: 7px solid $base-color-1;
-                    border-radius: 10px;
-                }
             }
         }
 
