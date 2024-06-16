@@ -175,7 +175,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
               <RouterLink class="icon-links" to="/latest-new"> 
                 LATEST NEWS & BLOG <span>
                
-                  <Icon icon="clarity:cursor-hand-click-line" width="50" height="50"  style="color: #4897E6" />
+                  <Icon icon="clarity:cursor-hand-click-line" width="50" height="50"  style="color: #4897E6" /> 
               </span> </RouterLink>
             </h3>
           </div>

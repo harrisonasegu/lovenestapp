@@ -503,7 +503,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         margin-bottom: 2.5rem;
         font-size: 50px;
         font-weight: 600;
-        line-height: 0px;
+        line-height: 30px;
         color: #fff;
         padding-left: 50px;
       }
@@ -512,7 +512,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         // border: 2px solid red;
         font-weight: 700;
         font-size: 70px;
-        line-height: 0px;
+        line-height: 30px;
         letter-spacing: 0em;
         color: #fff;
         padding-left: 350px;

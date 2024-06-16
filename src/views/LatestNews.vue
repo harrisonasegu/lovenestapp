@@ -2,119 +2,340 @@
 import { NH2 } from 'naive-ui';
 import { defineComponent, ref } from 'vue';
 
-// import VacancyBanner from '@/assets/images/vacancy_images/vacancy-banner.png'
+import Image1 from '@/assets/images/newImage/newsimage.png'
 </script>
 
 <template>
-    <div class="vacancy-page-wrap">
+    <div class="latest-page-wrap">
         <div class="banner">
-
             <div class="intro-content">
-                <!-- <h2 class="intro-title">
-      Dedicated To Senior Adults And The
-  </h2> -->
+                <h2 class="intro-title">
+                    A Day In The Life Of A
+                </h2>
                 <h1 class="intro-subtitle">
-                    Vacancy
+                    Caregiver
                 </h1>
             </div>
         </div>
-        <!-- First section -->
-        <div class="vacancy-contents">
+        <!-- This section carries all the contents in this page -->
+        <div class="latest-contents">
             <section class="first">
                 <!-- underline h3 text -->
-                <h3>
-                    Join the care provider, that cares for you
+                 <div>
+                    <h3> <span>
+                        <Icon icon="typcn:arrow-back" width="40" height="40"  style="color: #4897E6" />
+                    </span>
+                        Back To News
+                   </h3>
+                <p>
+                    As the general, worldwide trend is for people to live longer, caregivers are playing an increasingly vital role in 
+                    our society. In-home aides provide assistance and ensure the well-being of their clients. They can have a 
+                    dramatic impact on the families and individuals they help serve. Many of those drawn to a career as a caregiver
+                    have an innate desire to help others, and few roles offer such a big opportunity to make a real and ongoing 
+                    difference.
+                </p>
+                <p>                 
+                    Caregivers lend a helping, supportive hand to the elderly, those with disabilities, and others in need of
+                    assistance. In this way, they have played an important role in raising the quality of life for countless people.
+                </p>
+                 </div>
+              
+                 <div>
+                    <h3>
+                        Morning—Time to Start the Day Right
+                   </h3>
+                   <p>
+                    When caring for older adults, it's critical to first learn what, precisely, their needs are, and then determine an 
+                    appropriate schedule to match up to those needs. Naturally, routines may vary. While most clients will be early 
+                    birds and want to wake up with the sun, others will be night owls and want to sleep in late.
+                    The best home care organizations match clients and caregivers who are a good fit for each other. In the above 
+                    scenarios, that would mean matching early rising caregivers with early rising clients, and so forth. Regardless of 
+                    when the day “begins” caregivers are always instrumental in helping folks get their day started and moving in a
+                    positive direction.
+                   </p>
+                   <p>
+                    For breakfast, in-home aides can prepare nutritious and tasty meals. Older adults often enjoy lighter breakfasts, 
+                    but as always, open and honest communication is the key to understanding their preferences. Caregivers can 
+                    also help individuals take their prescribed medications on time, and in a manner that is well organized. Clients 
+                    might also need assistance with basic hygiene, such as brushing their teeth or combing their hair.
+                   </p>
+                <p>               
+                    Some days, a client might need to see a doctor, dentist, or legal or financial advisors. Caregivers can help by 
+                    driving a client's car, scheduling rideshares, or coordinating access to public transportation.
+                    Regular exercise is also an important need for the elderly. Walking, or participating in any light cardio activity, 
+                    can help improve an individual's health and well-being. A caregiver can be a great motivator in helping clients 
+                    achieve these simple but important goals.
+                </p>
+                 </div>
+              
+                 <div>
+                    <h3>
+                        Afternoon—Lunch, Midday Tasks, and Daily Living
                 </h3>
                 <p>
-                    Our Carer Centric values have lead to Visiting Angels having an exceptionally low staff
-                    turnover rate & great employee satisfaction reviews.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis facere dolorem suscipit,
-                    eligendi
-                    hic nobis! Consequatur accusantium aut temporibus placeat, optio sunt cupiditate, repellat error
-                    aspernatur, atque quaerat perspiciatis reviews.
+                    Properly trained in-home aides can help their clients develop, or stick to, a healthy diet. The elderly typically 
+                    have different nutritional needs than people in their youth. Of course, diet restrictions and requirements will 
+                    vary widely, so it's important to collaborate closely with families, medical practitioners, and clients. Caregivers 
+                    can also ensure that religious or other meal requirements are met—whether that be kosher, halal, or vegetarian
+                    or vegan fare. Lunch is also a great time for the client and caregiver to plan out their day.
+                   
                 </p>
-                <div class="vancancy-btn">
-                    <RouterLink class="icon-links" to="/job-form"> JOIN OUR TEAM </RouterLink>
-                </div>
+                <p>                                                 
+                    If the client has errands to run—to the grocery store, to the pharmacy, or to visit with friends—the early afternoon
+                    is often a good time. Caregivers might also take clients to houses of worship. As the day wears on, many seniors 
+                    will want to rest by taking a nap, or simply settling down with a book or a show on television. This is also a good 
+                    time for the caregiver to help with chores around the house. 
+
+                </p>
+                 </div>
+          
+                 <div>
+                    <h3>
+                        Evening—Dinner, and Time to Wind Down
+                </h3>
+                <p>                                     For elderly folks, the dinner hour is typically in the late afternoon, rather than at night. Once again, 
+                communication is key, so caregivers will want to tailor their routine to the unique requirements of their client. 
+                Ideally, the in-home aide will prepare a healthy and delicious dinner, then finish up with evening house chores, 
+                such as washing the dishes or doing laundry. The caregiver can also help the client take prescribed medications,
+                brush their teeth, go to the bathroom, and otherwise prepare for bed. It is not uncommon for clients to need 
+                assistance with getting into bed, or with gathering what they need for a comfortable night's sleep, once in bed.
+                    The caregiver should make sure that doors are locked, appliances are turned off, nightlights are functioning, and 
+                    that everything in the home is in its proper place. The biggest danger is that of nighttime falls, so caregivers 
+                    should be especially vigilant for tripping hazards.
+                    Finally, aides often keep notes about client’s likes/dislikes, meal preferences, schedules, and other helpful insights.
+                    These can be shared with the family, or another caregiver who might also be helping the client.                            
+                </p>
+                 </div>
+                      
+                 <div>
+                    <h3>
+                        Becoming a Caregiver
+                </h3>
+                <p>                                     A day in the life of a caretaker is varied, busy, and all about care. If you're looking for a rewarding, impactful 
+                career—working as a caregiver may be the perfect fit. Further, if you want to work with an organization that truly
+                values your talents and compassion, LoveNest Home Care is currently welcoming new applicants. Our team 
+                understands that our caregivers are literally and fundamentally who we are. LoveNest will help you through 
+                every step, as you begin this exciting journey. To view our open positions, or simply learn more about our 
+                philosophy, visit us online or give us a call today at 513-766-3339.                        
+                </p>
+                 </div>
+              
             </section>
 
-            <!-- second section -->
-            <section class="color-background">
-                <div class="contents">
-                    <div class="first-row">
-                        <div class="icons-contents">
-                            <div class="image">
-                                <img src="Ellipse" alt="picture">
-                            </div>
-                            <div class="para">
-                                Leading Rates of pay
-                            </div>
-                        </div>
-                        <div class="icons-contents">
-                            <div class="image">
-                                <img src="Car" alt="picture">
-                            </div>
-                            <div class="para">
-                                Leading Rates of pay
-                            </div>
-                        </div>
-                        <div class="icons-contents">
-                            <div class="image">
-                                <img src="Clock" alt="picture">
-                            </div>
-                            <div class="para">
-                                Leading Rates of pay
-                            </div>
-                        </div>
-                        <div class="icons-contents">
-                            <div class="image">
-                                <img src="HatchBack" alt="picture">
-                            </div>
-                            <div class="para">
-                                Leading Rates of pay
-                            </div>
-                        </div>
-                        <div class="icons-contents">
-                            <div class="image">
-                                <img src="BrainStorm" alt="picture">
-                            </div>
-                            <div class="para">
-                                Leading Rates of pay
-                            </div>
-                        </div>
-                    </div>
-                    <div class="second-row">
-                        <h3>
-                            Care isn't just a job, its the best thing you would ever do!
-                        </h3>
+            <!-- Related New Blogs -->
+             
+    <!-- LATEST NEWS & BLOG -->
+    <section>
+      <div class="line-paragraphy">
+        <!-- underline contents -->
+        <div class="underline-wrap">
+          <div class="making-preparation">
+            <h3>
+              <RouterLink class="icon-links" to="/latest-new"> 
+                LATEST NEWS & BLOG <span>
+               
+                  <Icon icon="clarity:cursor-hand-click-line" width="50" height="50"  style="color: #4897E6" /> 
+              </span> </RouterLink>
+            </h3>
+          </div>
+        </div>
+
+        <p>
+          See the latest news from LoveNest and get helpful information on senior in-home care.
+        </p>
+
+        <div class="cards">
+          <!-- card with light blue style 1 -->
+          <div class="items">
+            <div class="category-item">
+              <!-- card title and icon -->
+              <div class="category-item-header">
+                <div class="reliable">
+                  <div class="section-image">
+                    <img :src="Image1" alt="picture">
+                  </div>
+                  <div class="section-background">
+
+                    <div class="light-background">
+                      <div class="contents">
+                        <h2>
+                          A Day in the Life of a
+                          Caregiver
+                        </h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat faucibus ac lectus
-                            biandit erat.
-                            Lorem ipsum dolor sit amet, consecteturadipiscing elit. Erat faucibus
-                            ac lectus
-                            biandit erat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat faucibusac lectus
-                            biandit erat.
-                            Lorem ipsum dolor sit amet, consectetur adipis
-                            cing elit. Erat faucibus ac lectus
-                            biandit erat.
-
+                          As the general, worldwide trend is for people to live longer, caregivers are playing an
+                          increasingly vital role in our society. In-home aides ...
                         </p>
+                      </div>
                     </div>
-                </div>
-            </section>
-            <div class="application-process">
-                <h3>Application Process</h3>
-            </div>
-            <div class="vacancy-process">
-                <img src="VacancyProcess" alt="picture">
-            </div>
+                  </div>
 
-            <div class="vancancy-btn">
-                <a href="#">JOIN OUR TEAM</a>
-                <div>
                 </div>
+
+              </div>
             </div>
+          </div>
+
+          <!-- card with light red style 1 -->
+          <div class="items">
+            <div class="category-item">
+              <!-- card title and icon -->
+              <div class="category-item-header">
+                <div class="reliable">
+                  <div class="section-image">
+                    <img :src="Image1" alt="picture">
+                  </div>
+                  <div class="section-background first-long-lenght">
+
+                    <div class="light-background">
+                      <div class="contents">
+                        <h2>
+                          The LoveNest
+                          Difference:
+                          What Sets Us Apart
+                        </h2>
+                        <p>
+                          Accesss to good health care is vital for folks at any stage of life, but it is particularly
+                          important to older adults.
+                          Regular, reliable health care ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- card with light blue style 1 -->
+          <div class="items">
+            <div class="category-item">
+              <!-- card title and icon -->
+              <div class="category-item-header">
+                <div class="reliable">
+                  <div class="section-image">
+                    <img :src="Image1" alt="picture">
+                  </div>
+                  <div class="section-background">
+
+                    <div class="light-background">
+                      <div class="contents">
+                        <h2>
+                          When Does At-Home
+                          Care Make Sense?
+                        </h2>
+                        <p>
+                          As people age, they often need more assistance, day in and day out. At the same time, many
+                          seniors prefer to lead an independent life and may want ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- card with light red style 1 -->
+          <div class="items">
+            <div class="category-item">
+              <!-- card title and icon -->
+              <div class="category-item-header">
+                <div class="reliable">
+                  <div class="section-image">
+                    <img :src="Image1" alt="picture">
+                  </div>
+                  <div class="section-background lightblue-colored">
+
+                    <div class="light-background">
+                      <div class="contents">
+                        <h2>
+                          A Day in the Life of a
+                          Caregiver
+                        </h2>
+                        <p>
+                          As the general, worldwide trend is for people to live longer, caregivers are playing an
+                          increasingly vital role in our society. In-home aides ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- card with light blue style 1 -->
+          <div class="items">
+            <div class="category-item">
+              <!-- card title and icon -->
+              <div class="category-item-header">
+                <div class="reliable">
+                  <div class="section-image">
+                    <img :src="Image1" alt="picture">
+                  </div>
+                  <div class="section-background second-long-lenght">
+
+                    <div class="light-background">
+                      <div class="contents">
+                        <h2>
+                          The LoveNest
+                          Difference:
+                          What Sets Us Apart
+                        </h2>
+                        <p>
+                          Accesss to good health care is vital for folks at any stage of life, but it is particularly
+                          important to older adults.
+                          Regular, reliable health care ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- card with light red style 1 -->
+          <div class="items">
+            <div class="category-item">
+              <!-- card title and icon -->
+              <div class="category-item-header">
+                <div class="reliable">
+                  <div class="section-image">
+                    <img :src="Image1" alt="picture">
+                  </div>
+                  <div class="section-background lightblue-colored">
+
+                    <div class="light-background">
+                      <div class="contents">
+                        <h2>
+                          When Does At-Home
+                          Care Make Sense?
+                        </h2>
+                        <p>
+                          As people age, they often need more assistance, day in and day out. At the same time, many
+                          seniors prefer to lead an independent life and may want ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
         </div>
 
         <section>
@@ -123,12 +344,21 @@ import { defineComponent, ref } from 'vue';
         <div class="third-color"></div>
         <div class="first-color"></div>
       </div>
+        </section>
+
+        <section>
+      <div class="colored-last">
+        <div class="second-color"></div>
+        <div class="third-color"></div>
+        <div class="first-color"></div>
+      </div>
     </section>
+
     </div>
 </template>
 
 <style lang="scss" scoped>
-.vacancy-page-wrap {
+.latest-page-wrap {
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     .up-icon {
@@ -163,7 +393,7 @@ import { defineComponent, ref } from 'vue';
     }
 
     &>.banner {
-        background-image: url('../../assets/images/vacancy_images/vacancy-banner.png');
+        background-image: url('../assets/images/HelpFulLinks-Image/helfulLinkBanner.png');
         // border: 5px solid red;
         display: flex;
         align-items: center;
@@ -174,10 +404,7 @@ import { defineComponent, ref } from 'vue';
 
         &>.intro-content {
             //   border: 12px solid red;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 10px 20px;
             line-height: 0px;
 
             .intro-title {
@@ -185,7 +412,7 @@ import { defineComponent, ref } from 'vue';
                 margin-bottom: 2.5rem;
                 font-size: 50px;
                 font-weight: 600;
-                line-height: 0px;
+                line-height: 30px;
                 color: #fff;
                 padding-left: 50px;
             }
@@ -194,9 +421,10 @@ import { defineComponent, ref } from 'vue';
                 // border: 2px solid red;
                 font-weight: 700;
                 font-size: 70px;
-                line-height: 0px;
+                line-height: 30px;
                 letter-spacing: 0em;
                 color: #fff;
+                padding-left: 400px;
             }
 
             .discover-btn {
@@ -222,33 +450,22 @@ import { defineComponent, ref } from 'vue';
     }
 
 
-    &>.vacancy-contents {
+    &>.latest-contents {
 
         // underline h3 text
         &>.first {
             padding: 0 20px;
 
             h3 {
-                position: relative;
                 font-size: 30px;
                 font-weight: 700;
-                line-height: 60px;
                 letter-spacing: 0em;
-                text-align: center;
             }
 
-            h3::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 25%;
-                width: 50%;
-                border-bottom: 2px solid $base-color-1;
-            }
 
             p {
                 font-weight: 500;
-                line-height: 25px;
+                line-height: px;
                 letter-spacing: 0em;
             }
 
@@ -349,7 +566,7 @@ import { defineComponent, ref } from 'vue';
             }
         }
 
-        &>.vacancy-process {
+        &>.latest-process {
             // border: 2px solid red;
 
             img {
@@ -436,7 +653,7 @@ import { defineComponent, ref } from 'vue';
 
 // XX-SM (<251px)
 @media (max-width: 250.9px) {
-    .vacancy-page-wrap {
+    .latest-page-wrap {
 
         .up-icon {
       position: relative;
@@ -495,7 +712,7 @@ import { defineComponent, ref } from 'vue';
       }
     }
  
-    &>.vacancy-contents {
+    &>.latest-contents {
 
         // underline h3 text
         &>.first {
@@ -586,7 +803,7 @@ import { defineComponent, ref } from 'vue';
             }
         }
 
-        &>.vacancy-process {
+        &>.latest-process {
             // border: 2px solid red;
 
             img {
@@ -635,7 +852,7 @@ import { defineComponent, ref } from 'vue';
 
 // XX-SM
 @media (min-width: 251px) and (max-width: 350.9px) {
-    .vacancy-page-wrap {
+    .latest-page-wrap {
 
 .up-icon {
 position: relative;
@@ -694,7 +911,7 @@ line-height: 0px;
 }
 }
 
-&>.vacancy-contents {
+&>.latest-contents {
 
 // underline h3 text
 &>.first {
@@ -785,7 +1002,7 @@ line-height: 0px;
     }
 }
 
-&>.vacancy-process {
+&>.latest-process {
     // border: 2px solid red;
 
     img {
@@ -834,7 +1051,7 @@ height: 15px;
 
 // X-SM
 @media (min-width: 351px) and (max-width: 575.9px) {
-    .vacancy-page-wrap {
+    .latest-page-wrap {
             
     .up-icon {
   position: relative;
@@ -900,7 +1117,7 @@ h2 {
 }
 
 
-&>.vacancy-contents {
+&>.latest-contents {
 
 // underline h3 text
 &>.first {
@@ -993,7 +1210,7 @@ h2 {
     }
 }
 
-&>.vacancy-process {
+&>.latest-process {
     // border: 2px solid red;
 
     img {
@@ -1042,7 +1259,7 @@ height: 15px;
 
 // SM
 @media (min-width: 576px) and (max-width: 767.9px) {
-    .vacancy-page-wrap {
+    .latest-page-wrap {
 
             
 .up-icon {
@@ -1110,7 +1327,7 @@ height: 15px;
   }
     }
 
-    &>.vacancy-contents {
+    &>.latest-contents {
 
         // underline h3 text
         &>.first {
@@ -1217,7 +1434,7 @@ height: 15px;
             }
         }
 
-        &>.vacancy-process {
+        &>.latest-process {
             // border: 2px solid red;
 
             img {
@@ -1265,7 +1482,7 @@ height: 15px;
 
 // MD
 @media (min-width: 768px) and (max-width: 991.9px) {
-    .vacancy-page-wrap {
+    .latest-page-wrap {
 
 .up-icon {
     position: relative;
@@ -1348,7 +1565,7 @@ h2 {
 }
 
 
-&>.vacancy-contents {
+&>.latest-contents {
 
     // underline h3 text
     &>.first {
@@ -1475,7 +1692,7 @@ h2 {
         }
     }
 
-    &>.vacancy-process {
+    &>.latest-process {
         // border: 2px solid red;
 
         img {
@@ -1549,13 +1766,13 @@ section {
 
 // XXL
 @media (min-width: 1500px) {
-    .vacancy-page-wrap {
+    .latest-page-wrap {
      
         &>.banner {
         height: 500px;
       }
 
-        &>.vacancy-contents {
+        &>.latest-contents {
 
             // underline h3 text
             &>.first {
@@ -1651,7 +1868,7 @@ section {
             }
         }
 
-        .vacancy-process {
+        .latest-process {
             // border: 12px solid red;
 
             img {
