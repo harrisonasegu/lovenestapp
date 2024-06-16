@@ -171,7 +171,12 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         <!-- underline contents -->
         <div class="underline-wrap">
           <div class="making-preparation">
-            <h3>LATEST NEWS & BLOG
+            <h3>
+              <RouterLink class="icon-links" to="/latest-new"> 
+                LATEST NEWS & BLOG <span>
+               
+                  <Icon icon="clarity:cursor-hand-click-line" width="50" height="50"  style="color: #4897E6" />
+              </span> </RouterLink>
             </h3>
           </div>
         </div>
@@ -792,13 +797,24 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           display: flex;
           justify-content: center;
 
+          .icon-links {
+            text-decoration: none !important;
+            color: $base-color-1;
+            display: flex;
+            align-items:center;
+            column-gap: 10px;
+          }
+
+          span {
+            // display: flex;
+          }
           // border: 4px solid red;
           h3 {
             color: $base-color-1;
             position: relative;
             font-weight: 600;
-            font-size: 40px;
-            line-height: 60px;
+            font-size: 35px;
+            line-height: 50px;
             letter-spacing: 0em;
           }
 

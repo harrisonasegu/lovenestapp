@@ -39,7 +39,7 @@ const handleItemHeaderClick: CollapseProps['onItemHeaderClick'] = ({ name, expan
 }
 
 const imageUrl = [
-carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,  carouselImage9
+  carouselImage8, carouselImage5, carouselImage6, carouselImage2, carouselImage7, carouselImage9
 ]
 </script>
 
@@ -761,22 +761,22 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
     }
   }
 
-  a{
-    font-family: Montserrat; 
+  a {
+    font-family: Montserrat;
   }
 
   P {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 18px;
   }
 
   h2 {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 38px;
   }
 
   h3 {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 25px;
   }
 
@@ -5078,9 +5078,9 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
     }
 
     P {
-    font-size: 18px !important;
-    line-height: 30px !important;
-  }
+      font-size: 18px !important;
+      line-height: 30px !important;
+    }
 
 
     h2 {
@@ -5092,7 +5092,7 @@ carouselImage8, carouselImage5, carouselImage6, carouselImage2,  carouselImage7,
       font-size: 35px !important;
     }
 
- 
+
     // First- Section---------------
     // <!-- Relative and Absolute section -->
     section {

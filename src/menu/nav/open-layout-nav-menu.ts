@@ -115,6 +115,18 @@ export const openLayoutNavMenu: any = [
             RouterLink,
             {
                 to: {
+                    name: 'latest-new'
+                }
+            },
+            { default: () => 'LatestNewAndBlog' }
+        ),
+        key: 'LatestNewAndBlog'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
                     name: 'blogs'
                 }
             },
