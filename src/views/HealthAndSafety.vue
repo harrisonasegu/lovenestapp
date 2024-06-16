@@ -1000,7 +1000,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     }
   }
 }
-
+// 
 // XL
 /* @media (min-width: 1201px) and (max-width: 1499.9px) {} */
 
