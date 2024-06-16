@@ -1018,7 +1018,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
       // underline h3 text
       &>.first {
         // border: 3px solid red;
-        padding: 0 20px;
+        padding: 0 200px;
 
         div {
           // border: 3px solid red;
