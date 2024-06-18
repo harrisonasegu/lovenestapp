@@ -2406,9 +2406,10 @@ const imageUrl = [
               margin-bottom: 2.5rem;
               font-size: 20px;
               font-weight: 600;
-              line-height: 0px;
+              line-height: 40px;
               color: #fff;
               padding-left: 0px;
+              text-align: center;
             }
 
             .intro-subtitle {
@@ -2419,6 +2420,7 @@ const imageUrl = [
               letter-spacing: 0em;
               color: #fff;
               padding-left: 0px;
+              text-align: center;
             }
 
             .discover-btn {
@@ -3257,7 +3259,8 @@ const imageUrl = [
               font-weight: 400;
               line-height: 30px;
               color: #fff;
-              padding-left: 20px;
+              padding-left: 0px;
+              text-align: center;
             }
 
             .intro-subtitle {
@@ -3267,7 +3270,8 @@ const imageUrl = [
               line-height: 0px;
               letter-spacing: 0em;
               color: #fff;
-              padding-left: 20px;
+              padding-left: 0px;
+              text-align: center;
             }
 
             .discover-btn {

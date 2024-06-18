@@ -660,11 +660,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             flex-direction: column;
             row-gap: 25px;
 
-            .n-input, .n-select {
-          //  border: 3px solid red;
-           padding: 5px 0;
-          }
-
             // onboarding form
             &>div.onboarding-form {
               .n-form {

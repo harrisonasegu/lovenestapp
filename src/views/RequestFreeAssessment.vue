@@ -30,6 +30,11 @@ import { useAuthenticationStore } from '@/stores/modules/authentication'
 
 import { InputRegex } from '@/utils/regex/validations';
 
+const route = useRoute()
+const router = useRouter()
+
+const routeName = route.name as string
+
 const notification = useNotification()
 
 const responseMessageStore = useResponseMessageStore()
@@ -45,6 +50,7 @@ const model = reactive({
   lastName: '',
   email: '',
   phoneNumber: '',
+  timePicker: '',
   customerAddress: '',
   termsAndConditions: false
 })
@@ -54,6 +60,7 @@ const inputRequired = computed(() => (
   model.lastName === '' ||
   model.email === '' ||
   model.phoneNumber === '' ||
+  model.timePicker === '' ||
   model.customerAddress === '' ||
   !model.termsAndConditions
 ))
@@ -140,45 +147,39 @@ function handleValidateButtonClick(e: MouseEvent) {
       loadingState(true)
 
       // proceed to sign up
-      userStore.AddNewCustomer({
-        firstname: model.firstName,
-        lastname: model.lastName,
-        email: model.email,
-        phoneNo: model.phoneNumber,
-        customerAddress: model.customerAddress,
-        acceptTerms: model.termsAndConditions
-      })
-        .then(response => {
-          const { responseCode } = response
+      // userStore.AddNewCustomer({
+      //   firstname: model.firstName,
+      //   lastname: model.lastName,
+      //   email: model.email,
+      //   phoneNo: model.phoneNumber,
+      //   customerAddress: model.customerAddress,
+      //   acceptTerms: model.termsAndConditions
+      // })
+      //   .then(response => {
+      //     const { responseCode } = response
 
-          switch (responseCode) {
-            // successful registration
-            case '00':
-              // clear input
-              clearInputFields()
-              break
-          }
+      //     switch (responseCode) {
+      //       // successful registration
+      //       case '00':
+      //         // clear input
+      //         clearInputFields()
+      //         break
+      //     }
 
-          // loading state
-          loadingState(false)
-          // notification
-          showNotification(5000)
-        })
-        .catch(() => {
-          // loading state
-          loadingState(false)
-          // notification
-          showNotification(5000)
-        })
+      //     // loading state
+      //     loadingState(false)
+      //     // notification
+      //     showNotification(5000)
+      //   })
+      //   .catch(() => {
+      //     // loading state
+      //     loadingState(false)
+      //     // notification
+      //     showNotification(5000)
+      //   })
     }
   )
 }
-
-
-const route = useRoute()
-const router = useRouter()
-
-const routeName = route.name as string
 
 const navigateToSubMenu = (elementId: string) => {
   // Get the element by its ID
@@ -259,13 +260,13 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               Please fill out the form below and we'll get
               back to you to confirm the date and time
               of your consultation.
-              </p>
-              <p>
-                <span></span> Indicates required fields
-              </p>
+            </p>
+            <p>
+              <span></span> Indicates required fields
+            </p>
           </section>
 
-          <section class="form-body"> 
+          <section class="form-body">
             <div class="onboarding-form">
               <n-form ref="formRef" :model="model" :rules="rules">
                 <n-form-item path="firstName">
@@ -288,8 +289,9 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     :allow-input="allowNumberInput" :disabled="isLoading" @keydown.enter.prevent />
                 </n-form-item>
 
-                <n-form-item path="customerDate">
-                  <n-date-picker v-model:value="timePicker" type="date" />
+                <n-form-item size="large" path="customerDate">
+                  <n-date-picker placeholder="Select Vaild Date" v-model:value="timePicker" :disabled="isLoading"
+                    @keydown.enter.prevent type="date" />
                 </n-form-item>
 
                 <span>What services are you interested in?</span>
@@ -298,7 +300,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                   <n-space>
                     <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
                     <div class="t-and-c-container">
-                      <span>Companionship and engaging 
+                      <span>Companionship and engaging
                         conversation. </span>
                     </div>
                   </n-space>
@@ -357,7 +359,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     v-model:value="model.customerAddress" :disabled="isLoading" @keydown.enter.prevent />
                 </n-form-item>
 
-          
+
                 <div class="btn-container">
                   <n-button size="large" :loading="isLoading" :disabled="inputRequired || isLoading"
                     @click="handleValidateButtonClick">
@@ -369,8 +371,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
             <div class="privacy-form-footer">
               <span>LoveNest respects your privacy. For more
-                information , visit our  <router-link to="#"> <br> Privacy Policy page.</router-link> </span>
-             
+                information , visit our <router-link to="#"> <br> Privacy Policy page.</router-link> </span>
+
             </div>
           </section>
         </div>
@@ -415,10 +417,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           </div>
         </div>
       </div>
-        
+
     </section>
- 
-  
+
+
     <section>
       <div class="colored-last">
         <div class="second-color"></div>
@@ -458,25 +460,25 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
   }
 
   P {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 18px;
     color: #00000080;
   }
 
   h3 {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     color: $base-color-1;
     font-weight: 600 !important;
   }
 
   h2 {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 35px;
     color: $base-color-1;
   }
 
   span {
-    font-family: Montserrat; 
+    font-family: Montserrat;
   }
 
   .contents-dots {
@@ -565,7 +567,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
           // form header
           &.form-header {
-     
+
             // image container
             div.img-container {
               display: flex;
@@ -593,11 +595,11 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             flex-direction: column;
             row-gap: 25px;
 
-            .n-input, .n-date-picker {
-          //  border: 3px solid red;
-           width: 100%;
-           padding: 5px 0;
-          }
+            .n-input,
+            .n-date-picker {
+              //  border: 3px solid red;
+              width: 100%;
+            }
 
             // onboarding form
             &>div.onboarding-form {
@@ -628,10 +630,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 }
 
                 &>.btn-container {
-               //  border: 3px solid red;
-                 background-color: $base-color-1;
-                 color: #fff;
-                 
+                  //  border: 3px solid red;
+                  background-color: $base-color-1;
+                  color: #fff;
+
                   .n-button {
                     width: 100%;
                     color: #fff;
@@ -657,8 +659,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               }
             }
 
-              // onboarding form footer
-              &>div.privacy-form-footer {
+            // onboarding form footer
+            &>div.privacy-form-footer {
               width: 100%;
               display: flex;
               flex-direction: row;
@@ -687,156 +689,156 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
   }
 
-   // <!-- Carousel section -->
-   section {
+  // <!-- Carousel section -->
+  section {
     &>.carousel {
-        .carousel-img {
-          width: 100%;
-          height: 500px;
-          object-fit: cover;
-        }
-    
-        .custom-arrow {
-          display: flex;
-          position: absolute;
-          bottom: 25px;
-          right: 10px;
-        }
-    
-        .custom-arrow button {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 28px;
-          height: 28px;
-          margin-right: 12px;
-          color: #fff;
-          background-color: $base-color-2;
-          border-width: 0;
-          border-radius: 8px;
-          transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          cursor: pointer;
-        }
-    
-        .custom-arrow button:hover {
-          background-color: $base-color-1;
-        }
-    
-        .custom-arrow button:active {
-          transform: scale(0.95);
-          transform-origin: center;
-        }
-    
-        .custom-dots {
-          display: flex;
-          margin: 0;
-          padding: 0;
-          position: absolute;
-          bottom: 20px;
-          left: 20px;
-        }
-    
-        .custom-dots li {
-          display: inline-block;
-          width: 12px;
-          height: 4px;
-          margin: 0 3px;
-          border-radius: 4px;
-          background-color: $base-color-2;
-          // background-color: rgba(255, 255, 255, 0.4);
-          transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          cursor: pointer;
-        }
-    
-        .custom-dots li.is-active {
-          width: 40px;
-          background: $base-color-1;
-        }
-    
-        // Absolute Image - Section--------------
+      .carousel-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
 
-          .second-reliable {
-          //  border: 3px solid red;
-            border: 5px solid $base-color;
-            display: flex;
-            flex-direction: row-reverse;
+      .custom-arrow {
+        display: flex;
+        position: absolute;
+        bottom: 25px;
+        right: 10px;
+      }
+
+      .custom-arrow button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        margin-right: 12px;
+        color: #fff;
+        background-color: $base-color-2;
+        border-width: 0;
+        border-radius: 8px;
+        transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+
+      .custom-arrow button:hover {
+        background-color: $base-color-1;
+      }
+
+      .custom-arrow button:active {
+        transform: scale(0.95);
+        transform-origin: center;
+      }
+
+      .custom-dots {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .custom-dots li {
+        display: inline-block;
+        width: 12px;
+        height: 4px;
+        margin: 0 3px;
+        border-radius: 4px;
+        background-color: $base-color-2;
+        // background-color: rgba(255, 255, 255, 0.4);
+        transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+
+      .custom-dots li.is-active {
+        width: 40px;
+        background: $base-color-1;
+      }
+
+      // Absolute Image - Section--------------
+
+      .second-reliable {
+        //  border: 3px solid red;
+        border: 5px solid $base-color;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 500px;
+        overflow-y: hidden;
+        margin-bottom: 50px;
+
+        &>.section-image {
+
+          // border: 1px solid red;
+          img {
+            // border: 1px solid red;
+            width: 650px;
             height: 500px;
-            overflow-y: hidden;
-            margin-bottom: 50px;
-    
-            &>.section-image {
-    
-              // border: 1px solid red;
-              img {
-                // border: 1px solid red;
-                width: 650px;
-                height: 500px;
-              }
-            }
-    
-            &>.section-background {
-              // border: 1px solid red;
-              position: relative;
-              width: 1500px;
-              height: 500px;
-              background-color: $base-color;
-    
-              &>.light-background {
-                // border: 11px solid red;
-                background-color: #FFFFFFB2;
-                width: 850px;
-                // min-height: 200px;
-                position: absolute;
-                top: 20px;
-                bottom: 20px;
-                left: 20px;
-                display: flex;
-                align-content: center;
-                justify-content: flex-end;
-    
-                &>.contents {
-                  // border: 2px solid red;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 20px;
-    
-                  .quotation {
-                    line-height: 0.86px;
-                    color: $base-color-1;
-                    // margin-bottom: 20px;
-    
-                  }
-    
-                  p {
-                    font-family: Montserrat;
-                    font-weight: 400;
-                    line-height: 30.26px;
-                    margin-bottom: 20px;
-                  }
-    
-                  &>.color-btn {
-                    display: flex;
-                    justify-items: center;
-                    flex-direction: column;
-                    align-items: center;
-                    line-height: 0px;
-
-                    h4 {
-                      font-size: 30px;
-                      color: $base-color-1;
-                    }
-                 
-                  }
-                }
-              }
-            }
-    
           }
         }
+
+        &>.section-background {
+          // border: 1px solid red;
+          position: relative;
+          width: 1500px;
+          height: 500px;
+          background-color: $base-color;
+
+          &>.light-background {
+            // border: 11px solid red;
+            background-color: #FFFFFFB2;
+            width: 850px;
+            // min-height: 200px;
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            align-content: center;
+            justify-content: flex-end;
+
+            &>.contents {
+              // border: 2px solid red;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px;
+
+              .quotation {
+                line-height: 0.86px;
+                color: $base-color-1;
+                // margin-bottom: 20px;
+
+              }
+
+              p {
+                font-family: Montserrat;
+                font-weight: 400;
+                line-height: 30.26px;
+                margin-bottom: 20px;
+              }
+
+              &>.color-btn {
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+                align-items: center;
+                line-height: 0px;
+
+                h4 {
+                  font-size: 30px;
+                  color: $base-color-1;
+                }
+
+              }
+            }
+          }
+        }
+
       }
- 
+    }
+  }
+
   // colored-last line section
   section {
     &>.colored-last {
@@ -925,125 +927,130 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
 
 
-section {
-  &>.form-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    column-gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    section {
+      &>.form-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
-    // This section is for the form
-    div.form-container {
-    width: 90%;
-    border-radius: 0.3rem;
-    padding: 0 10px 40px;
-    row-gap: 30px;
+        // This section is for the form
+        div.form-container {
+          width: 90%;
+          border-radius: 0.3rem;
+          padding: 0 10px 40px;
+          row-gap: 30px;
 
-    &>section {
-      width: 100%;
+          &>section {
+            width: 100%;
 
-      // form header
-      &.form-header {
-        border-radius: 0.25rem;
-        padding: 22px 20px;
-        text-align: center;
+            // form header
+            &.form-header {
+              border-radius: 0.25rem;
+              padding: 22px 20px;
+              text-align: center;
 
-        // image container
-        // div.img-container {
-        //   border: 3px solid red;
-        //   h2{}
-        // }
+              // image container
+              // div.img-container {
+              //   border: 3px solid red;
+              //   h2{}
+              // }
 
-        // caption
-        &>h3 {
-          font-size: 1rem;
+              // caption
+              &>h3 {
+                font-size: 1rem;
+              }
+            }
+
+            // form body
+            &.form-body {
+              padding-left: unset;
+              padding-right: unset;
+
+              // onboarding form
+              // &>div.onboarding-form {}
+
+              // onboarding form footer
+              &>div.onboarding-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+
+              &>div.privacy-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+            }
+          }
         }
-      }
 
-      // form body
-      &.form-body {
-        padding-left: unset;
-        padding-right: unset;
-
-        // onboarding form
-        // &>div.onboarding-form {}
-
-        // onboarding form footer
-        &>div.onboarding-form-footer {
+        // This section is for the contents/assessment Address
+        &>.contents {
+          // border: 3px solid red;
+          display: flex;
           flex-direction: column;
-          row-gap: 5px;
-          text-align: center;
-        }
-        &>div.privacy-form-footer {
-          flex-direction: column;
-          row-gap: 5px;
-          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+
+          h2,
+          p,
+          a {
+            text-align: center;
+          }
+
+          .work-time {
+            padding-bottom: 30px;
+          }
         }
       }
     }
-  }
 
-    // This section is for the contents/assessment Address
-    &>.contents {
-      // border: 3px solid red;
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      margin: 0 auto;
+    // <!-- Carousel section -->
+    section {
+      &>.carousel {
 
-      h2, p, a {
-      text-align: center;
-      }
+        //  border: 3px solid red;
+        .carousel-img {
+          width: 100%;
+          height: 350px;
+        }
 
-      .work-time {
-        padding-bottom: 30px;
-      }
-    }
-  }
-}
-
-// <!-- Carousel section -->
-section {
-  &>.carousel {
-      //  border: 3px solid red;
-      .carousel-img {
-        width: 100%;
-        height: 350px;
-      }
-      img {
+        img {
           // border: 3px solid red;
           width: 100%;
         }
-  
-      .custom-arrow {
-        bottom: 20px;
-        right: 10px;
-      }
-  
-      .custom-dots {
-        bottom: 30px;
-      }
-  
-      .custom-dots li {
-        display: inline-block;
-        width: 12px;
-        height: 4px;
-        margin: 0 3px;
-        border-radius: 4px;
-        background-color: $base-color-2;
-        // background-color: rgba(255, 255, 255, 0.4);
-        transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-      }
-  
-      .custom-dots li.is-active {
-        width: 40px;
-        background: $base-color-1;
-      }
-  
-      // Absolute Image - Section--------------
+
+        .custom-arrow {
+          bottom: 20px;
+          right: 10px;
+        }
+
+        .custom-dots {
+          bottom: 30px;
+        }
+
+        .custom-dots li {
+          display: inline-block;
+          width: 12px;
+          height: 4px;
+          margin: 0 3px;
+          border-radius: 4px;
+          background-color: $base-color-2;
+          // background-color: rgba(255, 255, 255, 0.4);
+          transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+        }
+
+        .custom-dots li.is-active {
+          width: 40px;
+          background: $base-color-1;
+        }
+
+        // Absolute Image - Section--------------
 
         .second-reliable {
           // border: 3px solid red;
@@ -1054,9 +1061,9 @@ section {
           height: 350px;
           overflow-y: hidden;
           margin-bottom: 50px;
-  
+
           &>.section-image {
-  
+
             // border: 1px solid red;
             img {
               // border: 1px solid red;
@@ -1065,7 +1072,7 @@ section {
               padding-right: 0px;
             }
           }
-  
+
           &>.section-background {
             // border: 1px solid red;
             position: relative;
@@ -1073,7 +1080,7 @@ section {
             height: 350px;
             margin-top: -7px;
             background-color: $base-color;
-  
+
             &>.light-background {
               // border: 11px solid red;
               background-color: #FFFFFFB2;
@@ -1087,7 +1094,7 @@ section {
               display: flex;
               align-content: center;
               justify-content: flex-end;
-  
+
               &>.contents {
                 // border: 2px solid red;
                 display: flex;
@@ -1101,19 +1108,19 @@ section {
                   // border: 2px solid red;
                   height: 30px;
                 }
-  
+
                 .quotation {
                   line-height: 0.86px;
                   color: $base-color-1;
                   // margin-bottom: 20px;
                 }
-  
+
                 p {
                   font-weight: 400;
                   line-height: 30.26px;
                   margin-bottom: 20px;
                 }
-  
+
                 &>.color-btn {
                   display: flex;
                   justify-items: center;
@@ -1134,32 +1141,32 @@ section {
       }
     }
 
-// colored-last line section
-section {
-  &>.colored-last {
-    display: none;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: none;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
-}
 }
 
 // XX-SM
@@ -1214,7 +1221,7 @@ section {
           // border: 2px solid red;
           font-weight: 700;
           font-size: 30px;
-          line-height: 25px;
+          line-height: 40px;
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
@@ -1223,125 +1230,130 @@ section {
     }
 
 
-section {
-  &>.form-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    column-gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    section {
+      &>.form-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
-    // This section is for the form
-    div.form-container {
-    width: 90%;
-    border-radius: 0.3rem;
-    padding: 0 10px 40px;
-    row-gap: 30px;
+        // This section is for the form
+        div.form-container {
+          width: 90%;
+          border-radius: 0.3rem;
+          padding: 0 10px 40px;
+          row-gap: 30px;
 
-    &>section {
-      width: 100%;
+          &>section {
+            width: 100%;
 
-      // form header
-      &.form-header {
-        border-radius: 0.25rem;
-        padding: 22px 20px;
-        text-align: center;
+            // form header
+            &.form-header {
+              border-radius: 0.25rem;
+              padding: 22px 20px;
+              text-align: center;
 
-        // image container
-        // div.img-container {
-        //   border: 3px solid red;
-        //   h2{}
-        // }
+              // image container
+              // div.img-container {
+              //   border: 3px solid red;
+              //   h2{}
+              // }
 
-        // caption
-        &>h3 {
-          font-size: 1rem;
+              // caption
+              &>h3 {
+                font-size: 1rem;
+              }
+            }
+
+            // form body
+            &.form-body {
+              padding-left: unset;
+              padding-right: unset;
+
+              // onboarding form
+              // &>div.onboarding-form {}
+
+              // onboarding form footer
+              &>div.onboarding-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+
+              &>div.privacy-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+            }
+          }
         }
-      }
 
-      // form body
-      &.form-body {
-        padding-left: unset;
-        padding-right: unset;
-
-        // onboarding form
-        // &>div.onboarding-form {}
-
-        // onboarding form footer
-        &>div.onboarding-form-footer {
+        // This section is for the contents/assessment Address
+        &>.contents {
+          // border: 3px solid red;
+          display: flex;
           flex-direction: column;
-          row-gap: 5px;
-          text-align: center;
-        }
-        &>div.privacy-form-footer {
-          flex-direction: column;
-          row-gap: 5px;
-          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+
+          h2,
+          p,
+          a {
+            text-align: center;
+          }
+
+          .work-time {
+            padding-bottom: 30px;
+          }
         }
       }
     }
-  }
 
-    // This section is for the contents/assessment Address
-    &>.contents {
-      // border: 3px solid red;
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      margin: 0 auto;
+    // <!-- Carousel section -->
+    section {
+      &>.carousel {
 
-      h2, p, a {
-      text-align: center;
-      }
+        //  border: 3px solid red;
+        .carousel-img {
+          width: 100%;
+          height: 350px;
+        }
 
-      .work-time {
-        padding-bottom: 30px;
-      }
-    }
-  }
-}
-
-// <!-- Carousel section -->
-section {
-  &>.carousel {
-      //  border: 3px solid red;
-      .carousel-img {
-        width: 100%;
-        height: 350px;
-      }
-      img {
+        img {
           // border: 3px solid red;
           width: 100%;
         }
-  
-      .custom-arrow {
-        bottom: 20px;
-        right: 10px;
-      }
-  
-      .custom-dots {
-        bottom: 30px;
-      }
-  
-      .custom-dots li {
-        display: inline-block;
-        width: 12px;
-        height: 4px;
-        margin: 0 3px;
-        border-radius: 4px;
-        background-color: $base-color-2;
-        // background-color: rgba(255, 255, 255, 0.4);
-        transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-      }
-  
-      .custom-dots li.is-active {
-        width: 40px;
-        background: $base-color-1;
-      }
-  
-      // Absolute Image - Section--------------
+
+        .custom-arrow {
+          bottom: 20px;
+          right: 10px;
+        }
+
+        .custom-dots {
+          bottom: 30px;
+        }
+
+        .custom-dots li {
+          display: inline-block;
+          width: 12px;
+          height: 4px;
+          margin: 0 3px;
+          border-radius: 4px;
+          background-color: $base-color-2;
+          // background-color: rgba(255, 255, 255, 0.4);
+          transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+        }
+
+        .custom-dots li.is-active {
+          width: 40px;
+          background: $base-color-1;
+        }
+
+        // Absolute Image - Section--------------
 
         .second-reliable {
           // border: 3px solid red;
@@ -1352,9 +1364,9 @@ section {
           height: 350px;
           overflow-y: hidden;
           margin-bottom: 50px;
-  
+
           &>.section-image {
-  
+
             // border: 1px solid red;
             img {
               // border: 1px solid red;
@@ -1363,7 +1375,7 @@ section {
               padding-right: 0px;
             }
           }
-  
+
           &>.section-background {
             // border: 1px solid red;
             position: relative;
@@ -1371,7 +1383,7 @@ section {
             height: 350px;
             margin-top: -7px;
             background-color: $base-color;
-  
+
             &>.light-background {
               // border: 11px solid red;
               background-color: #FFFFFFB2;
@@ -1385,7 +1397,7 @@ section {
               display: flex;
               align-content: center;
               justify-content: flex-end;
-  
+
               &>.contents {
                 // border: 2px solid red;
                 display: flex;
@@ -1399,19 +1411,19 @@ section {
                   // border: 2px solid red;
                   height: 30px;
                 }
-  
+
                 .quotation {
                   line-height: 0.86px;
                   color: $base-color-1;
                   // margin-bottom: 20px;
                 }
-  
+
                 p {
                   font-weight: 400;
                   line-height: 30.26px;
                   margin-bottom: 20px;
                 }
-  
+
                 &>.color-btn {
                   display: flex;
                   justify-items: center;
@@ -1432,229 +1444,232 @@ section {
       }
     }
 
-// colored-last line section
-section {
-  &>.colored-last {
-    display: none;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: none;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
-   }
   }
- }
 }
 
 // X-SM
 @media (min-width: 351px) and (max-width: 575.9px) {
   .assessment-service-wrap {
 
-    
+
     .up-icon {
-  position: relative;
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
-
-P {
-  font-size: 14px !important;
-}
-
-h3 {
-  font-size: 15px !important;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-&>.banner {
-  // border: 11px solid red;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 10px;
-
-  &>.intro-content {
-    // border: 2px solid red;
-    width: 100%;
-    padding: 0px 20px;
-    line-height: 0px;
-
-    .intro-title {
-      // border: 2px solid red;
-      margin-bottom: 2.5rem;
-      font-size: 30px;
-      line-height: 35px;
-      padding-left: 0px;
-    }
-
-    .intro-title:first-child {
-      // border: 12px solid red;
-      margin-bottom: 0px;
-    }
-
-    .intro-subtitle {
-      // border: 2px solid red;
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 35px;
-      letter-spacing: 0em;
-      color: #fff;
-      padding-left: 0px;
-    }
-  }
-}
-
-
-section {
-  &>.form-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    column-gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-    // This section is for the form
-    div.form-container {
-    // border: 3px solid red;
-    width: 90%;
-    margin:0 auto;
-    border-radius: 0rem;
-    padding: 0 10px 40px;
-    row-gap: 30px;
-
-    &>section {
-      width: 100%;
-
-      // form header
-      &.form-header {
-    // border: 3px solid red;
-        border-radius: 0.25rem;
-        padding: 22px 20px;
-        text-align: center;
-
-        // image container
-        // div.img-container {
-        //   border: 3px solid red;
-        //   h2{}
-        // }
-
-        // caption
-        &>h3 {
-          font-size: 1rem;
-        }
-      }
-
-      // form body
-      &.form-body {
-        padding-left: unset;
-        padding-right: unset;
-
-        // onboarding form
-        // &>div.onboarding-form {}
-
-        // onboarding form footer
-        &>div.onboarding-form-footer {
-          flex-direction: column;
-          row-gap: 5px;
-          text-align: center;
-
-        
-        
-        }
-        &>div.privacy-form-footer {
-          flex-direction: column;
-          row-gap: 5px;
-          text-align: center;
-        }
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
       }
     }
-  }
 
-    // This section is for the contents/assessment Address
-    &>.contents {
-      // border: 3px solid red;
+    P {
+      font-size: 14px !important;
+    }
+
+    h3 {
+      font-size: 15px !important;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    &>.banner {
+      // border: 11px solid red;
+      height: 400px;
       display: flex;
-      flex-direction: column;
-      width: 90%;
-      margin: 0 auto;
+      justify-content: center;
+      padding: 10px 10px;
 
-      h2, p, a {
-      text-align: center;
-      }
+      &>.intro-content {
+        width: 100%;
+        padding: 0px 20px;
+        line-height: 0px;
 
-      .work-time {
-        padding-bottom: 30px;
+        .intro-title {
+          // border: 2px solid red;
+          margin-bottom: 2.5rem;
+          font-size: 30px;
+          line-height: 35px;
+          padding-left: 0px;
+          text-align: center;
+        }
+
+        .intro-title:first-child {
+          // border: 12px solid red;
+          margin-bottom: 0px;
+        }
+
+        .intro-subtitle {
+          // border: 2px solid red;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 40px;
+          letter-spacing: 0em;
+          color: #fff;
+          padding-left: 0px;
+          text-align: center;
+        }
       }
     }
-  }
-}
 
-// <!-- Carousel section -->
-section {
-  &>.carousel {
-      //  border: 3px solid red;
-      margin-bottom: -50px;
 
-      .carousel-img {
-        width: 100%;
-        // height: 350px;
+    section {
+      &>.form-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        // This section is for the form
+        div.form-container {
+          // border: 3px solid red;
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 0rem;
+          padding: 0 10px 40px;
+          row-gap: 30px;
+
+          &>section {
+            width: 100%;
+
+            // form header
+            &.form-header {
+              // border: 3px solid red;
+              border-radius: 0.25rem;
+              padding: 22px 20px;
+              text-align: center;
+
+              // image container
+              // div.img-container {
+              //   border: 3px solid red;
+              //   h2{}
+              // }
+
+              // caption
+              &>h3 {
+                font-size: 1rem;
+              }
+            }
+
+            // form body
+            &.form-body {
+              padding-left: unset;
+              padding-right: unset;
+
+              // onboarding form
+              // &>div.onboarding-form {}
+
+              // onboarding form footer
+              &>div.onboarding-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+
+              }
+
+              &>div.privacy-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        // This section is for the contents/assessment Address
+        &>.contents {
+          // border: 3px solid red;
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin: 0 auto;
+
+          h2,
+          p,
+          a {
+            text-align: center;
+          }
+
+          .work-time {
+            padding-bottom: 30px;
+          }
+        }
       }
-      img {
+    }
+
+    // <!-- Carousel section -->
+    section {
+      &>.carousel {
+        //  border: 3px solid red;
+        margin-bottom: -50px;
+
+        .carousel-img {
+          width: 100%;
+          // height: 350px;
+        }
+
+        img {
           // border: 3px solid red;
           width: 100%;
         }
-  
-      .custom-arrow {
-        bottom: 20px;
-        right: 10px;
-      }
-  
-      .custom-dots {
-        bottom: 30px;
-      }
-  
-      .custom-dots li {
-        display: inline-block;
-        width: 12px;
-        height: 4px;
-        margin: 0 3px;
-        border-radius: 4px;
-        background-color: $base-color-2;
-        // background-color: rgba(255, 255, 255, 0.4);
-        transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-      }
-  
-      .custom-dots li.is-active {
-        width: 40px;
-        background: $base-color-1;
-      }
-  
-      // Absolute Image - Section--------------
+
+        .custom-arrow {
+          bottom: 20px;
+          right: 10px;
+        }
+
+        .custom-dots {
+          bottom: 30px;
+        }
+
+        .custom-dots li {
+          display: inline-block;
+          width: 12px;
+          height: 4px;
+          margin: 0 3px;
+          border-radius: 4px;
+          background-color: $base-color-2;
+          // background-color: rgba(255, 255, 255, 0.4);
+          transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+        }
+
+        .custom-dots li.is-active {
+          width: 40px;
+          background: $base-color-1;
+        }
+
+        // Absolute Image - Section--------------
 
         .second-reliable {
           // border: 3px solid red;
@@ -1665,9 +1680,9 @@ section {
           // height: 500px;
           overflow-y: hidden;
           margin-bottom: 50px;
-  
+
           &>.section-image {
-  
+
             // border: 1px solid red;
             img {
               // border: 1px solid red;
@@ -1676,7 +1691,7 @@ section {
               padding-right: 0px;
             }
           }
-  
+
           &>.section-background {
             // border: 1px solid red;
             position: relative;
@@ -1684,7 +1699,7 @@ section {
             // height: 500px;
             margin-top: -7px;
             background-color: $base-color;
-  
+
             &>.light-background {
               // border: 11px solid red;
               background-color: #FFFFFFB2;
@@ -1698,7 +1713,7 @@ section {
               display: flex;
               align-content: center;
               justify-content: flex-end;
-  
+
               &>.contents {
                 // border: 2px solid red;
                 display: flex;
@@ -1712,19 +1727,19 @@ section {
                   // border: 2px solid red;
                   height: 30px;
                 }
-  
+
                 .quotation {
                   line-height: 0.86px;
                   color: $base-color-1;
                   // margin-bottom: 20px;
                 }
-  
+
                 p {
                   font-weight: 400;
                   line-height: 30.26px;
                   margin-bottom: 20px;
                 }
-  
+
                 &>.color-btn {
                   display: flex;
                   justify-items: center;
@@ -1746,55 +1761,55 @@ section {
     }
 
 
-// colored-last line section
-section {
-  &>.colored-last {
-    display: none;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: none;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
-   }
   }
- }
 }
 
 // SM
 @media (min-width: 576px) and (max-width: 767.9px) {
   .assessment-service-wrap {
 
-       
-.up-icon {
-  position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+    .up-icon {
+      position: relative;
 
-  P {
-    font-size: 18px !important;
-    line-height: 30px;
-  }
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
+
+    P {
+      font-size: 18px !important;
+      line-height: 30px;
+    }
 
 
     h2 {
@@ -1807,305 +1822,309 @@ section {
     }
 
     &>.banner {
-  // border: 11px solid red;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 10px;
-
-  &>.intro-content {
-    // border: 2px solid red;
-    width: 100%;
-    padding: 0px 20px;
-    line-height: 0px;
-
-    .intro-title {
-      // border: 2px solid red;
-      margin-bottom: 2.5rem;
-      font-size: 30px !important;
-      line-height: 30px;
-      padding-left: 0px;
-    }
-
-    .intro-title:first-child {
-      // border: 12px solid red;
-      margin-bottom: 0px;
-    }
-
-    .intro-subtitle {
-      // border: 2px solid red;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 40px;
-      letter-spacing: 0em;
-      color: #fff;
-      padding-left: 0px;
-    }
-  }
-    }
-
-section {
-&>.form-content {
-display: flex;
-justify-content: center;
-flex-direction: column;
-column-gap: 50px;
-margin-top: 50px;
-margin-bottom: 50px;
-
-// This section is for the form
-div.form-container {
-width: 90%;
-margin:0 auto;
-border-radius: 0.3rem;
-padding: 0 10px 40px;
-row-gap: 30px;
-
-&>section {
-  width: 100%;
-
-  // form header
-  &.form-header {
-    border-radius: 0.25rem;
-    padding: 22px 20px;
-    text-align: center;
-
-    // image container
-    // div.img-container {
-    //   border: 3px solid red;
-    //   h2{}
-    // }
-
-    // caption
-    &>h3 {
-      font-size: 1rem;
-    }
-  }
-
-  // form body
-  &.form-body {
-    padding-left: unset;
-    padding-right: unset;
-
-    // onboarding form
-    // &>div.onboarding-form {}
-
-    // onboarding form footer
-    &>div.onboarding-form-footer {
-      flex-direction: column;
-      row-gap: 5px;
-      text-align: center;
-    }
-    &>div.privacy-form-footer {
-      flex-direction: column;
-      row-gap: 5px;
-      text-align: center;
-    }
-  }
-}
-}
-
-// This section is for the contents/assessment Address
-&>.contents {
-  // border: 3px solid red;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-
-  h2, p, a {
-  text-align: center;
-  }
-
-  .work-time {
-    padding-bottom: 30px;
-   }
-  }
- }
-}
-
-// <!-- Carousel section -->
-section {
-&>.carousel {
-  //  border: 3px solid red;
-  margin-bottom: -50px;
-
-  .carousel-img {
-    width: 100%;
-    // height: 350px;
-  }
-  img {
-      // border: 3px solid red;
-      width: 100%;
-    }
-
-  .custom-arrow {
-    bottom: 20px;
-    right: 10px;
-  }
-
-  .custom-dots {
-    bottom: 30px;
-  }
-
-  .custom-dots li {
-    display: inline-block;
-    width: 12px;
-    height: 4px;
-    margin: 0 3px;
-    border-radius: 4px;
-    background-color: $base-color-2;
-    // background-color: rgba(255, 255, 255, 0.4);
-    transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-  }
-
-  .custom-dots li.is-active {
-    width: 40px;
-    background: $base-color-1;
-  }
-
-  // Absolute Image - Section--------------
-
-    .second-reliable {
-      // border: 3px solid red;
-      border: 5px solid $base-color;
+      // border: 11px solid red;
+      height: 400px;
       display: flex;
-      flex-direction: row-reverse;
-      flex-direction: column;
-      // height: 500px;
-      overflow-y: hidden;
-      margin-bottom: 50px;
+      justify-content: center;
+      padding: 10px 10px;
 
-      &>.section-image {
+      &>.intro-content {
+        // border: 2px solid red;
+        width: 100%;
+        padding: 0px 20px;
+        line-height: 0px;
 
-        // border: 1px solid red;
-        img {
-          // border: 1px solid red;
-          width: 100%;
-          height: auto;
-          padding-right: 0px;
+        .intro-title {
+          // border: 2px solid red;
+          margin-bottom: 2.5rem;
+          font-size: 30px !important;
+          line-height: 30px;
+          padding-left: 0px;
+        }
+
+        .intro-title:first-child {
+          // border: 12px solid red;
+          margin-bottom: 0px;
+        }
+
+        .intro-subtitle {
+          // border: 2px solid red;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 40px;
+          letter-spacing: 0em;
+          color: #fff;
+          padding-left: 0px;
         }
       }
+    }
 
-      &>.section-background {
-        // border: 1px solid red;
-        position: relative;
-        width: 100%;
-        // height: 500px;
-        margin-top: -7px;
-        background-color: $base-color;
+    section {
+      &>.form-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
-        &>.light-background {
-          // border: 11px solid red;
-          background-color: #FFFFFFB2;
-          width: 96%;
-          // min-height: 200px;
-          position: absolute;
-          overflow-y: scroll;
-          top: -30px;
-          bottom: 5px;
-          left: 7px;
+        // This section is for the form
+        div.form-container {
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 0.3rem;
+          padding: 0 10px 40px;
+          row-gap: 30px;
+
+          &>section {
+            width: 100%;
+
+            // form header
+            &.form-header {
+              border-radius: 0.25rem;
+              padding: 22px 20px;
+              text-align: center;
+
+              // image container
+              // div.img-container {
+              //   border: 3px solid red;
+              //   h2{}
+              // }
+
+              // caption
+              &>h3 {
+                font-size: 1rem;
+              }
+            }
+
+            // form body
+            &.form-body {
+              padding-left: unset;
+              padding-right: unset;
+
+              // onboarding form
+              // &>div.onboarding-form {}
+
+              // onboarding form footer
+              &>div.onboarding-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+
+              &>div.privacy-form-footer {
+                flex-direction: column;
+                row-gap: 5px;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        // This section is for the contents/assessment Address
+        &>.contents {
+          // border: 3px solid red;
           display: flex;
-          align-content: center;
-          justify-content: flex-end;
+          flex-direction: column;
+          width: 90%;
+          margin: 0 auto;
 
-          &>.contents {
-            // border: 2px solid red;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
+          h2,
+          p,
+          a {
             text-align: center;
+          }
 
-            .icons {
-              // border: 2px solid red;
-              height: 30px;
+          .work-time {
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    // <!-- Carousel section -->
+    section {
+      &>.carousel {
+        //  border: 3px solid red;
+        margin-bottom: -50px;
+
+        .carousel-img {
+          width: 100%;
+          // height: 350px;
+        }
+
+        img {
+          // border: 3px solid red;
+          width: 100%;
+        }
+
+        .custom-arrow {
+          bottom: 20px;
+          right: 10px;
+        }
+
+        .custom-dots {
+          bottom: 30px;
+        }
+
+        .custom-dots li {
+          display: inline-block;
+          width: 12px;
+          height: 4px;
+          margin: 0 3px;
+          border-radius: 4px;
+          background-color: $base-color-2;
+          // background-color: rgba(255, 255, 255, 0.4);
+          transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+        }
+
+        .custom-dots li.is-active {
+          width: 40px;
+          background: $base-color-1;
+        }
+
+        // Absolute Image - Section--------------
+
+        .second-reliable {
+          // border: 3px solid red;
+          border: 5px solid $base-color;
+          display: flex;
+          flex-direction: row-reverse;
+          flex-direction: column;
+          // height: 500px;
+          overflow-y: hidden;
+          margin-bottom: 50px;
+
+          &>.section-image {
+
+            // border: 1px solid red;
+            img {
+              // border: 1px solid red;
+              width: 100%;
+              height: auto;
+              padding-right: 0px;
             }
+          }
 
-            .quotation {
-              line-height: 0.86px;
-              color: $base-color-1;
-              // margin-bottom: 20px;
-            }
+          &>.section-background {
+            // border: 1px solid red;
+            position: relative;
+            width: 100%;
+            // height: 500px;
+            margin-top: -7px;
+            background-color: $base-color;
 
-            p {
-              font-weight: 400;
-              line-height: 30.26px;
-              margin-bottom: 20px;
-            }
-
-            &>.color-btn {
+            &>.light-background {
+              // border: 11px solid red;
+              background-color: #FFFFFFB2;
+              width: 96%;
+              // min-height: 200px;
+              position: absolute;
+              overflow-y: scroll;
+              top: -30px;
+              bottom: 5px;
+              left: 7px;
               display: flex;
-              justify-items: center;
-              flex-direction: column;
-              align-items: center;
-              line-height: 0px;
+              align-content: center;
+              justify-content: flex-end;
 
-              h4 {
-                font-size: 20px;
-                color: $base-color-1;
-                line-height: 0px;
+              &>.contents {
+                // border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                text-align: center;
+
+                .icons {
+                  // border: 2px solid red;
+                  height: 30px;
+                }
+
+                .quotation {
+                  line-height: 0.86px;
+                  color: $base-color-1;
+                  // margin-bottom: 20px;
+                }
+
+                p {
+                  font-weight: 400;
+                  line-height: 30.26px;
+                  margin-bottom: 20px;
+                }
+
+                &>.color-btn {
+                  display: flex;
+                  justify-items: center;
+                  flex-direction: column;
+                  align-items: center;
+                  line-height: 0px;
+
+                  h4 {
+                    font-size: 20px;
+                    color: $base-color-1;
+                    line-height: 0px;
+                  }
+                }
               }
             }
           }
         }
       }
     }
+
+
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: none;
+        margin-top: 50px;
+
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
+
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
+
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
+    }
   }
-}
-
-
-// colored-last line section
-section {
-&>.colored-last {
-display: none;
-margin-top: 50px;
-
-&>.first-color {
-  background-color: $base-color;
-  width: 50%;
-  height: 15px;
-}
-
-&>.second-color {
-  background-color: $base-color-2;
-  width: 25%;
-  height: 15px;
-}
-
-&>.third-color {
-  background-color: $base-color-1;
-  width: 25%;
-  height: 15px;
-}
-}
-}
-}
 }
 
 // MD
 @media (min-width: 768px) and (max-width: 991.9px) {
   .assessment-service-wrap {
 
-        
-.up-icon {
-  position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+    .up-icon {
+      position: relative;
 
-  P {
-    font-size: 18px !important;
-    line-height: 30px !important;
-  }
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
+
+    P {
+      font-size: 18px !important;
+      line-height: 30px !important;
+    }
 
 
     h2 {
@@ -2118,42 +2137,42 @@ margin-top: 50px;
     }
 
     &>.banner {
-// border: 11px solid red;
-height: 400px;
-display: flex;
-justify-content: center;
-padding: 10px 10px;
+      // border: 11px solid red;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      padding: 10px 10px;
 
-&>.intro-content {
-// border: 2px solid red;
-width: 100%;
-padding: 0px 20px;
-line-height: 0px;
+      &>.intro-content {
+        // border: 2px solid red;
+        width: 100%;
+        padding: 0px 20px;
+        line-height: 0px;
 
-.intro-title {
-  // border: 2px solid red;
-  margin-bottom: 2.5rem;
-  font-size: 50px !important;
-  line-height: 60px;
-  padding-left: 0px;
-}
+        .intro-title {
+          // border: 2px solid red;
+          margin-bottom: 2.5rem;
+          font-size: 50px !important;
+          line-height: 60px;
+          padding-left: 0px;
+        }
 
-.intro-title:first-child {
-  // border: 12px solid red;
-  margin-bottom: 0px;
-}
+        .intro-title:first-child {
+          // border: 12px solid red;
+          margin-bottom: 0px;
+        }
 
-.intro-subtitle {
-  // border: 2px solid red;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: 0em;
-  color: #fff;
-  padding-left: 0px;
-}
-}
-}
+        .intro-subtitle {
+          // border: 2px solid red;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 60px;
+          letter-spacing: 0em;
+          color: #fff;
+          padding-left: 0px;
+        }
+      }
+    }
 
     // colored-last line section
     section {
