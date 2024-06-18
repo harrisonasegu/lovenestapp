@@ -19,7 +19,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     </div>
     <!-- This section carries all the contents in this page -->
     <div class="latest-contents">
-  
+
       <!-- LATEST NEWS & BLOG -->
       <section>
         <div class="line-paragraphy">
@@ -607,7 +607,6 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 }
 
 // MEDIA QUERY
-
 // XX-SM (<251px)
 @media (max-width: 250.9px) {
   .latest-page-wrap {
@@ -922,6 +921,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
       &>.intro-content {
         // border: 2px solid red;
+        width: 100%;
         text-align: center;
         padding: 0px 0px;
         line-height: 0px;
@@ -931,9 +931,10 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           margin-bottom: 2.5rem;
           font-size: 20px;
           font-weight: 600;
-          line-height: 25px;
+          line-height: 35px;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-subtitle {
@@ -1210,8 +1211,9 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           // border: 2px solid red;
           margin-bottom: 2.5rem;
           font-size: 30px !important;
-          line-height: 30px;
+          line-height: 40px;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-title:first-child {
@@ -1227,6 +1229,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }
@@ -1495,10 +1498,12 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
         .intro-title {
           // border: 2px solid red;
+          width: 100%;
           margin-bottom: 2.5rem;
           font-size: 40px !important;
-          line-height: 30px;
+          line-height: 40px;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-title:first-child {
@@ -1510,10 +1515,11 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           // border: 2px solid red;
           font-weight: 700;
           font-size: 60px !important;
-          line-height: 30px;
+          line-height: 4ch;
           letter-spacing: 0em;
           color: #fff;
-          padding-left: 300px;
+          padding-left: 0px;
+          text-align: center;
         }
       }
     }

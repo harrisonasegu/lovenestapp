@@ -373,16 +373,19 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           line-height: 25px;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
           font-size: 30px;
-          line-height: 25px;
+          line-height: 40px;
           letter-spacing: 0em;
           color: #fff;
-          padding-left: 0px;
+          padding-left: 20px;
+          text-align: center;
+
         }
       }
     }
@@ -470,8 +473,9 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           // border: 2px solid red;
           margin-bottom: 2.5rem;
           font-size: 30px !important;
-          line-height: 30px;
+          line-height: 40px;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-title:first-child {
@@ -482,11 +486,12 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 45px !important;
-          line-height: 30px;
+          font-size: 40px !important;
+          line-height: 45px;
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }
@@ -578,7 +583,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           // border: 2px solid red;
           margin-bottom: 2.5rem;
           font-size: 40px !important;
-          line-height: 30px;
+          line-height: 40px;
           padding-left: 0px;
         }
 
@@ -591,10 +596,10 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           // border: 2px solid red;
           font-weight: 700;
           font-size: 60px !important;
-          line-height: 30px;
+          line-height: 40px;
           letter-spacing: 0em;
           color: #fff;
-          padding-left: 300px;
+          padding-left: 0px;
         }
       }
     }
@@ -704,7 +709,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           line-height: 30px;
           letter-spacing: 0em;
           color: #fff;
-          padding-left: 300px;
+          padding-left: 50px;
         }
       }
     }

@@ -90,8 +90,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
       </div>
     </div>
 
-     <!-- Colored background section/Last -->
-     <section>
+    <!-- Colored background section/Last -->
+    <section>
       <div class="last-colored-wrap">
         <div class="contents">
           <h3>
@@ -291,19 +291,19 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
   }
 
   P {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 18px;
     color: #00000080;
   }
 
   h3 {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     color: $base-color-1;
     font-weight: 600 !important;
   }
 
   h2 {
-    font-family: Montserrat; 
+    font-family: Montserrat;
     font-size: 35px;
     color: $base-color-1;
   }
@@ -365,8 +365,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
   }
 
-   // <!-- Colored background section/Last -->
-   section {
+  // <!-- Colored background section/Last -->
+  section {
     &>.last-colored-wrap {
       background-color: $base-color-1;
       // min-height: 300px;
@@ -388,13 +388,13 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         }
 
         h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 5%;
-            width: 90%;
-            border-bottom: 2px solid #fff;
-          }
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 5%;
+          width: 90%;
+          border-bottom: 2px solid #fff;
+        }
 
         .caption-paragraphy {
           // border: 2px solid red;
@@ -508,8 +508,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
   }
 
-   // colored-last line section
-   section {
+  // colored-last line section
+  section {
     &>.colored-last {
       display: flex;
       margin-top: 50px;
@@ -539,19 +539,19 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 @media (max-width: 250.9px) {
   .care-giver-wrap {
 
-.up-icon {
-  position: relative;
+    .up-icon {
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
 
-P {
+    P {
       font-size: 14px;
     }
 
@@ -597,16 +597,17 @@ P {
       }
     }
 
-       // <!-- Colored background section/Last -->
-       section {
+    // <!-- Colored background section/Last -->
+    section {
       &>.last-colored-wrap {
         padding: 40px 10px;
 
         &>.contents {
           h3 {
-          font-size: 30px;
-          line-height: 50px;
-        }
+            font-size: 30px;
+            line-height: 50px;
+          }
+
           .caption-paragraphy {
             // border: 2px solid red;
             width: 100%;
@@ -704,51 +705,51 @@ P {
       }
     }
 
- // colored-last line section
- section {
-  &>.colored-last {
-    display: flex;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
-}
 }
 
 // XX-SM
 @media (min-width: 251px) and (max-width: 350.9px) {
   .care-giver-wrap {
 
-.up-icon {
-  position: relative;
+    .up-icon {
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
 
-P {
+    P {
       font-size: 14px;
     }
 
@@ -768,6 +769,7 @@ P {
 
       &>.intro-content {
         // border: 2px solid red;
+        width: 100%;
         text-align: center;
         padding: 0px 0px;
         line-height: 0px;
@@ -780,7 +782,9 @@ P {
           line-height: 25px;
           color: #fff;
           padding-left: 20px;
+          text-align: center;
         }
+
 
         .intro-subtitle {
           // border: 2px solid red;
@@ -790,20 +794,22 @@ P {
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }
 
-       // <!-- Colored background section/Last -->
-       section {
+    // <!-- Colored background section/Last -->
+    section {
       &>.last-colored-wrap {
         padding: 40px 10px;
 
         &>.contents {
           h3 {
-          font-size: 25px !important;
-          line-height: 50px;
-        }
+            font-size: 25px !important;
+            line-height: 50px;
+          }
+
           .caption-paragraphy {
             // border: 2px solid red;
             width: 100%;
@@ -901,51 +907,51 @@ P {
       }
     }
 
- // colored-last line section
- section {
-  &>.colored-last {
-    display: flex;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
-}
 }
 
 // X-SM
 @media (min-width: 351px) and (max-width: 575.9px) {
   .care-giver-wrap {
 
-.up-icon {
-  position: relative;
+    .up-icon {
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
 
-P {
+    P {
       font-size: 14px;
     }
 
@@ -965,6 +971,7 @@ P {
 
       &>.intro-content {
         // border: 2px solid red;
+        width: 100%;
         text-align: center;
         padding: 0px 0px;
         line-height: 0px;
@@ -977,6 +984,7 @@ P {
           line-height: 25px;
           color: #fff;
           padding-left: 20px;
+          text-align: center;
         }
 
         .intro-subtitle {
@@ -987,21 +995,23 @@ P {
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }
 
-       // <!-- Colored background section/Last -->
-       section {
+    // <!-- Colored background section/Last -->
+    section {
       &>.last-colored-wrap {
         padding: 40px 10px;
 
         &>.contents {
           h3 {
-          font-size: 25px !important;
-          line-height: 50px;
-          margin-bottom: 10px;
-        }
+            font-size: 25px !important;
+            line-height: 50px;
+            margin-bottom: 10px;
+          }
+
           .caption-paragraphy {
             // border: 2px solid red;
             width: 100%;
@@ -1099,52 +1109,52 @@ P {
       }
     }
 
- // colored-last line section
- section {
-  &>.colored-last {
-    display: flex;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
- }
 }
 
 // SM
 @media (min-width: 576px) and (max-width: 767.9px) {
   .care-giver-wrap {
 
-.up-icon {
-  position: relative;
+    .up-icon {
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
 
-P {
-    font-size: 18px !important;
+    P {
+      font-size: 18px !important;
     }
 
     h2 {
@@ -1155,56 +1165,58 @@ P {
     h3 {
       font-size: 30px !important;
     }
+
     &>.banner {
-  // border: 11px solid red;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 10px;
+      // border: 11px solid red;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      padding: 10px 10px;
 
-  &>.intro-content {
-    // border: 2px solid red;
-    width: 100%;
-    padding: 0px 20px;
-    line-height: 0px;
+      &>.intro-content {
+        // border: 2px solid red;
+        width: 100%;
+        padding: 0px 20px;
+        line-height: 0px;
 
-    .intro-title {
-      // border: 2px solid red;
-      margin-bottom: 2.5rem;
-      font-size: 50px;
-      line-height: 60px;
-      padding-left: 0px;
+        .intro-title {
+          // border: 2px solid red;
+          margin-bottom: 2.5rem;
+          font-size: 50px;
+          line-height: 60px;
+          padding-left: 0px;
+        }
+
+        .intro-title:first-child {
+          // border: 12px solid red;
+          margin-bottom: 0px;
+        }
+
+        .intro-subtitle {
+          // border: 2px solid red;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 60px;
+          letter-spacing: 0em;
+          color: #fff;
+          padding-left: 0px;
+        }
+      }
     }
 
-    .intro-title:first-child {
-      // border: 12px solid red;
-      margin-bottom: 0px;
-    }
 
-    .intro-subtitle {
-      // border: 2px solid red;
-      font-weight: 700;
-      font-size: 60px;
-      line-height: 60px;
-      letter-spacing: 0em;
-      color: #fff;
-      padding-left: 0px;
-    }
-  }
-}
-
-
-       // <!-- Colored background section/Last -->
-       section {
+    // <!-- Colored background section/Last -->
+    section {
       &>.last-colored-wrap {
         padding: 40px 10px;
 
         &>.contents {
           h3 {
-          font-size: 25px !important;
-          line-height: 50px;
-          margin-bottom: 10px;
-        }
+            font-size: 25px !important;
+            line-height: 50px;
+            margin-bottom: 10px;
+          }
+
           .caption-paragraphy {
             // border: 2px solid red;
             width: 100%;
@@ -1302,52 +1314,52 @@ P {
       }
     }
 
- // colored-last line section
- section {
-  &>.colored-last {
-    display: flex;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
- }
 }
 
 // MD
 @media (min-width: 768px) and (max-width: 991.9px) {
   .care-giver-wrap {
 
-.up-icon {
-  position: relative;
+    .up-icon {
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
 
-P {
-    font-size: 18px !important;
+    P {
+      font-size: 18px !important;
     }
 
     h2 {
@@ -1358,56 +1370,58 @@ P {
     h3 {
       font-size: 30px !important;
     }
+
     &>.banner {
-  // border: 11px solid red;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 10px;
+      // border: 11px solid red;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      padding: 10px 10px;
 
-  &>.intro-content {
-    // border: 2px solid red;
-    width: 100%;
-    padding: 0px 20px;
-    line-height: 0px;
+      &>.intro-content {
+        // border: 2px solid red;
+        width: 100%;
+        padding: 0px 20px;
+        line-height: 0px;
 
-    .intro-title {
-      // border: 2px solid red;
-      margin-bottom: 2.5rem;
-      font-size: 50px;
-      line-height: 60px;
-      padding-left: 0px;
+        .intro-title {
+          // border: 2px solid red;
+          margin-bottom: 2.5rem;
+          font-size: 50px;
+          line-height: 60px;
+          padding-left: 0px;
+        }
+
+        .intro-title:first-child {
+          // border: 12px solid red;
+          margin-bottom: 0px;
+        }
+
+        .intro-subtitle {
+          // border: 2px solid red;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 60px;
+          letter-spacing: 0em;
+          color: #fff;
+          padding-left: 0px;
+        }
+      }
     }
 
-    .intro-title:first-child {
-      // border: 12px solid red;
-      margin-bottom: 0px;
-    }
 
-    .intro-subtitle {
-      // border: 2px solid red;
-      font-weight: 700;
-      font-size: 60px;
-      line-height: 60px;
-      letter-spacing: 0em;
-      color: #fff;
-      padding-left: 0px;
-    }
-  }
-}
-
-
-       // <!-- Colored background section/Last -->
-       section {
+    // <!-- Colored background section/Last -->
+    section {
       &>.last-colored-wrap {
         padding: 40px 10px;
 
         &>.contents {
           h3 {
-          font-size: 30px !important;
-          line-height: 50px;
-          margin-bottom: 10px;
-        }
+            font-size: 30px !important;
+            line-height: 50px;
+            margin-bottom: 10px;
+          }
+
           .caption-paragraphy {
             // border: 2px solid red;
             width: 100%;
@@ -1505,32 +1519,32 @@ P {
       }
     }
 
- // colored-last line section
- section {
-  &>.colored-last {
-    display: flex;
-    margin-top: 50px;
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
-    }
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
- }
 }
 
 // LG
@@ -3931,86 +3945,86 @@ P {
 @media (min-width: 1500px) {
   .care-giver-wrap {
 
-.up-icon {
-  position: relative;
+    .up-icon {
+      position: relative;
 
-  .move-up {
-    // border: 5px solid red;
-    transition: ease;
-    position: fixed;
-    right: 10px;
-    bottom: 20px;
-  }
-}
+      .move-up {
+        // border: 5px solid red;
+        transition: ease;
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
 
-P {
-  font-size: 18px;
-  color: #00000080;
-}
+    P {
+      font-size: 18px;
+      color: #00000080;
+    }
 
-h3 {
-  color: $base-color-1;
-  font-weight: 600 !important;
-}
+    h3 {
+      color: $base-color-1;
+      font-weight: 600 !important;
+    }
 
-h2 {
-  font-size: 35px;
-  color: $base-color-1;
-}
+    h2 {
+      font-size: 35px;
+      color: $base-color-1;
+    }
 
-&>.banner {
-  height: 500px;
+    &>.banner {
+      height: 500px;
 
-  // &>.intro-content {
-  //   // border: 12px solid red;
-  //   padding: 10px 20px;
-  //   line-height: 0px;
+      // &>.intro-content {
+      //   // border: 12px solid red;
+      //   padding: 10px 20px;
+      //   line-height: 0px;
 
-  //   .intro-title {
-  //     // border: 2px solid red;
-  //     margin-bottom: 2.5rem;
-  //     font-size: 50px;
-  //     font-weight: 600;
-  //     line-height: 0px;
-  //     color: #fff;
-  //     padding-left: 50px;
-  //   }
+      //   .intro-title {
+      //     // border: 2px solid red;
+      //     margin-bottom: 2.5rem;
+      //     font-size: 50px;
+      //     font-weight: 600;
+      //     line-height: 0px;
+      //     color: #fff;
+      //     padding-left: 50px;
+      //   }
 
-  //   .intro-subtitle {
-  //     // border: 2px solid red;
-  //     font-weight: 700;
-  //     font-size: 70px;
-  //     line-height: 0px;
-  //     letter-spacing: 0em;
-  //     color: #fff;
-  //     padding-left: 350px;
-  //   }
+      //   .intro-subtitle {
+      //     // border: 2px solid red;
+      //     font-weight: 700;
+      //     font-size: 70px;
+      //     line-height: 0px;
+      //     letter-spacing: 0em;
+      //     color: #fff;
+      //     padding-left: 350px;
+      //   }
 
-  //   .discover-btn {
-  //     // border: 1px solid $base-color;
-  //     padding: 15px 25px;
-  //     text-decoration: none;
-  //     font-size: 15px;
-  //     color: $base-color;
+      //   .discover-btn {
+      //     // border: 1px solid $base-color;
+      //     padding: 15px 25px;
+      //     text-decoration: none;
+      //     font-size: 15px;
+      //     color: $base-color;
 
-  //     &:hover {
-  //       background-color: #c96;
-  //       color: #fff;
-  //     }
+      //     &:hover {
+      //       background-color: #c96;
+      //       color: #fff;
+      //     }
 
-  //     &>div {
-  //       display: inline-flex;
-  //       column-gap: 5px;
-  //       justify-content: center;
-  //       align-items: center;
-  //     }
-  //   }
-  // }
-}
+      //     &>div {
+      //       display: inline-flex;
+      //       column-gap: 5px;
+      //       justify-content: center;
+      //       align-items: center;
+      //     }
+      //   }
+      // }
+    }
 
- // <!-- Colored background section/Last -->
- section {
-  &>.last-colored-wrap {
+    // <!-- Colored background section/Last -->
+    section {
+      &>.last-colored-wrap {
         background-color: $base-color-1;
         // min-height: 300px;
         padding: 50px 0px;
@@ -4140,33 +4154,33 @@ h2 {
           }
         }
       }
-}
-
- // colored-last line section
- section {
-  &>.colored-last {
-    display: flex;
-    margin-top: 50px;
-
-    &>.first-color {
-      background-color: $base-color;
-      width: 50%;
-      height: 15px;
     }
 
-    &>.second-color {
-      background-color: $base-color-2;
-      width: 25%;
-      height: 15px;
-    }
+    // colored-last line section
+    section {
+      &>.colored-last {
+        display: flex;
+        margin-top: 50px;
 
-    &>.third-color {
-      background-color: $base-color-1;
-      width: 25%;
-      height: 15px;
+        &>.first-color {
+          background-color: $base-color;
+          width: 50%;
+          height: 15px;
+        }
+
+        &>.second-color {
+          background-color: $base-color-2;
+          width: 25%;
+          height: 15px;
+        }
+
+        &>.third-color {
+          background-color: $base-color-1;
+          width: 25%;
+          height: 15px;
+        }
+      }
     }
   }
-}
-}
 }
 </style>

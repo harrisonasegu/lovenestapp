@@ -1181,6 +1181,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
       &>.intro-content {
         // border: 2px solid red;
+        width: 100%;
         text-align: center;
         padding: 0px 0px;
         line-height: 0px;
@@ -1529,6 +1530,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           font-size: 30px !important;
           line-height: 30px;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-title:first-child {
@@ -1544,6 +1546,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }

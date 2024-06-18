@@ -10,10 +10,10 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     <div class="banner">
       <div class="intro-content">
         <h2 class="intro-title">
-          LoveNest Home Care
+          Helpful
         </h2>
         <h1 class="intro-subtitle">
-          Health And Safety
+          Senior Links
         </h1>
       </div>
     </div>
@@ -22,23 +22,23 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
       <section class="first">
         <!-- underline h3 text -->
         <div>
-            <h3>
-                <a href="#">
-                    AgeWell Cincinnati
-                </a>
-            </h3>
-          <p>       
+          <h3>
+            <a href="#">
+              AgeWell Cincinnati
+            </a>
+          </h3>
+          <p>
             AgeWell Cincinnati is a coordinated, central solution that links older adults, their family members,
             friends, and caregivers to community resources for aging well in Jewish Cincinnati.
           </p>
           <h3>
-                <a href="#">
-                    Jewish Family Service of the Cincinnati Area
-                </a>
-            </h3>
+            <a href="#">
+              Jewish Family Service of the Cincinnati Area
+            </a>
+          </h3>
           <p>
             StarPoint Home Care is a subsidiary of Jewish Family Service of the Cincinnati Area, an organization
-            that strengthens lives and our community by providing professional social services to families and 
+            that strengthens lives and our community by providing professional social services to families and
             individuals in times of need. JFS offers access to food & financial support, care coordination, caregiver
             support, counseling, and so much more.
           </p>
@@ -91,12 +91,12 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     font-weight: 600 !important;
   }
 
-//   h2 {
-//     font-family: Montserrat;
-//     font-size: 70px;
-//     font-size: 35px;
-//     color: $base-color-1;
-//   }
+  //   h2 {
+  //     font-family: Montserrat;
+  //     font-size: 70px;
+  //     font-size: 35px;
+  //     color: $base-color-1;
+  //   }
 
   &>.banner {
     background-image: url('../assets/images/HelpFulLinks-Image/helfulLinkBanner.png');
@@ -157,6 +157,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
   &>.safety-contents {
     margin-top: 50px;
+
     // underline h3 text
     &>.first {
       // border: 3px solid red;
@@ -338,6 +339,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
       &>.intro-content {
         // border: 2px solid red;
+        width: 100%;
         text-align: center;
         padding: 0px 0px;
         line-height: 0px;
@@ -350,6 +352,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           line-height: 25px;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-subtitle {
@@ -360,6 +363,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }
@@ -449,6 +453,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           font-size: 30px !important;
           line-height: 30px;
           padding-left: 0px;
+          text-align: center;
         }
 
         .intro-title:first-child {
@@ -464,6 +469,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          text-align: center;
         }
       }
     }
@@ -571,7 +577,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           line-height: 30px;
           letter-spacing: 0em;
           color: #fff;
-          padding-left: 300px;
+          padding-left: 50px;
         }
       }
     }
