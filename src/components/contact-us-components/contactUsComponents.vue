@@ -4653,11 +4653,6 @@ section {
           flex-direction: column;
           row-gap: 25px;
 
-          .n-input, .n-select {
-        //  border: 3px solid red;
-         padding: 10px 0;
-        }
-
           // onboarding form
           &>div.onboarding-form {
             .n-form {
