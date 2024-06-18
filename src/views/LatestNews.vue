@@ -22,10 +22,14 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
       <section class="first">
         <!-- underline h3 text -->
         <div class="icon-content">
-          <h3> <span>
-              <Icon icon="typcn:arrow-back" width="40" height="40" style="color: #4897E6" />
-            </span>
-            Back To News
+          <h3>
+            <RouterLink class="icon-links" to="/our-care-services">
+              <span>
+                <Icon icon="typcn:arrow-back" width="40" height="40" style="color: #4897E6" />
+              </span>
+              Back To News
+            </RouterLink>
+         
           </h3>
           <p>
             As the general, worldwide trend is for people to live longer, caregivers are playing an increasingly vital
@@ -484,12 +488,21 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
       // border: 3px solid red;
       padding: 0 20px;
       .icon-content {
+        
          h3 {
+          // border: 2px solid red;
           display: flex;
           align-items: center;
 
-          span {
-           display: flex;
+          .icon-links {
+            display: flex;
+            align-items: center;
+            color: $base-color-1;
+
+            span {
+              display: flex;
+              align-items: center;
+            }
           }
          }
         }
