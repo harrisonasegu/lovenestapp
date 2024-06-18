@@ -15,7 +15,7 @@ import {
 } from 'naive-ui'
 
 const expandedItem = reactive({
-  name: '3',
+  name: '0',
   expanded: true
 })
 
@@ -406,8 +406,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
                     <div class="collapse">
 
-                      <n-collapse accordion arrow-placement="right" :default-expanded-names="expandedItem.name"
-                        @item-header-click="handleItemHeaderClick">
+                      <n-collapse accordion arrow-placement="right" :default-expanded-names="expandedItem.name">
                         <template #arrow>&VeryThinSpace;</template>
 
                         <n-collapse-item name="1">

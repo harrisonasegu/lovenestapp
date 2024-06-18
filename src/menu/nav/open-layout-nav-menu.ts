@@ -31,24 +31,62 @@ export const openLayoutNavMenu: any = [
             RouterLink,
             {
                 to: {
-                    name: 'disability support',
+                    name: 'Our Care Services'
                 }
             },
-            { default: () => 'Disability Support' }
+            { default: () => 'Our Care Services' }
         ),
-        key: 'disability support'
+        key: 'our-care-services'
     },
     {
         label: () => h(
             RouterLink,
             {
                 to: {
-                    name: 'CostCalculator'
+                    name: 'News And Resources',
                 }
             },
-            { default: () => 'CostCalculator' }
+            { default: () => 'News And Resources' }
         ),
-        key: 'CostCalculator'
+        key: 'news-and-resources',
+        children: [
+            {
+                label: () => h(
+                    RouterLink,
+                    {
+                        to: {
+                            name: 'News And Blogs'
+                        }
+                    },
+                    { default: () => 'News And Blogs' }
+                ),
+                key: 'news-blogs'
+            },
+            {
+                label: () => h(
+                    RouterLink,
+                    {
+                        to: {
+                            name: 'Health And Safety'
+                        }
+                    },
+                    { default: () => 'Health And Safety' }
+                ),
+                key: 'health-safety'
+            },
+            {
+                label: () => h(
+                    RouterLink,
+                    {
+                        to: {
+                            name: 'Helpful Senior Links'
+                        }
+                    },
+                    { default: () => 'Helpful Senior Links' }
+                ),
+                key: 'helpful-links'
+            },
+        ]
     },
     {
         label: () => h(

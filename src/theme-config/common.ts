@@ -1,7 +1,7 @@
 export const common = {
-  primaryColor: '#c96',
+  primaryColor: '#4897E6',
   primaryColorHover: '#cfa378',
-  primaryColorActive: '#d0904f',
-  primaryColorPressed: '#c96',
+  primaryColorActive: '#4897E6',
+  primaryColorPressed: '#4897E6',
   primaryColorSuppl: '#cfa378'
 }

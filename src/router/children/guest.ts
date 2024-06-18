@@ -13,40 +13,24 @@ const guestRouteChildren = [
     }
   },
   {
-    path: '/disablity-support',
-    name: 'disability support',
-    component: () => import('@/views/DisabilitySupport.vue'),
+    path: '/our-care-services',
+    name: 'Our Care Services',
+    component: () => import('@/views/OurCareServices.vue'),
     meta: {
-      title: 'Disability Support'
+      title: 'OurCareServices'
     }
   },
   {
-    path: '/CostCalculator',
-    name: 'CostCalculator',
-    component: () => import('@/views/CostCalculator.vue'),
+    path: '/news-and-resources',
+    name: 'News And Resources',
+    component: () => import('@/views/NewsAndResources.vue'),
     meta: {
-      title: 'CostCalculator'
-    }
-  },
-  {
-    path: '/vacancy',
-    name: 'vacancy',
-    component: () => import('@/views/Vacancy.vue'),
-    meta: {
-      title: 'Vacancy'
-    }
-  },
-  {
-    path: '/job-form',
-    name: 'JobForm',
-    component: () => import('@/views/JobForm.vue'),
-    meta: {
-      title: 'JobForm'
+      title: 'NewsAndResources'
     }
   },
   {
     path: '/helpful-links',
-    name: 'HelpfulSeniorLinks',
+    name: 'Helpful Senior Links',
     component: () => import('@/views/HelpfulSeniorLinks.vue'),
     meta: {
       title: 'HelpfulSeniorLinks'
@@ -54,7 +38,7 @@ const guestRouteChildren = [
   },
   {
     path: '/news-blogs',
-    name: 'NewsAndBlogs',
+    name: 'News And Blogs',
     component: () => import('@/views/NewsAndBlogs.vue'),
     meta: {
       title: 'NewsAndBlogs'
@@ -62,26 +46,10 @@ const guestRouteChildren = [
   },
   {
     path: '/health-safety',
-    name: 'HealthAndSafety',
+    name: 'Health And Safety',
     component: () => import('@/views/HealthAndSafety.vue'),
     meta: {
       title: 'HealthAndSafety'
-    }
-  },
-  {
-    path: '/latest-new',
-    name: 'LatestNewAndBlog',
-    component: () => import('@/views/LatestNews.vue'),
-    meta: {
-      title: 'LatestNewAndBlog'
-    }
-  },
-  {
-    path: '/blogs',
-    name: 'blogs',
-    component: () => import('@/views/Blogs.vue'),
-    meta: {
-      title: 'Blogs'
     }
   },
   {
@@ -101,6 +69,22 @@ const guestRouteChildren = [
     }
   },
   {
+    path: '/vacancy',
+    name: 'vacancy',
+    component: () => import('@/views/Vacancy.vue'),
+    meta: {
+      title: 'Vacancy'
+    }
+  },
+  {
+    path: '/latest-new',
+    name: 'LatestNewAndBlog',
+    component: () => import('@/views/LatestNews.vue'),
+    meta: {
+      title: 'LatestNewAndBlog'
+    }
+  },
+  {
     path: '/Free-assessment',
     name: 'free assessment',
     component: () => import('@/views/RequestFreeAssessment.vue'),
@@ -117,29 +101,13 @@ const guestRouteChildren = [
     }
   },
   {
-    path: '/CostCalculator',
-    name: 'CostCalculator',
-    component: () => import('@/views/CostCalculator.vue'),
+    path: '/job-form',
+    name: 'JobForm',
+    component: () => import('@/views/JobForm.vue'),
     meta: {
-      title: 'CostCalculator'
+      title: 'JobForm'
     }
   },
-  {
-    path: '/CostOfHomeCare',
-    name: 'CostOfHome Care',
-    component: () => import('@/views/CostOfHomeCare.vue'),
-    meta: {
-      title: 'CostOfHome Care'
-    }
-  },
-  {
-    path: '/CostOfLiveInCare',
-    name: 'CostOfLiveIn Care',
-    component: () => import('@/views/CostOfLiveInCare.vue'),
-    meta: {
-      title: 'CostOfLiveIn Care'
-    }
-  }
 ]
 
 export default guestRouteChildren

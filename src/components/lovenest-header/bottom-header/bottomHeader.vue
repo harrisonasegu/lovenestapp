@@ -112,10 +112,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               </div>
             </RouterLink>
 
-            <RouterLink class="icon-links" to="/CostCalculator"> Our Care Givers 
+            <RouterLink class="icon-links" to="/our-care-services"> Our Care Givers 
             </RouterLink>
 
-            <RouterLink class="icon-links" to="/disablity-support">
+            <RouterLink class="icon-links" to="/news-and-resources">
               <div class="dropdown">
                 <div class="dropdown-span">
                   <span class="dropdwon-icon">News & Resources <span>
