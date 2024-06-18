@@ -6905,7 +6905,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
-          font-size: 25px;
+          font-size: 20px !important;
           line-height: 30px;
           padding-left: 0px;
           text-align: center;
@@ -6918,8 +6918,8 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .intro-subtitle {
           // border: 2px solid red;
-          font-weight: 700;
-          font-size: 30px;
+          font-weight: 400;
+          font-size: 30px !important;
           line-height: 30px;
           letter-spacing: 0em;
           color: #fff;
@@ -8639,7 +8639,8 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
-          font-size: 30px;
+          font-weight: 400;
+          font-size: 30px !important;
           line-height: 40px;
           padding-left: 0px;
           text-align: center;
@@ -8653,7 +8654,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 35px;
+          font-size: 35px !important;
           line-height: 40px;
           letter-spacing: 0em;
           color: #fff;

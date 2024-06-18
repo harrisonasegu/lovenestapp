@@ -1946,7 +1946,8 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
-          font-size: 25px;
+          font-weight: 400;
+          font-size: 20px;
           line-height: 30px;
           padding-left: 0px;
         }
@@ -2550,7 +2551,8 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
-          font-size: 30px;
+          font-weight: 400;
+          font-size: 30px !important;
           line-height: 30px;
           padding-left: 0px;
           text-align: center;
@@ -2564,7 +2566,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 35px;
+          font-size: 35px !important;
           line-height: 30px;
           letter-spacing: 0em;
           color: #fff;

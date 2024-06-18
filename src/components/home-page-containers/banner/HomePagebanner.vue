@@ -2369,7 +2369,6 @@ const imageUrl = [
       }
     }
   }
-
 }
 
 // XX-SM

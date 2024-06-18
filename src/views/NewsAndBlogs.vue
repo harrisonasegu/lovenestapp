@@ -929,7 +929,8 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-title {
           // border: 12px solid red;
           margin-bottom: 2.5rem;
-          font-size: 20px;
+          font-weight: 400;
+          font-size: 20px !important;
           font-weight: 600;
           line-height: 35px;
           color: #fff;
@@ -940,7 +941,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 30px;
+          font-size: 30px !important;
           line-height: 25px;
           letter-spacing: 0em;
           color: #fff;
@@ -1210,6 +1211,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
+          font-weight: 400;
           font-size: 30px !important;
           line-height: 40px;
           padding-left: 0px;
@@ -1224,7 +1226,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 45px !important;
+          font-size: 35px !important;
           line-height: 30px;
           letter-spacing: 0em;
           color: #fff;

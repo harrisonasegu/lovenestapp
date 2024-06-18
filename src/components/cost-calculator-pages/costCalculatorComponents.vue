@@ -1721,7 +1721,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
           // border: 12px solid red;
           margin-bottom: 2.5rem;
           font-size: 20px;
-          font-weight: 600;
+          font-weight: 400;
           line-height: 40px;
           color: #fff;
           padding-left: 0px;
@@ -2350,6 +2350,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
+          font-weight: 400;
           font-size: 30px;
           line-height: 30px;
           padding-left: 0px;
