@@ -910,7 +910,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     // colored-last line section
     section {
       &>.colored-last {
-        display: flex;
+        display: none;
         margin-top: 50px;
 
         &>.first-color {
@@ -1112,7 +1112,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     // colored-last line section
     section {
       &>.colored-last {
-        display: flex;
+        display: none;
         margin-top: 50px;
 
         &>.first-color {
@@ -1317,7 +1317,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     // colored-last line section
     section {
       &>.colored-last {
-        display: flex;
+        display: none;
         margin-top: 50px;
 
         &>.first-color {
@@ -1522,7 +1522,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     // colored-last line section
     section {
       &>.colored-last {
-        display: flex;
+        display: none;
         margin-top: 50px;
 
         &>.first-color {
