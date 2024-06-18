@@ -146,7 +146,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 </div>
                 <!-- Dropdown #tag for Single page navigation -->
                 <div class="dropdown-content about-drop">
-                  <RouterLink class="icon-links" to="/Frequent-question"> Frequently Asked Questions 
+                  <RouterLink class="icon-links" to="/frequent-question"> Frequently Asked Questions 
                   </RouterLink>
                 </div>
               </div>

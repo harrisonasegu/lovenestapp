@@ -93,8 +93,8 @@ const guestRouteChildren = [
     }
   },
   {
-    path: '/Frequent-question',
-    name: 'FrequentAskQuestion',
+    path: '/frequent-question',
+    name: 'frequently asked question',
     component: () => import('@/views/FrequentAskQuestion.vue'),
     meta: {
       title: 'FrequentAskQuestion'
@@ -102,7 +102,7 @@ const guestRouteChildren = [
   },
   {
     path: '/Free-assessment',
-    name: 'RequestFreeAssessment',
+    name: 'free assessment',
     component: () => import('@/views/RequestFreeAssessment.vue'),
     meta: {
       title: 'RequestFreeAssessment'

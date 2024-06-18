@@ -31,20 +31,46 @@ import { useAuthenticationStore } from '@/stores/modules/authentication'
 
 import { InputRegex } from '@/utils/regex/validations';
 
+import Banner from '@/assets/images/about-us-image/aboutBanner.png'
+import Image1 from '@/assets/images/about-us-image/aboutImage1.png'
+import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
+import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
+
 const notification = useNotification()
 
 const responseMessageStore = useResponseMessageStore()
 const userStore = useAuthenticationStore()
 
+const route = useRoute()
+const router = useRouter()
+
+const routeName = route.name as string
+
 const isLoading = ref<boolean>(false)
 
 const formRef = ref<FormInst | null>(null)
+
+const options = [
+  {
+    label: 'Email',
+    value: 'email'
+  },
+  {
+    label: 'Text',
+    value: 'text'
+  },
+  {
+    label: 'Phone call',
+    value: 'phone call'
+  },
+]
 
 const model = reactive({
   firstName: '',
   lastName: '',
   email: '',
   phoneNumber: '',
+  meansOfContact: '',
   customerAddress: '',
   termsAndConditions: false
 })
@@ -54,6 +80,7 @@ const inputRequired = computed(() => (
   model.lastName === '' ||
   model.email === '' ||
   model.phoneNumber === '' ||
+  model.meansOfContact === '' ||
   model.customerAddress === '' ||
   !model.termsAndConditions
 ))
@@ -91,6 +118,13 @@ const rules: FormRules = {
     {
       required: true,
       message: 'phone number is required',
+      trigger: ['input', 'blur']
+    }
+  ],
+  formSelect: [
+    {
+      required: true,
+      message: 'this field is required',
       trigger: ['input', 'blur']
     }
   ],
@@ -140,44 +174,39 @@ function handleValidateButtonClick(e: MouseEvent) {
       loadingState(true)
 
       // proceed to sign up
-      userStore.AddNewCustomer({
-        firstname: model.firstName,
-        lastname: model.lastName,
-        email: model.email,
-        phoneNo: model.phoneNumber,
-        customerAddress: model.customerAddress,
-        acceptTerms: model.termsAndConditions
-      })
-        .then(response => {
-          const { responseCode } = response
+      // userStore.AddNewCustomer({
+      //   firstname: model.firstName,
+      //   lastname: model.lastName,
+      //   email: model.email,
+      //   phoneNo: model.phoneNumber,
+      //   customerAddress: model.customerAddress,
+      //   acceptTerms: model.termsAndConditions
+      // })
+      //   .then(response => {
+      //     const { responseCode } = response
 
-          switch (responseCode) {
-            // successful registration
-            case '00':
-              // clear input
-              clearInputFields()
-              break
-          }
+      //     switch (responseCode) {
+      //       // successful registration
+      //       case '00':
+      //         // clear input
+      //         clearInputFields()
+      //         break
+      //     }
 
-          // loading state
-          loadingState(false)
-          // notification
-          showNotification(5000)
-        })
-        .catch(() => {
-          // loading state
-          loadingState(false)
-          // notification
-          showNotification(5000)
-        })
+      //     // loading state
+      //     loadingState(false)
+      //     // notification
+      //     showNotification(5000)
+      //   })
+      //   .catch(() => {
+      //     // loading state
+      //     loadingState(false)
+      //     // notification
+      //     showNotification(5000)
+      //   })
     }
   )
 }
-
-const route = useRoute()
-const router = useRouter()
-
-const routeName = route.name as string
 
 const navigateToSubMenu = (elementId: string) => {
   // Get the element by its ID
@@ -228,13 +257,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
       navigateToSubMenuPage(navMenuTextContent, subMenu)
   }
 }
-
-
-
-import Banner from '@/assets/images/about-us-image/aboutBanner.png'
-import Image1 from '@/assets/images/about-us-image/aboutImage1.png'
-import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
-import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 </script>
 
 <template>
@@ -291,12 +313,24 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
                 </n-form-item>
 
                 <n-form-item path="phoneNumber">
-                  <n-input size="large" placeholder="Phone Number" v-model:value="model.phoneNumber"
-                    :allow-input="allowNumberInput" :disabled="isLoading" @keydown.enter.prevent />
+                  <n-input
+                    size="large"
+                    placeholder="Phone Number"
+                    v-model:value="model.phoneNumber"
+                    :allow-input="allowNumberInput"
+                    :disabled="isLoading" 
+                    @keydown.enter.prevent 
+                  />
                 </n-form-item>
 
-                <n-form-item  path="fromSelect">
-                  <n-select v-model:value="value" :options="options" />
+                <n-form-item  path="formSelect">
+                  <n-select
+                    size="large"
+                    v-model:value="model.meansOfContact"
+                    :options="options"
+                    placeholder=""
+                    :disabled="isLoading" 
+                  />
                 </n-form-item>
 
                 <n-form-item path="customerAddress">

@@ -62,78 +62,78 @@ export const openLayoutNavMenu: any = [
         ),
         key: 'vacancy'
     },
-    {
-        label: () => h(
-            RouterLink,
-            {
-                to: {
-                    name: 'job-form'
-                }
-            },
-            { default: () => 'JobForm' }
-        ),
-        key: 'JobForm'
-    },
-    {
-        label: () => h(
-            RouterLink,
-            {
-                to: {
-                    name: 'helpful-links'
-                }
-            },
-            { default: () => 'HelpfulSeniorLinks' }
-        ),
-        key: 'HelpfulSeniorLinks'
-    },
-    {
-        label: () => h(
-            RouterLink,
-            {
-                to: {
-                    name: 'news-blogs'
-                }
-            },
-            { default: () => 'NewsAndBlogs' }
-        ),
-        key: 'NewsAndBlogs'
-    },
-    {
-        label: () => h(
-            RouterLink,
-            {
-                to: {
-                    name: 'health-safety'
-                }
-            },
-            { default: () => 'HealthAndSafety' }
-        ),
-        key: 'HealthAndSafety'
-    },
-    {
-        label: () => h(
-            RouterLink,
-            {
-                to: {
-                    name: 'latest-new'
-                }
-            },
-            { default: () => 'LatestNewAndBlog' }
-        ),
-        key: 'LatestNewAndBlog'
-    },
-    {
-        label: () => h(
-            RouterLink,
-            {
-                to: {
-                    name: 'blogs'
-                }
-            },
-            { default: () => 'Blogs' }
-        ),
-        key: 'blogs'
-    },
+    // {
+    //     label: () => h(
+    //         RouterLink,
+    //         {
+    //             to: {
+    //                 name: 'job-form'
+    //             }
+    //         },
+    //         { default: () => 'JobForm' }
+    //     ),
+    //     key: 'JobForm'
+    // },
+    // {
+    //     label: () => h(
+    //         RouterLink,
+    //         {
+    //             to: {
+    //                 name: 'helpful-links'
+    //             }
+    //         },
+    //         { default: () => 'HelpfulSeniorLinks' }
+    //     ),
+    //     key: 'HelpfulSeniorLinks'
+    // },
+    // {
+    //     label: () => h(
+    //         RouterLink,
+    //         {
+    //             to: {
+    //                 name: 'news-blogs'
+    //             }
+    //         },
+    //         { default: () => 'NewsAndBlogs' }
+    //     ),
+    //     key: 'NewsAndBlogs'
+    // },
+    // {
+    //     label: () => h(
+    //         RouterLink,
+    //         {
+    //             to: {
+    //                 name: 'health-safety'
+    //             }
+    //         },
+    //         { default: () => 'HealthAndSafety' }
+    //     ),
+    //     key: 'HealthAndSafety'
+    // },
+    // {
+    //     label: () => h(
+    //         RouterLink,
+    //         {
+    //             to: {
+    //                 name: 'latest-new'
+    //             }
+    //         },
+    //         { default: () => 'LatestNewAndBlog' }
+    //     ),
+    //     key: 'LatestNewAndBlog'
+    // },
+    // {
+    //     label: () => h(
+    //         RouterLink,
+    //         {
+    //             to: {
+    //                 name: 'blogs'
+    //             }
+    //         },
+    //         { default: () => 'Blogs' }
+    //     ),
+    //     key: 'blogs'
+    // },
     {
         label: () => h(
             RouterLink,
@@ -144,26 +144,28 @@ export const openLayoutNavMenu: any = [
             },
             { default: () => 'About Us' }
         ),
-        key: 'about us'
-    },
-    {
-        label: () => h(
-            RouterLink,
+        key: 'about us',
+        children: [
             {
-                to: {
-                    name: 'Frequent-question'
-                }
+                label: () => h(
+                    RouterLink,
+                    {
+                        to: {
+                            name: 'frequently asked question'
+                        }
+                    },
+                    { default: () => 'FrequentAskQuestion' }
+                ),
+                key: 'FrequentAskQuestion'
             },
-            { default: () => 'FrequentAskQuestion' }
-        ),
-        key: 'FrequentAskQuestion'
+        ]
     },
     {
         label: () => h(
             RouterLink,
             {
                 to: {
-                    name: 'Free-assessment'
+                    name: 'free assessment'
                 }
             },
             { default: () => 'RequestFreeAssessment' }

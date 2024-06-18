@@ -108,7 +108,8 @@ const imageUrl = [
                 regardless of ethnicity, religion, or race.
               </p>
               <div class="color-btn">
-                <a href="#">Learn more about our personalized home care</a>
+                <!-- <a href="#">Learn more about our personalized home care</a> -->
+                <RouterLink class="icon-links" to="/home-care-services"> Learn more about our personalized home care </RouterLink>
               </div>
             </div>
           </div>
@@ -142,7 +143,8 @@ const imageUrl = [
                 common interests.
               </p>
               <div class="color-btn">
-                <a href="#">Request a Free Assessment</a>
+                <!-- <a href="#">Request a Free Assessment</a> -->
+                <RouterLink class="icon-links" to="/Free-assessment"> Request Free Assessment </RouterLink>
               </div>
             </div>
           </div>
@@ -387,7 +389,10 @@ const imageUrl = [
           </p>
         </div>
         <div class="see-more">
-          <span>See what this means for you</span>
+          <span class="a-link">
+            <RouterLink class="icon-links" to="/news-blogs"> See what this means for you
+            </RouterLink>
+          </span>
           <span>
             <Icon class="home-icon" icon="fe:arrow-right" width="20px" height="20px" style="color: #BE0C68" />
           </span>
@@ -401,7 +406,10 @@ const imageUrl = [
         <span>
           <Icon class="home-icon" icon="fe:arrow-right" width="20px" height="20px" style="color: #fff" />
         </span>
-        <span>See what this means for you</span>
+        <span>
+          <RouterLink class="icon-links" to="/news-blogs"> See what this means for you
+          </RouterLink>
+        </span>
       </div>
     </section>
 
@@ -453,7 +461,7 @@ const imageUrl = [
 
           <div class="contact-us">
             <!-- <a class="number" href="tel:++0808 501 5786">Contact Us</a> -->
-            <RouterLink class="icon-links" to="/about"> Contact Us</RouterLink>
+            <RouterLink class="icon-links" to="/Contact-Us"> Contact Us</RouterLink>
           </div>
 
           <div class="page-view">
@@ -763,6 +771,14 @@ const imageUrl = [
 
   a {
     font-family: Montserrat;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .a-link {
+    a {
+    color: $base-color-2;
+  }
   }
 
   P {

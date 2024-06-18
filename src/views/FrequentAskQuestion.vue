@@ -117,8 +117,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                     <div class="collapse">
 
-                      <n-collapse accordion arrow-placement="right" :default-expanded-names="expandedItem.name"
-                        @item-header-click="handleItemHeaderClick">
+                      <n-collapse accordion arrow-placement="right" :default-expanded-names="expandedItem.name">
                         <template #arrow>&VeryThinSpace;</template>
 
                         <n-collapse-item name="1">
