@@ -777,8 +777,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         .intro-title {
           // border: 12px solid red;
           margin-bottom: 2.5rem;
-          font-size: 20px;
-          font-weight: 600;
+          font-weight: 400;
+          font-size: 20px !important;
           line-height: 25px;
           color: #fff;
           padding-left: 20px;
@@ -789,7 +789,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 30px;
+          font-size: 30px !important;
           line-height: 35px;
           letter-spacing: 0em;
           color: #fff;
@@ -979,8 +979,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         .intro-title {
           // border: 12px solid red;
           margin-bottom: 2.5rem;
-          font-size: 20px;
-          font-weight: 600;
+          font-weight: 400;
+          font-size: 30px !important;
           line-height: 25px;
           color: #fff;
           padding-left: 20px;
@@ -990,7 +990,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         .intro-subtitle {
           // border: 2px solid red;
           font-weight: 700;
-          font-size: 30px;
+          font-size: 35px !important;
           line-height: 35px;
           letter-spacing: 0em;
           color: #fff;
