@@ -21,7 +21,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     <div class="latest-contents">
       <section class="first">
         <!-- underline h3 text -->
-        <div>
+        <div class="icon-content">
           <h3> <span>
               <Icon icon="typcn:arrow-back" width="40" height="40" style="color: #4897E6" />
             </span>
@@ -483,14 +483,25 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     &>.first {
       // border: 3px solid red;
       padding: 0 20px;
+      .icon-content {
+         h3 {
+          display: flex;
+          align-items: center;
+
+          span {
+           display: flex;
+          }
+         }
+        }
 
       div {
-        // border: 3px solid red;
-
         h3 {
-          // border: 3px solid red;
           margin-bottom: -10px;
           margin-top: 30px;
+        //   span {
+        //  border: 3px solid red;
+        // }
+
         }
       }
 
@@ -502,7 +513,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
   section {
     &>.line-paragraphy {
       margin-top: 30px;
-
+          //  border: 3px solid red;
       &>.underline-wrap {
         padding: 0 20px;
 
