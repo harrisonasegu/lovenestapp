@@ -23,7 +23,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         <!-- underline h3 text -->
         <div class="icon-content">
           <h3>
-            <RouterLink class="icon-links" to="/our-care-services">
+            <RouterLink class="icon-links" to="/news-and-resources">
               <span>
                 <Icon icon="typcn:arrow-back" width="40" height="40" style="color: #4897E6" />
               </span>
@@ -540,10 +540,6 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
             display: flex;
             align-items: center;
             column-gap: 10px;
-          }
-
-          span {
-            // display: flex;
           }
 
           // border: 4px solid red;
