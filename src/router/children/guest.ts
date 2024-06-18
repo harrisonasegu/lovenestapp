@@ -78,7 +78,7 @@ const guestRouteChildren = [
   },
   {
     path: '/latest-new',
-    name: 'LatestNewAndBlog',
+    name: 'Latest News And Blog',
     component: () => import('@/views/LatestNews.vue'),
     meta: {
       title: 'LatestNewAndBlog'

@@ -1042,7 +1042,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
           }
         }
       }
-  }
+}
 
 // XX-SM (<251px)
 @media (max-width: 250.9px) {
@@ -2322,7 +2322,7 @@ section {
     }
 
     &>.banner {
-  // border: 11px solid red;
+  // border: 4px solid red;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -2357,6 +2357,7 @@ section {
       padding-left: 0px;
     }
   }
+
 }
    
 &>.line-paragraphy {
@@ -4071,8 +4072,6 @@ section {
 // LG
 @media (min-width: 992px) and (max-width: 1200.9px) {
   .care-giver-wrap {
-
-
 
 &>.banner {
   &>.intro-content {

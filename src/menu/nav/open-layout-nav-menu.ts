@@ -46,7 +46,7 @@ export const openLayoutNavMenu: any = [
                     name: 'News And Resources',
                 }
             },
-            { default: () => 'News And Resources' }
+            { default: () => 'News & Resources' }
         ),
         key: 'news-and-resources',
         children: [
@@ -58,7 +58,7 @@ export const openLayoutNavMenu: any = [
                             name: 'News And Blogs'
                         }
                     },
-                    { default: () => 'News And Blogs' }
+                    { default: () => 'News & Blogs' }
                 ),
                 key: 'news-blogs'
             },
@@ -70,7 +70,7 @@ export const openLayoutNavMenu: any = [
                             name: 'Health And Safety'
                         }
                     },
-                    { default: () => 'Health And Safety' }
+                    { default: () => 'Health & Safety' }
                 ),
                 key: 'health-safety'
             },
@@ -82,7 +82,7 @@ export const openLayoutNavMenu: any = [
                             name: 'Helpful Senior Links'
                         }
                     },
-                    { default: () => 'Helpful Senior Links' }
+                    { default: () => 'Helpful Links' }
                 ),
                 key: 'helpful-links'
             },
@@ -100,78 +100,6 @@ export const openLayoutNavMenu: any = [
         ),
         key: 'vacancy'
     },
-    // {
-    //     label: () => h(
-    //         RouterLink,
-    //         {
-    //             to: {
-    //                 name: 'job-form'
-    //             }
-    //         },
-    //         { default: () => 'JobForm' }
-    //     ),
-    //     key: 'JobForm'
-    // },
-    // {
-    //     label: () => h(
-    //         RouterLink,
-    //         {
-    //             to: {
-    //                 name: 'helpful-links'
-    //             }
-    //         },
-    //         { default: () => 'HelpfulSeniorLinks' }
-    //     ),
-    //     key: 'HelpfulSeniorLinks'
-    // },
-    // {
-    //     label: () => h(
-    //         RouterLink,
-    //         {
-    //             to: {
-    //                 name: 'news-blogs'
-    //             }
-    //         },
-    //         { default: () => 'NewsAndBlogs' }
-    //     ),
-    //     key: 'NewsAndBlogs'
-    // },
-    // {
-    //     label: () => h(
-    //         RouterLink,
-    //         {
-    //             to: {
-    //                 name: 'health-safety'
-    //             }
-    //         },
-    //         { default: () => 'HealthAndSafety' }
-    //     ),
-    //     key: 'HealthAndSafety'
-    // },
-    // {
-    //     label: () => h(
-    //         RouterLink,
-    //         {
-    //             to: {
-    //                 name: 'latest-new'
-    //             }
-    //         },
-    //         { default: () => 'LatestNewAndBlog' }
-    //     ),
-    //     key: 'LatestNewAndBlog'
-    // },
-    // {
-    //     label: () => h(
-    //         RouterLink,
-    //         {
-    //             to: {
-    //                 name: 'blogs'
-    //             }
-    //         },
-    //         { default: () => 'Blogs' }
-    //     ),
-    //     key: 'blogs'
-    // },
     {
         label: () => h(
             RouterLink,
@@ -192,7 +120,7 @@ export const openLayoutNavMenu: any = [
                             name: 'frequently asked question'
                         }
                     },
-                    { default: () => 'FrequentAskQuestion' }
+                    { default: () => 'Frequent Ask Question' }
                 ),
                 key: 'FrequentAskQuestion'
             },
@@ -203,10 +131,22 @@ export const openLayoutNavMenu: any = [
             RouterLink,
             {
                 to: {
+                    name: 'Latest News And Blog'
+                }
+            },
+            { default: () => 'Latest News & Blog' }
+        ),
+        key: 'latest-new'
+    },
+    {
+        label: () => h(
+            RouterLink,
+            {
+                to: {
                     name: 'free assessment'
                 }
             },
-            { default: () => 'RequestFreeAssessment' }
+            { default: () => 'Request Free Assessment' }
         ),
         key: 'RequestFreeAssessment'
     },
