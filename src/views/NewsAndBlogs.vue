@@ -1212,7 +1212,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           // border: 2px solid red;
           margin-bottom: 2.5rem;
           font-weight: 400;
-          font-size: 30px !important;
+          font-size: 25px !important;
           line-height: 40px;
           padding-left: 0px;
           text-align: center;
@@ -1361,7 +1361,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
                     height: 300px;
 
                     &>.light-background {
-                      border: px solid red;
+                      // border: px solid red;
                       width: 94.5%;
                       right: 10px;
 

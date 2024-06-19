@@ -3254,7 +3254,7 @@ const imageUrl = [
             .intro-title {
               // border: 2px solid red;
               margin-bottom: 2.5rem;
-              font-size: 30px;
+              font-size: 25px !important;
               font-weight: 400;
               line-height: 30px;
               color: #fff;

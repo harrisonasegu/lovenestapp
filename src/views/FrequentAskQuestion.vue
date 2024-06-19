@@ -980,7 +980,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           // border: 12px solid red;
           margin-bottom: 2.5rem;
           font-weight: 400;
-          font-size: 30px !important;
+          font-size: 25px !important;
           line-height: 25px;
           color: #fff;
           padding-left: 20px;
