@@ -3252,9 +3252,10 @@ const imageUrl = [
             transform: translateY(0);
 
             .intro-title {
-              // border: 2px solid red;
+              // border: 1px solid red;
+              width: 300px;
               margin-bottom: 2.5rem;
-              font-size: 25px !important;
+              font-size: 22px !important;
               font-weight: 400;
               line-height: 35px;
               color: #fff;
