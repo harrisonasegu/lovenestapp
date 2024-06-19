@@ -2352,7 +2352,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
           margin-bottom: 2.5rem;
           font-weight: 400;
           font-size: 25px !important;
-          line-height: 30px;
+          line-height: 35px;
           padding-left: 0px;
           text-align: center;
         }
