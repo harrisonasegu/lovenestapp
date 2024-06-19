@@ -3256,7 +3256,7 @@ const imageUrl = [
               margin-bottom: 2.5rem;
               font-size: 25px !important;
               font-weight: 400;
-              line-height: 30px;
+              line-height: 35px;
               color: #fff;
               padding-left: 0px;
               text-align: center;
