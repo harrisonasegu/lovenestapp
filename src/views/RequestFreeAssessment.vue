@@ -1490,7 +1490,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
 
     P {
-      font-size: 14px !important;
+      font-size: 16px !important;
     }
 
     h3 {
@@ -1498,7 +1498,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
 
     h2 {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     &>.banner {
@@ -1588,10 +1588,16 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               padding-right: unset;
 
               // onboarding form
-              // &>div.onboarding-form {}
+              &>div.onboarding-form {
+                .t-and-c-container {
+                //  border: 3px solid red;
+                width: 280px;
+                }
+              }
 
               // onboarding form footer
               &>div.onboarding-form-footer {
+                // border: 3px solid red;
                 flex-direction: column;
                 row-gap: 5px;
                 text-align: center;
@@ -1627,141 +1633,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         }
       }
     }
-
-    // <!-- Carousel section -->
-    section {
-      &>.carousel {
-        //  border: 3px solid red;
-        margin-bottom: -50px;
-
-        .carousel-img {
-          width: 100%;
-          // height: 350px;
-        }
-
-        img {
-          // border: 3px solid red;
-          width: 100%;
-        }
-
-        .custom-arrow {
-          bottom: 20px;
-          right: 10px;
-        }
-
-        .custom-dots {
-          bottom: 30px;
-        }
-
-        .custom-dots li {
-          display: inline-block;
-          width: 12px;
-          height: 4px;
-          margin: 0 3px;
-          border-radius: 4px;
-          background-color: $base-color-2;
-          // background-color: rgba(255, 255, 255, 0.4);
-          transition: width 0.3s, background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          cursor: pointer;
-        }
-
-        .custom-dots li.is-active {
-          width: 40px;
-          background: $base-color-1;
-        }
-
-        // Absolute Image - Section--------------
-
-        .second-reliable {
-          // border: 3px solid red;
-          border: 5px solid $base-color;
-          display: flex;
-          flex-direction: row-reverse;
-          flex-direction: column;
-          // height: 500px;
-          overflow-y: hidden;
-          margin-bottom: 50px;
-
-          &>.section-image {
-
-            // border: 1px solid red;
-            img {
-              // border: 1px solid red;
-              width: 100%;
-              height: auto;
-              padding-right: 0px;
-            }
-          }
-
-          &>.section-background {
-            // border: 1px solid red;
-            position: relative;
-            width: 100%;
-            // height: 500px;
-            margin-top: -7px;
-            background-color: $base-color;
-
-            &>.light-background {
-              // border: 11px solid red;
-              background-color: #FFFFFFB2;
-              width: 96%;
-              // min-height: 200px;
-              position: absolute;
-              overflow-y: scroll;
-              top: -30px;
-              bottom: 5px;
-              left: 2px;
-              display: flex;
-              align-content: center;
-              justify-content: flex-end;
-
-              &>.contents {
-                // border: 2px solid red;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 10px;
-                text-align: center;
-
-                .icons {
-                  // border: 2px solid red;
-                  height: 30px;
-                }
-
-                .quotation {
-                  line-height: 0.86px;
-                  color: $base-color-1;
-                  // margin-bottom: 20px;
-                }
-
-                p {
-                  font-weight: 400;
-                  line-height: 30.26px;
-                  margin-bottom: 20px;
-                }
-
-                &>.color-btn {
-                  display: flex;
-                  justify-items: center;
-                  flex-direction: column;
-                  align-items: center;
-                  line-height: 0px;
-
-                  h4 {
-                    font-size: 20px;
-                    color: $base-color-1;
-                    line-height: 0px;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-
     // colored-last line section
     section {
       &>.colored-last {

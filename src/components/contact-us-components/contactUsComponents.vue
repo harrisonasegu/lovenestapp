@@ -1537,15 +1537,15 @@ section {
 }
 
 P {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
 h3 {
-  font-size: 18px !important;
+  font-size: 15px !important;
 }
 
 h2 {
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 &>.banner {
@@ -1661,9 +1661,14 @@ section {
       width: 90%;
       margin: 0 auto;
 
-      h2, p, a {
+      h2, a {
       text-align: center;
       }
+
+      P {
+      font-size: 14px !important;
+      text-align: center;
+    }
 
       .work-time {
         padding-bottom: 30px;
