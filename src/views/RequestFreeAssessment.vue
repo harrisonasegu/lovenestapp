@@ -1591,7 +1591,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               &>div.onboarding-form {
                 .t-and-c-container {
                 //  border: 3px solid red;
-                width: 280px;
+                 width: 280px;
                 }
               }
 
@@ -1627,6 +1627,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             text-align: center;
           }
 
+          h2 {
+            // border: 3px solid red;
+            margin-bottom: -10px;
+          }
           .work-time {
             padding-bottom: 30px;
           }
