@@ -6,7 +6,7 @@ import { Icon } from '@iconify/vue';
 <template>
   <header>
     <div class="topheader-wrap">
-      <nav> 
+      <nav>
         <div class="phone-routing">
           <div class="phone">
             <span>
@@ -14,7 +14,7 @@ import { Icon } from '@iconify/vue';
             </span>
 
             <span>
-                <a class="number" href="tel:++0808 501 5786">0808 501 5786</a>
+              <a class="number" href="tel:++0808 501 5786">0808 501 5786</a>
             </span>
 
           </div>
@@ -24,10 +24,12 @@ import { Icon } from '@iconify/vue';
                 <Icon icon="wpf:message-outline" color="#fff" width="20" />
               </span> <span> <a href="mailto:">Email</a> </span> </div>
 
-            <RouterLink class="icon-links" to="/vacancy"><span><Icon icon="clarity:cursor-arrow-line" width="20px" height="20px"  style="color: white" /></span> Apply For Jobs </RouterLink>
+            <RouterLink class="icon-links" to="/vacancy"><span>
+                <Icon icon="clarity:cursor-arrow-line" width="20px" height="20px" style="color: white" />
+              </span> Apply For Jobs </RouterLink>
 
             <RouterLink class="icon-links" to="/Free-assessment"> Request Free Assessment </RouterLink>
-<!-- 
+            <!-- 
               <div class="icon-links"><span>
                
                 <Icon icon="ion:search" width="20px" height="20px"  style="color: white" />
@@ -75,7 +77,8 @@ import { Icon } from '@iconify/vue';
           column-gap: 8px;
           font-size: 23px;
 
-          &>.number, a {
+          &>.number,
+          a {
             display: flex;
             text-decoration: none;
             font-size: 18px;
@@ -120,6 +123,43 @@ import { Icon } from '@iconify/vue';
         }
       }
     }
+  }
+
+  @media (min-width: 992px) and (max-width: 1240px) {
+
+    .topheader-wrap {
+
+      // header- nav
+      nav {
+
+        &>.phone-routing {
+          column-gap: 20px;
+
+          &>.phone {
+            // border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 8px;
+            font-size: 23px;
+
+            &>.number,
+            a {
+              display: flex;
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: 700;
+              color: $base-color-2;
+            }
+          }
+
+          &>.routing {
+            column-gap: 20px;
+          }
+        }
+      }
+    }
+
   }
 }
 </style>

@@ -24,12 +24,25 @@ import loveNestLogo from '@/assets/logo.png'
   box-sizing: border-box;
 
   .header-image {
+
     // border: 2px solid red;
+    .logo {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1240px) {
+    .header-image {
+
+      // border: 2px solid red;
       .logo {
         img {
-          width: 400px;
+          width: 200px;
         }
       }
     }
   }
+}
 </style>

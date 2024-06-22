@@ -110,21 +110,19 @@ export const openLayoutNavMenu: any = [
             },
             { default: () => 'About Us' }
         ),
-        key: 'about us',
-        children: [
+        key: 'about us'
+    },
+    {
+        label: () => h(
+            RouterLink,
             {
-                label: () => h(
-                    RouterLink,
-                    {
-                        to: {
-                            name: 'frequently asked question'
-                        }
-                    },
-                    { default: () => 'Frequent Ask Question' }
-                ),
-                key: 'FrequentAskQuestion'
+                to: {
+                    name: 'frequently asked question'
+                }
             },
-        ]
+            { default: () => 'FAQ' }
+        ),
+        key: 'frequent-question'
     },
     {
         label: () => h(

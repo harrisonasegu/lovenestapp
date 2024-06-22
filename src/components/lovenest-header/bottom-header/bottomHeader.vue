@@ -13,16 +13,16 @@ const navigateToSubMenu = (elementId: string) => {
   var element = document.getElementById(elementId);
 
   if (element) {
-      // Get the top offset of the element relative to the viewport
-      var offsetTop = element.offsetTop;
+    // Get the top offset of the element relative to the viewport
+    var offsetTop = element.offsetTop;
 
-      // Scroll to the coordinates of the element
-      window.scroll({
-          top: offsetTop,
-          behavior: 'smooth' // Optional: Smooth scrolling animation
-      });
+    // Scroll to the coordinates of the element
+    window.scroll({
+      top: offsetTop,
+      behavior: 'smooth' // Optional: Smooth scrolling animation
+    });
   } else {
-      console.error("Element with ID " + elementId + " not found.");
+    console.error("Element with ID " + elementId + " not found.");
   }
 }
 
@@ -80,21 +80,25 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                   <a href="#personal" @click.prevent="(e) => handleSubMenuClick(e, 'personal')">Personal Care</a>
 
-                  <a href="#domiciliary" @click.prevent="(e) => handleSubMenuClick(e, 'domiciliary')">Domiciliary Care</a>
+                  <a href="#domiciliary" @click.prevent="(e) => handleSubMenuClick(e, 'domiciliary')">Domiciliary
+                    Care</a>
 
-                  <a href="#companionship" @click.prevent="(e) => handleSubMenuClick(e, 'companionship')">Companionship Care & Support</a>
+                  <a href="#companionship" @click.prevent="(e) => handleSubMenuClick(e, 'companionship')">Companionship
+                    Care & Support</a>
 
                   <a href="#dementia" @click.prevent="(e) => handleSubMenuClick(e, 'dementia')">Dementia Care</a>
 
-                  <a href="#assistance"  @click.prevent="(e) => handleSubMenuClick(e, 'assistance')">Personal Assistance</a>
+                  <a href="#assistance" @click.prevent="(e) => handleSubMenuClick(e, 'assistance')">Personal
+                    Assistance</a>
 
-                  <a href="#pet"  @click.prevent="(e) => handleSubMenuClick(e, 'pet')">Pet-care Care</a>
+                  <a href="#pet" @click.prevent="(e) => handleSubMenuClick(e, 'pet')">Pet-care Care</a>
 
                   <a href="#life" @click.prevent="(e) => handleSubMenuClick(e, 'life')">End of Life Care</a>
 
                   <a href="#palliative" @click.prevent="(e) => handleSubMenuClick(e, 'palliative')">Palliative Care</a>
 
-                  <a href="#hospital" @click.prevent="(e) => handleSubMenuClick(e, 'hospital')">Hospital To Home Care</a>
+                  <a href="#hospital" @click.prevent="(e) => handleSubMenuClick(e, 'hospital')">Hospital To Home
+                    Care</a>
 
                   <a href="#overnight" @click.prevent="(e) => handleSubMenuClick(e, 'overnight')">Overnight Care</a>
 
@@ -106,13 +110,13 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                   <a href="#complex" @click.prevent="(e) => handleSubMenuClick(e, 'complex')">Complex Care</a>
 
-                  <a href="#stroke"  @click.prevent="(e) => handleSubMenuClick(e, 'stroke')">Stroke Care</a>
+                  <a href="#stroke" @click.prevent="(e) => handleSubMenuClick(e, 'stroke')">Stroke Care</a>
 
                 </div>
               </div>
             </RouterLink>
 
-            <RouterLink class="icon-links" to="/our-care-services"> Our Care Givers 
+            <RouterLink class="icon-links" to="/our-care-services"> Our Care Givers
             </RouterLink>
 
             <RouterLink class="icon-links" to="/news-and-resources">
@@ -132,7 +136,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                   <RouterLink class="icon-links" to="/helpful-links"> Helpful Senior Links
                   </RouterLink>
-                        
+
                 </div>
               </div>
             </RouterLink>
@@ -140,21 +144,21 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             <RouterLink class="icon-links" to="/about-us">
               <div class="dropdown">
                 <div class="dropdown-span">
-                  <span class="dropdwon-icon">About <span>
-                      <Icon icon="ic:sharp-arrow-drop-down" width="30" height="30" style="color: white" />
-                    </span></span>
-                </div>
-                <!-- Dropdown #tag for Single page navigation -->
-                <div class="dropdown-content about-drop">
-                  <RouterLink class="icon-links" to="/frequent-question"> Frequently Asked Questions 
-                  </RouterLink>
+                  <span class="dropdwon-icon">About </span>
                 </div>
               </div>
             </RouterLink>
-      
+
+            <RouterLink class="icon-links" to="/frequent-question">
+              <div class="dropdown">
+                <div class="dropdown-span">
+                  <span class="dropdwon-icon"> FAQ </span>
+                </div>
+              </div>
+            </RouterLink>
+
             <RouterLink class="icon-links" to="/Contact-Us"> Contact </RouterLink>
 
-            <!-- <RouterLink class="icon-links free" to="/vacancy"> Request Free Assessment </RouterLink> -->
           </div>
         </div>
       </nav>
@@ -195,7 +199,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          column-gap: 50px;
+          column-gap: 30px;
           padding-right: 20px;
 
           &>.free {
@@ -206,8 +210,9 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           }
 
           &>.icon-links {
+            // border: 2px solid red;
             color: $base-color-1;
-            font-size: 16px;
+            font-size: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -283,7 +288,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               display: flex;
             }
           }
-          
+
           &>.icon-links:hover {
             border-bottom: 3px solid #fff;
           }
