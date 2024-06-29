@@ -1520,7 +1520,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     }
 
     P {
-      font-size: 18px !important;
+      font-size: 16px !important;
     }
 
     h3 {

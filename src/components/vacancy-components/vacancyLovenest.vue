@@ -856,7 +856,7 @@ height: 15px;
 
 
 P {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
 h3 {

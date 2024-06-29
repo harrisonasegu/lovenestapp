@@ -1568,7 +1568,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
     }
 
     P {
-      font-size: 18px !important;
+      font-size: 16px !important;
       line-height: 25px !important;
     }
 

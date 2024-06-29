@@ -2320,8 +2320,8 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
     }
 
     p {
-      font-size: 18px !important;
-      line-height: 30px !important;
+      font-size: 16px !important;
+      line-height: 25px !important;
 
     }
 

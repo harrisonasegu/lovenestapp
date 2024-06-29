@@ -475,7 +475,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                     // collapse header and header extra
                     .collapsed-item-header {
-                      // border: 2px solid red;
                       padding: 10px 0;
                       font-size: 18px;
                       font-weight: 800;

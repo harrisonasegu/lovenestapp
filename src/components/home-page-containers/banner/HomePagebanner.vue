@@ -3377,12 +3377,12 @@ const imageUrl = [
     section {
 
       &>.reliable {
-        // border: 5px solid red;
+        // border: 2px solid red;
         display: flex;
         flex-direction: column;
         // height: 500px;
         overflow-y: scroll;
-        padding: 0 10px;
+        padding: 0px;
         margin-bottom: 50px;
         margin-top: 50px;
 
