@@ -39,7 +39,7 @@ const handleItemHeaderClick: CollapseProps['onItemHeaderClick'] = ({ name, expan
 }
 
 const imageUrl = [
-  carouselImage8, carouselImage5, carouselImage6, carouselImage2, carouselImage7, carouselImage9
+ carouselImage9, carouselImage8, carouselImage5, carouselImage6, carouselImage2, carouselImage7
 ]
 </script>
 
