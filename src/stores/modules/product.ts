@@ -39,7 +39,7 @@ export const useProductStore = defineStore('product', () => {
         const { responseCode, responseMessage } = responseData
 
         switch (responseCode) {
-          // successful logout
+          // successful
           case '00':
             // refresh product list
             RefreshProductList()
@@ -76,7 +76,7 @@ export const useProductStore = defineStore('product', () => {
         const { responseCode, responseMessage } = responseData
 
         switch (responseCode) {
-          // successful logout
+          // successful
           case '00':
             // refresh product list
             RefreshProductList()

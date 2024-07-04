@@ -4,7 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { Icon } from '@iconify/vue'
 import { computed, reactive } from 'vue'
 import { ArrowBack, ArrowForward } from '@vicons/ionicons5'
-import { NCarousel, NIcon, NCard, NTabs, NTabPane } from 'naive-ui'
+import { NCarousel, NIcon } from 'naive-ui'
 
 import {
   useNotification,
@@ -12,9 +12,8 @@ import {
   NForm,
   NFormItem,
   NInput,
-  NCheckbox,
+  // NCheckbox,
   NSelect,
-  NSpace
 } from 'naive-ui'
 
 import type {
@@ -27,19 +26,18 @@ import type {
 import { useResponseNotification } from '@/composables/responseNotification'
 
 import { useResponseMessageStore } from '@/stores/common/responseMessage'
-import { useAuthenticationStore } from '@/stores/modules/authentication'
+import { useFormSubmisionStore } from '@/stores/modules/formSubmission'
 
 import { InputRegex } from '@/utils/regex/validations';
 
 import Banner from '@/assets/images/about-us-image/aboutBanner.png'
 import Image1 from '@/assets/images/about-us-image/aboutImage1.png'
 import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
-import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
 
 const notification = useNotification()
 
 const responseMessageStore = useResponseMessageStore()
-const userStore = useAuthenticationStore()
+const formSubmisionStore = useFormSubmisionStore()
 
 const route = useRoute()
 const router = useRouter()
@@ -70,9 +68,8 @@ const model = reactive({
   lastName: '',
   email: '',
   phoneNumber: '',
-  meansOfContact: '',
-  customerAddress: '',
-  termsAndConditions: false
+  meansOfContact: null,
+  message: '',
 })
 
 const inputRequired = computed(() => (
@@ -80,9 +77,8 @@ const inputRequired = computed(() => (
   model.lastName === '' ||
   model.email === '' ||
   model.phoneNumber === '' ||
-  model.meansOfContact === '' ||
-  model.customerAddress === '' ||
-  !model.termsAndConditions
+  !model.meansOfContact ||
+  model.message === ''
 ))
 
 const rules: FormRules = {
@@ -121,17 +117,17 @@ const rules: FormRules = {
       trigger: ['input', 'blur']
     }
   ],
-  formSelect: [
+  meansOfContact: [
     {
       required: true,
-      message: 'this field is required',
+      message: 'means of contact is required',
       trigger: ['input', 'blur']
     }
   ],
-  customerAddress: [
+  message: [
     {
       required: true,
-      message: 'address is required',
+      message: 'message is required',
       trigger: ['input', 'blur']
     }
   ]
@@ -160,12 +156,13 @@ function clearInputFields() {
   model.lastName = ''
   model.email = ''
   model.phoneNumber = ''
-  model.customerAddress = ''
-  model.termsAndConditions = false
+  model.meansOfContact = null
+  model.message = ''
 }
 
 function handleValidateButtonClick(e: MouseEvent) {
   e.preventDefault()
+
   formRef.value?.validate(
     (errors: Array<FormValidationError> | undefined) => {
       if (errors) return
@@ -173,37 +170,36 @@ function handleValidateButtonClick(e: MouseEvent) {
       // loading state
       loadingState(true)
 
-      // proceed to sign up
-      // userStore.AddNewCustomer({
-      //   firstname: model.firstName,
-      //   lastname: model.lastName,
-      //   email: model.email,
-      //   phoneNo: model.phoneNumber,
-      //   customerAddress: model.customerAddress,
-      //   acceptTerms: model.termsAndConditions
-      // })
-      //   .then(response => {
-      //     const { responseCode } = response
+      // proceed to contact us
+      formSubmisionStore.ContactUs({
+        name: `${model.firstName} ${model.lastName}`,
+        email: model.email,
+        phoneNumber: model.phoneNumber,
+        contactPreference: model.meansOfContact as never as string,
+        message: model.message
+      })
+        .then(response => {
+          const { responseCode } = response
 
-      //     switch (responseCode) {
-      //       // successful registration
-      //       case '00':
-      //         // clear input
-      //         clearInputFields()
-      //         break
-      //     }
+          switch (responseCode) {
+            // successful
+            case '00':
+              // clear input
+              clearInputFields()
+              break
+          }
 
-      //     // loading state
-      //     loadingState(false)
-      //     // notification
-      //     showNotification(5000)
-      //   })
-      //   .catch(() => {
-      //     // loading state
-      //     loadingState(false)
-      //     // notification
-      //     showNotification(5000)
-      //   })
+          // loading state
+          loadingState(false)
+          // notification
+          showNotification(5000)
+        })
+        .catch(() => {
+          // loading state
+          loadingState(false)
+          // notification
+          showNotification(5000)
+        })
     }
   )
 }
@@ -323,22 +319,22 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                   />
                 </n-form-item>
 
-                <n-form-item  path="formSelect">
+                <n-form-item path="meansOfContact">
                   <n-select
                     size="large"
                     v-model:value="model.meansOfContact"
                     :options="options"
-                    placeholder=""
-                    :disabled="isLoading" 
+                    placeholder="How can we contact you?"
+                    :disabled="isLoading"
                   />
                 </n-form-item>
 
-                <n-form-item path="customerAddress">
-                  <n-input size="large" placeholder="Address" type="textarea" rows="2"
-                    v-model:value="model.customerAddress" :disabled="isLoading" @keydown.enter.prevent />
+                <n-form-item path="message">
+                  <n-input size="large" placeholder="Message" type="textarea" rows="2"
+                    v-model:value="model.message" :disabled="isLoading" @keydown.enter.prevent />
                 </n-form-item>
 
-                <n-form-item>
+                <!-- <n-form-item>
                   <n-space>
                     <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
                     <div class="t-and-c-container">
@@ -347,7 +343,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     </div>
                   </n-space>
 
-                </n-form-item>
+                </n-form-item> -->
 
                 <div class="btn-container">
                   <n-button size="large" :loading="isLoading" :disabled="inputRequired || isLoading"
@@ -499,7 +495,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
     <div class="up-icon">
       <div class="move-up" style="text-align: center">
-        <a href="#toTop" @click.prevent="(e) => handleSubMenuClick(e, 'toTop')">
+        <a href="#toTop" @click.prevent="(e: Event) => handleSubMenuClick(e, 'toTop')">
           <Icon class="icon-image" icon="emojione-monotone:up-arrow" width="50px" height="50px"
             style="color: #4897E6" />
         </a>
