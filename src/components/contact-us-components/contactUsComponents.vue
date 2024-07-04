@@ -678,6 +678,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     // nav link
                     a {
                       // text-decoration: none;
+                      // border: 2px solid red;
                       font-weight: 600;
                       color: $base-color;
                     }
@@ -739,6 +740,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         // border: 2px solid blue;
         width: 500px;
         min-height: 300px;
+        a {
+          // border: 2px solid red;
+          color: $base-color-1;
+        }
       }
     }
   }

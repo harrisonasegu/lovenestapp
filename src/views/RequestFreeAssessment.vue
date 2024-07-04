@@ -685,6 +685,11 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         // border: 2px solid blue;
         width: 500px;
         min-height: 300px;
+
+        a {
+          // border: 2px solid red;
+          color: $base-color-1;
+        }
       }
     }
   }
