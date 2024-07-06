@@ -11,6 +11,7 @@ import {
   NFormItem,
   NInput,
   NCheckbox,
+  NCheckboxGroup,
   NSpace,
   NSelect,
   NDatePicker
@@ -26,19 +27,23 @@ import type {
 import { useResponseNotification } from '@/composables/responseNotification'
 
 import { useResponseMessageStore } from '@/stores/common/responseMessage'
-import { useAuthenticationStore } from '@/stores/modules/authentication'
+
+import { useFormSubmisionStore } from '@/stores/modules/formSubmission'
 
 import { InputRegex } from '@/utils/regex/validations';
 
 const route = useRoute()
 const router = useRouter()
 
+const  cities = ref(null)
+
 const routeName = route.name as string
 
 const notification = useNotification()
 
 const responseMessageStore = useResponseMessageStore()
-const userStore = useAuthenticationStore()
+
+const formSubmisionStore = useFormSubmisionStore()
 
 const isLoading = ref<boolean>(false)
 const timePicker = ref()
@@ -50,8 +55,10 @@ const model = reactive({
   lastName: '',
   email: '',
   phoneNumber: '',
-  timePicker: '',
+  consultationDate: '',
   customerAddress: '',
+  message: '',
+  preferredServices: "", 
   termsAndConditions: false
 })
 
@@ -60,8 +67,10 @@ const inputRequired = computed(() => (
   model.lastName === '' ||
   model.email === '' ||
   model.phoneNumber === '' ||
-  model.timePicker === '' ||
+  model.consultationDate === '' ||
   model.customerAddress === '' ||
+  model.preferredServices === '' ||
+  model.message === '' ||
   !model.termsAndConditions
 ))
 
@@ -146,37 +155,20 @@ function handleValidateButtonClick(e: MouseEvent) {
       // loading state
       loadingState(true)
 
-      // proceed to sign up
-      // userStore.AddNewCustomer({
-      //   firstname: model.firstName,
-      //   lastname: model.lastName,
+      // formSubmisionStore.RequestFreeAssessment({
+      //   name: `${model.firstName} ${model.lastName}`,
       //   email: model.email,
-      //   phoneNo: model.phoneNumber,
-      //   customerAddress: model.customerAddress,
-      //   acceptTerms: model.termsAndConditions
+      //   phoneNumber: model.phoneNumber,
+      //   consultationDate: model.consultationDate,
+      //   // preferredServices: [{
+      //   //   option1: model.option1
+      //   //   option2: model.option2
+      //   //   option3 
+      //   //   option4
+      //   //   option5 
+      //   // }]
+      //   message: model.message,
       // })
-      //   .then(response => {
-      //     const { responseCode } = response
-
-      //     switch (responseCode) {
-      //       // successful registration
-      //       case '00':
-      //         // clear input
-      //         clearInputFields()
-      //         break
-      //     }
-
-      //     // loading state
-      //     loadingState(false)
-      //     // notification
-      //     showNotification(5000)
-      //   })
-      //   .catch(() => {
-      //     // loading state
-      //     loadingState(false)
-      //     // notification
-      //     showNotification(5000)
-      //   })
     }
   )
 }
@@ -295,8 +287,15 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 </n-form-item>
 
                 <span>What services are you interested in?</span>
-
-                <n-form-item>
+                <n-checkbox-group v-model:value="cities">
+                <n-space>
+                  <n-checkbox value="Beijing" label="Beijing" />
+                  <n-checkbox value="Shanghai" label="Shanghai" />
+                  <n-checkbox value="Guangzhou" label="Guangzhou" />
+                  <n-checkbox value="Shenzhen" label="Shenzhen" />
+                  </n-space>
+                </n-checkbox-group>
+                <!-- <n-form-item>
                   <n-space>
                     <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
                     <div class="t-and-c-container">
@@ -348,7 +347,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     </div>
                   </n-space>
 
-                </n-form-item>
+                </n-form-item> -->
 
                 <span>
                   Your Message
@@ -431,7 +430,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
     <div class="up-icon">
       <div class="move-up" style="text-align: center">
-        <a href="#toTop" @click.prevent="(e) => handleSubMenuClick(e, 'toTop')">
+        <a href="#toTop" @click.prevent="(e: Event) => handleSubMenuClick(e, 'toTop')">
           <Icon class="icon-image" icon="emojione-monotone:up-arrow" width="50px" height="50px"
             style="color: #4897E6" />
         </a>
@@ -613,7 +612,9 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                     // terms and conditions
                     .t-and-c-container {
+                    //  border: 3px solid red;
                       span {
+                        // border: 3px solid red;
                         text-decoration: none;
                         font-weight: bold;
                         color: $base-color-1;
@@ -627,6 +628,15 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                       color: $base-color;
                     }
                   }
+                }
+
+                &>.n-checkbox-group {
+                  // border: 2px solid red;
+                  width: 150px;
+                  display: flex;
+                  flex-direction: column;
+                  margin-bottom: 20px;
+                  margin-top: 10px;
                 }
 
                 &>.btn-container {
@@ -975,7 +985,9 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               padding-right: unset;
 
               // onboarding form
-              // &>div.onboarding-form {}
+              // &>div.onboarding-form {
+              //   border: 3px solid red;
+              // }
 
               // onboarding form footer
               &>div.onboarding-form-footer {

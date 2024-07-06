@@ -420,7 +420,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         <!-- Carousel section -->
         <section>
     <n-carousel class="carousel" show-arrow autoplay>
-
+    
 <!-- Second Section -->
 <!-- Relative and Absolute section -->
 <div class="second-reliable carousel-img">
