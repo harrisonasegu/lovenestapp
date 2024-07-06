@@ -12,6 +12,8 @@ import {
   NInput,
   NCheckbox,
   NCheckboxGroup,
+  NGrid,
+  NGi,
   NSpace,
   NSelect,
   NDatePicker
@@ -35,7 +37,7 @@ import { InputRegex } from '@/utils/regex/validations';
 const route = useRoute()
 const router = useRouter()
 
-const  cities = ref(null)
+const cities = ref(null)
 
 const routeName = route.name as string
 
@@ -58,7 +60,7 @@ const model = reactive({
   consultationDate: '',
   customerAddress: '',
   message: '',
-  preferredServices: "", 
+  preferredServices: "",
   termsAndConditions: false
 })
 
@@ -287,68 +289,29 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 </n-form-item>
 
                 <span>What services are you interested in?</span>
-                <n-checkbox-group v-model:value="cities">
-                <n-space>
-                  <n-checkbox value="Beijing" label="Beijing" />
-                  <n-checkbox value="Shanghai" label="Shanghai" />
-                  <n-checkbox value="Guangzhou" label="Guangzhou" />
-                  <n-checkbox value="Shenzhen" label="Shenzhen" />
-                  </n-space>
+                <n-checkbox-group>
+                  <n-grid :y-gap="8" :cols="1">
+                    <n-gi>
+                      <n-checkbox value="companionship" label="Companionship and engaging
+                        conversation." />
+                    </n-gi>
+                    <n-gi>
+                      <n-checkbox value="help" label="Help with household chores and light
+                        cleaning." />
+                    </n-gi>
+                    <n-gi>
+                      <n-checkbox value="dressing" label=" Help with dressing and grooming." />
+                    </n-gi>
+                    <n-gi>
+                      <n-checkbox value="hygiene" label="Help with hygiene and toileting." />
+                    </n-gi>
+                    <n-gi>
+                      <n-checkbox value="household" label="Help with household chores and light
+                        cleaning." />
+                    </n-gi>
+                  </n-grid>
                 </n-checkbox-group>
-                <!-- <n-form-item>
-                  <n-space>
-                    <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
-                    <div class="t-and-c-container">
-                      <span>Companionship and engaging
-                        conversation. </span>
-                    </div>
-                  </n-space>
-
-                </n-form-item>
-
-                <n-form-item>
-                  <n-space>
-                    <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
-                    <div class="t-and-c-container">
-                      <span>Help with household chores and light
-                        cleaning.</span>
-                    </div>
-                  </n-space>
-
-                </n-form-item>
-
-                <n-form-item>
-                  <n-space>
-                    <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
-                    <div class="t-and-c-container">
-                      <span>
-                        Help with dressing and grooming.
-                      </span>
-                    </div>
-                  </n-space>
-
-                </n-form-item>
-
-                <n-form-item>
-                  <n-space>
-                    <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
-                    <div class="t-and-c-container">
-                      <span>Help with hygiene and toileting.</span>
-                    </div>
-                  </n-space>
-
-                </n-form-item>
-
-                <n-form-item>
-                  <n-space>
-                    <n-checkbox size="large" v-model:checked="model.termsAndConditions" :disabled="isLoading" />
-                    <div class="t-and-c-container">
-                      <span>Help with hygiene and toileting.</span>
-                    </div>
-                  </n-space>
-
-                </n-form-item> -->
-
+              
                 <span>
                   Your Message
                 </span>
@@ -612,7 +575,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                     // terms and conditions
                     .t-and-c-container {
-                    //  border: 3px solid red;
+
+                      //  border: 3px solid red;
                       span {
                         // border: 3px solid red;
                         text-decoration: none;
@@ -632,9 +596,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                 &>.n-checkbox-group {
                   // border: 2px solid red;
-                  width: 150px;
-                  display: flex;
-                  flex-direction: column;
                   margin-bottom: 20px;
                   margin-top: 10px;
                 }
@@ -1607,8 +1568,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               // onboarding form
               &>div.onboarding-form {
                 .t-and-c-container {
-                //  border: 3px solid red;
-                 width: 280px;
+                  //  border: 3px solid red;
+                  width: 280px;
                 }
               }
 
@@ -1648,12 +1609,14 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             // border: 3px solid red;
             margin-bottom: -10px;
           }
+
           .work-time {
             padding-bottom: 30px;
           }
         }
       }
     }
+
     // colored-last line section
     section {
       &>.colored-last {
