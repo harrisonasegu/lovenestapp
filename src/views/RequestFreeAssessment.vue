@@ -48,7 +48,6 @@ const responseMessageStore = useResponseMessageStore()
 const formSubmisionStore = useFormSubmisionStore()
 
 const isLoading = ref<boolean>(false)
-const timePicker = ref()
 
 const formRef = ref<FormInst | null>(null)
 
@@ -57,23 +56,19 @@ const model = reactive({
   lastName: '',
   email: '',
   phoneNumber: '',
-  consultationDate: '',
-  customerAddress: '',
-  message: '',
-  preferredServices: "",
-  termsAndConditions: false
+  consultationDate: null,
+  message: ''
 })
+const preferredServicesModel = ref<string[]>([])
 
 const inputRequired = computed(() => (
   model.firstName === '' ||
   model.lastName === '' ||
   model.email === '' ||
   model.phoneNumber === '' ||
-  model.consultationDate === '' ||
-  model.customerAddress === '' ||
-  model.preferredServices === '' ||
+  !model.consultationDate ||
   model.message === '' ||
-  !model.termsAndConditions
+  preferredServicesModel.value.length === 0
 ))
 
 const rules: FormRules = {
@@ -112,10 +107,10 @@ const rules: FormRules = {
       trigger: ['input', 'blur']
     }
   ],
-  customerAddress: [
+  message: [
     {
       required: true,
-      message: 'address is required',
+      message: 'message is required',
       trigger: ['input', 'blur']
     }
   ]
@@ -139,13 +134,18 @@ function allowNumberInput(number: string) {
   return !number || /^\d{0,11}$/.test(number)
 }
 
+function handleServiceSelect (services: string[]) {
+  preferredServicesModel.value = services
+}
+
 function clearInputFields() {
   model.firstName = ''
   model.lastName = ''
   model.email = ''
   model.phoneNumber = ''
-  model.customerAddress = ''
-  model.termsAndConditions = false
+  model.consultationDate = null
+  model.message = ''
+  preferredServicesModel.value = []
 }
 
 function handleValidateButtonClick(e: MouseEvent) {
@@ -157,20 +157,23 @@ function handleValidateButtonClick(e: MouseEvent) {
       // loading state
       loadingState(true)
 
-      // formSubmisionStore.RequestFreeAssessment({
-      //   name: `${model.firstName} ${model.lastName}`,
-      //   email: model.email,
-      //   phoneNumber: model.phoneNumber,
-      //   consultationDate: model.consultationDate,
-      //   // preferredServices: [{
-      //   //   option1: model.option1
-      //   //   option2: model.option2
-      //   //   option3 
-      //   //   option4
-      //   //   option5 
-      //   // }]
-      //   message: model.message,
-      // })
+      formSubmisionStore.RequestFreeAssessment({
+        name: `${model.firstName} ${model.lastName}`,
+        email: model.email,
+        phoneNumber: model.phoneNumber,
+        consultationDate: model.consultationDate
+          ? new Date(model.consultationDate).toISOString()
+          : '',
+        preferredServices: preferredServicesModel.value,
+        // preferredServices: [{
+        //   option1: model.option1
+        //   option2: model.option2
+        //   option3 
+        //   option4
+        //   option5 
+        // }]
+        message: model.message,
+      })
     }
   )
 }
@@ -284,12 +287,13 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 </n-form-item>
 
                 <n-form-item size="large" path="customerDate">
-                  <n-date-picker placeholder="Select Vaild Date" v-model:value="timePicker" :disabled="isLoading"
+                  <n-date-picker placeholder="Consultation Date" v-model:value="model.consultationDate" :disabled="isLoading" clearable
                     @keydown.enter.prevent type="date" />
                 </n-form-item>
 
                 <span>What services are you interested in?</span>
-                <n-checkbox-group>
+
+                <n-checkbox-group v-model:value="preferredServicesModel" @update:value="handleServiceSelect">
                   <n-grid :y-gap="8" :cols="1">
                     <n-gi>
                       <n-checkbox value="companionship" label="Companionship and engaging
@@ -316,16 +320,15 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                   Your Message
                 </span>
 
-                <n-form-item path="customerAddress">
+                <n-form-item path="message">
                   <n-input size="large" placeholder="Message" type="textarea" rows="2"
-                    v-model:value="model.customerAddress" :disabled="isLoading" @keydown.enter.prevent />
+                    v-model:value="model.message" :disabled="isLoading" @keydown.enter.prevent />
                 </n-form-item>
-
 
                 <div class="btn-container">
                   <n-button size="large" :loading="isLoading" :disabled="inputRequired || isLoading"
                     @click="handleValidateButtonClick">
-                    Contact LoveNest
+                    Submit
                   </n-button>
                 </div>
               </n-form>

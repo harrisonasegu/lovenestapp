@@ -94,7 +94,7 @@ export const useFormSubmisionStore = defineStore('formSubmision', () => {
           }
   
           // update notification
-          updateResponse('Contact Us', 'error', (errorMessages_.length ? errorMessages_.join() : serverErrorMessage))
+          updateResponse('Request Free Assessment', 'error', (errorMessages_.length ? errorMessages_.join() : serverErrorMessage))
   
           return error
         })
