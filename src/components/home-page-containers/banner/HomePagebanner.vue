@@ -2,6 +2,7 @@
 import { NH2 } from 'naive-ui';
 import { reactive } from 'vue';
 import { NCarousel, NIcon, NH1, NH3 } from 'naive-ui'
+import { defineComponent, ref, onMounted } from 'vue';
 import { ArrowBack, ArrowForward } from '@vicons/ionicons5'
 
 // carousel Images
@@ -41,6 +42,7 @@ const handleItemHeaderClick: CollapseProps['onItemHeaderClick'] = ({ name, expan
 const imageUrl = [
  carouselImage9, carouselImage8, carouselImage5, carouselImage6, carouselImage2, carouselImage7
 ]
+
 </script>
 
 <template>
@@ -54,7 +56,7 @@ const imageUrl = [
         backgroundImage: `url(${url})`
       }">
           <div class="intro-content">
-            <n-h2 class="intro-title">
+            <n-h2 id="text-container" class="intro-title tlt">
               YOUR PERFECT MATCH FOR
             </n-h2>
             <n-h1 class="intro-subtitle">
@@ -665,6 +667,32 @@ const imageUrl = [
           top: auto;
           transform: translateY(0);
 
+          #text-container  {
+          //  border: 2px solid red;
+          display: flex;
+          //  opacity: 0;
+          //  position: relative;
+          //  animation: fadeInMove 3s ease-in-out infinite;
+          }
+
+          .letter {
+            opacity: 0;
+            position: relative;
+            animation: fadeInMove 1s ease-in-out forwards;
+            animation: fadeInMove 1s ease-in-out forwards;
+           }
+
+           @keyframes fadeInMove {
+              0% {
+                  opacity: 0;
+                  top: 20px;
+              }
+              100% {
+                  opacity: 1;
+                  top: 0;
+              }
+          }
+  
           .intro-title {
             // border: 2px solid red;
             margin-bottom: 2.5rem;

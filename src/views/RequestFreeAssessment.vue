@@ -162,18 +162,33 @@ function handleValidateButtonClick(e: MouseEvent) {
         email: model.email,
         phoneNumber: model.phoneNumber,
         consultationDate: model.consultationDate
-          ? new Date(model.consultationDate).toISOString()
+          ? new Date(model.consultationDate + ((60 * 60 * 1000) * 24 /* 1 day in milliseconds*/)).toISOString()
           : '',
         preferredServices: preferredServicesModel.value,
-        // preferredServices: [{
-        //   option1: model.option1
-        //   option2: model.option2
-        //   option3 
-        //   option4
-        //   option5 
-        // }]
         message: model.message,
       })
+      .then(response => {
+          const { responseCode } = response
+
+          switch (responseCode) {
+            // successful
+            case '00':
+              // clear input
+              clearInputFields()
+              break
+          }
+
+          // loading state
+          loadingState(false)
+          // notification
+          showNotification(5000)
+        })
+        .catch(() => {
+          // loading state
+          loadingState(false)
+          // notification
+          showNotification(5000)
+        })
     }
   )
 }
