@@ -149,7 +149,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
             values your talents and compassion, LoveNest Home Care is currently welcoming new applicants. Our team
             understands that our caregivers are literally and fundamentally who we are. LoveNest will help you through
             every step, as you begin this exciting journey. To view our open positions, or simply learn more about our
-            philosophy, visit us online or give us a call today at 513-766-3339.
+            philosophy, visit us online or give us a call today at  07931 918596.
           </p>
         </div>
 

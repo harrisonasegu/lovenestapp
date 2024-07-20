@@ -365,7 +365,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           <p>
             <a href="#">
               Address: 9395 Kenwood Rd, Suite 100, Cincinnati, OH 45242 <br>
-              Phone: 513-766-3339 <br>
+              Phone:  07931 918596 <br>
               Email: Info@StarPointHC.org
             </a>
           </p>
