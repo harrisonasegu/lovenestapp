@@ -224,7 +224,7 @@ import CostOfHomeCare3 from '@/assets/images/CostCalculatorPageImages/CostHomeCa
                             <Icon icon="ic:baseline-call" width="30px" height="25px" style="color: #DA5E42" />
                         </span>
                         <span>
-                            <a class="phone-number" href="#">0808 501 5786</a>
+                            <a class="phone-number" href="#"> 07931 918596</a>
                         </span>
                     </div>
                 </div>

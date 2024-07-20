@@ -45,24 +45,32 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
       <div class="footer-information">
         <h3>Information</h3>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <RouterLink class="icon-links" to="/about-us"> About Us</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="icon-links" to="/home-care-services"> Services</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="icon-links" to="/contact-us"> Contact</RouterLink>
+        </li>
       </div>
       <div class="footer-contact-us">
         <h3>Contact Us</h3>
-        <li><a href="#">+234808 501 5786</a></li>
-        <li><a href="#">info@abi-support.co.uk</a></li>
-        <li><a href="#">129 Broadways
-            OX11 8XD
-            Didcot
-            Oxfordshire</a>
+        <li><a href="tel:+ 07931 918596">Tel:  07931 918596</a>
+        </li>
+        <li><a href="#">info@lovenestcare.co.uk</a></li>
+        <li><a href="#">Lovenest Care Limited
+          Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham</a>
         </li>
       </div>
       <div class="footer-work-hours">
         <h3>Work Hours</h3>
         <p>
-          <span>Icon</span>
+          <span>
+            <Icon icon="svg-spinners:clock" width="30" height="30"  style="color: #ffffff8e" />
+          </span>
+          <br>
           <span>
             9 AM - 5 PM, Monday - Friday
           </span>
@@ -79,7 +87,11 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
             <span class="iconx">
               <Icon icon="ion:call" color="#fff" width="20" />
             </span>
-            <span>Contact Us</span>
+            <span>
+              <a class="number" href="tel:+ 07931 918596">
+                Contact Us
+              </a>
+            </span>
           </button>
         </p>
       </div>
@@ -200,6 +212,11 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
           align-items: center;
           column-gap: 10px;
           margin-top: 20px;
+           
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
         }
       }
 

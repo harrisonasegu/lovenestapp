@@ -32,11 +32,11 @@ onBeforeMount(() => setSideMenuState(false))
             <div class="icons-container">
                 <!-- phone -->
                 <div class="phone">
-                    <a href="tel:+0808 501 5786">
+                    <a href="tel:+ 07931 918596">
                         <span class="icon">
                             <Icon icon="ion:call" />
                         </span>
-                        <span class="icon-name">0808 501 5786</span>
+                        <span class="icon-name"> 07931 918596</span>
                     </a>
                 </div>
 
