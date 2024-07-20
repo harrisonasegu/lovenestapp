@@ -391,7 +391,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               Learn how to become a Caregiver:
               <br>
               Phone:  07931 918596 <br>
-              Email: AWorthy@JVSCareers.org
+              Email: info@lovenestcare.co.uk
             </a>
           </p>
 
