@@ -374,7 +374,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           </p>
           <p>
             <a href="#">
-              Lovenest Care Limited
+              Lovenest Care Limited <br>
               Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham
               <br>
               Phone:  07931 918596 <br>

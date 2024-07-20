@@ -364,9 +364,11 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           </p>
           <p>
             <a href="#">
-              Address: 9395 Kenwood Rd, Suite 100, Cincinnati, OH 45242 <br>
-              Phone:  07931 918596 <br>
-              Email: Info@StarPointHC.org
+              Address: Lovenest Care Limited
+              <br>
+              Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham<br>
+              Phone: 07931 918596 <br>
+              Email: info@lovenestcare.co.uk
             </a>
           </p>
 
@@ -376,10 +378,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           </h2>
           <p>
             <a href="#">
-              Learn how to become a Caregiver or apply today.Ashley Worthy, Talent Acquisition, JVS Career Services:
+              Learn how to become a Caregiver.
               <br>
-              Phone: 513-745-2912 <br>
-              Email: AWorthy@JVSCareers.org
+              Phone: 07931 918596 <br>
+              Email: info@lovenestcare.co.uk
             </a>
           </p>
 
