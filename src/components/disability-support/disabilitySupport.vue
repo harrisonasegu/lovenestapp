@@ -393,8 +393,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
           <!-- testing -->
           <div class="contact-us">
-            <!-- <a class="number" href="tel:++ 07931 918596">Contact Us</a> -->
-            <RouterLink class="icon-links" to="/about"> Contact Us</RouterLink>
+            <RouterLink class="icon-links" to="/contact-us"> Contact Us</RouterLink>
           </div>
 
           <div class="page-view">
@@ -565,7 +564,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
         <div class="contact-us">
           <!-- <a class="number" href="tel:++ 07931 918596">Contact Us</a> -->
-          <RouterLink class="icon-links" to="/about"> Visit Our Contact Page</RouterLink>
+          <RouterLink class="icon-links" to="/contact-us"> Visit Our Contact Page</RouterLink>
         </div>
 
       </div>

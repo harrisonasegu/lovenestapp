@@ -105,7 +105,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
           <div class="contact-us">
             <!-- <a class="number" href="tel:++ 07931 918596">Contact Us</a> -->
-            <RouterLink class="icon-links" to="/about"> Contact Us</RouterLink>
+            <RouterLink class="icon-links" to="/contact-us"> Contact Us</RouterLink>
           </div>
 
           <div class="page-view">
