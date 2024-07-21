@@ -410,10 +410,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
           <!-- Map -->
           <div class="map-location">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.727940896321!2d-84.38260602491317!3d39.226344171655676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840530a04566aab%3A0x2e890da8bb1228d9!2s9395%20Kenwood%20Rd%20100%209395%2C%20Cincinnati%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2sng!4v1718236947660!5m2!1sen!2sng"
-              width="100%" height="450" style="border:0;" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.9946283105915!2d-2.0599849240145036!3d52.31609997200847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870eb65fd1360ed%3A0xa924452480058440!2sBasepoint%20-%20Bromsgrove%2C%20Bromsgrove%20Enterprise%20Park!5e0!3m2!1sen!2sng!4v1721601137148!5m2!1sen!2sng" width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>

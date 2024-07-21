@@ -377,7 +377,7 @@ const imageUrl = [
     </section>
 
     <!-- Care Quality Commission--------- -->
-    <section>
+    <!-- <section >
       <div class="commissin-wrap">
         <div class="picture">
           <img :src="Image5" alt="picture">
@@ -400,10 +400,10 @@ const imageUrl = [
           </span>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Request Free Assessment -->
-    <section>
+    <!-- <section>
       <div class="see-more">
         <span>
           <Icon class="home-icon" icon="fe:arrow-right" width="20px" height="20px" style="color: #fff" />
@@ -413,7 +413,7 @@ const imageUrl = [
           </RouterLink>
         </span>
       </div>
-    </section>
+    </section> -->
 
     <!-- Third Section -->
     <!-- Relative and Absolute section -->

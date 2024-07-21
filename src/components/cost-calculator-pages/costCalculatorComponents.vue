@@ -403,8 +403,8 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
                   companionship.
                 </p>
                 <div class="color-btn">
-                  <h4>Sindy</h4>
-                  <p>Daughter of a LoveNest client</p>
+                  <!-- <h4>Sindy</h4> -->
+                  <p>LoveNest client</p>
                   <br>
                   <span>
                     <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"

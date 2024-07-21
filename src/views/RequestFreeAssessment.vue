@@ -324,10 +324,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     <n-gi>
                       <n-checkbox value="hygiene" label="Help with hygiene and toileting." />
                     </n-gi>
-                    <n-gi>
-                      <n-checkbox value="household" label="Help with household chores and light
-                        cleaning." />
-                    </n-gi>
                   </n-grid>
                 </n-checkbox-group>
               

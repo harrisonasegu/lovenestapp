@@ -2804,7 +2804,6 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     }
   }
 
-
   span {
     font-family: Montserrat;
     font-size: 18px !important;
@@ -3192,6 +3191,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         display: flex;
         flex-wrap: wrap;
         padding: 8px 0;
+
+        span {
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }
@@ -3327,12 +3331,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               row-gap: 10px;
 
               .contents {
-                border: 1px solid rgba(0, 0, 0, 0.070);
+                // border: 1px solid rgba(0, 0, 0, 0.070);
                 border-radius: 8px;
                 width: calc((100% / 2) - 17px);
                 display: flex;
                 flex-wrap: wrap;
                 padding: 8px 0;
+
+                span {
+                  display: flex;
+                  align-items: center;
+                }
               }
             }
           }
@@ -3738,12 +3747,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             row-gap: 10px;
 
             .contents {
-              border: 1px solid rgba(0, 0, 0, 0.070);
+              // border: 1px solid rgba(0, 0, 0, 0.070);
               border-radius: 8px;
               width: calc((100% / 1) - 17px);
               display: flex;
               flex-wrap: wrap;
               padding: 8px 0;
+
+              span {
+                display: flex;
+                align-items: center;
+              }
             }
           }
         }
@@ -4353,12 +4367,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             row-gap: 10px;
 
             .contents {
-              border: 1px solid rgba(0, 0, 0, 0.070);
+              // border: 1px solid rgba(0, 0, 0, 0.070);
               border-radius: 8px;
               width: calc((100% / 1) - 17px);
               display: flex;
               flex-wrap: wrap;
               padding: 8px 0;
+
+              span {
+                display: flex;
+                align-items: center;
+              }
             }
           }
         }
@@ -4458,12 +4477,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               }
 
               .contents {
-                border: 1px solid rgba(0, 0, 0, 0.070);
+                // border: 1px solid rgba(0, 0, 0, 0.070);
                 border-radius: 8px;
                 width: calc((100% / 1) - 17px);
                 display: flex;
                 flex-wrap: wrap;
                 padding: 8px 0;
+
+                span {
+                  display: flex;
+                  align-items: center;
+                }
 
                 .needs-assess {
                   color: #00000080;
@@ -4882,6 +4906,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                 flex-wrap: wrap;
                 padding: 8px 0;
 
+                span {
+                  display: flex;
+                  align-items: center;
+                }
+
                 .needs-assess {
                   color: #00000080;
                 }
@@ -4968,12 +4997,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               }
 
               .contents {
-                border: 1px solid rgba(0, 0, 0, 0.070);
+                // border: 1px solid rgba(0, 0, 0, 0.070);
                 border-radius: 8px;
                 width: calc((100% / 1) - 30px);
                 display: flex;
                 flex-wrap: wrap;
                 padding: 8px 0;
+
+                span {
+                  display: flex;
+                  align-items: center;
+                }
 
                 .needs-assess {
                   color: #00000080;

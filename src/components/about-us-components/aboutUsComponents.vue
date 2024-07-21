@@ -163,7 +163,8 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
                 </div>
               </div>
             </n-tab-pane>
-            <n-tab-pane class="tab-caption" name="jay chou" tab="VISION">
+            <n-tab-pane class="tab-caption" name="jay chou" tab="VISION"
+            >
               <div class="first-wrap">
                 <div class="picture">
                   <img :src="Image3" alt="picture">
@@ -208,8 +209,8 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
                   companionship.
                 </p>
                 <div class="color-btn">
-                  <h4>Sindy</h4>
-                  <p>Daughter of a LoveNest client</p>
+                  <!-- <h4>Sindy</h4> -->
+                  <p>LoveNest client</p>
                   <br>
                   <span>
                     <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"
@@ -492,6 +493,8 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
         // border: 2px solid red;
 
         .n-tab-pane {
+        // border: 2px solid red;
+     
           .first-wrap {
             // border: 2px solid blue;
             display: flex;
@@ -512,9 +515,9 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
             }
           }
         }
+        }
       }
     }
-  }
 
   // <!-- Carousel section -->
   section {
