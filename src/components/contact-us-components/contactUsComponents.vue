@@ -442,8 +442,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
       companionship.
     </p>
     <div class="color-btn">
-        <h4>Sindy</h4>
-        <p>Daughter of a LoveNest client</p>
+        <!-- <h4>Sindy</h4> -->
+        <p>LoveNest client</p>
           <br>
           <span>
             <Icon class="icons"  icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
