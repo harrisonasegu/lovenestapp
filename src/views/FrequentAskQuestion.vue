@@ -14,7 +14,7 @@ import {
 } from 'naive-ui'
 
 const expandedItem = reactive({
-  name: '3',
+  name: '1',
   expanded: true
 })
 
