@@ -24,20 +24,20 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         <div>
           <h3>
             <a href="#">
-              AgeWell Cincinnati
+              Family Service
             </a>
           </h3>
           <p>
-            AgeWell Cincinnati is a coordinated, central solution that links older adults, their family members,
-            friends, and caregivers to community resources for aging well in Jewish Cincinnati.
+            LoveNest Home Care Family Service is a coordinated, central solution that links older adults, their family members,
+            friends, and caregivers to community resources.
           </p>
           <h3>
             <a href="#">
-              Jewish Family Service of the Cincinnati Area
+              LoveNest Home Care Family Service 
             </a>
           </h3>
           <p>
-            StarPoint Home Care is a subsidiary of Jewish Family Service of the Cincinnati Area, an organization
+            LoveNest Home Care is an organization
             that strengthens lives and our community by providing professional social services to families and
             individuals in times of need. JFS offers access to food & financial support, care coordination, caregiver
             support, counseling, and so much more.
@@ -130,7 +130,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
         line-height: 30px;
         letter-spacing: 0em;
         color: #fff;
-        padding-left: 400px;
+        padding-left: 150px;
       }
 
       .discover-btn {
@@ -158,6 +158,12 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
   &>.safety-contents {
     margin-top: 50px;
 
+    h3 {
+      line-height: 25px;
+    }
+    p {
+      margin-top: -15px;
+    }
     // underline h3 text
     &>.first {
       // border: 3px solid red;
@@ -168,6 +174,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
   // colored-last line section
   section {
     &>.colored-last {
+      // border: 2px solid red;
       display: flex;
       margin-top: 50px;
 

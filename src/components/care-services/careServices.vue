@@ -211,7 +211,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         </div>
       </div>
       <p>
-        If you're looking for private-duty, in-home care in Cincinnati, LoveNest is here and ready to serve you. We
+        If you're looking for private-duty, in-home care in LoveNest, LoveNest is here and ready to serve you. We
         support all families who are searching for excellence with in-home senior care-services.
 
       </p>

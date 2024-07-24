@@ -64,6 +64,7 @@ import Banner from '@/assets/images/about-us-image/aboutBanner.png'
 import Image1 from '@/assets/images/about-us-image/aboutImage1.png'
 import Image2 from '@/assets/images/about-us-image/about-us-banner.png'
 import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
+import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
 </script>
 
 <template>
@@ -96,7 +97,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
       <p>
         Non-medical home about that puts your loved ones first.LoveNest Home about proceeds are reinvested in nonprofit,
         communal organizations that serve seniors, fight
-        hunger, and foster mental health in Cincinnati.
+        hunger, and foster mental health in LoveNest.
       </p>
     </div>
 
@@ -104,7 +105,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
     <section>
       <div class="third-reliable">
         <div class="section-image">
-          <img :src="Image1" alt="picture">
+          <img :src="Image3" alt="picture">
         </div>
         <div class="section-background">
           <div class="light-background">
@@ -151,7 +152,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
             <n-tab-pane class="tab-caption" name="the beatles" tab="VALUES">
               <div class="first-wrap">
                 <div class="picture">
-                  <img :src="Image1" alt="picture">
+                  <img :src="Image3" alt="picture">
                 </div>
                 <div class="contents">
                   <h2>OUR VALUES</h2>
@@ -426,6 +427,7 @@ import Image3 from '@/assets/images/about-us-image/aboutImage2.png'
       margin-bottom: 50px;
 
       &>.section-image {
+        margin-left: -5px;
 
         // border: 1px solid red;
         img {

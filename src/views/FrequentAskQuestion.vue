@@ -245,10 +245,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                           <p>
                             Our team is dedicated to providing family-like care. We get to know our clients and
                             caregivers,
-                            and consider our team a family. In addition, as a non-profit, all of our proceeds go
-                            directly
-                            back to serving the Cincinnati Jewish Community, through our parent agency, Jewish Family
-                            Service of Cincinnati.
+                            and consider our team a family.
                           </p>
                         </n-collapse-item>
 

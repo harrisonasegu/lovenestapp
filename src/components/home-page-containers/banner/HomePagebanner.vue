@@ -103,7 +103,7 @@ const imageUrl = [
                 IN THE HEART OF YOUR COMMUNITY
               </h2>
               <p>
-                LoveNest Home Care is based right in the heart of Cincinnati. We provide a full
+                LoveNest Home Care is based right in the heart ofLoveNest. We provide a full
                 complement of non-medical, in-home assistance services for senior adults who
                 need a helping hand maintaining their independence while continuing to live a
                 vibrant and engaged life. LoveNest is here to serve all seniors in our area,
@@ -604,10 +604,7 @@ const imageUrl = [
                           <p>
                             Our team is dedicated to providing family-like care. We get to know our clients and
                             caregivers,
-                            and consider our team a family. In addition, as a non-profit, all of our proceeds go
-                            directly
-                            back to serving the Cincinnati Jewish Community, through our parent agency, Jewish Family
-                            Service of Cincinnati.
+                            and consider our team a family.
                           </p>
                         </n-collapse-item>
 
