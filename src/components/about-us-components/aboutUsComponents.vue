@@ -114,7 +114,7 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
                 LOVENEST SPOTLIGHT
               </h2>
               <p>
-                Hi. My name is Alicia Reid and I'm the Assistant Director of
+                Hi. My name is Kay and I'm the Assistant Director of
                 LoveNest Home about. Every day, people entrust us to about for
                 their loved ones, and that is a responsibility I take very
                 seriously. In my role, I am responsible for training and

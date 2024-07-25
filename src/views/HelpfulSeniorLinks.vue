@@ -160,6 +160,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
     h3 {
       line-height: 25px;
+      cursor: none
     }
     p {
       margin-top: -15px;

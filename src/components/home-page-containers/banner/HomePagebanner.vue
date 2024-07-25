@@ -429,7 +429,7 @@ const imageUrl = [
                 LOVENEST SPOTLIGHT
               </h2>
               <p>
-                Hi. My name is Alicia Reid and I'm the Assistant Director of
+                Hi. My name is Kayand I'm the Assistant Director of
                 LoveNest Home Care. Every day, people entrust us to care for
                 their loved ones, and that is a responsibility I take very
                 seriously. In my role, I am responsible for training and
@@ -3248,7 +3248,7 @@ const imageUrl = [
 }
 
 // X-SM
-@media (min-width: 351.9px) and (max-width: 575.9px) {
+@media (min-width: 351px) and (max-width: 575.9px) {
   .wrap {
 
     // border: 2px solid red;
