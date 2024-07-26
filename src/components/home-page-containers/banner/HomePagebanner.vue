@@ -3613,7 +3613,7 @@ const imageUrl = [
 
 
         &>.guides-contents {
-          // border: 2px solid red;
+          border: 2px solid red;
           margin-top: 30px;
           display: flex;
           flex-wrap: wrap;
@@ -7685,7 +7685,7 @@ const imageUrl = [
     }
 
     P {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     h2 {
@@ -7907,7 +7907,7 @@ const imageUrl = [
 
         &>.guides-contents {
         // border: 2px solid red;
-        margin-top: 30px;
+        margin-top: 50px;
         margin-bottom: 30px;
 
         h3 {

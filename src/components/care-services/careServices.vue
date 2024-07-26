@@ -436,7 +436,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         <div class="icon-contact">
 
           <span>
-            <Icon icon="ion:call" color="#da5e42" width="15" />
+            <Icon class="icon" icon="ion:call" color="#da5e42" width="15" />
           </span>
 
           <span>
@@ -3177,7 +3177,6 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     }
 
     &>.contents-dots {
-      // border: 12px solid blue;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -3185,7 +3184,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
       row-gap: 10px;
 
       .contents {
-        // border: 1px solid rgba(0, 0, 0, 0.070);
+        border: transparent !important;
         border-radius: 8px;
         width: calc((100% / 4) - 33px);
         display: flex;
@@ -3331,7 +3330,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               row-gap: 10px;
 
               .contents {
-                // border: 1px solid rgba(0, 0, 0, 0.070);
+                border: transparent !important;
                 border-radius: 8px;
                 width: calc((100% / 2) - 17px);
                 display: flex;
@@ -3747,7 +3746,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             row-gap: 10px;
 
             .contents {
-              // border: 1px solid rgba(0, 0, 0, 0.070);
+              border: transparent !important;
               border-radius: 8px;
               width: calc((100% / 1) - 17px);
               display: flex;
@@ -4367,7 +4366,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             row-gap: 10px;
 
             .contents {
-              // border: 1px solid rgba(0, 0, 0, 0.070);
+              border: transparent !important;
               border-radius: 8px;
               width: calc((100% / 1) - 17px);
               display: flex;
@@ -4477,7 +4476,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               }
 
               .contents {
-                // border: 1px solid rgba(0, 0, 0, 0.070);
+                border: transparent !important;
                 border-radius: 8px;
                 width: calc((100% / 1) - 17px);
                 display: flex;
@@ -4899,7 +4898,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               }
 
               .contents {
-                // border: 1px solid rgba(0, 0, 0, 0.070);
+                border: transparent !important;
                 border-radius: 8px;
                 width: calc((100% / 3) - 30px);
                 display: flex;
@@ -4997,7 +4996,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               }
 
               .contents {
-                // border: 1px solid rgba(0, 0, 0, 0.070);
+                border: transparent !important;
                 border-radius: 8px;
                 width: calc((100% / 1) - 30px);
                 display: flex;
@@ -5193,7 +5192,8 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
     // The heart icons in the absolute pages
     .heart {
-      width: 25px;
+      // border: 2px solid red;
+      width: 15px;
     }
 
     // border: 11px solid red;
@@ -5222,10 +5222,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           // border: 2px solid red;
           font-weight: 700;
           font-size: 30px;
-          line-height: 25px;
+          line-height: 30px;
           letter-spacing: 0em;
           color: #fff;
           padding-left: 0px;
+          margin-top: -30px;
         }
 
       }
@@ -5321,13 +5322,19 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                 flex-direction: column;
                 column-gap: 10px;
 
-                // &>.first-section,
-                // .second-section {
-                //   div {
-                //     display: flex;
-                //     column-gap: 5px;
-                //   }
-                // }
+                &>.first-section, .second-section
+                {
+
+                span {
+                  display: flex;
+                  align-items: center;
+                 font-size: 14px !important;
+                }
+                  // div {
+                  //   display: flex;
+                  //   column-gap: 5px;
+                  // }
+                }
               }
             }
           }
@@ -5360,7 +5367,6 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         margin-bottom: 30px;
       }
     }
-
 
     &>.underline-wrap {
       // border: 2px solid blue;
@@ -5415,6 +5421,12 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           display: flex;
           flex-wrap: wrap;
           padding: 8px 0;
+
+          span {
+            display: flex;
+            align-items: center;
+            font-size: 14px !important;
+          }
         }
       }
     }
@@ -5446,9 +5458,12 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           column-gap: 10px;
 
           span {
-
             a {
               font-size: 14px;
+            }
+
+            .icon {
+              display: none;
             }
           }
         }
@@ -5530,12 +5545,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                 row-gap: 10px;
 
                 .contents {
-                  border: 1px solid rgba(0, 0, 0, 0.070);
+                  // border: 1px solid rgba(0, 0, 0, 0.070);
                   border-radius: 8px;
                   width: calc((100% / 1) - 0px);
                   display: flex;
                   flex-wrap: wrap;
                   padding: 8px 0;
+
+                  span {
+                    // border: 2px solid red;
+                    font-size: 14px !important;
+                  }
                 }
               }
             }
@@ -5725,10 +5745,18 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           .contents {
             width: calc((100% / 1) - 0px);
 
-            // &>.dots {
+            &>.dots {
+          // border: 2px solid blue;
+
             //   &>.dots-span {
+            // font-size: 14px !important;
+
             //   }
-            // }
+            }
+
+            span {
+             font-size: 14px !important;
+            }
           }
         }
       }
@@ -5850,7 +5878,6 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             font-size: 16px;
           }
 
-
           &>.paragraph-dots {
             // border: 1px solid red;
             display: flex;
@@ -5866,6 +5893,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               .contents {
                 width: calc((100% / 1) - 0px);
                 padding: 8px 0;
+
+                span {
+                  // border: 2px solid red;
+                  font-size: 14px !important;
+                }
               }
             }
           }
@@ -6331,6 +6363,10 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
               .contents {
                 width: calc((100% / 1) - 0px);
+
+                span {
+                  font-size: 14px !important;
+                }
               }
             }
           }
@@ -6404,6 +6440,10 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                   // .needs-assess {
                   //   color: #00000080;
                   // }
+
+                  span {
+                    font-size: 14px !important;
+                  }
                 }
               }
             }
@@ -6767,12 +6807,15 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                 }
 
                 .contents {
-                  border: 1px solid rgba(0, 0, 0, 0.070);
                   border-radius: 8px;
                   width: calc((100% / 1) - 0px);
                   display: flex;
                   flex-wrap: wrap;
                   padding: 8px 0;
+
+                  span { 
+                    font-size: 14px !important;
+                  }
                 }
               }
             }
@@ -6885,219 +6928,324 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 // XX-SM
 @media (min-width: 251px) and (max-width: 350.9px) {
   .care-service-wrap {
-    .up-icon {
-      position: relative;
 
-      .move-up {
-        // border: 2px solid red;
-        transition: ease;
-        position: fixed;
-        right: 10px;
-        bottom: 20px;
+.up-icon {
+  position: relative;
 
-        .icon-image {
-          //  border: 2px solid red;
-          width: 40px;
-        }
-      }
+  .move-up {
+    // border: 2px solid red;
+    transition: ease;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+
+    .icon-image {
+      //  border: 2px solid red;
+      width: 35px;
+    }
+  }
+}
+
+P {
+  font-size: 14px;
+}
+
+h2 {
+  // border: 12px solid red;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 15px !important;
+}
+
+// The heart icons in the absolute pages
+.heart {
+  // border: 2px solid red;
+  width: 15px;
+}
+
+// border: 11px solid red;
+&>.banner {
+  // border: 11px solid red;
+  height: 400px;
+  padding: 10px 10px;
+
+  &>.intro-content {
+    // border: 2px solid red;
+    text-align: center;
+    padding: 0px 0px;
+    line-height: 0px;
+
+    .intro-title {
+      // border: 12px solid red;
+      margin-bottom: 2.5rem;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 25px;
+      color: #fff;
+      padding-left: 0px;
     }
 
-    P {
-      font-size: 14px;
+    .intro-subtitle {
+      // border: 2px solid red;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0em;
+      color: #fff;
+      padding-left: 0px;
+      margin-top: -30px;
     }
 
-    // h2 {
-    //   // border: 12px solid red;
-    //   font-size: 20px !important;
-    // }
+  }
+}
 
-    h3 {
-      font-size: 18px !important;
-    }
+&>.line-paragraphy {
+  // border: 11px solid red;
+  margin-top: 30px;
 
-    // The heart icons in the absolute pages
-    .heart {
-      width: 25px;
-    }
+  p {
+    padding: 0 10px;
+    // text-align: center;
+  }
 
-    // border: 11px solid red;
-    &>.banner {
-      // border: 11px solid red;
-      height: 400px;
-      display: flex;
-      justify-content: center;
+  &>.underline-wrap {
+    padding: 0 10px;
 
-      padding: 10px 10px;
+    &>.making-preparation {
+      // border: 4px solid red;
+      margin-bottom: 30px;
 
-      &>.intro-content {
-        // border: 2px solid red;
+      h3 {
+        line-height: 30px;
         text-align: center;
-        padding: 0px 0px;
-        line-height: 0px;
+      }
 
+      h3::after {
+        left: 0%;
+        width: 100%;
+      }
+    }
+  }
 
-        .intro-title {
-          // border: 2px solid red;
-          margin-bottom: 2.5rem;
-          font-size: 20px !important;
-          line-height: 30px;
-          padding-left: 0px;
-          text-align: center;
-        }
+}
 
-        .intro-title:first-child {
-          // border: 12px solid red;
-          margin-bottom: 0px;
-        }
+section {
 
-        .intro-subtitle {
-          // border: 2px solid red;
-          font-weight: 400;
-          font-size: 30px !important;
-          line-height: 30px;
-          letter-spacing: 0em;
-          color: #fff;
-          padding-left: 0px;
-          text-align: center;
-        }
+  &>.reliable {
+    // border: 5px solid $base-color;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    padding: 0 0px;
+    margin-bottom: 0px;
+
+    &>.section-image {
+
+      // border: 1px solid red;
+      img {
+        // border: 1px solid red;
+        width: 100%;
+        height: auto;
       }
     }
 
-    &>.line-paragraphy {
-      // border: 11px solid red;
-      margin-top: 30px;
+    &>.section-background {
+      // border: 1px solid red;
+      margin-top: -6px;
+      position: relative;
+      width: 100%;
+      height: 450px;
+      background-color: $base-color;
 
-      p {
-        padding: 0 10px;
-        // text-align: center;
-      }
+      &>.light-background {
+        // border: 11px solid red;
+        background-color: #FFFFFFB2;
+        width: 95%;
+        top: -30px;
+        bottom: 5px;
+        right: 5px;
+        left: 5px;
+        justify-content: center;
 
-      &>.underline-wrap {
-        padding: 0 10px;
+        &>.contents {
+          // border: 2px solid red;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          overflow-y: scroll;
+          padding: 10px;
 
-        &>.making-preparation {
-          // border: 4px solid red;
-          margin-bottom: 30px;
-
-          h3 {
-            line-height: 30px;
+          h2 {
+            font-weight: 600;
+            line-height: 50.86px;
+            color: $base-color-1;
+            margin-bottom: 20px;
             text-align: center;
           }
 
-          h3::after {
-            left: 0%;
-            width: 100%;
-          }
-        }
-      }
+          &>.contents-wrap {
+            // border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            column-gap: 10px;
 
-    }
+            &>.first-section, .second-section
+            {
 
-
-    section {
-
-      &>.reliable {
-        // border: 5px solid $base-color;
-        display: flex;
-        flex-direction: column;
-        overflow-y: hidden;
-        padding: 0 0px;
-        margin-bottom: 0px;
-
-        &>.section-image {
-
-          // border: 1px solid red;
-          img {
-            // border: 1px solid red;
-            width: 100%;
-            height: auto;
-          }
-        }
-
-        &>.section-background {
-          // border: 1px solid red;
-          margin-top: -6px;
-          position: relative;
-          width: 100%;
-          height: 450px;
-          background-color: $base-color;
-
-          &>.light-background {
-            // border: 11px solid red;
-            background-color: #FFFFFFB2;
-            width: 97%;
-            top: -30px;
-            bottom: 5px;
-            right: 0px;
-            left: 5px;
-            justify-content: center;
-
-            &>.contents {
-              // border: 2px solid red;
+            span {
               display: flex;
-              flex-direction: column;
-              justify-content: center;
-              overflow-y: scroll;
-              padding: 10px;
-
-              h2 {
-                font-weight: 600;
-                line-height: 50.86px;
-                color: $base-color-1;
-                margin-bottom: 20px;
-                text-align: center;
-              }
-
-              &>.contents-wrap {
-                // border: 2px solid red;
-                display: flex;
-                flex-direction: column;
-                column-gap: 10px;
-
-                // &>.first-section,
-                // .second-section {
-                //   div {
-                //     display: flex;
-                //     column-gap: 5px;
-                //   }
-                // }
-              }
+              align-items: center;
+             font-size: 14px !important;
+            }
+              // div {
+              //   display: flex;
+              //   column-gap: 5px;
+              // }
             }
           }
         }
       }
     }
+  }
+}
 
-    // <!-- YOUR SEARCH ENDS HERE -->
-    &>.search-ends {
-      // border: 3px solid red;
-      margin-top: 20px;
+// <!-- YOUR SEARCH ENDS HERE -->
+&>.search-ends {
+  // border: 3px solid red;
+  margin-top: 20px;
 
-      &>.underline-wrap {
-        padding: 0 10px;
+  &>.underline-wrap {
+    padding: 0 10px;
 
-        &>.making-preparation {
-          display: flex;
-          justify-content: center;
+    &>.making-preparation {
+      display: flex;
+      justify-content: center;
 
-          h3 {
-            line-height: 30px;
-          }
-        }
-      }
-
-      p {
-        // border: 3px solid red;
-        padding: 0 10px;
-        text-align: left;
-        margin-bottom: 30px;
+      h3 {
+        line-height: 30px;
       }
     }
+  }
 
+  p {
+    // border: 3px solid red;
+    padding: 0 10px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+&>.underline-wrap {
+  // border: 2px solid blue;
+  padding: 0 10px;
+
+  &>.making-preparation {
+    display: flex;
+    justify-content: center;
+
+    // border: 4px solid red;
+    h3 {
+      text-align: center;
+      line-height: 25px;
+      margin-top: 30px;
+    }
+
+    h3::after {
+      left: 5%;
+      width: 90%;
+    }
+  }
+}
+
+&>.paragraph-dots {
+  // border: 11px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  margin-bottom: 30px;
+
+  &>.para {
+    p {
+      // border: 11px solid red;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      padding-bottom: 20px;
+      text-align: left;
+    }
+  }
+
+  &>.contents-dots {
+    // border: 2px solid blue;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 10px;
+
+    .contents {
+      width: calc((100% / 1) - 0px);
+      display: flex;
+      flex-wrap: wrap;
+      padding: 8px 0;
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+.call-us-wrap {
+  // border: 1px solid blue;
+  background-color: $base-color-1;
+  padding: 0 20px;
+
+  &>.call-contact {
+    // border: 2px solid red;
+    column-gap: 0px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    div h3 {
+      font-weight: 700;
+      line-height: 20px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    &>.icon-contact {
+      // border: 11px solid red;
+      border-radius: 8px;
+      width: 70%;
+      padding: 5px 15px;
+      column-gap: 10px;
+
+      span {
+        a {
+          font-size: 14px;
+        }
+
+        .icon {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+&>.elderly-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 20px 10px;
 
     &>.underline-wrap {
-      // border: 2px solid blue;
-      padding: 0 10px;
+      padding: 0 20px;
 
       &>.making-preparation {
         display: flex;
@@ -7106,573 +7254,229 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         // border: 4px solid red;
         h3 {
           text-align: center;
+          font-size: 16px;
           line-height: 25px;
-          margin-top: 30px;
-        }
-
-        h3::after {
-          left: 5%;
-          width: 90%;
         }
       }
     }
 
-    &>.paragraph-dots {
-      // border: 11px solid red;
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+    }
+
+    &>.lady-elderly-care {
+      // border: 2px solid red;
       display: flex;
       flex-direction: column;
-      padding: 0 10px;
-      margin-bottom: 30px;
+      justify-content: center;
+      padding: 30px 0;
 
-      &>.para {
-        p {
-          // border: 11px solid red;
-          font-weight: 400;
+      &>.lady {
+        img {
+          width: 100%;
+        }
+      }
+
+      &>.important-care {
+        // border: 1px solid red;
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
           line-height: 25px;
           letter-spacing: 0em;
-          padding-bottom: 20px;
-          text-align: left;
-        }
-      }
-
-      &>.contents-dots {
-        // border: 2px solid blue;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 30px;
-        row-gap: 10px;
-
-        .contents {
-          width: calc((100% / 1) - 0px);
-          display: flex;
-          flex-wrap: wrap;
-          padding: 8px 0;
-        }
-      }
-    }
-
-    .call-us-wrap {
-      // border: 1px solid blue;
-      background-color: $base-color-1;
-      padding: 0 20px;
-
-      &>.call-contact {
-        // border: 2px solid red;
-        column-gap: 0px;
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
-
-        div h3 {
-          font-weight: 700;
-          line-height: 20px;
-          font-size: 16px;
           text-align: center;
         }
 
-        &>.icon-contact {
-          // border: 11px solid red;
-          border-radius: 8px;
-          width: 70%;
-          padding: 5px 15px;
-          column-gap: 10px;
-
-          span {
-
-            a {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-    }
-
-    &>.elderly-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 10px;
-
-        &>.underline-wrap {
-          padding: 0 20px;
-
-          &>.making-preparation {
-            display: flex;
-            justify-content: center;
-
-            // border: 4px solid red;
-            h3 {
-              text-align: center;
-              font-size: 16px;
-              line-height: 25px;
-            }
-          }
-        }
-
         p {
-          // border: 2px solid red;
           font-size: 16px;
           font-weight: 400;
           line-height: 25px;
           letter-spacing: 0em;
         }
 
-        &>.lady-elderly-care {
-          // border: 2px solid red;
+        &>.paragraph-dots {
+          // border: 1px solid red;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          padding: 30px 0;
 
-          &>.lady {
-            img {
-              width: 100%;
-            }
-          }
-
-          &>.important-care {
-            // border: 1px solid red;
+          &>.contents-dots {
+            // border: 2px solid blue;
             width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 10px;
 
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              letter-spacing: 0em;
-              text-align: center;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 25px;
-              letter-spacing: 0em;
-            }
-
-            &>.paragraph-dots {
-              // border: 1px solid red;
+            .contents {
+              // border: 1px solid rgba(0, 0, 0, 0.070);
+              border-radius: 8px;
+              width: calc((100% / 1) - 0px);
               display: flex;
-              flex-direction: column;
+              flex-wrap: wrap;
+              padding: 8px 0;
 
-              &>.contents-dots {
-                // border: 2px solid blue;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                column-gap: 30px;
-                row-gap: 10px;
-
-                .contents {
-                  border: 1px solid rgba(0, 0, 0, 0.070);
-                  border-radius: 8px;
-                  width: calc((100% / 1) - 0px);
-                  display: flex;
-                  flex-wrap: wrap;
-                  padding: 8px 0;
-                }
+              span {
+                // border: 2px solid red;
+                font-size: 14px !important;
               }
             }
           }
         }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 25px;
-          letter-spacing: 0em;
-        }
       }
     }
 
-    // Looking for elderly care support? component just below the elderly care with image of an advance lady
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: 0em;
+    }
+  }
+}
 
-    &>.elderly-support {
-      background-color: $base-color-2;
+// Looking for elderly care support? component just below the elderly care with image of an advance lady
 
-      .call-us {
-        // border: 2px solid red;
-        background-color: $base-color-1;
+&>.elderly-support {
+  background-color: $base-color-2;
+
+  .call-us {
+    // border: 2px solid red;
+    background-color: $base-color-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    padding-bottom: 25px;
+
+    &>.call-contact {
+      // border: 10px solid blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+      div h3 {
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      &>.icon-contact {
+        // border: 10px solid blue;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10px 20px;
-        padding-bottom: 25px;
+        row-gap: 20px;
 
-        &>.call-contact {
-          // border: 10px solid blue;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
+        span {
+          // border: 11px solid red;
+          border-radius: 5px;
+          background-color: #fff;
           width: 100%;
+          padding: 5px 15px;
+          text-align: center;
 
-          div h3 {
-            color: #fff;
+
+          a {
+            text-decoration: none;
+            color: $base-color;
             font-size: 16px;
-            line-height: 25px;
+            font-weight: 700;
           }
+        }
 
-          &>.icon-contact {
-            // border: 10px solid blue;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            row-gap: 20px;
-
-            span {
-              // border: 11px solid red;
-              border-radius: 5px;
-              background-color: #fff;
-              width: 100%;
-              padding: 5px 15px;
-              text-align: center;
-
-
-              a {
-                text-decoration: none;
-                color: $base-color;
-                font-size: 16px;
-                font-weight: 700;
-              }
-            }
-
-            .phone-number {
-              color: $base-color-1;
-            }
-          }
+        .phone-number {
+          color: $base-color-1;
         }
       }
     }
+  }
+}
 
-    &>.personal-care {
-      // border: 1px solid red;
-      padding: 10px 10px;
+&>.personal-care {
+  // border: 1px solid red;
+  padding: 10px 10px;
+
+  &>.underline-wrap {
+    &>.underline-care {
+      margin-top: 20px;
+
+      // border: 4px solid red;
+      h3 {
+        position: relative;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+  }
+
+  &>.image-supporting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &>.image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &>.supporting {
+      width: 100%;
 
       &>.underline-wrap {
-        &>.underline-care {
-          margin-top: 20px;
+        &>.supporting-care {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
 
-          // border: 4px solid red;
           h3 {
             position: relative;
             font-size: 16px;
             line-height: 25px;
+            letter-spacing: 0em;
+            line-height: 25px;
           }
         }
       }
 
-      p {
+      h4 {
+        width: 100%;
         font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
         letter-spacing: 0em;
       }
 
-      &>.image-supporting {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        &>.image {
-          img {
-            width: 100%;
-          }
-        }
-
-        &>.supporting {
-          width: 100%;
-
-          &>.underline-wrap {
-            &>.supporting-care {
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-
-              h3 {
-                position: relative;
-                font-size: 16px;
-                line-height: 25px;
-                letter-spacing: 0em;
-                line-height: 25px;
-              }
-            }
-          }
-
-          h4 {
-            width: 100%;
-            font-size: 16px;
-            letter-spacing: 0em;
-          }
-
-          p {
-            font-size: 16px;
-          }
-        }
-      }
-
-      &>.choose-image {
-        // border: 4px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px 0;
-
-        &>.content {
-          width: 100%;
-
-          h3 {
-            font-size: 16px;
-            line-height: 25px;
-          }
-
-          p {
-            font-size: 16px;
-            line-height: 25px;
-          }
-        }
-
-        &>.image {
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-
-      &>.bathing-showering {
-        // border: 11px solid red;
-        padding: 0 0px;
-        margin-bottom: 0px;
-
-        h4 {
-          font-size: 16px;
-
-        }
-
-        &>.contents-dots {
-          // border: 2px solid blue;
-          width: 100%;
-
-          .contents {
-            width: calc((100% / 1) - 0px);
-
-            // &>.dots {
-            //   &>.dots-span {
-            //   }
-            // }
-          }
-        }
-      }
-    }
-
-    &>.getIn-touch {
-      border: 11px solid rgb(26, 135, 179)(0, 183, 255);
-
-      .call-us {
-        background-color: $base-color-1;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-
-        &>.call-contact {
-          width: 100%;
-          justify-content: center;
-
-          div h3 {
-            text-align: center;
-            font-size: 16px;
-          }
-
-          &>.contact {
-            // border: 11px solid red;
-            background-color: #fff;
-            border-radius: 5px;
-            color: $base-color;
-            padding: 5px 15px;
-            column-gap: 10px;
-            margin-bottom: 20px;
-
-            span {
-              display: flex;
-
-              a {
-                text-decoration: none;
-                font-size: 16px;
-              }
-            }
-
-            .phone-number {
-              color: $base-color-1;
-              font-weight: 700;
-            }
-          }
-        }
-      }
-    }
-
-    &>.domiciliary-care {
-      // border: 13px solid red;
-
-      &>.domiciliary {
-        padding: 0 10px;
-
-        &>.underline-domiciliary {
-          padding: 0 10px;
-
-          &>.making-preparation {
-
-            // border: 4px solid red;
-            h3 {
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 20px;
-            }
-          }
-        }
-
-        &>.image-domiciliary {
-          // border: 2px solid red;
-          padding: 0px 0;
-          justify-content: center;
-
-          &>.image {
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          &>.demociliary {
-            width: 100%;
-
-            h3 {
-              font-size: 16px;
-              line-height: 0px;
-              padding-top: 15px;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 25px;
-              letter-spacing: 0em;
-            }
-          }
-        }
-
-        &>.why-domiciliary {
-          h3 {
-            // border: 2px solid red;
-            font-size: 16px;
-          }
-
-          p {
-            font-size: 16px;
-            line-height: 25px;
-            letter-spacing: 0em;
-          }
-        }
-
-        &>.consider-domiciliary {
-          // border: 2px solid red;
-          padding-top: 0px;
-
-          h3 {
-            font-size: 16px;
-          }
-
-
-          &>.paragraph-dots {
-            // border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 30px;
-
-            &>.contents-dots {
-              // border: 2px solid blue;
-              width: 100%;
-              column-gap: 0px;
-              row-gap: 10px;
-
-              .contents {
-                width: calc((100% / 1) - 0px);
-                padding: 8px 0;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &>.companionship-care {
-      // border: 11px solid red;
-      padding: 0 10px;
-      padding-bottom: 20px;
-
-      &>.underline-wrap {
-        &>.underline-care {
-
-          // border: 4px solid red;
-          h3 {
-            position: relative;
-            line-height: 25px;
-          }
-
-          h3::after {
-            bottom: 0;
-            left: 0%;
-            width: 50%;
-          }
-        }
-      }
-
       p {
         font-size: 16px;
-        line-height: 25px;
       }
+    }
+  }
 
-      &>.image-companionship {
-        justify-content: center;
+  &>.choose-image {
+    // border: 4px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0;
 
-        &>.image {
-          img {
-            width: 100%;
-          }
-        }
-
-        &>.companionship {
-          width: 100%;
-
-          &>.underline-wrap {
-            &>.companionship-care {
-
-              // border: 4px solid red;
-              h3 {
-                font-size: 16px;
-                line-height: 25px;
-              }
-
-              h3::after {
-                bottom: 0;
-                left: 0%;
-                width: 40%;
-                border-bottom: 3px solid $base-color-1;
-              }
-            }
-          }
-
-          h4 {
-            width: 100%;
-            font-size: 16px;
-          }
-
-          p {
-            font-size: 16px;
-          }
-        }
-      }
+    &>.content {
+      width: 100%;
 
       h3 {
         font-size: 16px;
@@ -7681,836 +7485,615 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
       p {
         font-size: 16px;
-        font-weight: 400;
         line-height: 25px;
-        letter-spacing: 0em;
       }
     }
 
-    &>.dementia-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 0px 10px;
+    &>.image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 
-        &>.underline-wrap {
-          &>.making-preparation {
+  &>.bathing-showering {
+    // border: 11px solid red;
+    padding: 0 0px;
+    margin-bottom: 0px;
 
-            h3 {
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
+    h4 {
+      font-size: 16px;
+
+    }
+
+    &>.contents-dots {
+      // border: 2px solid blue;
+      width: 100%;
+
+      .contents {
+        width: calc((100% / 1) - 0px);
+
+        &>.dots {
+      // border: 2px solid blue;
+
+        //   &>.dots-span {
+        // font-size: 14px !important;
+
+        //   }
         }
 
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-        }
-
-        &>.elder-dementia-care {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          padding: 0;
-
-          &>.elder {
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          &>.important-care {
-            width: 100%;
-
-            h3 {
-              // border: 11px solid red;
-              font-size: 16px;
-              line-height: 0px;
-              padding-top: 15px
-            }
-
-            p {
-              font-size: 16px;
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          line-height: 25px;
+        span {
+         font-size: 14px !important;
         }
       }
     }
+  }
+}
 
-    &>.personal-assistance {
-      // border: 11px solid red;
-      padding: 0 10px;
-      padding-bottom: 20px;
+&>.getIn-touch {
+  border: 11px solid rgb(26, 135, 179)(0, 183, 255);
 
-      &>.underline-wrap {
-        &>.underline-care {
-          display: flex;
-          justify-content: center;
+  .call-us {
+    background-color: $base-color-1;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 
-          h3 {
-            font-size: 16px;
-            line-height: 25px;
-            text-align: center;
-            padding-top: 15px;
-          }
+    &>.call-contact {
+      width: 100%;
+      justify-content: center;
 
-          h3::after {
-            bottom: 0;
-            left: 5%;
-            width: 90%;
-          }
-        }
-      }
-
-      p {
+      div h3 {
+        text-align: center;
         font-size: 16px;
-        line-height: 25px;
       }
 
-      &>.image-personal-assistance {
-        // border: 2px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+      &>.contact {
+        // border: 11px solid red;
+        background-color: #fff;
+        border-radius: 5px;
+        color: $base-color;
+        padding: 5px 15px;
+        column-gap: 10px;
+        margin-bottom: 20px;
 
-        &>.image {
-          img {
-            width: 100%;
-          }
-        }
-
-        &>.companionship {
-          width: 100%;
-
-          p {
-            font-size: 16px;
-          }
-
-          h3 {
-            font-size: 16px;
-            line-height: 0px;
-          }
-        }
-      }
-    }
-
-    &>.pet-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 0px 10px;
-
-        &>.underline-wrap {
-          &>.making-preparation {
-
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
-        }
-
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-          line-height: 25px;
-          padding-bottom: 20px;
-        }
-
-        &>.pet-image-care {
-          // border: 21px solid red;
+        span {
           display: flex;
-          justify-content: center;
-          flex-direction: column;
-          padding: 10px 0px;
 
-          &>.pet-content {
-            width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 0px;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 25px;
-              letter-spacing: 0em;
-            }
-          }
-
-          &>.pet-picture {
-            img {
-              width: 100%;
-              height: auto;
-            }
+          a {
+            text-decoration: none;
+            font-size: 16px;
           }
         }
 
-        &>h3 {
-          // border: 1px solid green;
+        .phone-number {
+          color: $base-color-1;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+&>.domiciliary-care {
+  // border: 13px solid red;
+
+  &>.domiciliary {
+    padding: 0 10px;
+
+    &>.underline-domiciliary {
+      padding: 0 10px;
+
+      &>.making-preparation {
+
+        // border: 4px solid red;
+        h3 {
           font-size: 16px;
           line-height: 25px;
+          padding-top: 20px;
         }
       }
     }
 
-    &>.life-care {
+    &>.image-domiciliary {
+      // border: 2px solid red;
+      padding: 0px 0;
+      justify-content: center;
 
+      &>.image {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
 
-      &>.contents {
-        // border: 12px solid rgb(5, 3, 116);
-        padding: 0px 10px;
+      &>.demociliary {
+        width: 100%;
 
-        &>.underline-wrap {
-          &>.making-preparation {
-
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
+        h3 {
+          font-size: 16px;
+          line-height: 0px;
+          padding-top: 15px;
         }
 
         p {
-          // border: 2px solid red;
           font-size: 16px;
           font-weight: 400;
           line-height: 25px;
           letter-spacing: 0em;
         }
-
-        &>.life-care-image {
-          // border: 2px solid red;
-          display: flex;
-          flex-direction: column;
-          padding: 10px 0;
-
-          &>.lady {
-            img {
-              width: 100%;
-            }
-          }
-
-          &>.life-content {
-            width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 0px;
-              letter-spacing: 0em;
-              padding-top: 15px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          line-height: 0px;
-        }
       }
     }
 
-    &>.palliative-care {
-      &>.contents {
+    &>.why-domiciliary {
+      h3 {
         // border: 2px solid red;
-        padding: 0 10px;
+        font-size: 16px;
+      }
 
-        &>.underline-wrap {
-          &>.making-preparation {
-
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
-        }
-
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-        }
-
-        &>.palliative-image-care {
-          flex-direction: column;
-          padding: 0px 0;
-
-          &>.palliative-content {
-            width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 0px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-          }
-
-          &>.palliative-picture {
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          line-height: 25px;
-        }
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0em;
       }
     }
 
-    &>.hospital-care {
+    &>.consider-domiciliary {
+      // border: 2px solid red;
+      padding-top: 0px;
 
+      h3 {
+        font-size: 16px;
+      }
 
-      &>.contents {
-        // border: 2px solid red;
-        padding: 0 10px;
+      &>.paragraph-dots {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
 
-        &>.underline-wrap {
-          &>.making-preparation {
+        &>.contents-dots {
+          // border: 2px solid blue;
+          width: 100%;
+          column-gap: 0px;
+          row-gap: 10px;
 
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
+          .contents {
+            width: calc((100% / 1) - 0px);
+            padding: 8px 0;
+
+            span {
+              // border: 2px solid red;
+              font-size: 14px !important;
             }
           }
         }
+      }
+    }
+  }
+}
 
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-        }
+&>.companionship-care {
+  // border: 11px solid red;
+  padding: 0 10px;
+  padding-bottom: 20px;
 
-        &>.life-care-image {
-          // border: 2px solid red;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 20px 0;
+  &>.underline-wrap {
+    &>.underline-care {
 
-          &>.lady {
-            img {
-              width: 100%;
-            }
-          }
+      // border: 4px solid red;
+      h3 {
+        position: relative;
+        line-height: 25px;
+      }
 
-          &>.life-content {
-            width: 100%;
+      h3::after {
+        bottom: 0;
+        left: 0%;
+        width: 50%;
+      }
+    }
+  }
 
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-            }
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 
-            p {
-              font-size: 16px;
-            }
-          }
-        }
+  &>.image-companionship {
+    justify-content: center;
 
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          line-height: 25px;
-        }
+    &>.image {
+      img {
+        width: 100%;
+      }
+    }
 
-        &>.consider-hospital {
-          // border: 3px solid red;
-          padding-top: 0px;
+    &>.companionship {
+      width: 100%;
 
+      &>.underline-wrap {
+        &>.companionship-care {
+
+          // border: 4px solid red;
           h3 {
             font-size: 16px;
             line-height: 25px;
           }
 
-          &>.paragraph-dots {
-            padding-bottom: 30px;
-
-            &>.contents-dots {
-              // border: 2px solid blue;
-              width: 100%;
-              row-gap: 10px;
-
-              .contents {
-                width: calc((100% / 1) - 0px);
-              }
-            }
+          h3::after {
+            bottom: 0;
+            left: 0%;
+            width: 40%;
+            border-bottom: 3px solid $base-color-1;
           }
+        }
+      }
+
+      h4 {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+  }
+}
+
+&>.dementia-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0px 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
         }
       }
     }
 
-    &>.overnight-care {
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
 
-      &>.contents {
-        // border: 2px solid red;
-        padding: 0 10px;
+    &>.elder-dementia-care {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
 
-        &>.underline-wrap {
-          &>.making-preparation {
+      &>.elder {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
 
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
+      &>.important-care {
+        width: 100%;
+
+        h3 {
+          // border: 11px solid red;
+          font-size: 16px;
+          line-height: 0px;
+          padding-top: 15px
         }
 
         p {
-          // border: 2px solid red;
           font-size: 16px;
-        }
-
-        &>.lady-elderly-care {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 30px 0;
-
-          &>.lady {
-            img {
-              width: 100%;
-            }
-          }
-
-          &>.important-care {
-            width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-
-            &>.paragraph-dots {
-
-              &>.contents-dots {
-                // border: 2px solid blue;
-                width: 100%;
-
-                h4 {
-                  // border: 2px solid red;
-                  color: $base-color-1;
-                  font-size: 16px;
-                }
-
-                .contents {
-                  width: calc((100% / 1) - 0px);
-
-                  // .needs-assess {
-                  //   color: #00000080;
-                  // }
-                }
-              }
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          line-height: 25px;
         }
       }
     }
 
-    &>.couples-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 0 10px;
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
 
-        &>.underline-wrap {
-          &>.making-preparation {
+&>.personal-assistance {
+  // border: 11px solid red;
+  padding: 0 10px;
+  padding-bottom: 20px;
 
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
-        }
+  &>.underline-wrap {
+    &>.underline-care {
+      display: flex;
+      justify-content: center;
 
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-        }
+      h3 {
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        padding-top: 15px;
+      }
 
-        &>.couples-image-care {
-          // border: 2px solid red;
-          flex-direction: column;
-          justify-content: center;
-          padding: 0px 0;
+      h3::after {
+        bottom: 0;
+        left: 5%;
+        width: 90%;
+      }
+    }
+  }
 
-          &>.couples-content {
-            width: 100%;
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-            }
+  &>.image-personal-assistance {
+    // border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-            h4 {
-              // border: 2px solid red;
-              font-size: 16px;
-            }
+    &>.image {
+      img {
+        width: 100%;
+      }
+    }
 
-            p {
-              font-size: 16px;
-            }
-          }
+    &>.companionship {
+      width: 100%;
 
-          &>.couples-picture {
-            img {
-              width: 100%;
-              height: auto;
-              padding-top: 10px;
-            }
-          }
-        }
+      p {
+        font-size: 16px;
+      }
 
-        &>h3 {
-          // border: 1px solid green;
+      h3 {
+        font-size: 16px;
+        line-height: 0px;
+      }
+    }
+  }
+}
+
+&>.pet-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0px 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
           font-size: 16px;
           line-height: 25px;
+          padding-top: 15px;
         }
       }
     }
 
-    &>.live-in-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 10px;
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+      line-height: 25px;
+      padding-bottom: 20px;
+    }
 
-        &>.underline-wrap {
-          &>.making-preparation {
+    &>.pet-image-care {
+      // border: 21px solid red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 0px;
 
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
+      &>.pet-content {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 0px;
         }
 
         p {
-          // border: 2px solid red;
           font-size: 16px;
+          font-weight: 400;
           line-height: 25px;
+          letter-spacing: 0em;
         }
+      }
 
-        &>.wheelchair-live-in-care {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          padding: 10px 0;
-
-          &>.wheelchair-picture {
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          &>.important-care {
-            width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
-          font-size: 16px;
-          line-height: 25px;
+      &>.pet-picture {
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
 
-    &>.respite-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 10px 10px;
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
 
-        &>.underline-wrap {
-          &>.making-preparation {
+&>.life-care {
 
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
-        }
 
-        p {
-          // border: 2px solid red;
-          font-size: 16px;
-        }
+  &>.contents {
+    // border: 12px solid rgb(5, 3, 116);
+    padding: 0px 10px;
 
-        &>.respite-image-care {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          padding: 0;
-          padding-top: 20px;
+    &>.underline-wrap {
+      &>.making-preparation {
 
-          &>.respite-picture {
-            img {
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          &>.respite-content {
-            width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-            }
-
-            h4 {
-              // border: 2px solid red;
-              color: $base-color-1;
-              font-size: 16px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-          }
-        }
-
-        &>h3 {
-          // border: 1px solid green;
+        h3 {
+          // border: 4px solid red;
           font-size: 16px;
           line-height: 25px;
+          padding-top: 15px;
         }
       }
     }
 
-    &>.complex-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 0px 10px;
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+    }
 
-        &>.underline-wrap {
-          &>.making-preparation {
+    &>.life-care-image {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
 
-            h3 {
-              // border: 4px solid red;
-              font-size: 16px;
-              line-height: 25px;
-              padding-top: 15px;
-            }
-          }
+      &>.lady {
+        img {
+          width: 100%;
+        }
+      }
+
+      &>.life-content {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 0px;
+          letter-spacing: 0em;
+          padding-top: 15px;
         }
 
         p {
-          // border: 2px solid red;
           font-size: 16px;
         }
+      }
+    }
 
-        &>.complex-support-plan {
-          // border: 2px solid red;
-          justify-content: center;
-          flex-direction: column;
-          padding: 0px 0px;
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 0px;
+    }
+  }
+}
 
-          &>.complex-support {
-            width: 100%;
+&>.palliative-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0 10px;
 
-            &>.underline-wrap {
-              &>.making-preparation {
+    &>.underline-wrap {
+      &>.making-preparation {
 
-                h3 {
-                  // border: 4px solid red;
-                  font-size: 16px;
-                  line-height: 25px;
-                  padding-top: 15px;
-                }
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
 
-                h3::after {
-                  left: 0%;
-                  width: 50%;
-                  border-bottom: 3px solid $base-color-1;
-                }
-              }
-            }
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
 
-            h4 {
-              // border: 2px solid red;
-              color: $base-color-1;
-              font-size: 16px;
-            }
+    &>.palliative-image-care {
+      flex-direction: column;
+      padding: 0px 0;
 
-            p {
-              font-size: 16px;
-            }
+      &>.palliative-content {
+        width: 100%;
 
-            p span {
-              color: $base-color-1;
-              font-size: 16px;
-            }
-
-            &>.paragraph-dots {
-              // border: 1px solid red;
-              display: flex;
-              flex-direction: column;
-
-              &>.contents-dots {
-                // border: 2px solid blue;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                column-gap: 30px;
-                row-gap: 10px;
-
-                h4 {
-                  // border: 2px solid red;
-                  color: $base-color-1;
-                  font-size: 16px;
-                }
-
-                .contents {
-                  border: 1px solid rgba(0, 0, 0, 0.070);
-                  border-radius: 8px;
-                  width: calc((100% / 1) - 0px);
-                  display: flex;
-                  flex-wrap: wrap;
-                  padding: 8px 0;
-                }
-              }
-            }
-          }
-
-          &>.picture {
-            img {
-              width: 100%;
-            }
-          }
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 0px;
         }
 
-        &>.complex-home {
-          // border: 2px solid red;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          padding: 30px 0;
-
-          &>.picture {
-            img {
-              width: 100%;
-            }
-          }
-
-          &>.complex-support-content {
-            width: 100%;
-
-            &>.underline-wrap {
-              &>.making-preparation {
-
-                h3 {
-                  // border: 4px solid red;
-                  font-size: 16px;
-                  line-height: 25px;
-                }
-              }
-            }
-
-            h4 {
-              // border: 2px solid red;
-              color: $base-color-1;
-              font-size: 16px;
-            }
-
-            p {
-              font-size: 16px;
-            }
-
-            &>.paragraph-dots {
-              // border: 1px solid red;
-              display: flex;
-              flex-direction: column;
-
-              &>.contents-dots {
-                // border: 2px solid blue;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                column-gap: 30px;
-                row-gap: 10px;
-
-                h4 {
-                  // border: 2px solid red;
-                  color: $base-color-1;
-                  font-size: 16px;
-                }
-
-                .contents {
-                  border: 1px solid rgba(0, 0, 0, 0.070);
-                  border-radius: 8px;
-                  width: calc((100% / 1) - 0px);
-                  display: flex;
-                  flex-wrap: wrap;
-                  padding: 8px 0;
-                }
-              }
-            }
-          }
+        p {
+          font-size: 16px;
         }
+      }
+
+      &>.palliative-picture {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+&>.hospital-care {
+
+
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
+
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
+
+    &>.life-care-image {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 0;
+
+      &>.lady {
+        img {
+          width: 100%;
+        }
+      }
+
+      &>.life-content {
+        width: 100%;
 
         h3 {
           // border: 1px solid red;
@@ -8524,13 +8107,437 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
       }
     }
 
-    &>.stroke-care {
-      &>.contents {
-        // border: 2px solid red;
-        padding: 20px 10px;
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &>.consider-hospital {
+      // border: 3px solid red;
+      padding-top: 0px;
+
+      h3 {
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      &>.paragraph-dots {
+        padding-bottom: 30px;
+
+        &>.contents-dots {
+          // border: 2px solid blue;
+          width: 100%;
+          row-gap: 10px;
+
+          .contents {
+            width: calc((100% / 1) - 0px);
+
+            span {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+&>.overnight-care {
+
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
+
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
+
+    &>.lady-elderly-care {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 0;
+
+      &>.lady {
+        img {
+          width: 100%;
+        }
+      }
+
+      &>.important-care {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        &>.paragraph-dots {
+
+          &>.contents-dots {
+            // border: 2px solid blue;
+            width: 100%;
+
+            h4 {
+              // border: 2px solid red;
+              color: $base-color-1;
+              font-size: 16px;
+            }
+
+            .contents {
+              width: calc((100% / 1) - 0px);
+
+              // .needs-assess {
+              //   color: #00000080;
+              // }
+
+              span {
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+&>.couples-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
+
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
+
+    &>.couples-image-care {
+      // border: 2px solid red;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 0;
+
+      &>.couples-content {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        h4 {
+          // border: 2px solid red;
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      &>.couples-picture {
+        img {
+          width: 100%;
+          height: auto;
+          padding-top: 10px;
+        }
+      }
+    }
+
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+&>.live-in-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 20px 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
+
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &>.wheelchair-live-in-care {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 0;
+
+      &>.wheelchair-picture {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &>.important-care {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+&>.respite-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 10px 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
+
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
+
+    &>.respite-image-care {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 20px;
+
+      &>.respite-picture {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &>.respite-content {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        h4 {
+          // border: 2px solid red;
+          color: $base-color-1;
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+&>.complex-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 0px 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+
+        h3 {
+          // border: 4px solid red;
+          font-size: 16px;
+          line-height: 25px;
+          padding-top: 15px;
+        }
+      }
+    }
+
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
+
+    &>.complex-support-plan {
+      // border: 2px solid red;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 0px;
+
+      &>.complex-support {
+        width: 100%;
 
         &>.underline-wrap {
           &>.making-preparation {
+
+            h3 {
+              // border: 4px solid red;
+              font-size: 16px;
+              line-height: 25px;
+              padding-top: 15px;
+            }
+
+            h3::after {
+              left: 0%;
+              width: 50%;
+              border-bottom: 3px solid $base-color-1;
+            }
+          }
+        }
+
+        h4 {
+          // border: 2px solid red;
+          color: $base-color-1;
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        p span {
+          color: $base-color-1;
+          font-size: 16px;
+        }
+
+        &>.paragraph-dots {
+          // border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+
+          &>.contents-dots {
+            // border: 2px solid blue;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 10px;
+
+            h4 {
+              // border: 2px solid red;
+              color: $base-color-1;
+              font-size: 16px;
+            }
+
+            .contents {
+              border: 1px solid rgba(0, 0, 0, 0.070);
+              border-radius: 8px;
+              width: calc((100% / 1) - 0px);
+              display: flex;
+              flex-wrap: wrap;
+              padding: 8px 0;
+            }
+          }
+        }
+      }
+
+      &>.picture {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &>.complex-home {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px 0;
+
+      &>.picture {
+        img {
+          width: 100%;
+        }
+      }
+
+      &>.complex-support-content {
+        width: 100%;
+
+        &>.underline-wrap {
+          &>.making-preparation {
+
             h3 {
               // border: 4px solid red;
               font-size: 16px;
@@ -8539,26 +8546,28 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           }
         }
 
-        p {
+        h4 {
           // border: 2px solid red;
+          color: $base-color-1;
           font-size: 16px;
         }
 
-        &>.stroke-image-care {
-          // border: 2px solid red;
+        p {
+          font-size: 16px;
+        }
+
+        &>.paragraph-dots {
+          // border: 1px solid red;
           display: flex;
-          justify-content: center;
           flex-direction: column;
-          padding: 0;
 
-          &>.stroke-content {
+          &>.contents-dots {
+            // border: 2px solid blue;
             width: 100%;
-
-            h3 {
-              // border: 1px solid red;
-              font-size: 16px;
-              line-height: 25px;
-            }
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 10px;
 
             h4 {
               // border: 2px solid red;
@@ -8566,53 +8575,124 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               font-size: 16px;
             }
 
-            p {
-              font-size: 16px;
-            }
-          }
+            .contents {
+              border-radius: 8px;
+              width: calc((100% / 1) - 0px);
+              display: flex;
+              flex-wrap: wrap;
+              padding: 8px 0;
 
-          &>.stroke-picture {
-            img {
-              width: 100%;
-              height: auto;
+              span { 
+                font-size: 14px !important;
+              }
             }
           }
         }
+      }
+    }
 
-        &>h3 {
-          // border: 1px solid green;
+    h3 {
+      // border: 1px solid red;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+&>.stroke-care {
+  &>.contents {
+    // border: 2px solid red;
+    padding: 20px 10px;
+
+    &>.underline-wrap {
+      &>.making-preparation {
+        h3 {
+          // border: 4px solid red;
           font-size: 16px;
           line-height: 25px;
         }
       }
     }
 
-    // colored-last line section
-    section {
-      &>.colored-last {
-        display: none;
-        margin-top: 50px;
+    p {
+      // border: 2px solid red;
+      font-size: 16px;
+    }
 
-        &>.first-color {
-          background-color: $base-color;
-          width: 50%;
-          height: 15px;
+    &>.stroke-image-care {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+
+      &>.stroke-content {
+        width: 100%;
+
+        h3 {
+          // border: 1px solid red;
+          font-size: 16px;
+          line-height: 25px;
         }
 
-        &>.second-color {
-          background-color: $base-color-2;
-          width: 25%;
-          height: 15px;
+        h4 {
+          // border: 2px solid red;
+          color: $base-color-1;
+          font-size: 16px;
         }
 
-        &>.third-color {
-          background-color: $base-color-1;
-          width: 25%;
-          height: 15px;
+        p {
+          font-size: 16px;
+        }
+      }
+
+      &>.stroke-picture {
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
+
+    &>h3 {
+      // border: 1px solid green;
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
+}
+
+// colored-last line section
+section {
+  &>.colored-last {
+    display: none;
+    margin-top: 50px;
+
+    &>.first-color {
+      background-color: $base-color;
+      width: 50%;
+      height: 15px;
+    }
+
+    &>.second-color {
+      background-color: $base-color-2;
+      width: 25%;
+      height: 15px;
+    }
+
+    &>.third-color {
+      background-color: $base-color-1;
+      width: 25%;
+      height: 15px;
+    }
+  }
+}
+}
+ 
 }
 
 // X-SM
@@ -8654,7 +8734,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     // The heart icons in the absolute pages
     .heart {
       // border: 1px solid red;
-      width: 25px;
+      width: 15px;
     }
 
     // border: 11px solid red;
@@ -8668,9 +8748,9 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
       &>.intro-content {
         // border: 2px solid red;
         width: 100%;
-        padding: 0px 20px;
-        line-height: 0px;
-
+        padding: 0px;
+        line-height: 20px;
+        
         .intro-title {
           // border: 2px solid red;
           margin-bottom: 2.5rem;
@@ -8695,6 +8775,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           color: #fff;
           padding-left: 0px;
           text-align: center;
+          margin-top: -10px;
         }
       }
     }
@@ -17396,17 +17477,17 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     }
 
     P {
-      font-size: 28px !important;
-      line-height: 50px !important;
+      font-size: 18px !important;
+      line-height: 30px !important;
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     h3 {
       // border: 2px solid red;
-      font-size: 60px !important;
+      font-size: 35px !important;
       line-height: 80px !important;
     }
 
@@ -17452,7 +17533,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
       margin-top: 50px;
 
       p {
-        padding: 0 20px;
+        padding: 0 200px;
         // text-align: center;
       }
 
@@ -17604,7 +17685,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
       p {
         // border: 3px solid red;
-        padding: 0 20px;
+        padding: 0 200px;
         text-align: center;
         padding-bottom: 30px;
       }
@@ -17743,7 +17824,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
     .call-us-wrap {
       // border: 12px solid red;
       background-color: $base-color-1;
-      padding: 0 20px;
+      padding: 0 200px;
 
       &>.call-contact {
         width: 100%;
@@ -17755,7 +17836,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         h3 {
           color: #fff;
           font-weight: 400;
-          font-size: 40px !important;
+          font-size: 30px !important;
           font-weight: 700;
           line-height: 40px;
           letter-spacing: 0em;
@@ -17769,7 +17850,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 20px 30px;
+          padding: 15px 30px;
           column-gap: 10px;
 
           span {
@@ -17829,9 +17910,9 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
             h3 {
               // border: 1px solid red;
-              font-size: 22px;
+              font-size: 30px !important;
               font-weight: 700;
-              line-height: 40px;
+              line-height: 35px !important;
               letter-spacing: 0em;
             }
 
@@ -17883,7 +17964,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
     &>.elderly-support {
       .call-us {
-        padding: 10px 20px;
+        padding: 0px 200px;
 
         &>.call-contact {
           // border: 14px solid red;
@@ -17897,7 +17978,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           div h3 {
             color: #fff;
             font-weight: 400;
-            font-size: 40px !important;
+            font-size: 30px !important;
             font-weight: 700;
             line-height: 30px;
             letter-spacing: 0em;
@@ -17913,7 +17994,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
               // border: 11px solid red;
               border-radius: 20px;
               background-color: #fff;
-              padding: 20px 30px;
+              padding: 15px 30px;
 
 
               a {
@@ -17947,12 +18028,21 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
       .image-supporting,
       .choose-image {
         justify-content: center;
-        column-gap: 200px;
+        column-gap: 50px;
+
+        .supporting {
+          h3 {
+            // border: 2px solid red;
+            font-size: 30px !important;
+            line-height: 40px !important;
+            margin-bottom: 10px;
+          }
+        }
 
         &>.image {
           img {
             width: 550px;
-            height: 550px;
+            height: auto;
           }
         }
       }
@@ -17965,6 +18055,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         margin-bottom: 30px;
 
         h4 {
+          // border: 11px solid red;
           font-size: 30px;
           font-weight: 600;
           line-height: 25px;
@@ -18005,7 +18096,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         background-color: $base-color-1;
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 0px 200px;
 
         &>.call-contact {
           width: 100%;
@@ -18018,7 +18109,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           div h3 {
             // border: 2px solid red;
             color: #fff;
-            font-size: 40px !important;
+            font-size: 30px !important;
             font-weight: 700;
             line-height: 25px;
             letter-spacing: 0em;
@@ -18027,7 +18118,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
           &>.contact {
             // border: 11px solid red;
-            padding: 20px 35px;
+            padding: 15px 35px;
 
             span {
               display: flex;
@@ -18057,7 +18148,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .image-domiciliary {
           justify-content: center;
-          column-gap: 100px;
+          column-gap: 50px;
         }
 
         &>.consider-domiciliary {
@@ -18115,7 +18206,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 200px;
+        column-gap: 50px;
 
         &>.image {
           img {
@@ -18137,7 +18228,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                 position: relative;
                 font-size: 30px;
                 font-weight: 700;
-                line-height: 48px;
+                line-height: 50px !important;
                 letter-spacing: 0em;
               }
 
@@ -18172,10 +18263,12 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
       }
 
       h3 {
+        // border: 2px solid red;
         font-size: 25px;
         font-weight: 700;
         line-height: 25px;
         letter-spacing: 0em;
+        margin-bottom: -10px;
       }
 
       p {
@@ -18203,7 +18296,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           // border: 2px solid red;
           display: flex;
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
           padding: 30px 0;
 
           &>.elder {
@@ -18261,7 +18354,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 300px;
+        column-gap: 50px;
 
         &>.image {
           img {
@@ -18304,7 +18397,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .pet-image-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
       }
     }
@@ -18327,7 +18420,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .life-care-image {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
       }
     }
@@ -18347,7 +18440,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .palliative-image-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
       }
     }
@@ -18367,7 +18460,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .life-care-image {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
 
         .paragraph-dots {
@@ -18403,10 +18496,15 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .lady-elderly-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
 
           .important-care {
             width: 650px;
+
+            h3 {
+                // border: 2px solid blue;
+                line-height: 45px !important;
+            }
 
             &>.paragraph-dots {
               // border: 1px solid red;
@@ -18450,7 +18548,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .couples-image-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
       }
     }
@@ -18470,7 +18568,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .wheelchair-live-in-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
       }
     }
@@ -18489,7 +18587,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .respite-image-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
       }
     }
@@ -18508,7 +18606,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .complex-support-plan {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
 
           p span {
             // border: 2px solid red;
@@ -18524,6 +18622,13 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             color: $base-color-2;
             font-size: 30px !important;
             line-height: 35px !important;
+          }
+
+          h3 {
+            // border: 2px solid red;
+            color: $base-color-2;
+            font-size: 30px !important;
+            line-height: 40px !important;
           }
 
           &>.paragraph-dots {
@@ -18561,7 +18666,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .complex-home {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
           // border: 2px solid red;
 
           h4 {
@@ -18619,7 +18724,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
         .stroke-image-care {
           justify-content: center;
-          column-gap: 300px;
+          column-gap: 50px;
         }
 
         h3 {
