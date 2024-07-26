@@ -2261,7 +2261,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
           .items {
             // border: 1px solid red;
-            width: calc((100% / 3) - 20px);
+            width: calc((100% / 3) - 150px);
             min-height: 250px;
             display: flex;
             flex-flow: column nowrap;

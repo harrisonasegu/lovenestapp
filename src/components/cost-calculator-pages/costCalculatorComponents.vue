@@ -6514,12 +6514,34 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
       height: 500px;
     }
 
+    
+  &>.line-paragraphy {
+    p {
+      padding: 0 200px;
+      // text-align: center;
+    }
+  }
+
+  section {
+    &>.colored-wrap {
+      background-color: $base-color;
+      min-height: 300px;
+      padding: 50px 0px;
+
+      &>.contents {
+        .cards {
+          padding: 0 150px;
+            }
+      }
+    }
+  }
+
     // Third- Section--------------
     section {
       margin-top: 50px;
 
       &>.third-reliable {
-        // border: 5px solid $base-color;
+        border: 5px solid $base-color;
         display: flex;
         flex-direction: row-reverse;
         height: 650px;
@@ -6748,6 +6770,5 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
       }
     }
   }
-
 }
 </style>

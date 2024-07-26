@@ -5245,10 +5245,10 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
 
     &>.line-paragraphy {
       // border: 3px solid red;
+      padding: 0 200px;
       margin-top: 30px;
 
       &>.underline-wrap {
-        padding: 0 20px;
 
         &>.making-preparation {
           display: flex;

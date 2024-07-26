@@ -161,39 +161,5 @@ import { Icon } from '@iconify/vue';
     }
 
   }
-
-  @media (max-width: 1500px) {
-
-  .topheader-wrap {
-    // header- nav
-    nav {
-      &>.phone-routing {
-        column-gap: 20px;
-
-        &>.phone {
-          // border: 12px solid red;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          column-gap: 8px;
-          font-size: 23px;
-
-          &>.number,
-          a {
-            display: flex;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 700;
-            color: $base-color-2;
-          }
-        }
-
-        &>.routing {
-          column-gap: 20px;
-        }
-      }
-    }
-  }
- }
 }
 </style>

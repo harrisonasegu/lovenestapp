@@ -4018,8 +4018,150 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
       // }
     }
 
-    // <!-- Colored background section/Last -->
-    section {
+   // <!-- Colored background section/Last -->
+  section {
+    &>.last-colored-wrap {
+      background-color: $base-color-1;
+      // min-height: 300px;
+      padding: 50px 0px;
+
+      &>.contents {
+        h3 {
+          // width: fit-content;
+          position: relative;
+          width: 100%;
+          margin: 0 auto;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 45.76px;
+          color: $base-color-1;
+          color: #fff;
+          text-align: center;
+          line-height: 60px;
+        }
+
+        h3::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 5%;
+          width: 90%;
+          border-bottom: 2px solid #fff;
+        }
+
+        .caption-paragraphy {
+          // border: 2px solid red;
+          width: 1000px;
+          margin: 0 auto;
+          font-family: Montserrat;
+          font-weight: 400;
+          line-height: 29.26px;
+          color: #fff;
+          text-align: center;
+          padding-top: 30px;
+          padding-bottom: 20px;
+        }
+
+        .contact-us {
+          // border: 1px solid #fff;
+          background-color: #fff;
+          border-radius: 10px;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          height: 50px;
+          margin-bottom: 50px;
+
+          .icon-links {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 36px;
+            color: $base-color-1;
+            padding: 30px;
+          }
+        }
+
+        .application-page-wrap {
+
+          // border: 2px solid red;
+          // application-contents
+          &>.application-contents {
+
+            &>.financial-grants {
+              padding: 0px;
+              display: flex;
+              flex-direction: column;
+              row-gap: 30px;
+
+              &>.collapse {
+                padding: 0px 50px;
+                // height: 40px;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 25px;
+
+                .n-collapse {
+                  // border: 1px solid $base-color;
+                  line-height: 50px;
+                  color: $base-color-1;
+
+                  .n-collapse-item {
+                    // border: 2px solid red;
+                    border-bottom: 1px solid $base-color;
+                    // margin: 0;
+                    padding-left: 20px;
+                    padding-right: 24px;
+                    padding-bottom: 20px;
+                    background-color: #fff;
+
+                    // make non-first-child item border transparent
+                    &:last-of-type {
+                      border-bottom: 1px solid transparent;
+                    }
+
+                    &.n-collapse-item--active {
+                      border-top: 1px solid $base-color;
+                    }
+
+                    // collapse header and header extra
+                    .collapsed-item-header {
+                      // border: 2px solid red;
+                      padding: 10px 0;
+                      font-size: 18px;
+                      font-weight: 800;
+                      line-height: 40px;
+                      color: $base-color-1;
+                      text-align: left;
+                    }
+
+                    .header-extra-container {
+                      font-size: 25px;
+                      font-weight: bolder;
+                      color: $base-color-2;
+                    }
+
+                    // collapsed content
+                    p {
+                      width: 900px;
+                      font-size: 16px;
+                      font-weight: 700;
+                      line-height: 25.26px;
+                      color: $base-color-1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+   // <!-- Colored background section/Last -->
+   section {
       &>.last-colored-wrap {
         background-color: $base-color-1;
         // min-height: 300px;
@@ -4088,7 +4230,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
                 &>.collapse {
                   // border: 2px solid red;
-                  padding: 0px 150px;
+                  padding: 0px 100px;
                   // height: 40px;
                   font-style: normal;
                   font-weight: 800;
@@ -4139,7 +4281,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                         width: 85%;
                         font-size: 25px;
                         font-weight: 700;
-                        line-height: 25.26px;
+                        line-height: 40.26px;
                         color: $base-color-1;
                       }
                     }
@@ -4152,31 +4294,6 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
       }
     }
 
-    // colored-last line section
-    section {
-      &>.colored-last {
-        display: flex;
-        margin-top: 50px;
-
-        &>.first-color {
-          background-color: $base-color;
-          width: 50%;
-          height: 15px;
-        }
-
-        &>.second-color {
-          background-color: $base-color-2;
-          width: 25%;
-          height: 15px;
-        }
-
-        &>.third-color {
-          background-color: $base-color-1;
-          width: 25%;
-          height: 15px;
-        }
-      }
-    }
   }
 }
 </style>

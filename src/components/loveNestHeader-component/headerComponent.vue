@@ -54,4 +54,27 @@ header {
     width: 100%;
     }
   }
+  @media (max-width: 1500px) {
+  header {
+    section {
+    .desktop-header {
+      // background-color: $base-color;
+      .header-wrap {
+        .headerImage-contents {
+          // border: 10px solid red;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 20px;
+          // padding-top: 20px;
+        }
+        
+        // &>.content {
+        //   //  border: 12px solid red;
+        //   }
+      }
+    }
+  }
+  }
+  }
 </style>

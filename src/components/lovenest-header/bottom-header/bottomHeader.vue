@@ -76,41 +76,41 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                     </span></span>
                 </div>
                 <div class="dropdown-content">
-                  <a href="#elderly" @click.prevent="(e) => handleSubMenuClick(e, 'elderly')">Elderly Care</a>
+                  <a href="#elderly" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'elderly')">Elderly Care</a>
 
-                  <a href="#personal" @click.prevent="(e) => handleSubMenuClick(e, 'personal')">Personal Care</a>
+                  <a href="#personal" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'personal')">Personal Care</a>
 
-                  <a href="#domiciliary" @click.prevent="(e) => handleSubMenuClick(e, 'domiciliary')">Domiciliary
+                  <a href="#domiciliary" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'domiciliary')">Domiciliary
                     Care</a>
 
-                  <a href="#companionship" @click.prevent="(e) => handleSubMenuClick(e, 'companionship')">Companionship
+                  <a href="#companionship" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'companionship')">Companionship
                     Care & Support</a>
 
-                  <a href="#dementia" @click.prevent="(e) => handleSubMenuClick(e, 'dementia')">Dementia Care</a>
+                  <a href="#dementia" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'dementia')">Dementia Care</a>
 
-                  <a href="#assistance" @click.prevent="(e) => handleSubMenuClick(e, 'assistance')">Personal
+                  <a href="#assistance" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'assistance')">Personal
                     Assistance</a>
 
-                  <a href="#pet" @click.prevent="(e) => handleSubMenuClick(e, 'pet')">Pet-care Care</a>
+                  <a href="#pet" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'pet')">Pet-care Care</a>
 
-                  <a href="#life" @click.prevent="(e) => handleSubMenuClick(e, 'life')">End of Life Care</a>
+                  <a href="#life" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'life')">End of Life Care</a>
 
-                  <a href="#palliative" @click.prevent="(e) => handleSubMenuClick(e, 'palliative')">Palliative Care</a>
+                  <a href="#palliative" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'palliative')">Palliative Care</a>
 
-                  <a href="#hospital" @click.prevent="(e) => handleSubMenuClick(e, 'hospital')">Hospital To Home
+                  <a href="#hospital" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'hospital')">Hospital To Home
                     Care</a>
 
-                  <a href="#overnight" @click.prevent="(e) => handleSubMenuClick(e, 'overnight')">Overnight Care</a>
+                  <a href="#overnight" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'overnight')">Overnight Care</a>
 
-                  <a href="#couples" @click.prevent="(e) => handleSubMenuClick(e, 'couples')">Live-In Couples Care</a>
+                  <a href="#couples" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'couples')">Live-In Couples Care</a>
 
-                  <a href="#live" @click.prevent="(e) => handleSubMenuClick(e, 'live')">Live-In Care</a>
+                  <a href="#live" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'live')">Live-In Care</a>
 
-                  <a href="#respite" @click.prevent="(e) => handleSubMenuClick(e, 'respite')">Respite Care</a>
+                  <a href="#respite" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'respite')">Respite Care</a>
 
-                  <a href="#complex" @click.prevent="(e) => handleSubMenuClick(e, 'complex')">Complex Care</a>
+                  <a href="#complex" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'complex')">Complex Care</a>
 
-                  <a href="#stroke" @click.prevent="(e) => handleSubMenuClick(e, 'stroke')">Stroke Care</a>
+                  <a href="#stroke" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'stroke')">Stroke Care</a>
 
                 </div>
               </div>
@@ -297,14 +297,13 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 1500px) {
     .topheader-wrap {
-      // border: 12px solid red;
+      border: 12px solid red;
 
 
       // header- nav
       nav {
-        border: 2px solid red;
         color: #fff;
         padding: 5px 0px;
         padding-right: 0px;

@@ -6793,7 +6793,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
         &>.contents {
           .cards {
-            // border: 1px solid red;
+            // border: 11px solid red;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -6945,11 +6945,11 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           row-gap: 50px;
           margin-top: 30px;
           margin-bottom: 50px;
-          padding: 0px;
+          padding: 0 0px;
 
           .items {
             // border: 1px solid red;
-            width: calc((100% / 3) - 20px);
+            width: calc((100% / 3) - 150px);
             min-height: 250px;
             display: flex;
             flex-flow: column nowrap;
@@ -7166,38 +7166,27 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
       }
     }
 
-    // <!-- Colored background section/Last -->
+    
     section {
       &>.last-colored-wrap {
         background-color: $base-color-1;
         // min-height: 300px;
-        padding: 50px 150px;
+        padding: 50px 0px;
 
         &>.contents {
-          h3 {
+          h2 {
             // width: fit-content;
-            position: relative;
             width: 100%;
             margin: 0 auto;
             font-weight: 600;
             line-height: 45.76px;
             color: $base-color-1;
             color: #fff;
-            text-align: center;
-            line-height: 60px;
-          }
-
-          h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 5%;
-            width: 90%;
-            border-bottom: 2px solid #fff;
+            text-align: center
           }
 
           .caption-paragraphy {
-            // border: 2px solid red;
+            // border: 21px solid red;
             width: 1000px;
             margin: 0 auto;
             font-family: Montserrat;
@@ -7210,7 +7199,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
           }
 
           .contact-us {
-            // border: 1px solid #fff;
+            // border: 5px solid red;
             background-color: #fff;
             border-radius: 10px;
             width: fit-content;
@@ -7218,16 +7207,18 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-            height: 50px;
+            height: 60px;
+            padding: 30px 80px;
             margin-bottom: 50px;
+            margin-top: 30px;
 
             .icon-links {
               text-decoration: none;
-              font-size: 20px;
+              font-size: 25px;
               font-weight: 700;
               line-height: 36px;
               color: $base-color-1;
-              padding: 30px;
+              // padding: 30px;
             }
           }
 
@@ -7244,7 +7235,8 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
                 row-gap: 30px;
 
                 &>.collapse {
-                  padding: 0px 50px;
+                  // border: 2px solid red;
+                  padding: 0px 100px;
                   // height: 40px;
                   font-style: normal;
                   font-weight: 800;
@@ -7275,8 +7267,9 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
 
                       // collapse header and header extra
                       .collapsed-item-header {
-                        padding: 10px 0;
-                        font-size: 25px !important;
+                        // border: 25px solid red;
+                        padding: 25px 0;
+                        font-size: 30px;
                         font-weight: 800;
                         line-height: 40px;
                         color: $base-color-1;
@@ -7284,18 +7277,17 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
                       }
 
                       .header-extra-container {
-                        // border: 4px solid red;
-                        font-size: 50px;
+                        font-size: 40px;
                         font-weight: bolder;
                         color: $base-color-2;
                       }
 
                       // collapsed content
                       p {
-                        width: 70%;
-                        font-size: 20px !important;
+                        width: 85%;
+                        font-size: 25px;
                         font-weight: 700;
-                        line-height: 40px;
+                        line-height: 40.26px;
                         color: $base-color-1;
                       }
                     }
