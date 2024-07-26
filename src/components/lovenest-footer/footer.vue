@@ -42,7 +42,7 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
           </span>
         </p>
       </div>
-      <div class="footer-information">
+      <div class="footer-information footer-icons">
         <h3>Information</h3>
         <li><a href="#">Home</a></li>
         <li>
@@ -55,7 +55,7 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
           <RouterLink class="icon-links" to="/contact-us"> Contact</RouterLink>
         </li>
       </div>
-      <div class="footer-contact-us">
+      <div class="footer-contact-us footer-icons">
         <h3>Contact Us</h3>
         <li><a href="tel:+ 07931 918596">Tel:  07931 918596</a>
         </li>
@@ -64,7 +64,7 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
           Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham</a>
         </li>
       </div>
-      <div class="footer-work-hours">
+      <div class="footer-work-hours footer-icons">
         <h3>Work Hours</h3>
         <p>
           <span>
@@ -77,7 +77,7 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
         </p>
 
         <p>
-          9 AM - 5 PM, Monday - Friday <br>
+          9 AM - 5 PM, Saturday - Sunday <br>
           Are you or a loved one in need of
           compassionate care and
           support?
@@ -138,13 +138,16 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
     &>.footer-content {
       // border: 3px solid blue;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       flex-wrap: wrap;
+      row-gap: 20px;
+      column-gap: 20px;
       padding-bottom: 30px;
 
       // logo
       &>.footer-icons {
         // border: 1px solid red;
+        width: 350px !important;
         display: flex;
         flex-direction: column;
         row-gap: 30px;
@@ -984,6 +987,10 @@ import Citi from '@/assets/images/footer_image/Citibank (1).png'
       h3 {
         font-size: 40px;
       }
+    }
+
+    .footer-content, .footer-images, .all-rights  {
+      padding: 0 200px;
     }
    } 
 }

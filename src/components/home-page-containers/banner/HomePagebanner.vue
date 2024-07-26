@@ -1560,8 +1560,7 @@ const imageUrl = [
           background-position: center;
 
           &>.intro-content {
-            // border: 2px solid red;
-            padding: 10px 0px;
+            padding: 0px 0px;
             position: static;
             left: auto;
             top: auto;
@@ -1582,7 +1581,7 @@ const imageUrl = [
             .intro-subtitle {
               // border: 2px solid red;
               font-weight: 700;
-              font-size: 30px;
+              font-size: 25px;
               line-height: 0px;
               letter-spacing: 0em;
               color: #fff;
@@ -1675,16 +1674,17 @@ const imageUrl = [
     }
 
     P {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     h2 {
       // border: 2px solid red;
-      font-size: 16px;
+      font-size: 14px;
+      line-height: 25px !important;
     }
 
     h3 {
-      font-size: 15px;
+      font-size: 14px;
     }
 
     // First- Section---------------
@@ -1749,7 +1749,7 @@ const imageUrl = [
               p {
                 font-family: Montserrat;
                 font-weight: 400;
-                line-height: 30.26px;
+                line-height: 25.26px;
                 margin-bottom: 20px;
               }
 
@@ -1761,7 +1761,7 @@ const imageUrl = [
                 text-align: center;
 
                 a {
-                  font-size: 14px;
+                  font-size: 11px;
                 }
               }
 
@@ -1791,7 +1791,7 @@ const imageUrl = [
           img {
             // border: 1px solid red;
             width: 100%;
-            height: auto;
+            height: 300px;
             padding-right: 0px;
           }
         }
@@ -1836,7 +1836,7 @@ const imageUrl = [
               p {
                 font-family: Montserrat;
                 font-weight: 400;
-                line-height: 30.26px;
+                line-height: 25.26px;
                 margin-bottom: 20px;
               }
 
@@ -1850,7 +1850,7 @@ const imageUrl = [
 
                 a {
                   color: #fff;
-                  font-size: 14px;
+                  font-size: 11px;
                   font-weight: 700;
                   text-decoration: none;
                 }
@@ -1981,6 +1981,7 @@ const imageUrl = [
             margin: 0 auto;
             font-weight: 600;
             line-height: 25px;
+            text-align: center;
           }
 
           .caption-paragraphy {
@@ -2010,8 +2011,9 @@ const imageUrl = [
                     .contents {
                       column-gap: 5px;
 
-                      h3 {
-                        font-size: 18px;
+                      h4 {
+                        font-size: 14px;
+                        line-height: 25px;
                       }
 
                       .dot-background {
@@ -2264,8 +2266,8 @@ const imageUrl = [
 
         &>.contents {
           h3 {
-            font-size: 30px;
-            line-height: 50px;
+            font-size: 16px;
+            line-height: 30px;
           }
 
           .caption-paragraphy {
@@ -2290,9 +2292,10 @@ const imageUrl = [
             height: 40px;
             margin-bottom: 10px;
 
+          
             .icon-links {
               // border: 2px solid red;
-              font-size: 14px;
+              font-size: 11px;
               line-height: 25px;
               padding: 0px 25px;
             }
@@ -2335,10 +2338,7 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 18px;
-                        font-weight: 800;
-                        line-height: 30px;
-                        font-size: 14px;
+                        font-size: 12px;
                         line-height: 25.26px;
                       }
 
@@ -2351,7 +2351,7 @@ const imageUrl = [
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 14px;
+                        font-size: 11px;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;
@@ -2397,7 +2397,7 @@ const imageUrl = [
 }
 
 // XX-SM
-@media (min-width: 251.9px) and (max-width: 350.9px) {
+@media (min-width: 251px) and (max-width: 350.9px) {
   .wrap {
 
     // border: 2px solid red;
@@ -2445,6 +2445,7 @@ const imageUrl = [
               color: #fff;
               padding-left: 0px;
               text-align: center;
+              margin-top: -20px;
             }
 
             .discover-btn {
@@ -2537,11 +2538,11 @@ const imageUrl = [
 
     h2 {
       // border: 2px solid red;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     h3 {
-      font-size: 15px;
+      font-size: 14px;
     }
 
     // First- Section---------------
@@ -2608,7 +2609,7 @@ const imageUrl = [
               p {
                 font-family: Montserrat;
                 font-weight: 400;
-                line-height: 30.26px;
+                line-height: 25.26px;
                 margin-bottom: 20px;
               }
 
@@ -2620,7 +2621,7 @@ const imageUrl = [
                 text-align: center;
 
                 a {
-                  font-size: 14px;
+                  font-size: 12px;
                 }
               }
 
@@ -2695,7 +2696,7 @@ const imageUrl = [
               p {
                 font-family: Montserrat;
                 font-weight: 400;
-                line-height: 30.26px;
+                line-height: 25.26px;
                 margin-bottom: 20px;
               }
 
@@ -2709,7 +2710,7 @@ const imageUrl = [
 
                 a {
                   color: #fff;
-                  font-size: 14px;
+                  font-size: 12px;
                   font-weight: 700;
                   text-decoration: none;
                 }
@@ -2860,8 +2861,8 @@ const imageUrl = [
                     .contents {
                       column-gap: 5px;
 
-                      h3 {
-                        font-size: 18px;
+                      h4 {
+                        font-size: 16px;
                       }
 
                       .dot-background {
@@ -3114,8 +3115,8 @@ const imageUrl = [
 
         &>.contents {
           h3 {
-            font-size: 30px;
-            line-height: 60px;
+            font-size: 18px;
+            line-height: 30px;
             margin-bottom: 10px;
           }
 
@@ -3143,7 +3144,7 @@ const imageUrl = [
 
             .icon-links {
               // border: 2px solid red;
-              font-size: 14px;
+              font-size: 11px;
               line-height: 25px;
               padding: 0px 25px;
             }
@@ -3166,7 +3167,7 @@ const imageUrl = [
                   // height: 40px;
                   font-style: normal;
                   font-weight: 800;
-                  font-size: 18px;
+                  font-size: 16px;
 
                   .n-collapse {
                     line-height: 3%;
@@ -3186,7 +3187,6 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 18px;
                         font-weight: 800;
                         line-height: 30px;
                         font-size: 14px;
@@ -3202,7 +3202,7 @@ const imageUrl = [
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 14px;
+                        font-size: 12px;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;
@@ -3297,6 +3297,7 @@ const imageUrl = [
               color: #fff;
               padding-left: 0px;
               text-align: center;
+              margin-top: -20px;
             }
 
             .discover-btn {
@@ -3384,17 +3385,17 @@ const imageUrl = [
     }
 
     P {
-      font-size: 16px !important;
+      font-size: 14px !important;
       line-height: 25px !important;
     }
 
     h2 {
       // border: 2px solid red;
-      font-size: 20px !important;
+      font-size: 15px !important;
     }
 
     h3 {
-      font-size: 18px !important;
+      font-size: 16px !important;
     }
 
     // First- Section---------------
@@ -3463,8 +3464,9 @@ const imageUrl = [
 
               p {
                 font-weight: 400;
-                line-height: 30.26px;
+                line-height: 25.26px;
                 margin-bottom: 20px;
+                text-align: center;
               }
 
               &>.color-btn {
@@ -3475,7 +3477,7 @@ const imageUrl = [
                 text-align: center;
 
                 a {
-                  font-size: 14px;
+                  font-size: 12px;
                 }
               }
 
@@ -3552,6 +3554,7 @@ const imageUrl = [
                 font-weight: 400;
                 line-height: 30.26px;
                 margin-bottom: 20px;
+                text-align: center;
               }
 
               &>.color-btn {
@@ -3564,7 +3567,7 @@ const imageUrl = [
 
                 a {
                   color: #fff;
-                  font-size: 14px;
+                  font-size: 12px;
                   font-weight: 700;
                   text-decoration: none;
                 }
@@ -3582,7 +3585,7 @@ const imageUrl = [
         padding: 0 10px;
 
         h2 {
-          border-bottom: 3px solid $base-color-1;
+          border-bottom: 2px solid $base-color-1;
           width: fit-content;
           margin: 0 auto;
           font-weight: 600;
@@ -3628,7 +3631,7 @@ const imageUrl = [
             row-gap: 20px;
             width: 100%;
             font-family: Montserrat;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 25.26px;
             text-align: center;
 
@@ -3715,7 +3718,7 @@ const imageUrl = [
                     .contents {
                       column-gap: 5px;
 
-                      h3 {
+                      h4 {
                         font-size: 18px;
                       }
 
@@ -3939,6 +3942,7 @@ const imageUrl = [
                 font-weight: 400;
                 line-height: 25.26px;
                 margin-bottom: 20px;
+                text-align: center;
               }
 
               &>.color-btn {
@@ -3970,7 +3974,7 @@ const imageUrl = [
         &>.contents {
           h3 {
             font-size: 30px;
-            line-height: 60px;
+            line-height: 30px;
             margin-bottom: 10px;
           }
 
@@ -3998,7 +4002,7 @@ const imageUrl = [
 
             .icon-links {
               // border: 2px solid red;
-              font-size: 14px;
+              font-size: 12px;
               line-height: 25px;
               padding: 0px 25px;
             }
@@ -4041,15 +4045,14 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 16px !important;
+                        font-size: 14px !important;
                         font-weight: 800;
                         line-height: 30px;
-                        font-size: 14px;
                         line-height: 25.26px;
                       }
 
                       .header-extra-container {
-                        // font-size: 25px !important;
+                        font-size: 20px !important;
                         font-weight: bolder;
                         color: $base-color-2;
                       }
@@ -4057,7 +4060,7 @@ const imageUrl = [
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 14px !important;
+                        font-size: 12px !important;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;
@@ -4237,7 +4240,7 @@ const imageUrl = [
     }
 
     P {
-      font-size: 18px !important;
+      font-size: 16px !important;
       line-height: 30px;
     }
 
@@ -4542,6 +4545,10 @@ const imageUrl = [
               width: 100%;
               padding-bottom: 10px;
             }
+            
+            h3{
+              font-size: 20px !important;
+            }
 
             p {
               //  border: 2px solid red;
@@ -4711,8 +4718,6 @@ const imageUrl = [
       }
     }
 
-
-
     // Third- Section--------------
     section {
       margin-top: 50px;
@@ -4855,11 +4860,13 @@ const imageUrl = [
         padding: 40px 10px;
 
         &>.contents {
-          h2 {
+          h3 {
+            // border: 2px solid red;
             // width: fit-content;
             width: 100%;
             margin: 0 auto;
-            line-height: 30.76px;
+            line-height: 35.76px;
+            font-size: 30px !important;
           }
 
           .caption-paragraphy {
@@ -4929,7 +4936,7 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 18px;
+                        font-size: 16px !important;
                         font-weight: 800;
                         line-height: 30px;
                         font-size: 14px;
@@ -4945,7 +4952,7 @@ const imageUrl = [
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 14px;
+                        font-size: 14px !important;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;
@@ -5123,7 +5130,7 @@ const imageUrl = [
     }
 
     P {
-      font-size: 18px !important;
+      font-size: 16px !important;
       line-height: 30px !important;
     }
 
@@ -5357,90 +5364,75 @@ const imageUrl = [
 
         &>.vector-pictures {
           // border: 2px solid red;
-          display: none !important;
+          // display: none !important;
           display: flex;
           justify-content: center;
           align-items: center;
           margin-bottom: 10px;
 
           img {
-            width: 100%
+            width: 80%;
+            height: auto;
           }
         }
 
         &>.guides-contents {
+        // border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 80px;
+        row-gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+
+        &>.our-teams,
+        .free-home,
+        .care-package {
           // border: 2px solid red;
-          margin-top: 30px;
+          width: 25%;
           display: flex;
-          flex-wrap: wrap;
-          align-items: center;
           justify-content: center;
-          column-gap: 0px;
+          flex-direction: left;
           row-gap: 20px;
-          justify-content: center;
+          font-weight: 700;
+          line-height: 29.26px;
+          text-align: center;
 
-          &>.our-teams,
-          .free-home,
-          .care-package {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            row-gap: 20px;
-            width: 100%;
-            font-family: Montserrat;
-            font-weight: 700;
-            line-height: 25.26px;
-            text-align: center;
+          .icon-content {
+            // border: 3px solid $base-color-1;
+            display: none;
 
-            .icon-content {
-              // border: 3px solid $base-color-1;
-
-              .icons {
-                border: 3px solid $base-color-1;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                height: 90px;
-                width: 90px;
-
-                .reduce-icon {
-                  //  border: 2px solid red;
-                  width: 45px;
-                }
-              }
-            }
-
-            // .icon-content::after {
-            //      content: "";
-            //       position: absolute;
-            //       right: 0;
-            //       top: 50%;
-            //       width: 30px;
-            //       height: 5px;
-            //       background-color: $base-color-1; 
-            //       transform: translateY(-50%);
-            //   }
-
-            h3,
-            p {
-              width: 100%;
-              padding-bottom: 10px;
-            }
-
-            p {
-              //  border: 2px solid red;
-              width: 100%;
-              color: #00000080;
+            .icons {
+              border: 3px solid $base-color-1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 110px;
+              width: 110px;
             }
           }
 
-          .care-package {
-            margin-bottom: 20px;
+          p {
+            width: 250px;
+            color: #00000080;
+            font-size: 14px !important;
+          }
+          
+          h3 {
+            display: flex;
+            width: 200px;
+            margin: 0 auto;
+            align-items: center;
+            font-size: 18px !important;
+            text-align: center;
           }
         }
+       }
+       
       }
     }
 
@@ -5477,7 +5469,7 @@ const imageUrl = [
             padding: 0px;
 
             .items {
-              width: calc((100% / 1) - 0px);
+              width: calc((100% / 2) - 40px);
 
               div.category-item {
 
@@ -5693,11 +5685,13 @@ const imageUrl = [
         padding: 40px 10px;
 
         &>.contents {
-          h2 {
+          h3 {
+            // border: 2px solid red;
             // width: fit-content;
             width: 100%;
             margin: 0 auto;
-            line-height: 30.76px;
+            line-height: 35.76px;
+            font-size: 30px !important;
           }
 
           .caption-paragraphy {
@@ -5719,15 +5713,14 @@ const imageUrl = [
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-            height: 50px;
-            margin-top: 10px;
+            height: 40px;
             margin-bottom: 10px;
 
             .icon-links {
               // border: 2px solid red;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 25px;
-              padding: 0px 50px;
+              padding: 0px 25px;
             }
           }
 
@@ -5768,14 +5761,15 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 18px;
+                        font-size: 16px !important;
                         font-weight: 800;
                         line-height: 30px;
+                        font-size: 14px;
                         line-height: 25.26px;
                       }
 
                       .header-extra-container {
-                        font-size: 25px;
+                        font-size: 18px;
                         font-weight: bolder;
                         color: $base-color-2;
                       }
@@ -5783,7 +5777,7 @@ const imageUrl = [
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 16px;
+                        font-size: 14px !important;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;
@@ -5959,8 +5953,6 @@ const imageUrl = [
         }
       }
     }
-
-
 
     P {
       font-size: 16px;
@@ -6194,7 +6186,8 @@ const imageUrl = [
 
         &>.vector-pictures {
           // border: 2px solid red;
-          display: none !important;
+          width: 80%;
+          margin: 0 auto;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -6206,78 +6199,62 @@ const imageUrl = [
         }
 
         &>.guides-contents {
+        // border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 80px;
+        row-gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+
+        &>.our-teams,
+        .free-home,
+        .care-package {
           // border: 2px solid red;
-          margin-top: 30px;
+          width: 25%;
           display: flex;
-          flex-wrap: wrap;
-          align-items: center;
           justify-content: center;
-          column-gap: 0px;
+          flex-direction: left;
           row-gap: 20px;
-          justify-content: center;
+          font-weight: 700;
+          line-height: 29.26px;
+          text-align: center;
 
-          &>.our-teams,
-          .free-home,
-          .care-package {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            row-gap: 20px;
-            width: 100%;
-            font-family: Montserrat;
-            font-weight: 700;
-            line-height: 25.26px;
-            text-align: center;
+          .icon-content {
+            // border: 3px solid $base-color-1;
+            display: none;
 
-            .icon-content {
-              // border: 3px solid $base-color-1;
-
-              .icons {
-                border: 3px solid $base-color-1;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                height: 90px;
-                width: 90px;
-
-                .reduce-icon {
-                  //  border: 2px solid red;
-                  width: 45px;
-                }
-              }
-            }
-
-            // .icon-content::after {
-            //      content: "";
-            //       position: absolute;
-            //       right: 0;
-            //       top: 50%;
-            //       width: 30px;
-            //       height: 5px;
-            //       background-color: $base-color-1; 
-            //       transform: translateY(-50%);
-            //   }
-
-            h3,
-            p {
-              width: 100%;
-              padding-bottom: 10px;
-            }
-
-            p {
-              //  border: 2px solid red;
-              width: 100%;
-              color: #00000080;
+            .icons {
+              border: 3px solid $base-color-1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 110px;
+              width: 110px;
             }
           }
 
-          .care-package {
-            margin-bottom: 20px;
+          p {
+            width: 300px;
+            color: #00000080;
+            font-size: 14px !important;
+          }
+          
+          h3 {
+            display: flex;
+            width: 200px;
+            margin: 0 auto;
+            align-items: center;
+            font-size: 20px !important;
+            text-align: center;
           }
         }
+       }
+       
       }
     }
 
@@ -6314,7 +6291,7 @@ const imageUrl = [
             padding: 0px;
 
             .items {
-              width: calc((100% / 1) - 0px);
+              width: calc((100% / 3) - 40px);
 
               div.category-item {
 
@@ -6339,6 +6316,7 @@ const imageUrl = [
               }
             }
           }
+        
         }
       }
     }
@@ -7137,7 +7115,6 @@ const imageUrl = [
             }
           }
         }
-
       }
     }
 
@@ -7918,7 +7895,19 @@ const imageUrl = [
           display: none;
         }
 
-        .caption-contents {}
+        &>.guides-contents {
+        // border: 2px solid red;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        h3 {
+          margin-bottom: 15px;
+          font-size: 25px;
+        }
+        p {
+          font-size: 18px;
+        }
+       }   
       }
     }
 
@@ -7955,6 +7944,7 @@ const imageUrl = [
 
           .cards {
             // border: 1px solid red;
+            padding: 0 100px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -7962,7 +7952,6 @@ const imageUrl = [
             row-gap: 20px;
             margin-top: 30px;
             margin-bottom: 50px;
-            padding: 0 0px;
 
             .items {
               border: 1px solid #ffffff3f;
@@ -8262,7 +8251,7 @@ const imageUrl = [
 
                 &>.collapse {
                   // border: 2px solid red;
-                  padding: 0px 150px;
+                  padding: 0px 100px;
                   // height: 40px;
                   font-style: normal;
                   font-weight: 800;
@@ -8313,7 +8302,7 @@ const imageUrl = [
                         width: 85%;
                         font-size: 25px;
                         font-weight: 700;
-                        line-height: 25.26px;
+                        line-height: 40.26px;
                         color: $base-color-1;
                       }
                     }
