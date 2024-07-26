@@ -161,5 +161,7 @@ import { Icon } from '@iconify/vue';
     }
 
   }
+  @media (max-width: 1500px) {
+}
 }
 </style>

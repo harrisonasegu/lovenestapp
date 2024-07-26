@@ -5217,7 +5217,7 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
         .intro-subtitle {
           // border: 2px solid red;
           font-size: 100px;
-          padding-left: 300px;
+          padding-left: 100px;
         }
 
         .discover-btn {

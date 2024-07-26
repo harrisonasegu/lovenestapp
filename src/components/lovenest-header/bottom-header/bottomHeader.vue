@@ -299,9 +299,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
   @media (max-width: 1500px) {
     .topheader-wrap {
-      border: 12px solid red;
-
-
+      // border: 12px solid red;
       // header- nav
       nav {
         color: #fff;
