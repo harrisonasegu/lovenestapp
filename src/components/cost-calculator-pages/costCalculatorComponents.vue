@@ -2322,7 +2322,6 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
     p {
       font-size: 16px !important;
       line-height: 25px !important;
-
     }
 
     h2 {
@@ -2371,6 +2370,7 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
           color: #fff;
           padding-left: 0px;
           text-align: center;
+          margin-top: -5px;
         }
       }
 
