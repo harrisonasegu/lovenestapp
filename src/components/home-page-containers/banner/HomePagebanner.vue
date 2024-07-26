@@ -3473,7 +3473,7 @@ const imageUrl = [
                 width: fit-content;
                 margin: 0 auto;
                 border-radius: 5px;
-                padding: 8px;
+                padding: 10px;
                 text-align: center;
 
                 a {
@@ -3943,7 +3943,6 @@ const imageUrl = [
                 margin-bottom: 20px;
                 text-align: center;
                 margin-bottom: 5px;
-
               }
 
               p {
