@@ -3594,6 +3594,7 @@ const imageUrl = [
           color: $base-color-1;
           margin-bottom: 30px;
           text-align: center;
+          font-size: 16px !important;
         }
 
 
@@ -3938,6 +3939,7 @@ const imageUrl = [
 
               h2 {
                 font-weight: 600;
+                font-size: 18px !important;
                 line-height: 25.86px;
                 color: $base-color-1;
                 margin-bottom: 20px;
@@ -3972,7 +3974,6 @@ const imageUrl = [
         }
       }
     }
-
 
     // <!-- Colored background section/Last -->
     section {
