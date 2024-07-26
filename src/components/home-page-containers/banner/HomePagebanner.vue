@@ -4007,6 +4007,7 @@ const imageUrl = [
             justify-content: center;
             margin: 0 auto;
             height: 40px;
+            margin-top: 10px;
             margin-bottom: 10px;
 
             .icon-links {
