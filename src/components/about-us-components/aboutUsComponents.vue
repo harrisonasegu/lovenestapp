@@ -508,9 +508,13 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
             }
 
             &>.contents {
-              width: 100%;
-              //  h2 {}
-              //  p {}
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
+                width: 100%;
+               }
             }
           }
         }
@@ -932,7 +936,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
     }
 
     // <!-- This section is for tab, Mission, Vision etc -->
-
     section {
       &>.tab-content {
 
@@ -953,11 +956,14 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
               }
 
               &>.contents {
-                // border: 2px solid blue;
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
                 width: 100%;
-                //  h2 {}
-                //  p {}
-              }
+               }
+            }
             }
           }
         }
@@ -1186,7 +1192,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
       }
     }
 
-
     &>.line-paragraphy {
       // border: 3px solid red;
       margin-top: 30px;
@@ -1361,7 +1366,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
     }
 
     // <!-- This section is for tab, Mission, Vision etc -->
-
     section {
       &>.tab-content {
 
@@ -1382,11 +1386,14 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
               }
 
               &>.contents {
-                // border: 2px solid blue;
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
                 width: 100%;
-                //  h2 {}
-                //  p {}
-              }
+               }
+            }
             }
           }
         }
@@ -1817,10 +1824,13 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
               }
 
               &>.contents {
-                // border: 2px solid blue;
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
                 width: 100%;
-                //  h2 {}
-                //  p {}
+               }
               }
             }
           }
@@ -2058,7 +2068,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
       }
     }
 
-
     &>.line-paragraphy {
       // border: 3px solid red;
       margin-top: 30px;
@@ -2233,7 +2242,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
     }
 
     // <!-- This section is for tab, Mission, Vision etc -->
-
     section {
       &>.tab-content {
 
@@ -2254,11 +2262,14 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
               }
 
               &>.contents {
-                // border: 2px solid blue;
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
                 width: 100%;
-                //  h2 {}
-                //  p {}
-              }
+               }
+            }
             }
           }
         }
@@ -2489,8 +2500,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
       }
     }
 
-
-
     &>.line-paragraphy {
       // border: 3px solid red;
       margin-top: 30px;
@@ -2665,7 +2674,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
     }
 
     // <!-- This section is for tab, Mission, Vision etc -->
-
     section {
       &>.tab-content {
 
@@ -2686,11 +2694,14 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
               }
 
               &>.contents {
-                // border: 2px solid blue;
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
                 width: 100%;
-                //  h2 {}
-                //  p {}
-              }
+               }
+            }
             }
           }
         }
@@ -2928,7 +2939,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
       }
     }
 
-
     &>.line-paragraphy {
       // border: 3px solid red;
       margin-top: 30px;
@@ -3103,7 +3113,6 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
     }
 
     // <!-- This section is for tab, Mission, Vision etc -->
-
     section {
       &>.tab-content {
 
@@ -3124,11 +3133,14 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
               }
 
               &>.contents {
-                // border: 2px solid blue;
+              // border: 2px solid blue;
+              padding: 0 10px;
+             
+              //  h2, p 
+               p, h2 {
                 width: 100%;
-                //  h2 {}
-                //  p {}
-              }
+               }
+            }
             }
           }
         }
