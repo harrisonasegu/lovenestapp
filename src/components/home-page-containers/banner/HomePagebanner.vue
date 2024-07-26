@@ -1190,7 +1190,7 @@ const imageUrl = [
                   }
 
                   p {
-                    color: #FFFFFF80;
+                    color: #ffffffa5;
                     font-weight: 400;
                     line-height: 24px;
                     letter-spacing: 0em;
@@ -3385,7 +3385,7 @@ const imageUrl = [
     }
 
     P {
-      font-size: 14px !important;
+      font-size: 16px !important;
       line-height: 25px !important;
     }
 
@@ -3464,7 +3464,7 @@ const imageUrl = [
 
               p {
                 font-weight: 400;
-                line-height: 25.26px;
+                line-height: 30.26px !important;
                 margin-bottom: 20px;
                 text-align: center;
               }
@@ -3547,12 +3547,13 @@ const imageUrl = [
                 color: $base-color-1;
                 margin-bottom: 20px;
                 text-align: center;
+                font-size: 18px !important;
+                margin-bottom: 10px;
               }
 
               p {
-                font-family: Montserrat;
                 font-weight: 400;
-                line-height: 30.26px;
+                line-height: 30.26px !important;
                 margin-bottom: 20px;
                 text-align: center;
               }
@@ -3658,6 +3659,7 @@ const imageUrl = [
             h3,
             p {
               width: 100%;
+              font-size: 14px !important;
             }
 
             p {
@@ -3727,6 +3729,12 @@ const imageUrl = [
                         height: 10px;
                       }
                     }
+
+                    p {
+                        // border: 2px solid red;
+                        font-size: 15px !important;
+                        font-weight: 600;
+                      }
                   }
                 }
               }
@@ -3934,15 +3942,16 @@ const imageUrl = [
                 color: $base-color-1;
                 margin-bottom: 20px;
                 text-align: center;
+                margin-bottom: 5px;
 
               }
 
               p {
-                font-family: Montserrat;
                 font-weight: 400;
                 line-height: 25.26px;
                 margin-bottom: 20px;
                 text-align: center;
+                font-size: 15px !important;
               }
 
               &>.color-btn {
@@ -3973,7 +3982,7 @@ const imageUrl = [
 
         &>.contents {
           h3 {
-            font-size: 30px;
+            font-size: 20px !important;
             line-height: 30px;
             margin-bottom: 10px;
           }
@@ -4045,7 +4054,7 @@ const imageUrl = [
                       .collapsed-item-header {
                         // border: 2px solid red;
                         padding: 10px 0;
-                        font-size: 14px !important;
+                        font-size: 16px !important;
                         font-weight: 800;
                         line-height: 30px;
                         line-height: 25.26px;
@@ -4060,7 +4069,7 @@ const imageUrl = [
                       // collapsed content
                       p {
                         width: 100%;
-                        font-size: 12px !important;
+                        font-size: 14px !important;
                         padding: 0px;
                         line-height: 25.26px;
                         color: $base-color-1;
