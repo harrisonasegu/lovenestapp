@@ -133,8 +133,8 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
     <!-- This section is for tab, Mission, Vision etc -->
     <section>
       <div class="tab-content">
-        <n-card title="" style="margin-bottom: 16px">
-          <n-tabs default-value="oasis" justify-content="space-evenly" type="line">
+        
+          <n-tabs type="segment" animated>
             <n-tab-pane class="tab-caption" name="oasis" tab="MISSION">
               <div class="first-wrap">
                 <div class="picture">
@@ -157,9 +157,7 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
                 <div class="contents">
                   <h2>OUR VALUES</h2>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magni et, tempora alias, expedita
-                    facere illo reprehenderit nisi necessitatibus optio, sint adipisci similique asperiores blanditiis.
-                    Consequuntur temporibus asperiores doloribus eum!
+                    Caring with a smile Everyone responds to a smile. We believe that there is always time for a smile, no matter how busy life is. We know some of our clients spend long hours alone and look forward to our carers' visits to brighten their day.
                   </p>
                 </div>
               </div>
@@ -173,15 +171,14 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
                 <div class="contents">
                   <h2>OUR VISION</h2>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magni et, tempora alias, expedita
-                    facere illo reprehenderit nisi necessitatibus optio, sint adipisci similique asperiores blanditiis.
-                    Consequuntur temporibus asperiores doloribus eum!
+                    We aim to be an outstanding care provider within
+                    Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham, providing our clients with first class care, using every means available, to achieve the best possible outcomes for them.
                   </p>
                 </div>
               </div>
             </n-tab-pane>
           </n-tabs>
-        </n-card>
+       
       </div>
     </section>
 
@@ -270,7 +267,7 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
 
     <div class="up-icon">
       <div class="move-up" style="text-align: center">
-        <a href="#toTop" @click.prevent="(e) => handleSubMenuClick(e, 'toTop')">
+        <a href="#toTop" @click.prevent="(e: Event,) => handleSubMenuClick(e, 'toTop')">
           <Icon class="icon-image" icon="emojione-monotone:up-arrow" width="50px" height="50px"
             style="color: #4897E6" />
         </a>
