@@ -297,9 +297,8 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     }
   }
 
-  @media (max-width: 1500px) {
+  @media (min-width: 1500px) {
     .topheader-wrap {
-      // border: 12px solid red;
       // header- nav
       nav {
         color: #fff;
@@ -313,6 +312,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
           justify-content: center;
           align-items: center;
           column-gap: 0px;
+          padding-right: 65px;
 
           &>.routing {
             // border: 2px solid red;

@@ -29,6 +29,7 @@ import HeaderImage from '@/components/lovenest-header/header-logo/headerLogo.vue
 header {
   section {
     .desktop-header {
+
       // background-color: $base-color;
       .header-wrap {
         .headerImage-contents {
@@ -39,19 +40,27 @@ header {
           padding: 0px 20px;
           // padding-top: 20px;
         }
-        
+
         // &>.content {
         //   //  border: 12px solid red;
         //   }
       }
     }
   }
-  }
-
+}
 
 @media (max-width: 991.9px) {
   header {
     width: 100%;
-    }
   }
+}
+
+@media (min-width: 1500px) {
+  header {
+
+    .headerImage-contents {
+      padding: 0 100px !important;
+   }
+  }
+}
 </style>

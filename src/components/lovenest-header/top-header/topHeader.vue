@@ -161,7 +161,81 @@ import { Icon } from '@iconify/vue';
     }
 
   }
-  @media (max-width: 1500px) {
-}
+  @media (min-width: 1500px) {
+    .topheader-wrap {
+    // border: 12px solid red;
+
+    // header- nav
+    nav {
+      // border: 12px solid red;
+      font-family: Montserrat;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &>.phone-routing {
+        // border: 12px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+
+        &>.phone {
+          // border: 2px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 8px;
+          font-size: 23px;
+
+          &>.number,
+          a {
+            display: flex;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            color: $base-color-2;
+          }
+        }
+
+        &>.routing {
+          // border: 2px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 30px;
+
+          &>.icon-links {
+            background-color: $base-color-2;
+            border-radius: 10px;
+            padding: 10px 15px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+
+            span {
+              // border: 12px solid red;
+              display: flex;
+
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+ }
 }
 </style>
