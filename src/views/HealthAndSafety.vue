@@ -10,7 +10,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
     <div class="banner">
       <div class="intro-content">
         <h2 class="intro-title">
-          LoveNest Home Care
+          LoveNest Care
         </h2>
         <h1 class="intro-subtitle">
           Health And Safety

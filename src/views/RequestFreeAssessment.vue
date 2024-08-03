@@ -273,9 +273,9 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               back to you to confirm the date and time
               of your consultation.
             </p>
-            <p>
+            <!-- <p>
               <span></span> Indicates required fields
-            </p>
+            </p> -->
           </section>
 
           <section class="form-body">
@@ -347,7 +347,11 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
             <div class="privacy-form-footer">
               <span>LoveNest respects your privacy. For more
-                information , visit our <router-link to="#"> <br> Privacy Policy page.</router-link> </span>
+                information , visit our  <br> 
+                <span class="input-privacy">
+                  Privacy Policy page
+                </span>
+              </span>
 
             </div>
           </section>
@@ -359,26 +363,24 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             home care needs.
           </p>
           <p>
-            <a href="#">
-              Address: Lovenest Care Limited
+             <b> Address: Lovenest Care Limited</b>
+               Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham
               <br>
-              Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham<br>
-              Phone: 07931 918596 <br>
-              Email: info@lovenestcare.co.uk
-            </a>
+              <a href="tel:+234 07931 918596">  Phone:  07931 918596</a>
+             <br>
+              <a href="mailto: info@lovenestcare.co.uk">  Email: info@lovenestcare.co.uk</a>
           </p>
 
           <h2>
             Looking for a Job with
             LoveNest HomeCare?
           </h2>
-          <p>
-            <a href="#">
-              Learn how to become a Caregiver.
+          <p class="p-contents">
+              <b>Learn how to become a Caregiver:</b>
               <br>
-              Phone: 07931 918596 <br>
-              Email: info@lovenestcare.co.uk
-            </a>
+              <a href="tel:+234 07931 918596">  Phone:  07931 918596</a>
+               <br>
+               <a href="mailto: info@lovenestcare.co.uk">  Email: info@lovenestcare.co.uk</a>
           </p>
 
           <h2>
@@ -453,6 +455,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
     font-family: Montserrat;
     font-size: 35px;
     color: $base-color-1;
+  }
+
+  .p-contents, b {
+    color: $base-color-1 !important;
   }
 
   span {
@@ -656,13 +662,17 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               word-break: break-all;
               text-align: center;
 
-              // &>span {}
-
-              a {
-                text-decoration: none;
-                font-weight: bold;
-                color: red;
+              .input-privacy {
+                // border: 2px solid red;
+                color: rgba(0, 0, 0, 0.477);
+                font-weight: 400
               }
+
+              // a {
+              //   text-decoration: none;
+              //   font-weight: bold;
+              //   color: red;
+              // }
             }
           }
         }

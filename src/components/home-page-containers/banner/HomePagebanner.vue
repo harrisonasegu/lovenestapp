@@ -102,7 +102,7 @@ const imageUrl = [
                 IN THE HEART OF YOUR COMMUNITY
               </h2>
               <p>
-                LoveNest Home Care is based right in the heart ofLoveNest. We provide a full
+                LoveNest Care is based right in the heart ofLoveNest. We provide a full
                 complement of non-medical, in-home assistance services for senior adults who
                 need a helping hand maintaining their independence while continuing to live a
                 vibrant and engaged life. LoveNest is here to serve all seniors in our area,
@@ -429,7 +429,7 @@ const imageUrl = [
               </h2>
               <p>
                 Hi. My name is Kayand I'm the Assistant Director of
-                LoveNest Home Care. Every day, people entrust us to care for
+                LoveNest Care. Every day, people entrust us to care for
                 their loved ones, and that is a responsibility I take very
                 seriously. In my role, I am responsible for training and
                 managing LoveNest's full team of caregivers. But what really
@@ -518,7 +518,7 @@ const imageUrl = [
                           </template>
 
                           <p>
-                            LoveNest Home Care does not currently take Medicaid or Medicare insurance. Should you have a
+                            LoveNest Care does not currently take insurance. Should you have a
                             long-term care (LTC) insurance plan, LoveNest will work diligently with you LTC to get your
                             services covered under your policy. Please note that many LTC policies have an elimination
                             period that you must meet before services are covered.

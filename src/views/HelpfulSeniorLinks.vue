@@ -28,16 +28,16 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
             </a>
           </h3>
           <p>
-            LoveNest Home Care Family Service is a coordinated, central solution that links older adults, their family members,
+            LoveNest Care Family Service is a coordinated, central solution that links older adults, their family members,
             friends, and caregivers to community resources.
           </p>
           <h3>
             <a href="#">
-              LoveNest Home Care Family Service 
+              LoveNest Care Family Service 
             </a>
           </h3>
           <p>
-            LoveNest Home Care is an organization
+            LoveNest Care is an organization
             that strengthens lives and our community by providing professional social services to families and
             individuals in times of need. JFS offers access to food & financial support, care coordination, caregiver
             support, counseling, and so much more.

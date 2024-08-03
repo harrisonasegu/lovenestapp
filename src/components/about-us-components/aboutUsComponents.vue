@@ -200,11 +200,9 @@ import Image4 from '@/assets/images/Caregiver-Image/caregiverbanner.png'
                   <Icon class="icons" icon="ri:double-quotes-l" width="80px" height="80px" style="color: #4897E6" />
                 </div>
                 <p>
-                  Mom's LoveNest aboutgivers are simultaneously her lifeline and
-                  my security blanket. […] From the day Mom first moved here—
-                  just prior to Rosh Hashanah, 2017—her aides have not only
-                  provided her day-to-day about, but they've also provided her
-                  companionship.
+                  Mom's LoveNest caregivers are simultaneously her lifeline and
+                  my security blanket. […] From the day Mom first moved here.
+                  Lovenest has provided her day-to-day care.
                 </p>
                 <div class="color-btn">
                   <!-- <h4>Sindy</h4> -->

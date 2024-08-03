@@ -440,7 +440,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </span>
 
           <span>
-            <a class="phone-number" href="tel:++ 07931 918596"> 07931 918596</a>
+            <a class="phone-number" href="tel:+ 07931 918596"> 07931 918596</a>
           </span>
 
         </div>
@@ -663,9 +663,8 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
-
           </div>
         </div>
       </div>
@@ -737,7 +736,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             personal care?
           </h3>
           <p>
-            At Beaumont Home Care, our care professionals are experienced in
+            At LoveNest Care, our care professionals are experienced in
             providing bespoke personal care services, ensuring that each client's
             individual and unique needs are preferences are met. We strive to create a
             reassuring and supportive environment where individuals feel comfortable,
@@ -894,7 +893,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -910,7 +909,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
         </div>
         <p>
-          At Lovenest Home Care, we understand that there's no place like home and if you have ever felt like you could
+          At LoveNest Care, we understand that there's no place like home and if you have ever felt like you could
           use some extra support
           at home to continue living independently, domiciliary care can help. We can offer a variety of flexible care
           options from just
@@ -956,7 +955,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             Why should you choose us for domiciliary care?
           </h3>
           <p>
-            Lovenest Home Care is a trusted provider of domiciliary care services. We have a proven track record of
+            LoveNest Care is a trusted provider of domiciliary care services. We have a proven track record of
             delivering exceptional care
             and have earned the trust of our clients and their families. We are committed to making a positive
             difference
@@ -965,7 +964,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             home.
           </p>
           <p>
-            Choosing Lovenest Home Care means choosing a reliable and compassionate partner in domiciliary care. We are
+            Choosing LoveNest Care means choosing a reliable and compassionate partner in domiciliary care. We are
             dedicated to
             providing a personalized, high-quality service that meets your unique needs and promotes well-being.
           </p>
@@ -1053,7 +1052,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
 
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1101,7 +1100,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
                 care and support
               </h4>
               <p>
-                At Lovenest Home Care, our companionship care service pairs you
+                At LoveNest Care, our companionship care service pairs you
                 or your loved one with a skilled care professional whose company you
                 will genuinely enjoy. Companionship care is here to provide:
               </p>
@@ -1144,7 +1143,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         always an enjoyable
         experience. Companionship contributes to a better quality of life, can aid recovery and improves mental health.
 
-        Choosing Beaumont Home Care for companionship care and support provides not just company, but also peace of
+        Choosing  LoveNest Care Home Care for companionship care and support provides not just company, but also peace of
         mind.
       </p>
     </section>
@@ -1158,7 +1157,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1176,7 +1175,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         <p>
           Elderly care encompasses a broad range of services and support aimed at meeting the physical, emotional, and
           social needs of older
-          At Lovenest Home Care, we understand the unique challenges and complexities that come with providing care for
+          At LoveNest Care, we understand the unique challenges and complexities that come with providing care for
           loved ones living
           with dementia. We are proud to specialise in dementia care, offering our expertise together with compassionate
           and tailored support
@@ -1228,7 +1227,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           Why should you choose us for domiciliary care?
         </h3>
         <p>
-          At Lovenest Home Care, we are specialists in dementia care. We have extensive experience and knowledge in
+          At LoveNest Care, we are specialists in dementia care. We have extensive experience and knowledge in
           providing
           personalized support to individuals living with dementia. Our care professionals undergo specialized training
           to
@@ -1237,7 +1236,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           standards of care.
         </p>
         <p>
-          Choosing Lovenest Home Care means choosing a trusted partner in dementia care. We are dedicated to making a
+          Choosing LoveNest Care means choosing a trusted partner in dementia care. We are dedicated to making a
           positive
           difference in the lives of individuals living with dementia and for their families.
         </p>
@@ -1255,11 +1254,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           <div class="icon-contact">
 
             <span>
-              <a class="#" href="tel:++ 07931 918596">Schedule a call back</a>
+              <a class="#" href="tel:+ 07931 918596">Schedule a call back</a>
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1291,7 +1290,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             <h3>What is Personal assistant?
             </h3>
             <p>
-              At Lovenest Home Care we are always looking at ways to make every day
+              At LoveNest Care we are always looking at ways to make every day
               living just that little bit easier. From organizing and managing household
               bills, helping you set up technology (PC's,Iphones,Ipads, Zoom), running
               errands, scheduling appointments.
@@ -1317,7 +1316,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1404,11 +1403,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           <div class="icon-contact">
 
             <span>
-              <a class="#" href="tel:++ 07931 918596">Schedule a call back</a>
+              <a class="#" href="tel:+ 07931 918596">Schedule a call back</a>
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1481,7 +1480,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           Our end-of-life team are highly trained and skilled in delivering personalized care that meets the unique
           needs
           of each individual we
-          care for. Choosing Beaumont Home Care means choosing a compassionate and reliable partner in your end-of-life
+          care for. Choosing  LoveNest Care Home Care means choosing a compassionate and reliable partner in your end-of-life
           journey.
           We are committed to making a positive difference in your life and providing support you need to feel safe,
           comfortable and cared
@@ -1499,7 +1498,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1583,7 +1582,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         <p>
           It is an emotional time for all involved and we're here to support your loved one and family through our
           bespoke palliative care at home services.
-          At Beaumont Home Care we understand the unique needs and challenges faced by individuals and families dealing
+          At  LoveNest Care Home Care we understand the unique needs and challenges faced by individuals and families dealing
           with serious
           illness.
         </p>
@@ -1604,7 +1603,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1632,7 +1631,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           or disorientation.
         </p>
         <p>
-          At Lovenest Home Care we can offer a range of hospital discharge care options at short notice. This may
+          At LoveNest Care we can offer a range of hospital discharge care options at short notice. This may
           involve
           hourly care, night
           care or even 24-hour live-in care. Our hospital to home care service is flexible and can often be provided on
@@ -1770,7 +1769,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -1904,11 +1903,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           <div class="icon-contact">
 
             <span>
-              <a class="#" href="tel:++ 07931 918596">Schedule a call back</a>
+              <a class="#" href="tel:+ 07931 918596">Schedule a call back</a>
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a class="#" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -2000,7 +1999,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           Why you should choose us for live-in care for couples?
         </h3>
         <p>
-          At Lovenest Home Care we understand the unique needs and dynamics of couples requiring care. Our experienced
+          At LoveNest Care we understand the unique needs and dynamics of couples requiring care. Our experienced
           care
           professionals are trained to provide personalised care that caters to the individual needs of each client
           within
@@ -2013,7 +2012,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
         </p>
 
         <p>
-          With Beaumont Home Care, you can trust that you and your partner will receive the highest level of care,
+          With LoveNest Care, you can trust that you and your partner will receive the highest level of care,
           allowing you to continue
           enjoying your lives together.
         </p>
@@ -2029,7 +2028,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -2094,7 +2093,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           Why should you choose us for live-in care?
         </h3>
         <p>
-          Choosing Beaumont Home Care for live-in care means choosing a trusted and reliable provider that is committed
+          Choosing LoveNest Care for live-in care means choosing a trusted and reliable provider that is committed
           to
           delivering
           exceptional care and support. Our team of highly trained and compassionate live-in care professionals are
@@ -2104,7 +2103,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           comfort of their own home.
         </p>
         <p>
-          Beaumont Home Care can assist with everything from routine housework, cooking, and companionship to personal
+           LoveNest Care can assist with everything from routine housework, cooking, and companionship to personal
           care and more
           specialised needs. We have an exceptionally dedicated live-in care team available ready to provide
           round-the-clock assistance
@@ -2124,11 +2123,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           <div class="icon-contact">
 
             <span>
-              <a class="#" href="tel:++ 07931 918596">Schedule a call back</a>
+              <a class="#" href="tel:+ 07931 918596">Schedule a call back</a>
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -2210,14 +2209,14 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           Why choose us for respite care?
         </h3>
         <p>
-          At Lovenest Home Care, we have extensive experience in providing respite care services. Our care professionals
+          At LoveNest Care, we have extensive experience in providing respite care services. Our care professionals
           are trained and
           experienced in supporting individuals and their families during periods of respite. We also understand the
           unique challenges and
           needs that arise during respite care and are equipped to provide the highest level of support.
         </p>
         <p>
-          Choosing Lovenest Home Care for respite care means choosing a reliable and compassionate partner who
+          Choosing LoveNest Care for respite care means choosing a reliable and compassionate partner who
           understands
           the
           unique needs of both the individual receiving care and their family. We are dedicated to providing
@@ -2237,7 +2236,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           </div>
           <div class="contact">
             <span>
-              <a class="phone-number" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -2273,7 +2272,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           distressing.
         </p>
         <p>
-          At Lovenest Home Care we provide a range of specialist home care services for a variety of circumstance. Our
+          At LoveNest Care we provide a range of specialist home care services for a variety of circumstance. Our
           specialist and expert
           home care is all about tailoring the service to the individual; we listen, as to ensure we provide complete
           person-centred care at all
@@ -2496,7 +2495,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
             <p>
               Specialist home care, also referred to as complex care, is tailor-made
               assistance provided to those living with an on-going health condition
-              or a new diagnosis. With the help of Beaumont's specialist home care
+              or a new diagnosis. With the help of  LoveNest Care's specialist home care
               team, a custom-made approach is adopted to ensure both the needs
               and wants of the client will not only be met but surpassed.
             </p>
@@ -2621,11 +2620,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           <div class="icon-contact">
 
             <span>
-              <a class="#" href="tel:++ 07931 918596">Schedule a call back</a>
+              <a class="#" href="tel:+ 07931 918596">Schedule a call back</a>
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>
@@ -2649,7 +2648,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           is needed.
         </p>
         <p>
-          We understand the challenges a stroke can bring, not just for you but also your loved ones. At Alina Homecare,
+          We understand the challenges a stroke can bring, not just for you but also your loved ones. At  LoveNest Care,
           we can help with all
           aspects of Stroke Care at Home, from overcoming difficulties with mobility, to communication and emotional
           support.
@@ -2733,7 +2732,7 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           tailor our care to suit your specific needs and requirements.
         </p>
         <p>
-          Choosing Lovenest Home Care after a stroke is a big decision with the emotional impact a stroke can bring,
+          Choosing LoveNest Care after a stroke is a big decision with the emotional impact a stroke can bring,
           familiarity and
           consistency are vital factors to consider.
         </p>
@@ -2756,11 +2755,11 @@ import Frame7 from '@/assets/images/Care_Service/Frame7.png'
           <div class="icon-contact">
 
             <span>
-              <a class="#" href="tel:++ 07931 918596">Schedule a call back</a>
+              <a class="#" href="tel:+ 07931 918596">Schedule a call back</a>
             </span>
 
             <span>
-              <a class="#" href="#">Get in touch</a>
+              <a class="phone-number" href="mailto: info@lovenestcare.co.uk">Get in touch</a>
             </span>
 
           </div>

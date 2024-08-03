@@ -22,7 +22,7 @@ import { Icon } from '@iconify/vue';
           <div class="routing">
             <div class="icon-links"> <span>
                 <Icon icon="wpf:message-outline" color="#fff" width="20" />
-              </span> <span> <a href="mailto:">Email</a> </span> </div>
+              </span> <span> <a href="mailto: info@lovenestcare.co.uk">Email</a> </span> </div>
 
             <RouterLink class="icon-links" to="/vacancy"><span>
                 <Icon icon="clarity:cursor-arrow-line" width="20px" height="20px" style="color: white" />

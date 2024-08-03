@@ -362,8 +362,8 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
                 LOVENEST SPOTLIGHT
               </h2>
               <p>
-                Hi. My name is Kayand I'm the Assistant Director of
-                LoveNest Home Care. Every day, people entrust us to care for
+                Hi. My name is Kay and I'm the Assistant Director of
+                LoveNest Care. Every day, people entrust us to care for
                 their loved ones, and that is a responsibility I take very
                 seriously. In my role, I am responsible for training and
                 managing LoveNest's full team of caregivers. But what really
@@ -397,10 +397,8 @@ import Imagegiver3 from '@/assets/images/Care_Service/Frame7.png'
                 </div>
                 <p>
                   Mom's LoveNest caregivers are simultaneously her lifeline and
-                  my security blanket. […] From the day Mom first moved here—
-                  just prior to Rosh Hashanah, 2017—her aides have not only
-                  provided her day-to-day care, but they've also provided her
-                  companionship.
+                  my security blanket. […] From the day Mom first moved here.
+                  Lovenest has provided her day-to-day care.
                 </p>
                 <div class="color-btn">
                   <!-- <h4>Sindy</h4> -->

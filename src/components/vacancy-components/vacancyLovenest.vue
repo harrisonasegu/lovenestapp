@@ -34,13 +34,12 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
                 <p>
                     Our Carer Centric values have lead to Visiting Angels having an exceptionally low staff
                     turnover rate & great employee satisfaction reviews.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis facere dolorem suscipit,
-                    eligendi
-                    hic nobis! Consequatur accusantium aut temporibus placeat, optio sunt cupiditate, repellat error
-                    aspernatur, atque quaerat perspiciatis reviews.
+                    We provides several services like; bathing, dressing, grooming, and other personal care. This could include helping our clients get to the bathroom and cleaning them after.
+
+                    We also assits with cleaning, laundry, and yard work. Food also can be a key part of our  caregiving, grocery shopping and preparing healthy meals. Taking them out to eat or bringing them to their homes gives them a chance to be social and visit with other people.
                 </p>
                 <div class="vancancy-btn">
-                    <RouterLink class="icon-links" to="/job-form"> JOIN OUR TEAM </RouterLink>
+                    <RouterLink class="icon-links" to="/Free-assessment"> JOIN OUR TEAM </RouterLink>
                 </div>
             </section>
 
@@ -94,16 +93,9 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
                             Care isn't just a job, its the best thing you would ever do!
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat faucibus ac lectus
-                            biandit erat.
-                            Lorem ipsum dolor sit amet, consecteturadipiscing elit. Erat faucibus
-                            ac lectus
-                            biandit erat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat faucibusac lectus
-                            biandit erat.
-                            Lorem ipsum dolor sit amet, consectetur adipis
-                            cing elit. Erat faucibus ac lectus
-                            biandit erat.
+                            Making someone feel loved is one of the most important things you can do in life. Caring love messages, advices, personal communication etc, can show someone that you care about them and want to make them feel special.
+                            We learn about any health problems, so we know what to look out for, spot symptoms.
+                            And take good care of our clients professionally.
 
                         </p>
                     </div>
@@ -227,7 +219,6 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
         }
     }
 
-
     &>.vacancy-contents {
 
         // underline h3 text
@@ -264,6 +255,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
                 padding: 15px 30px;
                 margin-top: 30px;
                 margin-bottom: 40px;
+                text-align: center;
 
                 a {
                     text-decoration: none;
@@ -372,6 +364,8 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
             padding: 15px 30px;
             margin-top: 30px;
             margin-bottom: 40px;
+            text-align: center;
+            text-decoration: none;
 
             // /* Styles for modal overlay */
             // .modal-overlay {

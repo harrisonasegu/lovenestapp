@@ -160,7 +160,7 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                           </template>
 
                           <p>
-                            LoveNest Home Care does not currently take Medicaid or Medicare insurance. Should you have a
+                            LoveNest Care does not currently take insurance. Should you have a
                             long-term care (LTC) insurance plan, LoveNest will work diligently with you LTC to get your
                             services covered under your policy. Please note that many LTC policies have an elimination
                             period that you must meet before services are covered.

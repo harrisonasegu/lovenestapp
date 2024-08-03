@@ -115,7 +115,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
                       </div>
                     </div>
                     <p>
-                      Stay up to date on key senior topics and resources, get news from LoveNest Home Care, and more.
+                      Stay up to date on key senior topics and resources, get news from LoveNest Care, and more.
                     </p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
                       <h4>Health and Safety</h4>
                     </div>
                     <p>
-                      LoveNest Home Care continues to meet needs of our clients.
+                      LoveNest Care continues to meet needs of our clients.
                     </p>
                   </div>
                 </div>
@@ -448,7 +448,7 @@ import Image1 from '@/assets/images/newImage/newsimage.png'
                           </template>
 
                           <p>
-                            LoveNest Home Care does not currently take Medicaid or Medicare insurance. Should you have a
+                            LoveNest Care does not currently take insurance. Should you have a
                             long-term care (LTC) insurance plan, LoveNest will work diligently with you LTC to get your
                             services covered under your policy. Please note that many LTC policies have an elimination
                             period that you must meet before services are covered.

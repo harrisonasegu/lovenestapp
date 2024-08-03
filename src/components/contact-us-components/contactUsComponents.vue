@@ -275,22 +275,22 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
         <div class="form-container">
           <section class="form-header">
             <div class="img-container">
-              <h2>How Can We Help 
+              <h2>How Can We Help
                 You?
               </h2>
             </div>
 
             <p>
-                Please fill out the form below with a brief 
-                message about your needs and we'll get 
-                right back to you.
-              </p>
-              <p>
+              Please fill out the form below with a brief
+              message about your needs and we'll get
+              right back to you.
+            </p>
+            <!-- <p>
                 <span></span> Indicates required fields
-              </p>
+              </p> -->
           </section>
 
-          <section class="form-body"> 
+          <section class="form-body">
             <div class="onboarding-form">
               <n-form ref="formRef" :model="model" :rules="rules">
                 <n-form-item path="firstName">
@@ -309,29 +309,18 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
                 </n-form-item>
 
                 <n-form-item path="phoneNumber">
-                  <n-input
-                    size="large"
-                    placeholder="Phone Number"
-                    v-model:value="model.phoneNumber"
-                    :allow-input="allowNumberInput"
-                    :disabled="isLoading" 
-                    @keydown.enter.prevent 
-                  />
+                  <n-input size="large" placeholder="Phone Number" v-model:value="model.phoneNumber"
+                    :allow-input="allowNumberInput" :disabled="isLoading" @keydown.enter.prevent />
                 </n-form-item>
 
                 <n-form-item path="meansOfContact">
-                  <n-select
-                    size="large"
-                    v-model:value="model.meansOfContact"
-                    :options="options"
-                    placeholder="How can we contact you?"
-                    :disabled="isLoading"
-                  />
+                  <n-select size="large" v-model:value="model.meansOfContact" :options="options"
+                    placeholder="How can we contact you?" :disabled="isLoading" />
                 </n-form-item>
 
                 <n-form-item path="message">
-                  <n-input size="large" placeholder="Message" type="textarea" rows="2"
-                    v-model:value="model.message" :disabled="isLoading" @keydown.enter.prevent />
+                  <n-input size="large" placeholder="Message" type="textarea" rows="2" v-model:value="model.message"
+                    :disabled="isLoading" @keydown.enter.prevent />
                 </n-form-item>
 
                 <!-- <n-form-item>
@@ -361,8 +350,11 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
             <div class="privacy-form-footer">
               <span>LoveNest respects your privacy. For more
-                information , visit our  <router-link to="#"> <br> Privacy Policy page.</router-link> </span>
-             
+                information , visit our <br> 
+                <span class="input-privacy">
+                  Privacy Policy page
+                </span>
+              </span>
             </div>
           </section>
         </div>
@@ -372,27 +364,26 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
             Our team is always ready to assist you with all of your
             home care needs.
           </p>
-          <p>
-            <a href="#">
-              Lovenest Care Limited <br>
-              Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham
-              <br>
-              Phone:  07931 918596 <br>
-              Email: info@lovenestcare.co.uk
-            </a>
+
+          <p class="p-contents">
+            <b>Lovenest Care Limited</b> <br>
+            Basepoint Business Centre, Isidore Road, Bromsgrove, B60 3ET, Birmingham
+            <br>
+            <a href="tel:+234 07931 918596"> Phone: 07931 918596</a>
+            <br>
+            <a href="mailto: info@lovenestcare.co.uk"> Email: info@lovenestcare.co.uk</a>
           </p>
 
           <h2>
             Looking for a Job with
             LoveNest HomeCare?
           </h2>
-          <p>
-            <a href="#">
-              Learn how to become a Caregiver:
-              <br>
-              Phone:  07931 918596 <br>
-              Email: info@lovenestcare.co.uk
-            </a>
+          <p class="p-contents">
+            <b>Learn how to become a Caregiver:</b>
+            <br>
+            <a href="tel:+234 07931 918596"> Phone: 07931 918596</a>
+            <br>
+            <a href="mailto: info@lovenestcare.co.uk"> Email: info@lovenestcare.co.uk</a>
           </p>
 
           <h2>
@@ -410,78 +401,86 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
 
           <!-- Map -->
           <div class="map-location">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.9946283105915!2d-2.0599849240145036!3d52.31609997200847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870eb65fd1360ed%3A0xa924452480058440!2sBasepoint%20-%20Bromsgrove%2C%20Bromsgrove%20Enterprise%20Park!5e0!3m2!1sen!2sng!4v1721601137148!5m2!1sen!2sng" width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.9946283105915!2d-2.0599849240145036!3d52.31609997200847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870eb65fd1360ed%3A0xa924452480058440!2sBasepoint%20-%20Bromsgrove%2C%20Bromsgrove%20Enterprise%20Park!5e0!3m2!1sen!2sng!4v1721601137148!5m2!1sen!2sng"
+              width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
         </div>
       </div>
     </section>
 
-        <!-- Carousel section -->
-        <section>
-    <n-carousel class="carousel" show-arrow autoplay>
-    
-<!-- Second Section -->
-<!-- Relative and Absolute section -->
-<div class="second-reliable carousel-img">
-<div class="section-image">
-<img :src="Banner" alt="picture">
-</div>
-<div class="section-background">
+    <!-- Carousel section -->
+    <section>
+      <n-carousel class="carousel" show-arrow autoplay>
 
-<div class="light-background">
-  <div class="contents">
-    <div class="quotation">
-      <Icon class="icons"
-        icon="ri:double-quotes-l" width="80px" height="80px"  style="color: #4897E6" />
-    </div>
-    <p>
-      Mom's LoveNest caregivers are simultaneously her lifeline and
-      my security blanket. […] From the day Mom first moved here—
-      just prior to Rosh Hashanah, 2017—her aides have not only
-      provided her day-to-day care, but they've also provided her 
-      companionship.
-    </p>
-    <div class="color-btn">
-        <!-- <h4>Sindy</h4> -->
-        <p>LoveNest client</p>
-          <br>
-          <span>
-            <Icon class="icons"  icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-            <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-            <Icon  class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-            <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-            <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"  style="color: #4897E6" />
-          </span>
-    </div>
-  </div>
-</div>
-</div>
-</div>
+        <!-- Second Section -->
+        <!-- Relative and Absolute section -->
+        <div class="second-reliable carousel-img">
+          <div class="section-image">
+            <img :src="Banner" alt="picture">
+          </div>
+          <div class="section-background">
 
-<img class="carousel-img" :src="Image2">
+            <div class="light-background">
+              <div class="contents">
+                <div class="quotation">
+                  <Icon class="icons" icon="ri:double-quotes-l" width="80px" height="80px" style="color: #4897E6" />
+                </div>
+                <p>
+                  Mom's LoveNest caregivers are simultaneously her lifeline and
+                  my security blanket. […] From the day Mom first moved here.
+                  Lovenest has provided her day-to-day care.
+                </p>
+                <div class="color-btn">
+                  <!-- <h4>Sindy</h4> -->
+                  <p>LoveNest client</p>
+                  <br>
+                  <span>
+                    <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"
+                      style="color: #4897E6" />
+                    <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"
+                      style="color: #4897E6" />
+                    <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"
+                      style="color: #4897E6" />
+                    <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"
+                      style="color: #4897E6" />
+                    <Icon class="icons" icon="material-symbols-light:star" width="40px" height="40px"
+                      style="color: #4897E6" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<img class="carousel-img" :src="Image1">
+        <img class="carousel-img" :src="Image2">
 
-<img class="carousel-img" :src="Image2">
+        <img class="carousel-img" :src="Image1">
 
-<template #arrow="{ prev, next }">
-    <div class="custom-arrow">
-      <button type="button" class="custom-arrow--left" @click="prev">
-        <n-icon><ArrowBack /></n-icon>
-      </button>
-      <button type="button" class="custom-arrow--right" @click="next">
-        <n-icon><ArrowForward /></n-icon>
-      </button>
-    </div>
-  </template>
-<template #dots="{ total, currentIndex, to }">
-<ul class="custom-dots">
-  <li v-for="index of total" :key="index" :class="{ ['is-active']: currentIndex === index - 1 }"
-    @click="to(index - 1)" />
-</ul>
-</template>
-    </n-carousel>
+        <img class="carousel-img" :src="Image2">
+
+        <template #arrow="{ prev, next }">
+          <div class="custom-arrow">
+            <button type="button" class="custom-arrow--left" @click="prev">
+              <n-icon>
+                <ArrowBack />
+              </n-icon>
+            </button>
+            <button type="button" class="custom-arrow--right" @click="next">
+              <n-icon>
+                <ArrowForward />
+              </n-icon>
+            </button>
+          </div>
+        </template>
+        <template #dots="{ total, currentIndex, to }">
+          <ul class="custom-dots">
+            <li v-for="index of total" :key="index" :class="{ ['is-active']: currentIndex === index - 1 }"
+              @click="to(index - 1)" />
+          </ul>
+        </template>
+      </n-carousel>
     </section>
 
 
@@ -537,6 +536,10 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
   h2 {
     font-family: Montserrat; 
     font-size: 35px;
+    color: $base-color-1;
+  }
+
+  .p-contents {
     color: $base-color-1;
   }
 
@@ -724,13 +727,17 @@ const handleSubMenuClick = (event: Event, subMenu: string) => {
               word-break: break-all;
               text-align: center;
 
-              // &>span {}
-
-              a {
-                text-decoration: none;
-                font-weight: bold;
-                color: red;
+              .input-privacy {
+                // border: 2px solid red;
+                color: rgba(0, 0, 0, 0.477);
+                font-weight: 400
               }
+              // // &>span {}
+              // a {
+              //   text-decoration: none;
+              //   font-weight: bold;
+              //   color: red;
+              // }
             }
           }
         }

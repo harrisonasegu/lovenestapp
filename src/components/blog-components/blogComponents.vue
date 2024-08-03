@@ -18,7 +18,7 @@ import BlogPicture from '@/assets/images/blog-Image/blog-picture.png'
 
         <div class="blog-caption">
             <div class="h3-contents">
-                <h3>Welcome to the official blog of Lovenest Home Care
+                <h3>Welcome to the official blog of LoveNest Care
                 </h3>
                 <p>
                     We're dedicated to providing the best care and support for the elderly and vulnerable in Essex. As
