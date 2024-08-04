@@ -109,7 +109,7 @@ import VacancyProcess from '@/assets/images/vacancy_images/vacancy-connect.png'
             </div>
 
             <div class="vancancy-btn">
-                <a href="#">JOIN OUR TEAM</a>
+                <a href="/Contact-Us">JOIN OUR TEAM</a>
                 <div>
                 </div>
             </div>
